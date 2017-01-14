@@ -1,0 +1,51 @@
+#N canvas 86 117 1243 621 10;
+#X obj 102 9 Input;
+#X obj 72 30 Output;
+#X obj 974 480 s absolute-relative;
+#X obj 974 454 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 724 25 Controller-Side;
+#X obj 965 535 s jump-gliss;
+#X obj 1047 431 s gliss-length;
+#X obj 965 516 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X floatatom 1047 407 5 0 0 0 - - -, f 5;
+#X obj 965 390 loadbang;
+#X msg 965 421 0;
+#X obj 143 9 Fader 0 16 32 48 64;
+#X obj 1101 517 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X obj 1101 537 s stereo-mono;
+#X obj 48 178 UGen 0 0 3;
+#X obj 49 54 Mixer 0 3 0;
+#X obj 143 30 Fader 1 17 33 49 65;
+#X obj 282 9 Fader 2 18 34 50 66;
+#X obj 282 30 Fader 3 19 35 51 67;
+#X obj 421 9 Fader 4 20 36 52 68;
+#X obj 421 30 Fader 5 21 37 53 69;
+#X obj 560 9 Fader 6 22 38 54 70;
+#X obj 560 30 Fader 7 23 39 55 71;
+#X obj 341 54 Mixer 1 4 1;
+#X obj 628 61 Mixer 2 5 2;
+#X obj 347 176 UGen 1 1 4;
+#X obj 632 175 UGen 2 2 5;
+#X obj 919 77 Presets;
+#X obj 919 23 hradio 15 1 0 17 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
+#X msg 1121 485 1;
+#X text 894 176 - Figure out how I want signal to be silenced \; -
+Start making the presets by name. That's the \; best way to make things
+come together. \; - If you work efficiently \, this could be done \;
+tomorrow and ready for the automation stage. \; - In the end \, only
+one loadbang. \; - A panic button? Something that just jogs \; things
+somehow?;
+#X connect 3 0 2 0;
+#X connect 7 0 5 0;
+#X connect 8 0 6 0;
+#X connect 9 0 10 0;
+#X connect 9 0 29 0;
+#X connect 10 0 3 0;
+#X connect 10 0 7 0;
+#X connect 12 0 13 0;
+#X connect 28 0 27 0;
+#X connect 29 0 12 0;

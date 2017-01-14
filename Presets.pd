@@ -1,0 +1,19 @@
+#N canvas 214 165 1103 465 10;
+#X text 44 28 Source Levels \; Elems \; Exp \; Volumes (not so important)
+\; Glissando? (also not so important) \; Relative/Absolute control
+\; Eventually: the rhythm section \; Eventually: reverb \; Stereo situation
+\;;
+#X obj 127 312 SourceFaderPresets;
+#X obj 127 276 inlet;
+#X text 39 339 0 ALL OFF \; 1 ALL NOISE \; 2 ALL SIG \; 3 ALL SELF
+\;;
+#X text 139 347 4 ONE NOISE \; 5 ONE SIG \; 6 ONE SELF;
+#X text 240 342 7 PAIR \; 8 PAIR & NOISE \; 9 PAIR & SIG \; 10 PAIR
+& SELF;
+#X text 362 332 11 DAISY CHAIN \; 12 DAISY CHAIN & NOISE \; 13 DAISY
+CHAIN & SIG \; 14 DAISY CHAIN & SELF \; 15 DAISY CHAIN & HALF SELF
+\; 16 ORGY;
+#X obj 176 277 hradio 15 1 0 17 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
+#X connect 2 0 1 0;
+#X connect 7 0 1 0;
