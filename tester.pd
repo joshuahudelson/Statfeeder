@@ -1,4 +1,4 @@
-#N canvas 80 125 1243 621 10;
+#N canvas 123 127 1243 621 10;
 #X obj 102 9 Input;
 #X obj 72 30 Output;
 #X obj 974 480 s absolute-relative;
@@ -16,22 +16,18 @@
 #X obj 1101 517 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 1 1;
 #X obj 1101 537 s stereo-mono;
-#X obj 48 178 UGen 0 0 3;
 #X obj 49 54 Mixer 0 3 0;
 #X obj 341 54 Mixer 1 4 1;
 #X obj 628 61 Mixer 2 5 2;
-#X obj 919 77 Presets;
-#X obj 919 23 hradio 15 1 0 17 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+#X obj 915 83 Presets;
 #X msg 1121 485 1;
-#X text 894 176 - Figure out how I want signal to be silenced \; -
+#X text 366 499 - Figure out how I want signal to be silenced \; -
 Start making the presets by name. That's the \; best way to make things
 come together. \; - If you work efficiently \, this could be done \;
 tomorrow and ready for the automation stage. \; - In the end \, only
 one loadbang. \; - A panic button? Something that just jogs \; things
 somehow?;
 #X obj 347 176 UGen 1 1 4;
-#X obj 632 175 UGen 2 2 5;
 #X obj 143 30 Fader 1 17 33 49 65;
 #X obj 282 9 Fader 2 18 34 50 66;
 #X obj 282 30 Fader 3 19 35 51 67;
@@ -39,13 +35,17 @@ somehow?;
 #X obj 421 30 Fader 5 21 37 53 69;
 #X obj 560 9 Fader 6 22 38 54 70;
 #X obj 560 30 Fader 7 23 39 55 71;
+#X obj 1043 63 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
+-1 -1 5;
+#X obj 48 178 UGen 0 0 3;
+#X obj 632 175 UGen 2 2 5;
 #X connect 3 0 2 0;
 #X connect 7 0 5 0;
 #X connect 8 0 6 0;
 #X connect 9 0 10 0;
-#X connect 9 0 20 0;
+#X connect 9 0 18 0;
 #X connect 10 0 3 0;
 #X connect 10 0 7 0;
 #X connect 12 0 13 0;
-#X connect 19 0 18 0;
-#X connect 20 0 12 0;
+#X connect 18 0 12 0;
+#X connect 28 0 17 1;
