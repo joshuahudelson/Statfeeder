@@ -1,26 +1,26 @@
-#N canvas 123 127 1243 621 10;
+#N canvas 98 113 1244 621 10;
 #X obj 102 9 Input;
 #X obj 72 30 Output;
-#X obj 974 480 s absolute-relative;
-#X obj 974 454 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 954 499 s absolute-relative;
+#X obj 954 473 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 724 25 Controller-Side;
-#X obj 965 535 s jump-gliss;
-#X obj 1047 431 s gliss-length;
-#X obj 965 516 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 945 544 s jump-gliss;
+#X obj 995 467 s gliss-length;
+#X obj 945 525 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X floatatom 1047 407 5 0 0 0 - - -, f 5;
-#X obj 965 390 loadbang;
-#X msg 965 421 0;
+#X floatatom 995 443 5 0 0 0 - - -, f 5;
+#X obj 945 409 loadbang;
+#X msg 945 440 0;
 #X obj 143 9 Fader 0 16 32 48 64;
-#X obj 1101 517 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+#X obj 1081 526 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 1 1;
-#X obj 1101 537 s stereo-mono;
+#X obj 1081 546 s stereo-mono;
 #X obj 49 54 Mixer 0 3 0;
 #X obj 341 54 Mixer 1 4 1;
 #X obj 628 61 Mixer 2 5 2;
-#X obj 915 83 Presets;
-#X msg 1121 485 1;
+#X obj 84 622 Presets;
+#X msg 1101 504 1;
 #X text 366 499 - Figure out how I want signal to be silenced \; -
 Start making the presets by name. That's the \; best way to make things
 come together. \; - If you work efficiently \, this could be done \;
@@ -35,8 +35,6 @@ somehow?;
 #X obj 421 30 Fader 5 21 37 53 69;
 #X obj 560 9 Fader 6 22 38 54 70;
 #X obj 560 30 Fader 7 23 39 55 71;
-#X obj 1043 63 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
--1 -1 5;
 #X obj 48 178 UGen 0 0 3;
 #X obj 632 175 UGen 2 2 5;
 #X connect 3 0 2 0;
@@ -48,4 +46,3 @@ somehow?;
 #X connect 10 0 7 0;
 #X connect 12 0 13 0;
 #X connect 18 0 12 0;
-#X connect 28 0 17 1;

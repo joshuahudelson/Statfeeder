@@ -1,6 +1,6 @@
-#N canvas 411 97 940 641 10;
-#X obj 67 58 hradio 15 1 0 16 empty empty empty 0 -8 0 10 -262144 -1
--1 12;
+#N canvas 188 127 1054 641 10;
+#X obj 67 58 hradio 15 1 0 17 empty empty empty 0 -8 0 10 -262144 -1
+-1 16;
 #X obj 67 478 unpack;
 #X obj 67 519 s fader-0-bypass;
 #X obj 106 499 s fader-3-bypass;
@@ -74,9 +74,29 @@
 #X msg 568 492 0.8;
 #X msg 448 418 20 25;
 #X obj 394 353 sel 10 11 12;
+#X obj 646 203 s fader-0-bypass;
+#X obj 765 203 s fader-3-bypass;
+#X obj 670 223 s fader-1-bypass;
+#X obj 789 223 s fader-4-bypass;
+#X obj 695 243 s fader-2-bypass;
+#X obj 814 243 s fader-5-bypass;
+#X obj 646 182 unpack f f f f f f;
+#X msg 646 159 250 500 125 300 600 180;
+#X msg 671 138 124 250 167 200 300 225;
+#X msg 722 96 16 8 31 50 40 70;
+#X obj 646 73 sel 13 14 15 16;
+#X text 814 160 LOW DRONE;
+#X text 842 140 MID DRONE;
+#X text 850 119 HIGH DRONE;
+#X msg 697 117 63 125 31 125 250 100;
+#X text 843 97 ULTRA DRONE;
+#X text 428 378 SNOW;
+#X text 462 399 SLEET;
+#X text 490 419 DRIZZLE;
 #X connect 0 0 51 0;
 #X connect 0 0 56 0;
 #X connect 0 0 73 0;
+#X connect 0 0 84 0;
 #X connect 1 0 2 0;
 #X connect 1 0 4 0;
 #X connect 1 0 6 0;
@@ -150,3 +170,17 @@
 #X connect 73 0 69 0;
 #X connect 73 1 70 0;
 #X connect 73 2 72 0;
+#X connect 80 0 74 0;
+#X connect 80 1 76 0;
+#X connect 80 2 78 0;
+#X connect 80 3 75 0;
+#X connect 80 4 77 0;
+#X connect 80 5 79 0;
+#X connect 81 0 80 0;
+#X connect 82 0 80 0;
+#X connect 83 0 80 0;
+#X connect 84 0 81 0;
+#X connect 84 1 82 0;
+#X connect 84 2 88 0;
+#X connect 84 3 83 0;
+#X connect 88 0 80 0;
