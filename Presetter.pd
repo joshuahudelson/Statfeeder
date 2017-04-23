@@ -1,0 +1,138 @@
+#N canvas 127 137 1204 589 10;
+#X obj 154 13 hradio 15 1 0 20 empty empty empty 0 -8 0 10 -262144
+-1 -1 3;
+#X text 316 74 ALL OFF;
+#X obj 154 79 t b b;
+#X obj 171 128 t b b;
+#X text 305 125 TINY CRYSTALS;
+#X text 273 512 First 6 are the Elem/Exp values \; Next three are the
+output volumes \; Then stereo control \; Then output volumes \;;
+#X msg 287 347 \; fader-0-bypass \$1 \; fader-1-bypass \$2 \; fader-2-bypass
+\$3 \; fader-3-bypass \$4 \; fader-4-bypass \$5 \; fader-5-bypass \$6
+\; ugen0-external-vol \$7 \; ugen1-external-vol \$8 \; ugen2-external-vol
+\$9 \; stereo-mono \$10 \;;
+#X msg 287 96 0 0 0 0 0 0 0 0 0 0;
+#X obj 189 178 t b b;
+#X text 306 176 MEDIUM CRYSTALS;
+#X text 62 308 2 ALL SIG \; 3 ALL SELF;
+#X text 62 369 6 ONE SELF \; 7 PAIR;
+#X text 62 399 8 PAIR & NOISE \; 9 PAIR & SIG \;;
+#X text 62 429 10 PAIR & SELF \; 11 DAISY CHAIN;
+#X text 62 339 4 ONE NOISE \; 5 ONE SIG;
+#X text 62 279 0 ALL OFF \; 1 ALL NOISE;
+#X text 62 460 12 DC & NOISE \; 13 DC & SIG;
+#X text 62 489 14 DC & SELF \; 15 DC & HALF S;
+#X text 62 518 16 ORGY;
+#X obj 154 376 Sourcerer;
+#X msg 154 102 0;
+#X msg 171 151 1;
+#X msg 189 200 1;
+#X obj 206 228 t b b;
+#X msg 206 250 1;
+#X msg 287 195 11 8 6 66 48 36 1 1 1 1;
+#X msg 287 245 34 27 28 204 162 168 1 1 1 1;
+#X text 306 226 LARGE CRYSTALS;
+#X obj 154 50 sel 0 1 2 3 4;
+#X obj 224 278 t b b;
+#X msg 224 300 1;
+#X text 324 276 HIGH ORGAN;
+#X msg 287 145 6 11 9 36 72 54 1 1 1 1;
+#X obj 540 50 sel 5 6 7 8 9;
+#X obj 540 80 t b b;
+#X obj 557 129 t b b;
+#X msg 673 348 \; fader-0-bypass \$1 \; fader-1-bypass \$2 \; fader-2-bypass
+\$3 \; fader-3-bypass \$4 \; fader-4-bypass \$5 \; fader-5-bypass \$6
+\; ugen0-external-vol \$7 \; ugen1-external-vol \$8 \; ugen2-external-vol
+\$9 \; stereo-mono \$10 \;;
+#X obj 575 179 t b b;
+#X obj 540 377 Sourcerer;
+#X msg 557 152 1;
+#X msg 575 201 1;
+#X obj 592 229 t b b;
+#X msg 592 251 1;
+#X obj 610 279 t b b;
+#X msg 610 301 1;
+#X msg 287 295 61 67 55 366 402 330 1 1 1 1;
+#X text 686 77 MEDIUM ORGAN;
+#X text 689 127 LOW ORGAN;
+#X msg 673 97 105 93 104 630 558 624 1 1 1 1;
+#X msg 673 146 159 150 160 954 900 960 1 1 1 1;
+#X msg 540 103 1;
+#X text 843 371 separate the triage list \, so \; only one \, and have
+s boxes to \; get stuff to it. Same with the Sourcer \; box \, only
+one \, s boxes. Make \; everything more compact \, because there \;
+will be lots of stuff.;
+#X text 688 176 SNOW;
+#X text 688 227 SLEET;
+#X text 688 277 DRIZZLE;
+#X msg 673 196 6 10 12 4.8 8 9.6 1 1 1 1;
+#X msg 673 246 13 23 22 10 18 17 1 1 1 1;
+#X msg 673 296 15 27 21 12 21 16 1 1 1 1;
+#X obj 951 246 r to_sourcerer;
+#X obj 971 266 r to_sourcerer_custom;
+#X obj 971 289 unpack f f f;
+#X obj 951 318 Sourcerer;
+#X text 965 59 The issue is \, what if you want \; to do a custom one...
+\; the big message box will still \; send something to r to_sourcerer
+\; so... Could just have the \; custom message get triggered \; after
+\, but it's sloppy.;
+#X text 946 160 Maybe just only use the preset \; source levels \,
+and if you need \; another \, add a new preset \; but don't ever customize
+;
+#X connect 0 0 28 0;
+#X connect 2 0 20 0;
+#X connect 2 1 7 0;
+#X connect 3 0 21 0;
+#X connect 3 1 32 0;
+#X connect 7 0 6 0;
+#X connect 8 0 22 0;
+#X connect 8 1 25 0;
+#X connect 20 0 19 0;
+#X connect 21 0 19 0;
+#X connect 22 0 19 0;
+#X connect 23 0 24 0;
+#X connect 23 1 26 0;
+#X connect 24 0 19 0;
+#X connect 25 0 6 0;
+#X connect 26 0 6 0;
+#X connect 28 0 2 0;
+#X connect 28 1 3 0;
+#X connect 28 2 8 0;
+#X connect 28 3 23 0;
+#X connect 28 4 29 0;
+#X connect 28 5 33 0;
+#X connect 29 0 30 0;
+#X connect 29 1 45 0;
+#X connect 30 0 19 0;
+#X connect 32 0 6 0;
+#X connect 33 0 34 0;
+#X connect 33 1 35 0;
+#X connect 33 2 37 0;
+#X connect 33 3 41 0;
+#X connect 33 4 43 0;
+#X connect 34 0 50 0;
+#X connect 34 1 48 0;
+#X connect 35 0 39 0;
+#X connect 35 1 49 0;
+#X connect 37 0 40 0;
+#X connect 37 1 55 0;
+#X connect 39 0 38 0;
+#X connect 40 0 38 0;
+#X connect 41 0 42 0;
+#X connect 41 1 56 0;
+#X connect 42 0 38 0;
+#X connect 43 0 44 0;
+#X connect 43 1 57 0;
+#X connect 44 0 38 0;
+#X connect 45 0 6 0;
+#X connect 48 0 36 0;
+#X connect 49 0 36 0;
+#X connect 50 0 38 0;
+#X connect 55 0 36 0;
+#X connect 56 0 36 0;
+#X connect 57 0 36 0;
+#X connect 58 0 61 0;
+#X connect 59 0 60 0;
+#X connect 60 0 61 1;
+#X connect 60 1 61 2;
+#X connect 60 2 61 3;

@@ -1,48 +1,43 @@
-#N canvas 98 113 1244 621 10;
-#X obj 102 9 Input;
-#X obj 72 30 Output;
-#X obj 954 499 s absolute-relative;
-#X obj 954 473 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#N canvas 63 98 1150 630 10;
+#X obj 695 645 s absolute-relative;
+#X obj 695 619 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 724 25 Controller-Side;
-#X obj 945 544 s jump-gliss;
-#X obj 995 467 s gliss-length;
-#X obj 945 525 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 774 25 Controller-Side;
+#X obj 686 690 s jump-gliss;
+#X obj 736 613 s gliss-length;
+#X obj 686 671 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X floatatom 995 443 5 0 0 0 - - -, f 5;
-#X obj 945 409 loadbang;
-#X msg 945 440 0;
-#X obj 143 9 Fader 0 16 32 48 64;
-#X obj 1081 526 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
-#X obj 1081 546 s stereo-mono;
-#X obj 49 54 Mixer 0 3 0;
+#X floatatom 736 589 5 0 0 0 - - -, f 5;
+#X obj 686 555 loadbang;
+#X msg 686 586 0;
+#X obj 193 9 Fader 0 16 32 48 64;
+#X obj 822 672 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 822 692 s stereo-mono;
+#X obj 49 474 Presets;
+#X msg 842 650 1;
+#X obj 193 30 Fader 1 17 33 49 65;
+#X obj 332 9 Fader 2 18 34 50 66;
+#X obj 332 30 Fader 3 19 35 51 67;
+#X obj 471 9 Fader 4 20 36 52 68;
+#X obj 471 30 Fader 5 21 37 53 69;
+#X obj 610 9 Fader 6 22 38 54 70;
+#X obj 610 30 Fader 7 23 39 55 71;
+#X obj 49 157 UGen 0 0 3;
+#X obj 667 496 Presetter;
+#X obj 72 9 Controller_Input;
+#X obj 856 539 Signal_Output;
 #X obj 341 54 Mixer 1 4 1;
-#X obj 628 61 Mixer 2 5 2;
-#X obj 84 622 Presets;
-#X msg 1101 504 1;
-#X text 366 499 - Figure out how I want signal to be silenced \; -
-Start making the presets by name. That's the \; best way to make things
-come together. \; - If you work efficiently \, this could be done \;
-tomorrow and ready for the automation stage. \; - In the end \, only
-one loadbang. \; - A panic button? Something that just jogs \; things
-somehow?;
-#X obj 347 176 UGen 1 1 4;
-#X obj 143 30 Fader 1 17 33 49 65;
-#X obj 282 9 Fader 2 18 34 50 66;
-#X obj 282 30 Fader 3 19 35 51 67;
-#X obj 421 9 Fader 4 20 36 52 68;
-#X obj 421 30 Fader 5 21 37 53 69;
-#X obj 560 9 Fader 6 22 38 54 70;
-#X obj 560 30 Fader 7 23 39 55 71;
-#X obj 48 178 UGen 0 0 3;
-#X obj 632 175 UGen 2 2 5;
-#X connect 3 0 2 0;
-#X connect 7 0 5 0;
-#X connect 8 0 6 0;
-#X connect 9 0 10 0;
-#X connect 9 0 18 0;
-#X connect 10 0 3 0;
-#X connect 10 0 7 0;
-#X connect 12 0 13 0;
-#X connect 18 0 12 0;
+#X obj 628 54 Mixer 2 5 2;
+#X obj 49 54 Mixer 0 3 0;
+#X obj 341 157 UGen 1 1 4;
+#X obj 628 157 UGen 2 2 5;
+#X connect 1 0 0 0;
+#X connect 5 0 3 0;
+#X connect 6 0 4 0;
+#X connect 7 0 8 0;
+#X connect 7 0 13 0;
+#X connect 8 0 1 0;
+#X connect 8 0 5 0;
+#X connect 10 0 11 0;
+#X connect 13 0 10 0;
