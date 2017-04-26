@@ -1,11 +1,11 @@
-#N canvas 63 98 1150 630 10;
+#N canvas 322 101 1150 648 10;
 #X obj 695 645 s absolute-relative;
 #X obj 695 619 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 774 25 Controller-Side;
 #X obj 686 690 s jump-gliss;
 #X obj 736 613 s gliss-length;
-#X obj 686 671 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 686 671 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X floatatom 736 589 5 0 0 0 - - -, f 5;
 #X obj 686 555 loadbang;
@@ -23,13 +23,13 @@
 #X obj 471 30 Fader 5 21 37 53 69;
 #X obj 610 9 Fader 6 22 38 54 70;
 #X obj 610 30 Fader 7 23 39 55 71;
-#X obj 49 157 UGen 0 0 3;
 #X obj 667 496 Presetter;
 #X obj 72 9 Controller_Input;
 #X obj 856 539 Signal_Output;
 #X obj 341 54 Mixer 1 4 1;
 #X obj 628 54 Mixer 2 5 2;
 #X obj 49 54 Mixer 0 3 0;
+#X obj 49 157 UGen 0 0 3;
 #X obj 341 157 UGen 1 1 4;
 #X obj 628 157 UGen 2 2 5;
 #X connect 1 0 0 0;
