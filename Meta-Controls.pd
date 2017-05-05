@@ -1,0 +1,39 @@
+#N canvas 225 259 774 447 10;
+#X obj 101 101 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 101 136 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 129 141 STEREO/MONO;
+#X obj 101 172 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 101 208 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 129 178 REVERB;
+#X text 130 213 RHYTHM;
+#X obj 351 126 s absolute-relative;
+#X obj 27 12 r init-loadbang;
+#X msg 27 84 0;
+#X msg 27 119 1;
+#X msg 27 155 0;
+#X msg 27 191 0;
+#X obj 351 161 s stereo-mono;
+#X text 129 106 ABS/REL;
+#X obj 101 244 nbx 1 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
+-262144 -1 -1 3 256;
+#X text 131 248 GLISS EXP;
+#X obj 352 264 s gliss-exp;
+#X msg 27 227 1;
+#X connect 0 0 7 0;
+#X connect 1 0 13 0;
+#X connect 8 0 9 0;
+#X connect 8 0 10 0;
+#X connect 8 0 11 0;
+#X connect 8 0 12 0;
+#X connect 8 0 18 0;
+#X connect 9 0 0 0;
+#X connect 10 0 1 0;
+#X connect 11 0 3 0;
+#X connect 12 0 4 0;
+#X connect 15 0 17 0;
+#X connect 18 0 15 0;
+#X coords 0 -1 1 1 115 167 2 100 100;
