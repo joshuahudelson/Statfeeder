@@ -1,15 +1,14 @@
-#N canvas 190 227 1066 519 10;
+#N canvas 172 223 1066 519 10;
 #X obj 101 46 vradio 13 1 0 18 empty empty empty 0 -8 0 10 -262144
--1 -1 11;
+-1 -1 1;
 #X text 108 30 SOURCE PRESETS:;
-#X obj 101 315 s to_sourcerer;
 #X text 116 46 0 ALL OFF \; 1 ALL NOISE \; 2 ALL SIG \; 3 ALL SELF
 \; 4 ONE NOISE \; 5 ONE SIG \; 6 ONE SELF \; 7 PAIR \; 8 PAIR & NOISE
 \; 9 PAIR & SIG \; 10 PAIR & SELF \; 11 DAISY CHAIN \; 12 DC REVERSE
 \; 13 DC & NOISE \; 14 DC & SIG \; 15 DC & SELF \; 16 DC & HALF \;
 17 ORGY \;;
-#X obj 271 139 r to_sourcerer;
-#X obj 271 181 Sourcerer;
-#X connect 0 0 2 0;
-#X connect 4 0 5 0;
-#X coords 0 -1 1 1 130 277 2 99 30;
+#X obj 101 325 Sourcerer;
+#X obj 101 4 r to_source_presets;
+#X connect 0 0 3 0;
+#X connect 4 0 0 0;
+#X coords 0 -1 1 1 130 280 2 99 30;

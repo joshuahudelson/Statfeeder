@@ -1,0 +1,16 @@
+#N canvas 612 225 450 300 10;
+#X obj 132 220 tabwrite SOURCE;
+#X obj 155 157 f;
+#X obj 184 157 + 1;
+#X msg 178 132 0;
+#X obj 132 107 t f b;
+#X obj 132 16 inlet;
+#X obj 178 107 r array-setter-reset;
+#X connect 1 0 2 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 1;
+#X connect 3 0 1 1;
+#X connect 4 0 0 0;
+#X connect 4 1 1 0;
+#X connect 5 0 4 0;
+#X connect 6 0 3 0;

@@ -1,17 +1,23 @@
-#N canvas 103 99 1218 648 10;
-#X obj 896 24 Presetter;
+#N canvas 79 103 1218 648 10;
+#X obj 896 175 Presetter;
 #X obj 6 6 Controller_Input;
-#X obj 932 651 Signal_Output;
+#X obj 681 586 Signal_Output;
 #X obj 49 34 Mixer 0 3 0;
 #X obj 341 87 UGen 1 1 4;
 #X obj 49 87 UGen 0 0 3;
 #X obj 628 87 UGen 2 2 5;
-#X obj 1024 24 Presets_Source;
-#X obj 896 319 Presets-Gliss;
+#X obj 1037 24 Presets_Source;
+#X obj 1037 315 Presets-Gliss;
 #X obj 341 34 Mixer 1 4 1;
 #X obj 628 34 Mixer 2 5 2;
-#X obj 721 431 Meta-Controls;
-#X obj 372 570 Presets_Elem_Exp;
-#X text 113 562 Controls for \; - META: "transition" presets \;;
-#X text 886 489 PUT GLISS EXP and the \; three Gliss timings \; into
-the GLISS PRESETS \; subpatch. \;;
+#X obj 896 24 Meta-Controls;
+#X obj 840 561 Presets_Elem_Exp;
+#X text 74 542 comment;
+#X text 56 481 TO DO: - "transition" presets - presets for stereo -
+gliss for stereo - random walk: \; - control rate \; not jump size.
+\; - no performance sequence \, instead \; random selection \, then
+use controls and \; sub-presets (like flutes for wind \, etc.) \;;
+#X obj 554 428 Transitions;
+#X floatatom 759 427 5 0 0 0 - - -, f 5;
+#X obj 766 469 s fader-0-bypass;
+#X connect 16 0 17 0;
