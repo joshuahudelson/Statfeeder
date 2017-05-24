@@ -1,4 +1,4 @@
-#N canvas 182 109 1061 636 10;
+#N canvas 176 117 1061 636 10;
 #X obj 530 576 s gliss-length-exps;
 #X obj 499 614 s gliss-length-elems;
 #X obj 562 537 s gliss-length-sources;
@@ -6,29 +6,29 @@
 #X floatatom 499 596 5 0 0 0 - - -, f 5;
 #X floatatom 562 520 5 0 0 0 - - -, f 5;
 #X text 143 23 GLISS PRESETS:;
-#X obj 137 40 vradio 13 1 0 10 empty empty empty 0 -8 0 10 -262144
--1 -1 8;
+#X obj 137 37 vradio 13 1 0 10 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
 #X obj 499 166 sel 0 1 2 3 4 5 6 7;
 #X obj 726 166 sel 8 9 10;
 #X obj 499 454 Gliss-Length-Converter;
 #X obj 530 433 Gliss-Length-Converter;
 #X obj 562 412 Gliss-Length-Converter;
-#X obj 137 184 nbx 1 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
+#X obj 137 171 nbx 1 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
 -262144 -1 -1 1 256;
-#X text 167 188 GLISS EXP;
-#X msg 81 167 1;
-#X obj 137 256 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
+#X text 167 175 GLISS EXP;
+#X msg 81 154 1;
+#X obj 137 239 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
 -262144 -1 -1 850 256;
-#X text 209 261 LONG;
-#X msg 81 191 100;
-#X obj 137 280 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
+#X text 209 244 LONG;
+#X msg 81 176 100;
+#X obj 137 261 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
 -262144 -1 -1 2100 256;
-#X text 209 285 V. LONG;
-#X msg 81 263 2100;
+#X text 209 266 V. LONG;
+#X msg 81 244 2100;
 #X obj 81 2 r init-loadbang;
-#X obj 293 252 s gliss-length-medium;
-#X obj 293 276 s gliss-length-long;
-#X obj 293 300 s gliss-length-verylong;
+#X obj 293 237 s gliss-length-medium;
+#X obj 293 259 s gliss-length-long;
+#X obj 293 281 s gliss-length-verylong;
 #X obj 499 367 unpack s s s s;
 #X floatatom 594 480 5 0 0 0 - - -, f 5;
 #X obj 594 497 s gliss-length-vols;
@@ -41,24 +41,24 @@
 #X msg 726 350 short verylong verylong zero;
 #X obj 594 391 Gliss-Length-Converter;
 #X msg 748 329 verylong verylong verylong verylong;
-#X text 151 40 0 E/EX/S/V = 0 \; 1 ALL SHORT \; 2 ALL MEDIUM \; 3 ALL
+#X text 151 37 0 E/EX/S/V = 0 \; 1 ALL SHORT \; 2 ALL MEDIUM \; 3 ALL
 LONG \; 4 0/0/VL/0 \; 5 0/L/L/0 \; 6 L/L/0/0 \; 7 0/L/0/0 \; 8 0/VL/VL/0
 \; 9 ALL VERY LONG;
-#X obj 137 208 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
+#X obj 137 193 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
 -262144 -1 -1 100 256;
-#X text 209 213 SHORT;
-#X obj 137 232 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
+#X text 209 198 SHORT;
+#X obj 137 217 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
 -262144 -1 -1 300 256;
-#X text 209 237 MEDIUM;
-#X msg 81 215 300;
-#X msg 81 239 850;
-#X obj 293 228 s gliss-length-short;
-#X obj 326 204 s gliss-exp;
+#X text 209 222 MEDIUM;
+#X msg 81 200 300;
+#X msg 81 222 850;
+#X obj 293 213 s gliss-length-short;
+#X obj 326 189 s gliss-exp;
 #X msg 596 210 long long zero zero;
 #X msg 580 231 zero long long zero;
 #X obj 815 222 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 356 23 r to_gliss_presets;
+#X obj 356 20 r to_gliss_presets;
 #X connect 3 0 0 0;
 #X connect 4 0 1 0;
 #X connect 5 0 2 0;
@@ -109,4 +109,4 @@ LONG \; 4 0/0/VL/0 \; 5 0/L/L/0 \; 6 L/L/0/0 \; 7 0/L/0/0 \; 8 0/VL/VL/0
 #X connect 44 0 16 0;
 #X connect 48 0 26 0;
 #X connect 50 0 7 0;
-#X coords 0 -1 1 1 130 280 2 135 23;
+#X coords 0 -1 1 1 130 260 2 135 23;

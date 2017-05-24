@@ -1,7 +1,7 @@
-#N canvas 207 93 1150 687 10;
+#N canvas 204 97 1150 687 10;
 #X obj 375 638 s to_global_presets;
 #X obj 608 638 s to_gliss_presets;
-#X obj 33 18 vradio 14 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
+#X obj 33 33 vradio 14 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
 -1 0;
 #N canvas 41 97 450 250 (subpatch) 0;
 #X array DELAY 10 float 3;
@@ -52,6 +52,7 @@
 #X obj 55 380 sel 0 1 2 3 4 5;
 #X msg 55 417 5;
 #X msg 710 232 4 \, 0 \, 0 \, 1 \, 3 \, 3;
+#X text 41 16 TRANSITIONS;
 #X connect 2 0 20 0;
 #X connect 8 0 34 0;
 #X connect 9 0 36 0;

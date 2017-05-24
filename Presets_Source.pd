@@ -1,6 +1,6 @@
-#N canvas 172 223 1066 519 10;
+#N canvas 169 227 1066 519 10;
 #X obj 101 46 vradio 13 1 0 18 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 11;
 #X text 108 30 SOURCE PRESETS:;
 #X text 116 46 0 ALL OFF \; 1 ALL NOISE \; 2 ALL SIG \; 3 ALL SELF
 \; 4 ONE NOISE \; 5 ONE SIG \; 6 ONE SELF \; 7 PAIR \; 8 PAIR & NOISE
@@ -11,4 +11,4 @@
 #X obj 101 4 r to_source_presets;
 #X connect 0 0 3 0;
 #X connect 4 0 0 0;
-#X coords 0 -1 1 1 130 280 2 99 30;
+#X coords 0 -1 1 1 130 260 2 99 30;

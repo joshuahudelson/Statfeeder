@@ -1,23 +1,23 @@
-#N canvas 79 103 1218 648 10;
-#X obj 896 175 Presetter;
-#X obj 6 6 Controller_Input;
-#X obj 681 586 Signal_Output;
-#X obj 49 34 Mixer 0 3 0;
-#X obj 341 87 UGen 1 1 4;
-#X obj 49 87 UGen 0 0 3;
-#X obj 628 87 UGen 2 2 5;
-#X obj 1037 24 Presets_Source;
-#X obj 1037 315 Presets-Gliss;
-#X obj 341 34 Mixer 1 4 1;
-#X obj 628 34 Mixer 2 5 2;
-#X obj 896 24 Meta-Controls;
-#X obj 840 561 Presets_Elem_Exp;
-#X text 74 542 comment;
-#X text 56 481 TO DO: - "transition" presets - presets for stereo -
-gliss for stereo - random walk: \; - control rate \; not jump size.
-\; - no performance sequence \, instead \; random selection \, then
-use controls and \; sub-presets (like flutes for wind \, etc.) \;;
-#X obj 554 428 Transitions;
-#X floatatom 759 427 5 0 0 0 - - -, f 5;
-#X obj 766 469 s fader-0-bypass;
-#X connect 16 0 17 0;
+#N canvas 70 112 1218 648 10;
+#X obj 894 163 Presetter;
+#X obj 920 598 Controller_Input;
+#X obj 1062 599 Signal_Output;
+#X obj 42 12 Mixer 0 3 0;
+#X obj 42 379 Presets_Source;
+#X obj 324 379 Presets-Gliss;
+#X obj 334 12 Mixer 1 4 1;
+#X obj 621 12 Mixer 2 5 2;
+#X obj 1024 12 Meta-Controls;
+#X obj 894 12 Transitions;
+#X obj 42 58 UGen 0 0 3;
+#X text 554 434 FINAL GOALS \; - walker that I like \; - transitions
+that I like \; - easy controller presets \; - reverb \; - rhythm \;
+;
+#X text 521 531 NEXT \; - make Walker preset panel \; - improve Walker
+\; - more transitions \; - Walker for volumes? or just let \; rhythm
+take care of that?;
+#X obj 183 379 Presets_Walker;
+#X obj 334 58 UGen 1 1 4;
+#X obj 621 58 UGen 2 2 5;
+#X text 533 379 For Global Presets \; extra button for each \; for
+turning on glisser.;
