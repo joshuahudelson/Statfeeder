@@ -1,4 +1,4 @@
-#N canvas 176 117 1061 636 10;
+#N canvas 167 129 1061 636 10;
 #X obj 530 576 s gliss-length-exps;
 #X obj 499 614 s gliss-length-elems;
 #X obj 562 537 s gliss-length-sources;
@@ -7,7 +7,7 @@
 #X floatatom 562 520 5 0 0 0 - - -, f 5;
 #X text 143 23 GLISS PRESETS:;
 #X obj 137 37 vradio 13 1 0 10 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 9;
 #X obj 499 166 sel 0 1 2 3 4 5 6 7;
 #X obj 726 166 sel 8 9 10;
 #X obj 499 454 Gliss-Length-Converter;
@@ -56,8 +56,6 @@ LONG \; 4 0/0/VL/0 \; 5 0/L/L/0 \; 6 L/L/0/0 \; 7 0/L/0/0 \; 8 0/VL/VL/0
 #X obj 326 189 s gliss-exp;
 #X msg 596 210 long long zero zero;
 #X msg 580 231 zero long long zero;
-#X obj 815 222 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
 #X obj 356 20 r to_gliss_presets;
 #X connect 3 0 0 0;
 #X connect 4 0 1 0;
@@ -74,7 +72,6 @@ LONG \; 4 0/0/VL/0 \; 5 0/L/L/0 \; 6 L/L/0/0 \; 7 0/L/0/0 \; 8 0/VL/VL/0
 #X connect 8 7 29 0;
 #X connect 9 0 35 0;
 #X connect 9 1 37 0;
-#X connect 9 1 49 0;
 #X connect 10 0 4 0;
 #X connect 11 0 3 0;
 #X connect 12 0 5 0;
@@ -108,5 +105,5 @@ LONG \; 4 0/0/VL/0 \; 5 0/L/L/0 \; 6 L/L/0/0 \; 7 0/L/0/0 \; 8 0/VL/VL/0
 #X connect 43 0 41 0;
 #X connect 44 0 16 0;
 #X connect 48 0 26 0;
-#X connect 50 0 7 0;
+#X connect 49 0 7 0;
 #X coords 0 -1 1 1 130 260 2 135 23;

@@ -1,4 +1,4 @@
-#N canvas 41 137 866 570 10;
+#N canvas 41 149 866 570 10;
 #X obj 571 19 inlet;
 #X obj 519 181 >;
 #X obj 519 203 t b f;
@@ -21,7 +21,7 @@
 #X obj 546 471 spigot;
 #X obj 585 448 > 0;
 #X obj 502 540 outlet;
-#X obj 590 63 Gate;
+#X obj 799 121 Gate;
 #X obj 175 15 r init-loadbang;
 #X obj 517 84 + 1;
 #X msg 175 38 0;

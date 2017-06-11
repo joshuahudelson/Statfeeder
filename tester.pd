@@ -1,4 +1,4 @@
-#N canvas 70 112 1218 648 10;
+#N canvas 76 95 1179 649 10;
 #X obj 894 163 Presetter;
 #X obj 920 598 Controller_Input;
 #X obj 1062 599 Signal_Output;
@@ -10,14 +10,10 @@
 #X obj 1024 12 Meta-Controls;
 #X obj 894 12 Transitions;
 #X obj 42 58 UGen 0 0 3;
-#X text 554 434 FINAL GOALS \; - walker that I like \; - transitions
-that I like \; - easy controller presets \; - reverb \; - rhythm \;
-;
-#X text 521 531 NEXT \; - make Walker preset panel \; - improve Walker
-\; - more transitions \; - Walker for volumes? or just let \; rhythm
-take care of that?;
 #X obj 183 379 Presets_Walker;
 #X obj 334 58 UGen 1 1 4;
 #X obj 621 58 UGen 2 2 5;
-#X text 533 379 For Global Presets \; extra button for each \; for
-turning on glisser.;
+#X text 471 473 TO DO \; - Make the rhythmer \; - Make and sort more
+globals \; - Make more transitions \; - Get the controller set up nicely
+\; - Make the Walker work right \, or get rid of it - clean up the
+subpatch \; - Get reverb.;
