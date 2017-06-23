@@ -1,7 +1,7 @@
-#N canvas 174 95 1115 649 10;
+#N canvas 88 85 1213 649 10;
 #X obj 894 163 Presetter;
-#X obj 897 560 Controller_Input;
-#X obj 896 580 Signal_Output;
+#X obj 1087 600 Controller_Input;
+#X obj 1086 620 Signal_Output;
 #X obj 42 12 Mixer 0 3 0;
 #X obj 42 379 Presets_Source;
 #X obj 324 379 Presets-Gliss;
@@ -14,7 +14,10 @@
 #X obj 334 58 UGen 1 1 4;
 #X obj 621 58 UGen 2 2 5;
 #X obj 465 379 Rhythmer;
-#X text 461 532 TO DO \; - Make and sort more globals \; - Make more
-transitions \, and presets that include Rhythmer. - Get the controller
-set up nicely \; - Make the Walker work right \, or get rid of it -
-clean up the subpatch \; - Get reverb.;
+#X text 884 458 TO DO \; - make controls for reverb \; - make dry control
+for rhythmer \; - make volume+global rhythmer control \; - make sure
+modes work right \; - make insert ones/random for rhythmer \; - loadbang
+for rhythmer \; - fix walker \; - get controller hooked up right \;
+;
+#X text 467 556 - Make Gliss with just $ and value entry \; - no need
+for long \, short \, etc... or have them \; hard-coded.;
