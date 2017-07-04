@@ -1,4 +1,4 @@
-#N canvas 88 85 1213 649 10;
+#N canvas 82 93 1213 649 10;
 #X obj 894 163 Presetter;
 #X obj 1087 600 Controller_Input;
 #X obj 1086 620 Signal_Output;
@@ -19,5 +19,3 @@ for rhythmer \; - make volume+global rhythmer control \; - make sure
 modes work right \; - make insert ones/random for rhythmer \; - loadbang
 for rhythmer \; - fix walker \; - get controller hooked up right \;
 ;
-#X text 467 556 - Make Gliss with just $ and value entry \; - no need
-for long \, short \, etc... or have them \; hard-coded.;
