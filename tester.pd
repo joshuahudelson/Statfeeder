@@ -1,5 +1,5 @@
-#N canvas 76 101 1213 649 10;
-#X obj 894 163 Presetter;
+#N canvas 73 105 1213 649 10;
+#X obj 894 162 Presetter;
 #X obj 1087 600 Controller_Input;
 #X obj 1086 620 Signal_Output;
 #X obj 42 12 Mixer 0 3 0;
@@ -14,5 +14,7 @@
 #X obj 465 379 Rhythmer;
 #X obj 42 58 UGen 0 0 3;
 #X obj 621 58 UGen 2 2 5;
-#X text 884 458 TO DO \; - get controller hooked up \; - make Global
-Presets one column? \; -;
+#X text 857 500 TO DO \; - get controller hooked up \; - make Global
+Presets one column? \; - make separate glissers for walker? \; - make
+a delay or something for walker \; so it doesn't send to all at same
+time? \;;
