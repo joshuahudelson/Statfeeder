@@ -1,10 +1,10 @@
-#N canvas 115 124 774 407 10;
-#X obj 403 127 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#N canvas 109 132 971 407 10;
+#X obj 403 127 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 403 151 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 431 156 STEREO/MONO;
-#X obj 403 175 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 403 175 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 403 199 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -26,6 +26,10 @@
 #X msg 703 138 \; pd dsp \$1;
 #X obj 550 195 s reverb-bypass;
 #X msg 27 158 1;
+#X obj 403 30 r absolute-relative-receive;
+#X obj 403 11 r dsp-on-off-receive;
+#X obj 403 49 r reverb-bypass-receive;
+#X obj 403 68 r rhythm-on-off-receive;
 #X connect 0 0 7 0;
 #X connect 1 0 12 0;
 #X connect 3 0 19 0;
@@ -41,4 +45,8 @@
 #X connect 16 0 18 0;
 #X connect 17 0 16 0;
 #X connect 20 0 3 0;
+#X connect 21 0 0 0;
+#X connect 22 0 14 0;
+#X connect 23 0 3 0;
+#X connect 24 0 4 0;
 #X coords 0 -1 1 1 130 140 2 400 100;
