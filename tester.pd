@@ -1,5 +1,5 @@
-#N canvas 50 97 1254 655 10;
-#X obj 894 162 Presetter;
+#N canvas 42 99 1254 655 10;
+#X obj 894 163 Presetter;
 #X obj 1086 600 Controller_Input;
 #X obj 1086 620 Signal_Output;
 #X obj 42 12 Mixer 0 3 0;
@@ -14,8 +14,7 @@
 #X obj 621 58 UGen 2 2 5;
 #X obj 334 58 UGen 1 1 4;
 #X obj 42 58 UGen 0 0 3;
-#X text 1034 181 TO DO \; - rhythmer presets \; - walker presets \;
-and gliss control \; - random metro for walker \; - rhythmer switch
-off \; walker \; - multiplex globals with \; change object \, so can
-have \; more globals? \; - Transitions \; - finish controller presets
-\; - multiplex for rhythmer rate \;;
+#X text 898 501 TO DO \; - multiplex globals with \; change object
+\, so can have \; more globals? \; - Transitions \; - finish controller
+presets \; - multiplex for rhythmer rate \;;
+#X obj 1119 579 GEM-Center;
