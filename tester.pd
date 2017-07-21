@@ -1,4 +1,4 @@
-#N canvas 41 111 1255 655 10;
+#N canvas 41 53 1325 715 10;
 #X obj 894 163 Presetter;
 #X obj 1086 600 Controller_Input;
 #X obj 1086 620 Signal_Output;
@@ -17,7 +17,6 @@
 #X obj 1119 579 GEM-Center;
 #X obj 1119 557 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X text 881 501 TO DO \; - Make Gliss value not preset \, but preset
-buttons \; - Make Walker send rate info to Gliss \; - finish controller
-presets \; - multiplex controller \; for rhythmer rate \, etc \;;
+#X text 881 501 TO DO \; - finish controller presets \; - multiplex
+controller \; for rhythmer rate \, etc \;;
 #X connect 16 0 15 0;
