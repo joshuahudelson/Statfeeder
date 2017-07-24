@@ -1,7 +1,7 @@
 #N canvas 41 53 1325 715 10;
 #X obj 894 163 Presetter;
-#X obj 1086 600 Controller_Input;
-#X obj 1086 620 Signal_Output;
+#X obj 1162 632 Controller_Input;
+#X obj 1162 652 Signal_Output;
 #X obj 42 12 Mixer 0 3 0;
 #X obj 42 379 Presets_Source;
 #X obj 183 379 Presets-Gliss;
@@ -14,9 +14,11 @@
 #X obj 621 58 UGen 2 2 5;
 #X obj 334 58 UGen 1 1 4;
 #X obj 42 58 UGen 0 0 3;
-#X obj 1119 579 GEM-Center;
-#X obj 1119 557 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1195 611 GEM-Center;
+#X obj 1195 589 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X text 881 501 TO DO \; - finish controller presets \; - multiplex
-controller \; for rhythmer rate \, etc \;;
+#X text 881 501 TO DO \; - multiplex controller (but no \; need to
+fill in everything) \; - make "change" operation in \; Global Presets
+\, plus a reset \; - Need to have bogus number for \; gliss so it doesn't
+default to zero;
 #X connect 16 0 15 0;
