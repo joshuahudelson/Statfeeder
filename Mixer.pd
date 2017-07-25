@@ -1,4 +1,4 @@
-#N canvas 41 85 1211 687 10;
+#N canvas 41 89 1211 687 10;
 #X obj 62 579 *~;
 #X floatatom 126 471 5 0 0 0 - - -, f 5;
 #X msg 126 438 set \$1;
@@ -48,15 +48,15 @@
 #X obj 63 283 r~ ugen0;
 #X obj 234 283 r~ ugen1;
 #X obj 409 283 r~ ugen2;
-#X obj 501 225 vsl 50 35 0 1 0 0 empty empty LEFT 5 12 0 17 -262144
+#X obj 501 225 vsl 50 35 0 1 0 0 empty empty empty 5 12 0 17 -262144
 -1 -1 0 1;
-#X obj 551 225 vsl 50 35 0 1 0 0 empty empty MID 10 12 0 17 -262144
+#X obj 551 225 vsl 50 35 0 1 0 0 empty empty empty 10 12 0 17 -262144
 -1 -1 0 1;
-#X obj 601 225 vsl 50 35 0 1 0 0 empty empty RIGHT 1 12 0 17 -262144
+#X obj 601 225 vsl 50 35 0 1 0 0 empty empty empty 1 12 0 17 -262144
 -1 -1 0 1;
-#X obj 651 225 vsl 50 35 0 1 0 0 empty empty SIG~ 6 12 0 17 -262144
--1 -1 0 1;
-#X obj 701 225 vsl 50 35 0 1 0 0 empty empty NOISE 1 12 0 16 -262144
+#X obj 651 225 vsl 50 35 0 1 0 0 empty empty empty 6 12 0 17 -262144
+-1 -1 3400 1;
+#X obj 701 225 vsl 50 35 0 1 0 0 empty empty empty 1 12 0 16 -262144
 -1 -1 0 1;
 #X obj 501 43 unpack 0 1 2 3 4;
 #X obj 1009 574 t b f;

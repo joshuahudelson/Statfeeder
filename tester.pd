@@ -5,15 +5,11 @@
 #X obj 42 12 Mixer 0 3 0;
 #X obj 42 379 Presets_Source;
 #X obj 183 379 Presets-Gliss;
-#X obj 334 12 Mixer 1 4 1;
-#X obj 621 12 Mixer 2 5 2;
 #X obj 1024 12 Meta-Controls;
 #X obj 894 12 Transitions;
 #X obj 324 379 Presets_Walker;
 #X obj 465 379 Rhythmer;
-#X obj 621 58 UGen 2 2 5;
 #X obj 334 58 UGen 1 1 4;
-#X obj 42 58 UGen 0 0 3;
 #X obj 1195 611 GEM-Center;
 #X obj 1195 589 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -21,4 +17,16 @@
 fill in everything) \; - make "change" operation in \; Global Presets
 \, plus a reset \; - Need to have bogus number for \; gliss so it doesn't
 default to zero;
-#X connect 16 0 15 0;
+#X obj 334 12 Mixer 1 4 1;
+#X obj 621 12 Mixer 2 5 2;
+#X obj 621 58 UGen 2 2 5;
+#X obj 42 58 UGen 0 0 3;
+#X floatatom 1195 158 5 0 0 0 - - -, f 5;
+#X obj 1195 177 s exp-base;
+#X floatatom 1193 210 5 0 0 0 - - -, f 5;
+#X obj 1193 229 s elem-exp-multiplier;
+#X msg 1189 111;
+#X connect 12 0 11 0;
+#X connect 18 0 19 0;
+#X connect 20 0 21 0;
+#X connect 22 0 19 0;
