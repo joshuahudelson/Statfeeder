@@ -1,0 +1,33 @@
+#N canvas 491 148 851 519 10;
+#X obj 43 42 inlet;
+#X obj 43 63 sel 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+20 21;
+#X msg 294 401 \; gliss-length-receive \$1 \; to_gliss_presets \$2
+\;;
+#X msg 43 455 0 0 0 0 0;
+#X msg 43 476 \; walker-leap-receive \$1 \; walker-rate-receive \$2
+\; walker-preset-bypass \$3 \; gliss-length-receive \$4 \; to_gliss_presets
+\$5 \;;
+#X msg 61 395 \; walker-leap-receive \$1 \; walker-rate-receive \$2
+\; walker-preset-bypass \$3 \;;
+#X msg 61 374 20 1000 2;
+#X msg 80 353 15 2000 3;
+#X msg 98 319 \; rhythm-presets-receive \$1;
+#X msg 98 298 4;
+#X msg 117 277 5;
+#X msg 136 256 6;
+#X msg 154 222 \; rhythmvolume-receive bang;
+#X connect 0 0 1 0;
+#X connect 1 0 3 0;
+#X connect 1 1 6 0;
+#X connect 1 2 7 0;
+#X connect 1 3 9 0;
+#X connect 1 4 10 0;
+#X connect 1 5 11 0;
+#X connect 1 6 12 0;
+#X connect 3 0 4 0;
+#X connect 6 0 5 0;
+#X connect 7 0 5 0;
+#X connect 9 0 8 0;
+#X connect 10 0 8 0;
+#X connect 11 0 8 0;

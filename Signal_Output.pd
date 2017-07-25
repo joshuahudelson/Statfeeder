@@ -1,4 +1,4 @@
-#N canvas 41 164 1184 589 10;
+#N canvas 41 168 1184 589 10;
 #X obj 348 674 dac~;
 #X obj 284 38 r~ ugen0;
 #X obj 284 91 *~;
@@ -14,7 +14,7 @@
 -1 -1 12700 1;
 #X obj 143 7 r fadertrim-6;
 #X obj 143 63 / 400;
-#X floatatom 143 644 5 0 0 0 - - -, f 5;
+#X floatatom 143 624 5 0 0 0 - - -, f 5;
 #X obj 458 251 lop~ 300;
 #X obj 643 251 lop~ 300;
 #X obj 282 458 *~;
@@ -23,8 +23,8 @@
 #X obj 320 555 catch~ dac-left;
 #X obj 381 577 catch~ dac-right;
 #X obj 314 486 throw~ dac-right;
-#X obj 321 658 *~;
-#X obj 382 658 *~;
+#X obj 321 638 *~;
+#X obj 382 638 *~;
 #X obj 459 458 *~;
 #X obj 490 458 *~;
 #X obj 459 510 throw~ dac-left;

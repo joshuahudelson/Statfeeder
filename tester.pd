@@ -1,7 +1,7 @@
 #N canvas 41 53 1325 715 10;
 #X obj 894 163 Presetter;
-#X obj 921 595 Controller_Input;
-#X obj 921 615 Signal_Output;
+#X obj 894 562 Controller_Input;
+#X obj 894 582 Signal_Output;
 #X obj 42 12 Mixer 0 3 0;
 #X obj 42 379 Presets_Source;
 #X obj 183 379 Presets-Gliss;
@@ -9,15 +9,14 @@
 #X obj 894 12 Transitions;
 #X obj 324 379 Presets_Walker;
 #X obj 465 379 Rhythmer;
-#X obj 954 574 GEM-Center;
-#X obj 954 552 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 894 534 GEM-Center;
+#X obj 894 512 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 334 12 Mixer 1 4 1;
 #X obj 621 12 Mixer 2 5 2;
 #X obj 42 58 UGen 0 0 3;
 #X obj 334 58 UGen 1 1 4;
 #X obj 621 58 UGen 2 2 5;
-#X text 1076 526 - gliss values in transitions \; - rhythm presets
-in second column \; - ...rewrite Walker labels \; - new seq for tonal
-rhythm \; - new seq for noise rhythm \;;
+#X text 1017 518 - gliss values in transitions \; - take care of volume
+and bandpass \;;
 #X connect 11 0 10 0;
