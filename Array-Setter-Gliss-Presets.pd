@@ -1,0 +1,16 @@
+#N canvas 41 85 450 300 10;
+#X obj 155 157 f;
+#X obj 184 157 + 1;
+#X msg 178 132 0;
+#X obj 132 107 t f b;
+#X obj 132 16 inlet;
+#X obj 178 107 r array-setter-reset;
+#X obj 132 194 tabwrite GLISS-PRESETS;
+#X connect 0 0 1 0;
+#X connect 0 0 6 1;
+#X connect 1 0 0 1;
+#X connect 2 0 0 1;
+#X connect 3 0 6 0;
+#X connect 3 1 0 0;
+#X connect 4 0 3 0;
+#X connect 5 0 2 0;
