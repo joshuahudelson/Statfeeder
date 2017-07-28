@@ -1,4 +1,4 @@
-#N canvas 41 81 1283 687 10;
+#N canvas 41 85 1283 687 10;
 #X text 480 100 GLOBAL PRESETS;
 #X obj 464 56 r to_global_presets;
 #X obj 594 126 vradio 13 1 0 22 empty empty empty 0 -8 0 10 -262144
@@ -294,6 +294,8 @@ SIREN \; 17 SIREN 2 \; 18 SALT \; 19 GRIND \; 20 KETTLE \; 21 STATIC
 #X obj 594 626 Global_Presets_2;
 #X text 609 126 ALL OFF \; WIND ELM HOVER \; WIND EXP HOVER \; TONAL
 FAST \; NOISE FAST \; VOLUME FAST \; VOLUME TOGGLE \;;
+#X text 39 117 GLOBAL PRESETS;
+#X text 845 132 MUX GLOBAL PRESETS;
 #X connect 1 0 72 0;
 #X connect 2 0 158 0;
 #X connect 4 0 2 0;

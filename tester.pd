@@ -1,4 +1,4 @@
-#N canvas 41 53 1325 715 10;
+#N canvas 63 81 1195 687 10;
 #X obj 894 163 Presetter;
 #X obj 894 562 Controller_Input;
 #X obj 1006 622 Signal_Output;
@@ -14,13 +14,14 @@
 -1 -1;
 #X obj 334 12 Mixer 1 4 1;
 #X obj 621 12 Mixer 2 5 2;
-#X obj 42 58 UGen 0 0 3;
 #X obj 334 58 UGen 1 1 4;
-#X obj 621 58 UGen 2 2 5;
 #X msg 890 605 open pdtest.wav;
 #X msg 1006 601 start;
 #X msg 1053 601 stop;
+#X obj 42 58 UGen 0 0 3;
+#X obj 621 58 UGen 2 2 5;
+#X text 959 500 - Source presets should also \; adjust VOLUMES!;
 #X connect 11 0 10 0;
+#X connect 15 0 2 0;
+#X connect 16 0 2 0;
 #X connect 17 0 2 0;
-#X connect 18 0 2 0;
-#X connect 19 0 2 0;
