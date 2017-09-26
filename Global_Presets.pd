@@ -1,4 +1,4 @@
-#N canvas 86 93 1202 687 10;
+#N canvas 83 97 1202 687 10;
 #X obj 277 7 inlet;
 #X msg 732 615 1 6 7 5 26 33 22 1 1 1 1;
 #X text 913 616 2 - CRYSTALS;
@@ -73,7 +73,6 @@
 #X msg 533 336 2 351 355 353 9 9 9 1 1 1 1 0 400;
 #X msg 515 357 2 353 353 353 8.94 8.97 8.94 1 1 1 1 0 400;
 #X msg 488 378 2 400 400 400 9.5 9.3 9.5 1 1 1 1 0 400;
-#X msg 295 483 1 6 7 5 0 0 0 1 1 1 1 0 500;
 #X msg 463 294 2 400 600 500 244 359 279 1 1 1 1 0 500;
 #X msg 482 273 14 400 600 500 244 359 279 1 1 1 1 0 500;
 #X msg 518 231 7 200 99 601 100 99 100 1 0 1 1 0 500;
@@ -84,6 +83,7 @@
 #X msg 612 126 15 200 400 300 70 90 80 1 1 1 1 0 500;
 #X msg 631 105 8 594 20 601 50 10 50 1 0.6 1 1 0 500;
 #X msg 649 84 11 20 39 19 1 25 2 1 1 1 1 0 500;
+#X msg 295 483 1 6 7 5 0 0 0 1 1 1 1 0 400;
 #X connect 0 0 31 0;
 #X connect 23 0 30 0;
 #X connect 23 1 64 0;
@@ -97,7 +97,7 @@
 #X connect 29 0 7 0;
 #X connect 30 0 68 0;
 #X connect 31 0 57 0;
-#X connect 31 1 69 0;
+#X connect 31 1 79 0;
 #X connect 31 2 58 0;
 #X connect 31 3 59 0;
 #X connect 31 4 65 0;
@@ -106,17 +106,17 @@
 #X connect 31 7 25 0;
 #X connect 31 8 26 0;
 #X connect 31 9 41 0;
-#X connect 31 10 70 0;
-#X connect 31 11 71 0;
+#X connect 31 10 69 0;
+#X connect 31 11 70 0;
 #X connect 31 12 61 0;
-#X connect 31 13 72 0;
-#X connect 31 14 73 0;
-#X connect 31 15 74 0;
-#X connect 31 16 75 0;
-#X connect 31 17 76 0;
-#X connect 31 18 77 0;
-#X connect 31 19 78 0;
-#X connect 31 20 79 0;
+#X connect 31 13 71 0;
+#X connect 31 14 72 0;
+#X connect 31 15 73 0;
+#X connect 31 16 74 0;
+#X connect 31 17 75 0;
+#X connect 31 18 76 0;
+#X connect 31 19 77 0;
+#X connect 31 20 78 0;
 #X connect 31 21 62 0;
 #X connect 41 0 42 0;
 #X connect 41 1 64 0;
