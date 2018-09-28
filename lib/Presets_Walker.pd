@@ -1,4 +1,4 @@
-#N canvas 143 108 1220 651 10;
+#N canvas 578 92 776 651 10;
 #X obj 480 618 s walker-fader-onoff-1;
 #X obj 549 555 s walker-fader-onoff-4;
 #X obj 458 639 s walker-fader-onoff-0;
@@ -6,12 +6,12 @@
 #X obj 503 597 s walker-fader-onoff-2;
 #X obj 572 534 s walker-fader-onoff-5;
 #X obj 33 53 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144 -1
--1 0;
+-1 4;
 #X obj 35 194 nbx 5 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 1250 256;
+-262144 -1 -1 700 256;
 #X text 114 200 RATE;
 #X obj 35 219 nbx 5 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 30 256;
+-262144 -1 -1 300 256;
 #X text 114 225 LEAP;
 #X obj 275 352 s walker-rate;
 #X obj 166 239 s walker-leap;
@@ -33,14 +33,9 @@
 #X obj -135 202 r walker-leap-receive;
 #X obj 458 456 unpack f f f f f f f;
 #X msg 458 433 0 0 0 0 0 0 0;
-#X msg 474 412 1 1 1 1 1 1 7;
-#X msg 491 391 1 1 1 0 0 0 7;
-#X msg 540 328 0 1 0 0 0 0 7;
-#X msg 557 307 0 0 0 0 1 0 7;
 #X obj 458 211 sel 0 1 2 3 4 5 6;
 #X msg 220 177 1250;
 #X obj 595 512 s to_gliss_presets;
-#X msg 524 349 0 0 0 1 0 1 7;
 #X obj 33 3 r walker-preset-bypass;
 #X obj 678 133 r walker-preset-confirm;
 #X msg 507 370 0 0 0 1 1 1 2;
@@ -48,10 +43,15 @@
 #X obj 275 214 t f f;
 #X text 47 52 0 ALL OFF \; 1 ALL WALK \; 2 ELEM \; 3 EXP \; 4 0&2 EXP
 \; 5 1 ELEM \; 6 1 EXP \;;
-#X connect 6 0 35 0;
-#X connect 7 0 43 0;
+#X msg 474 412 1 1 1 1 1 1 4;
+#X msg 491 391 1 1 1 0 0 0 1;
+#X msg 524 349 0 0 0 1 0 1 2;
+#X msg 540 328 0 1 0 0 0 0 1;
+#X msg 557 307 0 0 0 0 1 0 2;
+#X connect 6 0 31 0;
+#X connect 7 0 38 0;
 #X connect 9 0 12 0;
-#X connect 14 0 36 0;
+#X connect 14 0 32 0;
 #X connect 14 0 15 0;
 #X connect 14 0 26 0;
 #X connect 15 0 9 0;
@@ -78,24 +78,24 @@
 #X connect 29 3 3 0;
 #X connect 29 4 1 0;
 #X connect 29 5 5 0;
-#X connect 29 6 37 0;
+#X connect 29 6 33 0;
 #X connect 30 0 29 0;
-#X connect 31 0 29 0;
-#X connect 32 0 29 0;
-#X connect 33 0 29 0;
-#X connect 34 0 29 0;
-#X connect 35 0 30 0;
-#X connect 35 1 31 0;
-#X connect 35 2 32 0;
-#X connect 35 3 41 0;
-#X connect 35 4 38 0;
-#X connect 35 5 33 0;
-#X connect 35 6 34 0;
-#X connect 36 0 7 0;
-#X connect 38 0 29 0;
-#X connect 39 0 6 0;
-#X connect 40 0 25 0;
+#X connect 31 0 30 0;
+#X connect 31 1 40 0;
+#X connect 31 2 41 0;
+#X connect 31 3 36 0;
+#X connect 31 4 42 0;
+#X connect 31 5 43 0;
+#X connect 31 6 44 0;
+#X connect 32 0 7 0;
+#X connect 34 0 6 0;
+#X connect 35 0 25 0;
+#X connect 36 0 29 0;
+#X connect 38 0 11 0;
+#X connect 38 1 37 0;
+#X connect 40 0 29 0;
 #X connect 41 0 29 0;
-#X connect 43 0 11 0;
-#X connect 43 1 42 0;
+#X connect 42 0 29 0;
+#X connect 43 0 29 0;
+#X connect 44 0 29 0;
 #X coords 0 -1 1 1 130 260 2 30 30;
