@@ -1,4 +1,4 @@
-#N canvas 164 81 1202 687 10;
+#N canvas 161 85 1202 687 10;
 #X obj 277 7 inlet;
 #X msg 732 615 1 6 7 5 26 33 22 1 1 1 1;
 #X text 913 616 2 - CRYSTALS;

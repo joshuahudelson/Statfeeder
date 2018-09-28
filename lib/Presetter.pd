@@ -1,8 +1,8 @@
-#N canvas 41 85 1283 687 10;
-#X text 480 100 GLOBAL PRESETS;
-#X obj 464 56 r to_global_presets;
-#X obj 594 126 vradio 13 1 0 22 empty empty empty 0 -8 0 10 -262144
--1 -1 6;
+#N canvas 43 89 1283 687 10;
+#X text 477 100 GLOBAL PRESETS;
+#X obj 461 36 r to_global_presets;
+#X obj 578 126 vradio 13 1 0 9 empty empty empty 0 -8 0 10 -262144
+-1 -1 7;
 #N canvas 170 147 1154 601 global-preset-secondary 0;
 #X obj 266 11 inlet;
 #X msg 266 559 0 0 0 0 0 0 0 0 0 0 0;
@@ -132,7 +132,7 @@ walker-preset-bypass \$14 \;;
 #X connect 64 0 61 0;
 #X connect 65 0 61 0;
 #X restore 726 682 pd global-preset-secondary;
-#X obj 594 79 r to_secondary_globals;
+#X obj 578 59 r to_secondary_globals;
 #X obj 24 166 sel 1;
 #X obj 24 582 s to_global_presets;
 #X obj 67 187 sel 1;
@@ -200,8 +200,8 @@ walker-preset-bypass \$14 \;;
 #X obj 1086 411 r rbutton-6-mux;
 #X obj 1129 432 r rbutton-7-mux;
 #X obj 788 582 s to_secondary_globals;
-#X obj 464 126 vradio 13 1 0 22 empty empty empty 0 -8 0 10 -262144
--1 -1 2;
+#X obj 461 126 vradio 13 1 0 22 empty empty empty 0 -8 0 10 -262144
+-1 -1 20;
 #X obj 960 481 sel 1;
 #X obj 1003 502 sel 1;
 #X obj 1046 523 sel 1;
@@ -222,8 +222,8 @@ walker-preset-bypass \$14 \;;
 #X msg -245 918 1 6 7 5 0 0 0 1 1 1 1;
 #X msg -227 897 1 6 7 5 26 33 22 1 1 1 1;
 #X obj -98 736 t b b;
-#X obj 464 626 Global_Presets;
-#X text 490 125 0 ALL OFF \; 1 WHITE \; 2 HALOGEN \; 3 REEDS \; 4 SERPENTINE
+#X obj 461 516 Global_Presets;
+#X text 479 125 0 ALL OFF \; 1 WHITE \; 2 HALOGEN \; 3 REEDS \; 4 SERPENTINE
 \; 5 WIND \; 6 GONG \; 7 RAYS \; 8 FLUTES \; 9 FLOUTS \; 10 CHORD \;
 11 CHORD 2 \; 12 WHISTLE \; 13 HUM \; 14 HUM2 \; 15 BACKGROUND \; 16
 SIREN \; 17 SIREN 2 \; 18 SALT \; 19 GRIND \; 20 KETTLE \; 21 STATIC
@@ -291,10 +291,11 @@ SIREN \; 17 SIREN 2 \; 18 SALT \; 19 GRIND \; 20 KETTLE \; 21 STATIC
 #X msg 1043 432 21;
 #X msg 1086 453 22;
 #X msg 1129 474 23;
-#X obj 594 626 Global_Presets_2;
-#X text 609 126 ALL OFF \; WIND ELM HOVER \; WIND EXP HOVER \; TONAL
-FAST \; NOISE FAST \; VOLUME FAST \; VOLUME TOGGLE \;;
+#X obj 578 516 Global_Presets_2;
 #X text 39 117 GLOBAL PRESETS;
+#X text 596 126 0 ALL OFF \; 1 WIND ELM HOVER \; 2 WIND EXP HOVER \;
+3 TONAL FAST \; 4 NOISE FAST \; 5 VOLUME FAST \; 6 VOLUME TOGGLE \;
+7 NEW FLUTE 1 \; 8 RAND FLUTE \;;
 #X text 845 132 MUX GLOBAL PRESETS;
 #X connect 1 0 72 0;
 #X connect 2 0 158 0;
