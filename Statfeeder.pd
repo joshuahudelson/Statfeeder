@@ -1,4 +1,4 @@
-#N canvas 66 81 1255 687 10;
+#N canvas 43 53 1323 715 10;
 #X obj 894 163 Presetter;
 #X obj 906 591 Signal_Output;
 #X obj 42 12 Mixer 0 3 0;
