@@ -1,38 +1,42 @@
-#N canvas 457 163 851 596 10;
-#X obj 43 42 inlet;
-#X msg 43 490 0 0 0 0 0;
-#X msg 43 511 \; walker-leap-receive \$1 \; walker-rate-receive \$2
+#N canvas 136 123 938 596 10;
+#X obj 173 22 inlet;
+#X msg 173 470 0 0 0 0 0;
+#X msg 173 554 \; walker-leap-receive \$1 \; walker-rate-receive \$2
 \; walker-preset-bypass \$3 \; gliss-length-receive \$4 \; to_gliss_presets
 \$5 \;;
-#X msg 61 405 \; walker-leap-receive \$1 \; walker-rate-receive \$2
+#X msg 219 386 \; walker-leap-receive \$1 \; walker-rate-receive \$2
 \; walker-preset-bypass \$3 \;;
-#X msg 61 384 20 1000 2;
-#X msg 80 363 15 2000 3;
-#X msg 98 329 \; rhythm-presets-receive \$1;
-#X msg 99 308 4;
-#X msg 118 287 5;
-#X msg 137 266 6;
-#X msg 156 232 \; rhythmvolume-receive bang;
-#X obj 175 211 t b b;
-#X obj 223 211 del 80;
-#X msg 336 372 \; exp-base \$12 \; to_source_presets \$1 \; fader-0-bypass
+#X msg 219 364 20 1000 2;
+#X msg 266 343 15 2000 3;
+#X msg 308 307 \; rhythm-presets-receive \$1;
+#X msg 312 288 4;
+#X msg 359 267 5;
+#X msg 406 246 6;
+#X msg 452 212 \; rhythmvolume-receive bang;
+#X obj 499 191 t b b;
+#X obj 547 191 del 80;
+#X msg 531 458 \; exp-base \$12 \; to_source_presets \$1 \; fader-0-bypass
 \$2 \; fader-1-bypass \$3 \; fader-2-bypass \$4 \; fader-3-bypass \$5
 \; fader-4-bypass \$6 \; fader-5-bypass \$7 \; ugen0-external-vol \$8
 \; ugen1-external-vol \$9 \; ugen2-external-vol \$10 \; stereo-mono
 \$11 \; elem-exp-multiplier \$13;
-#X text 536 211 FLUTES;
-#X msg 280 211 2 300 500 200 8 12 9 1 1 1 1 0 400;
-#X msg 336 336 2 300 500 200 0 0 0 1 1 1 1 3 400;
-#X msg 653 253 \; walker-preset-bypass \$3;
-#X msg 652 228 0;
-#X obj 43 63 sel 0 1 2 3 4 5 6 7 8 9 10 11 12, f 36;
-#X obj 196 157 t b b;
-#X msg 336 305 2 10 30 20 0 0 0 1 1 1 1 3 400;
-#X obj 215 101 t b b;
-#X msg 196 490 30 65 3 50 2;
-#X msg 204 471 30 65 1 65 4;
+#X text 914 191 FLUTES;
+#X msg 658 191 2 300 500 200 8 12 9 1 1 1 1 0 400;
+#X msg 531 379 2 300 500 200 0 0 0 1 1 1 1 3 400;
+#X msg 977 233 \; walker-preset-bypass \$3;
+#X msg 976 208 0;
+#X obj 173 43 sel 0 1 2 3 4 5 6 7 8 9 10 11 12, f 87;
+#X obj 545 107 t b b;
+#X msg 577 351 2 10 30 20 0 0 0 1 1 1 1 3 400;
+#X obj 592 107 t b b;
+#X msg 173 498 30 65 3 50 2;
+#X msg 173 526 30 65 1 65 4;
+#X msg 248 470 0;
+#X text 773 410 0 ALL OFF;
+#X msg 578 409 0 0 0 0 0 0 0 0 0 0 0 0 400;
 #X connect 0 0 19 0;
 #X connect 1 0 2 0;
+#X connect 1 0 25 0;
 #X connect 4 0 3 0;
 #X connect 5 0 3 0;
 #X connect 7 0 6 0;
@@ -62,3 +66,6 @@
 #X connect 22 1 21 0;
 #X connect 23 0 2 0;
 #X connect 24 0 2 0;
+#X connect 25 0 6 0;
+#X connect 25 0 27 0;
+#X connect 27 0 13 0;
