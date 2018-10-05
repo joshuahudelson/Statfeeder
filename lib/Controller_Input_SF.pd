@@ -1,4 +1,4 @@
-#N canvas 197 186 634 337 10;
+#N canvas 194 190 634 337 10;
 #X obj 41 61 ctlin;
 #X floatatom 41 238 5 0 0 0 - - -, f 5;
 #X obj 41 289 s;
@@ -24,9 +24,6 @@
 #X text 139 168 rewind button \; toggles controller \;;
 #X obj 73 204 s sense-numb;
 #X obj 367 187 Controller-Side_SF;
-#X text 394 220 BUTTONS \; - rewind: controller numb \; - fast-forward:
-abs/rel \; - track: walker presets \; - marker: rhythmer presets \;
-- play: rhythmer on/off \;;
 #X connect 0 0 19 0;
 #X connect 0 1 20 0;
 #X connect 1 0 2 0;

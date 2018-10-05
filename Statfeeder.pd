@@ -20,5 +20,7 @@
 #X text 923 561 start/stop \; recording;
 #X obj 465 379 RhythmerSF;
 #X obj 955 514 Controller_Input_SF;
+#X text 844 642 Salt with hover \, all walk \, 65 rate and leap from
+30 to 300;
 #X connect 9 0 8 0;
 #X connect 15 0 1 0;
