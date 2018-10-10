@@ -1,4 +1,4 @@
-#N canvas 264 108 1102 678 10;
+#N canvas 258 88 1102 678 10;
 #X floatatom 758 232 5 0 0 0 - - -, f 5;
 #X floatatom 36 65 5 0 0 0 - - -, f 5;
 #X floatatom 301 406 5 0 0 0 - - -, f 5;
@@ -81,6 +81,8 @@
 #X obj 36 310 Gate;
 #X obj 36 520 Gate;
 #X floatatom 524 520 5 0 0 0 - - -, f 5;
+#X obj 926 109 s auxfader-\$1;
+#X obj 926 174 s auxknob-\$1;
 #X connect 0 0 9 0;
 #X connect 1 0 42 0;
 #X connect 2 0 11 0;
@@ -105,7 +107,9 @@
 #X connect 15 0 73 0;
 #X connect 16 0 76 0;
 #X connect 16 0 77 1;
+#X connect 16 0 82 0;
 #X connect 17 0 0 0;
+#X connect 17 0 83 0;
 #X connect 18 0 1 0;
 #X connect 20 0 21 0;
 #X connect 21 0 7 1;

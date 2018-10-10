@@ -50,10 +50,10 @@
 #X obj 953 312 sel 0 1 2 3;
 #X obj 953 293 random 4;
 #X text 945 79 Gliss Presets;
-#X obj 85 663 s Array-Setter-Global;
-#X obj 558 569 s Array-Setter-Delay;
-#X obj 948 667 s Array-Setter-Gliss-Presets;
-#X obj 558 597 s Array-Setter-Gliss;
+#X obj 78 615 s Array-Setter-Global;
+#X obj 421 459 s Array-Setter-Delay;
+#X obj 921 616 s Array-Setter-Gliss-Presets;
+#X obj 421 487 s Array-Setter-Gliss;
 #X obj 600 25 s array-setter-reset;
 #X obj 26 138 s triggernext;
 #X obj 147 3 inlet;
