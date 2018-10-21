@@ -2,7 +2,7 @@
 #X msg 71 329 set;
 #X obj 188 322 until;
 #X obj 165 274 t b b b;
-#X msg 188 303 67;
+#X msg 188 303 17;
 #X msg 188 445 1;
 #X msg 204 426 2;
 #X msg 220 407 4;
@@ -12,22 +12,19 @@
 #X msg 285 407 18;
 #X msg 301 385 20;
 #X obj 188 360 sel 0 1 2 3 4 5 6 7;
-#X msg 78 566 2 \, 18 \, 1 \, 20 \, 5 \, 2 \, 1 \, 16 \, 18 \, 20 \,
-2 \, 4 \, 5 \, 5 \, 20 \, 5 \, 16 \, 5 \, 16 \, 12 \, 2 \, 16 \, 1
-\, 5 \, 1 \, 16 \, 4 \, 16 \, 2 \, 12 \, 18 \, 2 \, 2 \,;
+#X msg 78 566 5 \, 20 \, 12 \, 16 \, 5 \, 18 \, 4 \, 16 \, 2 \, 12
+\, 2 \,;
 #X obj 165 256 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 188 341 random 8;
 #X msg 422 146 set;
 #X obj 504 158 until;
 #X obj 481 101 t b b b;
-#X msg 504 134 66;
+#X msg 504 134 16;
 #X obj 504 196 sel 0 1 2 3 4 5 6 7;
-#X msg 421 379 150 \, 80 \, 150 \, 100 \, 100 \, 50 \, 80 \, 50 \,
-100 \, 100 \, 80 \, 150 \, 50 \, 50 \, 150 \, 80 \, 100 \, 100 \, 100
-\, 100 \, 100 \, 50 \, 50 \, 50 \, 100 \, 100 \, 100 \, 150 \, 50 \,
-80 \, 100 \, 100 \, 0;
-#X obj 481 58 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X msg 421 379 100 \, 100 \, 150 \, 100 \, 50 \, 100 \, 150 \, 100
+\, 150 \, 100 \, 100 \, 50 \, 150 \, 100 \, 80 \, 100 \, 0;
+#X obj 481 65 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 504 177 random 8;
 #X text 220 255 Global Presets:;
@@ -37,13 +34,12 @@
 #X msg 898 294 set;
 #X obj 953 274 until;
 #X obj 930 226 t b b b;
-#X msg 953 255 66;
+#X msg 953 255 16;
 #X msg 953 397 1;
 #X msg 971 378 2;
 #X msg 990 359 4;
-#X msg 921 564 1 \, 4 \, 0 \, 2 \, 0 \, 1 \, 2 \, 0 \, 0 \, 4 \, 4
-\, 1 \, 1 \, 2 \, 1 \, 1 \, 4 \, 2 \, 0 \, 4 \, 2 \, 4 \, 4 \, 4 \,
-2 \, 4 \, 1 \, 2 \, 2 \, 0 \, 2 \, 1 \, 0;
+#X msg 921 564 1 \, 2 \, 0 \, 0 \, 2 \, 0 \, 0 \, 1 \, 2 \, 2 \, 0
+;
 #X obj 930 58 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X msg 1008 340 0;
@@ -54,7 +50,7 @@
 #X obj 421 459 s Array-Setter-Delay;
 #X obj 921 616 s Array-Setter-Gliss-Presets;
 #X obj 421 487 s Array-Setter-Gliss;
-#X obj 600 25 s array-setter-reset;
+#X obj 555 23 s array-setter-reset;
 #X obj 26 138 s triggernext;
 #X obj 147 3 inlet;
 #X obj 147 41 t b b b b b;
@@ -83,7 +79,7 @@
 #X obj 273 10 inlet;
 #X text 317 11 Minimum number of transitions.;
 #X text 90 3 Trigger;
-#X obj 338 135 s seqlen;
+#X obj 182 151 s seqlen;
 #X obj 229 93 + 10;
 #X obj 229 67 random;
 #X connect 0 0 13 0;
