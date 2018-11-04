@@ -1,0 +1,28 @@
+#N canvas 120 169 1163 536 10;
+#X obj 98 55 inlet;
+#X obj 98 316 statfeed;
+#X obj 98 196 until;
+#X floatatom 98 171 5 0 0 0 - - -, f 5;
+#X text 164 265 number of elements;
+#X floatatom 161 292 5 0 0 0 - - -, f 5;
+#X text 200 292 exp;
+#X msg 124 278 8;
+#X obj 98 224 random 1000;
+#X obj 98 253 / 999;
+#X obj 98 397 outlet;
+#X obj 337 105 inlet;
+#X obj 173 120 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 95 93 t f b;
+#X connect 0 0 13 0;
+#X connect 1 0 10 0;
+#X connect 2 0 8 0;
+#X connect 3 0 2 0;
+#X connect 5 0 1 2;
+#X connect 7 0 1 1;
+#X connect 8 0 9 0;
+#X connect 9 0 1 0;
+#X connect 11 0 5 0;
+#X connect 12 0 7 0;
+#X connect 13 0 3 0;
+#X connect 13 1 12 0;
