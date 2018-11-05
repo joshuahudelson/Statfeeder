@@ -1,25 +1,25 @@
-#N canvas 43 53 1323 715 10;
-#X obj 894 163 Presetter;
-#X obj 906 591 Signal_Output;
+#N canvas 69 99 1268 657 10;
+#X obj 902 453 Signal_Output;
 #X obj 42 12 Mixer 0 3 0;
 #X obj 42 379 Presets_Source;
 #X obj 183 379 Presets-Gliss;
 #X obj 894 12 Meta-Controls;
 #X obj 324 379 Presets_Walker;
-#X obj 1069 591 GEM-Center;
-#X obj 1069 569 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1048 453 GEM-Center;
+#X obj 1048 431 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 334 12 Mixer 1 4 1;
 #X obj 621 12 Mixer 2 5 2;
 #X obj 334 58 UGen 1 1 4;
 #X obj 42 58 UGen 0 0 3;
 #X obj 621 58 UGen 2 2 5;
-#X obj 906 565 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 902 427 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 923 561 start/stop \; recording;
+#X text 919 423 start/stop \; recording;
 #X obj 465 379 RhythmerSF;
-#X obj 955 514 Controller_Input_SF;
-#X text 844 642 Salt with hover \, all walk \, 65 rate and leap from
+#X obj 959 481 Controller_Input_SF;
+#X obj 894 62 Global_Buttons;
+#X text 953 360 Salt with hover \, all walk \, 65 rate and leap from
 30 to 300;
-#X connect 8 0 7 0;
-#X connect 14 0 1 0;
+#X connect 7 0 6 0;
+#X connect 13 0 0 0;

@@ -1,38 +1,38 @@
-#N canvas 64 192 971 407 10;
-#X obj 403 129 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#N canvas 61 196 971 407 10;
+#X obj 470 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 27 264 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 124 300 STEREO/MONO;
-#X obj 403 207 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 620 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 550 149 s absolute-relative;
-#X obj 27 12 r init-loadbang;
-#X msg 27 112 0;
+#X obj 469 305 s absolute-relative;
+#X obj 27 -38 r init-loadbang;
+#X msg 27 9 0;
 #X msg 27 238 1;
 #X obj 27 298 s stereo-mono;
-#X msg 703 201 \; pd dsp \$1;
-#X obj 550 227 s reverb-bypass;
-#X msg 27 190 1;
-#X obj 403 -11 r absolute-relative-receive;
-#X obj 403 -39 r dsp-on-off-receive;
-#X obj 403 45 r reverb-bypass-receive;
-#X obj 403 181 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X msg 570 236 \; pd dsp \$1;
+#X obj 620 208 s reverb-bypass;
+#X msg 27 87 1;
+#X obj 470 -12 r absolute-relative-receive;
+#X obj 570 44 r dsp-on-off-receive;
+#X obj 620 72 r reverb-bypass-receive;
+#X obj 570 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X msg 27 164 1;
-#X obj 403 103 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X msg 27 61 1;
+#X obj 420 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 403 73 r sense-numb;
-#X obj 403 155 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 420 -40 r sense-numb;
+#X obj 520 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 432 158 MULTIPLEX;
-#X msg 27 138 0;
-#X obj 403 17 r multiplex-controller;
-#X text 431 108 SENSE;
-#X text 431 131 RELATIVE;
-#X text 431 184 DSP;
-#X text 431 211 BYPASS REVERB;
-#X obj 577 175 s multiplex;
+#X msg 27 35 0;
+#X obj 520 16 r multiplex-controller;
+#X text 411 124 SENSE;
+#X text 567 128 DSP;
+#X obj 520 277 s multiplex;
+#X text 468 125 REL;
+#X text 511 127 PLEX;
+#X text 617 127 REV;
 #X connect 0 0 4 0;
 #X connect 1 0 8 0;
 #X connect 3 0 10 0;
@@ -40,7 +40,7 @@
 #X connect 5 0 7 0;
 #X connect 5 0 11 0;
 #X connect 5 0 16 0;
-#X connect 5 0 21 0;
+#X connect 5 0 20 0;
 #X connect 6 0 0 0;
 #X connect 7 0 1 0;
 #X connect 11 0 3 0;
@@ -50,7 +50,7 @@
 #X connect 15 0 9 0;
 #X connect 16 0 15 0;
 #X connect 18 0 17 0;
-#X connect 19 0 27 0;
+#X connect 19 0 24 0;
+#X connect 20 0 19 0;
 #X connect 21 0 19 0;
-#X connect 22 0 19 0;
-#X coords 0 -1 1 1 130 140 2 400 100;
+#X coords 0 -1 1 1 260 50 2 400 100;

@@ -1,0 +1,43 @@
+#N canvas 43 89 812 593 10;
+#X obj 381 181 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+-166441 -262144 -1;
+#X obj 381 257 hradio 35 1 0 8 empty empty symbol -15 10 0 4 -262144
+-262144 -262144 -1;
+#X obj 381 333 hradio 35 1 0 8 empty empty symbol -15 10 0 4 -262144
+-262144 -262144 -1;
+#X text 384 150 OFF WHIT HALO REED SERP WIND GONG RAYS;
+#X text 384 226 FlUT FLOU CHOR CHR2 WHST HUM HUM2 BACK;
+#X text 384 165 2WHT 2HAL 2REE 2SRP 2WND 2CHD 2STC 2SLT;
+#X text 384 241 rWHT rHAL rREE rWND rCHD rSTC rSLT ____;
+#X text 384 302 SIRN SIR2 SALT GRND KETL STAT;
+#X text 384 317 sWHT sHUM sHAL sWND sCHD sSLT;
+#X obj 52 136 < 8;
+#X obj 52 288 > 15;
+#X obj 52 212 expr (($f1>7)&($f1<15));
+#X msg 52 316 color 0 \$1 0;
+#X msg 52 240 color 0 \$1 0;
+#X msg 52 164 color 0 \$1 0;
+#X floatatom 52 92 5 0 0 0 - - -, f 5;
+#X msg 252 164 set \$1;
+#X obj 252 106 % 8;
+#X msg 252 240 set \$1;
+#X msg 252 316 set \$1;
+#X obj 52 34 Presetter;
+#X connect 9 0 14 0;
+#X connect 10 0 12 0;
+#X connect 11 0 13 0;
+#X connect 12 0 2 0;
+#X connect 13 0 1 0;
+#X connect 14 0 0 0;
+#X connect 15 0 9 0;
+#X connect 15 0 11 0;
+#X connect 15 0 10 0;
+#X connect 15 0 17 0;
+#X connect 16 0 0 0;
+#X connect 17 0 16 0;
+#X connect 17 0 18 0;
+#X connect 17 0 19 0;
+#X connect 18 0 1 0;
+#X connect 19 0 2 0;
+#X connect 20 0 15 0;
+#X coords 0 -1 1 1 280 218 2 381 150;
