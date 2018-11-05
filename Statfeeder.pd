@@ -4,8 +4,7 @@
 #X obj 42 12 Mixer 0 3 0;
 #X obj 42 379 Presets_Source;
 #X obj 183 379 Presets-Gliss;
-#X obj 1024 12 Meta-Controls;
-#X obj 894 12 Transitions;
+#X obj 894 12 Meta-Controls;
 #X obj 324 379 Presets_Walker;
 #X obj 1069 591 GEM-Center;
 #X obj 1069 569 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -22,5 +21,5 @@
 #X obj 955 514 Controller_Input_SF;
 #X text 844 642 Salt with hover \, all walk \, 65 rate and leap from
 30 to 300;
-#X connect 9 0 8 0;
-#X connect 15 0 1 0;
+#X connect 8 0 7 0;
+#X connect 14 0 1 0;
