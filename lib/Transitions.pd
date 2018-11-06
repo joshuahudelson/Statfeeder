@@ -1,29 +1,29 @@
-#N canvas 44 81 1323 687 10;
+#N canvas 43 89 1323 687 10;
 #X obj 406 703 s to_global_presets;
 #N canvas 43 105 450 250 (subpatch) 0;
 #X array DELAY 100 float 3;
-#A 0 80 100 90 80 100 100 160 80 90 100 150 150 100 50 80 50 100 80
-50 100 80 100 100 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
 #X coords 0 1000 100 0 200 140 1 0 0;
 #X restore 770 260 graph;
 #N canvas 43 101 450 250 (subpatch) 0;
 #X array GLISS 100 float 3;
-#A 0 0 0 0 0 0 0 0 0 0 0 150 150 100 50 80 50 100 80 50 100 80 100
-100 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0;
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
 #X coords 0 1000 100 0 200 140 1 0 0;
 #X restore 770 99 graph;
 #X obj 991 298 Array-Setter-Delay;
 #X obj 991 137 Array-Setter-Gliss;
 #N canvas 43 101 450 250 (subpatch) 0;
 #X array GLOBAL 100 float 3;
-#A 0 18 20 1 20 1 16 18 20 1 5 5 2 16 16 18 0 0 0 0 0 0 0 0 0 0 0 0
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0;
+0;
 #X coords 0 24 100 0 200 140 1 0 0;
 #X restore 770 -62 graph;
 #X obj 403 238 s array-setter-reset;
@@ -62,7 +62,7 @@
 #X obj 991 459 Array-Setter-Gliss-Presets;
 #N canvas 43 101 450 250 (subpatch) 0;
 #X array GLISS-PRESETS 100 float 3;
-#A 0 0 0 0 0 0 0 0 0 0 0 2 0 4 4 2 2 2 2 0 1 1 1 4 4 0 0 0 0 0 0 0
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0;
@@ -89,7 +89,7 @@
 -1;
 #X obj 112 629 del;
 #X obj 112 657 spigot;
-#X obj 130 560 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 130 560 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X msg 35 543 0;
 #X msg 200 543 1;
@@ -122,6 +122,7 @@
 #X obj 93 71 r transnumtodo;
 #X obj 141 -65 inlet;
 #X obj 45 -14 route 8 9 10 11 12 13 14 15 16 17 18 19 20 21;
+#X obj 45 111 t b b;
 #X connect 8 0 4 0;
 #X connect 9 0 3 0;
 #X connect 10 0 59 1;
@@ -165,6 +166,7 @@
 #X connect 43 0 46 0;
 #X connect 44 0 45 0;
 #X connect 49 0 13 0;
+#X connect 50 0 14 0;
 #X connect 51 0 91 0;
 #X connect 52 0 50 1;
 #X connect 53 0 54 0;
@@ -172,7 +174,7 @@
 #X connect 55 0 56 1;
 #X connect 56 0 21 0;
 #X connect 57 0 91 0;
-#X connect 58 0 50 0;
+#X connect 58 0 92 0;
 #X connect 59 0 60 0;
 #X connect 60 0 29 0;
 #X connect 61 0 60 1;
@@ -210,4 +212,6 @@
 #X connect 91 12 58 0;
 #X connect 91 13 58 0;
 #X connect 91 14 49 0;
-#X coords 0 715 1 714 130 140 0;
+#X connect 92 0 50 0;
+#X connect 92 1 72 0;
+#X coords 0 687 1 686 130 140 0;

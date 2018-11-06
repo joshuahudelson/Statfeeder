@@ -1,10 +1,10 @@
-#N canvas 43 101 1170 593 10;
+#N canvas 43 149 1170 593 10;
 #X obj 381 89 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 4;
-#X obj 381 143 hradio 35 1 0 8 empty empty symbol -15 10 0 4 -262144
--166441 -262144 4;
-#X obj 381 197 hradio 35 1 0 8 empty empty symbol -15 10 0 4 -262144
--262144 -262144 4;
+-166441 -262144 2;
+#X obj 381 143 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+-262144 -262144 2;
+#X obj 381 197 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+-262144 -262144 2;
 #X text 384 72 OFF WHIT HALO REED SERP WIND GONG RAYS;
 #X text 384 126 FlUT FLOU CHOR CHR2 WHST HUM HUM2 BACK;
 #X text 384 180 SIRN SIR2 SALT GRND KETL STAT;
@@ -19,15 +19,15 @@
 #X obj 249 26 % 8;
 #X msg 249 126 set \$1;
 #X msg 249 180 set \$1;
-#X obj 793 477 Presetter;
+#X obj 793 557 Presetter;
 #X obj 793 178 + 8;
 #X obj 793 232 + 16;
 #X obj 381 280 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 5;
-#X obj 381 333 hradio 35 1 0 8 empty empty symbol -15 10 0 4 -262144
--262144 -262144 5;
-#X obj 381 386 hradio 35 1 0 8 empty empty symbol -15 10 0 4 -262144
--262144 -262144 5;
+-262144 -262144 1;
+#X obj 381 333 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+-166441 -262144 1;
+#X obj 381 386 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+-262144 -262144 1;
 #X text 384 264 2WHT 2HAL 2REE 2SRP 2WND 2CHD 2STC 2SLT;
 #X text 384 317 rWHT rHAL rREE rWND rCHD rSTC rSLT ____;
 #X text 384 370 sWHT sHUM sHAL sWND sCHD sSLT;
@@ -48,6 +48,21 @@
 #X floatatom 853 199 5 0 0 0 - - -, f 5;
 #X msg 667 72 color 0 0 0;
 #X msg 667 346 color 0 0 0;
+#X obj 561 551 s transexp;
+#X obj 442 551 s transnumtodo;
+#X obj 853 514 t f b;
+#X floatatom 561 531 5 0 0 0 - - -, f 5;
+#X msg 561 503 set \$1;
+#X msg 413 519 0;
+#X obj 442 428 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
+-262144 -1 -1 22 256;
+#X obj 550 428 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
+-262144 -1 -1 31 256;
+#X text 525 432 EXP;
+#X text 417 432 NUM;
+#X obj 381 490 t f b;
+#X obj 381 464 t f b;
+#X obj 848 62 r to_global_presets;
 #X connect 0 0 39 0;
 #X connect 1 0 18 0;
 #X connect 2 0 19 0;
@@ -70,8 +85,8 @@
 #X connect 18 0 39 0;
 #X connect 19 0 39 0;
 #X connect 20 0 40 0;
-#X connect 21 0 35 0;
-#X connect 22 0 36 0;
+#X connect 21 0 53 0;
+#X connect 22 0 54 0;
 #X connect 26 0 31 0;
 #X connect 27 0 29 0;
 #X connect 28 0 30 0;
@@ -93,13 +108,25 @@
 #X connect 39 0 17 0;
 #X connect 39 0 12 0;
 #X connect 39 0 42 0;
-#X connect 40 0 17 1;
 #X connect 40 0 37 0;
 #X connect 40 0 41 0;
+#X connect 40 0 45 0;
 #X connect 41 0 0 0;
 #X connect 41 0 1 0;
 #X connect 41 0 2 0;
 #X connect 42 0 20 0;
 #X connect 42 0 21 0;
 #X connect 42 0 22 0;
-#X coords 0 -1 1 1 280 351 2 381 70;
+#X connect 45 0 17 1;
+#X connect 45 1 46 0;
+#X connect 46 0 43 0;
+#X connect 47 0 46 0;
+#X connect 48 0 47 0;
+#X connect 49 0 44 0;
+#X connect 50 0 47 0;
+#X connect 53 0 35 0;
+#X connect 53 1 48 0;
+#X connect 54 0 36 0;
+#X connect 54 1 50 0;
+#X connect 55 0 12 0;
+#X coords 0 -1 1 1 280 390 2 381 70;
