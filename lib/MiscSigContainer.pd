@@ -1,0 +1,13 @@
+#N canvas 210 218 450 300 10;
+#X obj 104 207 Signal_Output;
+#X obj 104 181 GEM-Center;
+#X obj 104 136 bng 20 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 104 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 234 189 Controller_Input_SF;
+#X text 133 106 START/STOP RECORDING;
+#X text 133 139 RUN GEM;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
+#X coords 0 -1 1 1 280 60 2 100 100;
