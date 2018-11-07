@@ -1,18 +1,18 @@
-#N canvas 60 101 1191 655 10;
+#N canvas 57 105 1191 655 10;
 #X obj 285 564 s numelems;
 #X obj 285 255 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 0 256;
+-262144 -1 -1 125 256;
 #X obj 285 543 s rhythmrate;
 #X obj 285 299 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 0 256;
 #X obj 285 342 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 0 256;
+-262144 -1 -1 0.01 256;
 #X obj 285 501 s rhythmsinglevalue;
 #X obj 285 522 s rhythmepsilon;
 #X text 283 240 Rate;
 #X text 283 327 Epsilon;
 #X obj 285 429 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 0 256;
+-262144 -1 -1 1.5 256;
 #X text 283 414 Exp;
 #X obj 285 480 s rhythmexponent;
 #X obj 25 476 r rhythmoutput;
@@ -158,11 +158,11 @@
 #X obj 161 -18 r rhythmvolume-receive;
 #X obj 70 521 t f f;
 #X obj 161 363 vradio 13 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X obj 161 417 vradio 13 1 0 3 empty empty empty 0 -8 0 10 -262144
 -1 -1 1;
+#X obj 161 417 vradio 13 1 0 3 empty empty empty 0 -8 0 10 -262144
+-1 -1 2;
 #X obj 285 385 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 0 256;
+-262144 -1 -1 8 256;
 #X text 283 370 Num Elems;
 #X obj 326 222 bng 13 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -184,7 +184,7 @@
 #X obj 1071 89 r rhythmer-presets-confirm;
 #X msg 1011 89 set \$1;
 #X obj 161 216 vradio 13 1 0 10 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 5;
 #X text 175 362 Random \; Single-Value \; Feedback;
 #X text 176 417 Off \; Tonal Presets \; Noisy Presets \;;
 #X text 280 204 VOL;
@@ -242,7 +242,7 @@
 #X msg 44 126 1 0 0;
 #X msg 64 105 0 1 0;
 #X msg 84 84 0 0 1;
-#X obj 359 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 359 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 431 350 r rhythmepsilon;
 #X obj 264 241 r rhythmsinglevalue;
