@@ -1,4 +1,4 @@
-#N canvas 103 137 905 522 10;
+#N canvas 380 120 905 522 10;
 #X obj 172 484 tabwrite GLOBAL;
 #X obj 274 456 f;
 #X obj 303 456 + 1;
@@ -39,14 +39,20 @@
 #X connect 5 0 16 0;
 #X connect 6 0 3 0;
 #X connect 7 0 20 0;
+#X connect 7 0 4 0;
 #X connect 8 0 22 0;
+#X connect 8 0 4 0;
 #X connect 9 0 23 0;
+#X connect 9 0 4 0;
 #X connect 10 0 25 0;
+#X connect 10 0 4 0;
 #X connect 11 0 4 0;
 #X connect 11 0 18 0;
 #X connect 12 0 4 0;
 #X connect 13 0 19 0;
+#X connect 13 0 4 0;
 #X connect 14 0 21 0;
+#X connect 14 0 4 0;
 #X connect 15 0 11 0;
 #X connect 15 1 13 0;
 #X connect 15 2 7 0;

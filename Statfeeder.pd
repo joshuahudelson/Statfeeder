@@ -1,4 +1,4 @@
-#N canvas 105 95 1164 657 10;
+#N canvas 66 88 1168 660 10;
 #X obj 4 5 cnv 15 1150 640 empty empty empty 20 12 0 14 -228856 -66577
 0;
 #X obj 12 12 Mixer 0 3 0;
@@ -8,11 +8,11 @@
 #X obj 294 379 Presets_Walker;
 #X obj 304 12 Mixer 1 4 1;
 #X obj 591 12 Mixer 2 5 2;
-#X obj 304 58 UGen 1 1 4;
-#X obj 12 58 UGen 0 0 3;
-#X obj 591 58 UGen 2 2 5;
 #X obj 435 379 RhythmerSF;
 #X obj 864 93 Global_Buttons;
 #X obj 864 515 MiscSigContainer;
 #X text 853 601 Salt with hover \, all walk \, 65 rate and \; leap
 from 30 to 300;
+#X obj 591 58 UGen 2 2 5;
+#X obj 12 58 UGen 0 0 3;
+#X obj 304 58 UGen 1 1 4;

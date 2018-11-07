@@ -1,10 +1,10 @@
-#N canvas 43 149 1170 593 10;
+#N canvas 43 165 1170 593 10;
 #X obj 381 89 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--166441 -262144 2;
+-166441 -262144 0;
 #X obj 381 143 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 2;
+-262144 -262144 0;
 #X obj 381 197 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 2;
+-262144 -262144 0;
 #X text 384 72 OFF WHIT HALO REED SERP WIND GONG RAYS;
 #X text 384 126 FlUT FLOU CHOR CHR2 WHST HUM HUM2 BACK;
 #X text 384 180 SIRN SIR2 SALT GRND KETL STAT;
@@ -23,9 +23,9 @@
 #X obj 793 178 + 8;
 #X obj 793 232 + 16;
 #X obj 381 280 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 1;
-#X obj 381 333 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -166441 -262144 1;
+#X obj 381 333 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+-262144 -262144 1;
 #X obj 381 386 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 1;
 #X text 384 264 2WHT 2HAL 2REE 2SRP 2WND 2CHD 2STC 2SLT;
@@ -55,14 +55,17 @@
 #X msg 561 503 set \$1;
 #X msg 413 519 0;
 #X obj 442 428 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 22 256;
+-262144 -1 -1 15 256;
 #X obj 550 428 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 31 256;
-#X text 525 432 EXP;
+-262144 -1 -1 6 256;
+#X text 525 433 EXP;
 #X text 417 432 NUM;
 #X obj 381 490 t f b;
 #X obj 381 464 t f b;
-#X obj 848 62 r to_global_presets;
+#X obj 879 47 r to_global_presets;
+#X obj 943 366 loadbang;
+#X msg 941 411 15;
+#X msg 987 411 6;
 #X connect 0 0 39 0;
 #X connect 1 0 18 0;
 #X connect 2 0 19 0;
@@ -129,4 +132,9 @@
 #X connect 54 0 36 0;
 #X connect 54 1 50 0;
 #X connect 55 0 12 0;
+#X connect 55 0 17 0;
+#X connect 56 0 57 0;
+#X connect 56 0 58 0;
+#X connect 57 0 49 0;
+#X connect 58 0 50 0;
 #X coords 0 -1 1 1 280 390 2 381 70;
