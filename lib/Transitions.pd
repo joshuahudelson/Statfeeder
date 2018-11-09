@@ -1,127 +1,127 @@
-#N canvas 43 81 1323 687 10;
-#X obj 406 703 s to_global_presets;
+#N canvas 43 128 1323 609 10;
+#X obj 406 625 s to_global_presets;
 #N canvas 43 105 450 250 (subpatch) 0;
 #X array DELAY 100 float 3;
-#A 0 200 200 400 200 200 200 600 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A 0 100 100 100 100 350 100 100 100 100 100 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0;
+0 0 0 0 0 0 0 0 0 0 0;
 #X coords 0 1000 100 0 200 140 1 0 0;
-#X restore 770 260 graph;
+#X restore 770 182 graph;
 #N canvas 43 101 450 250 (subpatch) 0;
 #X array GLISS 100 float 3;
-#A 0 0 0 400 0 0 0 600 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A 0 250 250 250 250 250 250 250 250 250 250 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0;
+0 0 0 0 0 0 0 0 0 0 0;
 #X coords 0 1000 100 0 200 140 1 0 0;
-#X restore 770 99 graph;
-#X obj 991 298 Array-Setter-Delay;
-#X obj 991 137 Array-Setter-Gliss;
+#X restore 770 21 graph;
+#X obj 991 220 Array-Setter-Delay;
+#X obj 991 59 Array-Setter-Gliss;
 #N canvas 43 101 450 250 (subpatch) 0;
 #X array GLOBAL 100 float 3;
-#A 0 1 4 1 20 9 5 5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A 0 10 5 4 12 20 0 4 5 2 3 19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0;
+0 0 0;
 #X coords 0 24 100 0 200 140 1 0 0;
-#X restore 770 -62 graph;
-#X obj 380 266 s array-setters;
-#X obj 991 99 r array-setters;
-#X obj 991 260 r array-setters;
-#X obj 130 595 tabread DELAY;
-#X obj 406 675 tabread GLOBAL;
-#X obj 406 560 tabread GLISS;
-#X obj 357 210 t b f b;
-#X obj 112 338 f;
-#X obj 148 338 + 1;
-#X msg 130 316 0;
-#X obj 646 435 r array-setter-reset;
-#X obj 112 365 t f f;
-#X msg 112 508 stop;
-#X obj 17 598 t b f;
-#X obj 112 480 sel 1;
-#X msg 346 504 set \$1;
-#X floatatom 346 525 5 0 0 0 - - -, f 5;
-#X obj 346 543 + 1;
-#X obj 346 482 r seqlen;
-#X obj 130 399 r seqlen;
-#X obj 357 294 s triggernext;
-#X obj 112 272 r triggernext;
-#X obj 112 685 s triggernext;
-#X obj 203 469 s globaltabread;
-#X obj 263 406 s glisstabread;
-#X obj 223 448 s delaytabread;
-#X obj 406 511 r glisstabread;
-#X obj 17 570 r delaytabread;
-#X obj 406 626 r globaltabread;
-#X obj 156 508 del 10;
-#X obj 406 588 s gliss-length-receive;
-#X obj 991 421 r array-setters;
-#X obj 991 459 Array-Setter-Gliss-Presets;
+#X restore 770 -140 graph;
+#X obj 380 188 s array-setters;
+#X obj 991 21 r array-setters;
+#X obj 991 182 r array-setters;
+#X obj 130 517 tabread DELAY;
+#X obj 406 597 tabread GLOBAL;
+#X obj 406 482 tabread GLISS;
+#X obj 357 132 t b f b;
+#X obj 112 260 f;
+#X obj 148 260 + 1;
+#X msg 130 238 0;
+#X obj 201 221 r array-setter-reset;
+#X obj 112 287 t f f;
+#X msg 112 430 stop;
+#X obj 17 520 t b f;
+#X obj 112 402 sel 1;
+#X msg 346 426 set \$1;
+#X floatatom 346 447 5 0 0 0 - - -, f 5;
+#X obj 346 465 + 1;
+#X obj 346 404 r seqlen;
+#X obj 130 321 r seqlen;
+#X obj 357 216 s triggernext;
+#X obj 112 194 r triggernext;
+#X obj 112 607 s triggernext;
+#X obj 203 391 s globaltabread;
+#X obj 263 328 s glisstabread;
+#X obj 223 370 s delaytabread;
+#X obj 406 433 r glisstabread;
+#X obj 17 492 r delaytabread;
+#X obj 406 548 r globaltabread;
+#X obj 156 430 del 10;
+#X obj 406 510 s gliss-length-receive;
+#X obj 991 343 r array-setters;
+#X obj 991 381 Array-Setter-Gliss-Presets;
 #N canvas 43 101 450 250 (subpatch) 0;
 #X array GLISS-PRESETS 100 float 3;
-#A 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+#A 0 4 4 4 4 4 4 4 4 4 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0;
 #X coords 0 10 100 0 200 140 1 0 0;
-#X restore 770 421 graph;
-#X obj 203 382 t f f f f;
-#X obj 243 427 s glisspresetstabread;
-#X obj 574 626 r glisspresetstabread;
-#X obj 574 675 tabread GLISS-PRESETS;
-#X obj 574 703 s to_gliss_presets;
-#X floatatom 585 654 5 0 0 0 - - -, f 5;
-#X floatatom 417 654 5 0 0 0 - - -, f 5;
-#X floatatom 420 539 5 0 0 0 - - -, f 5;
-#X floatatom 357 185 5 0 0 0 - - -, f 5;
-#X obj 45 205 Transition-Randomizer;
-#X obj 61 -41 r to-transitions;
-#X floatatom 93 179 5 0 0 0 - - -, f 5;
-#X floatatom 130 427 5 0 0 0 - - -, f 5;
-#X obj 112 452 >=;
-#X obj 45 -65 inlet;
-#X obj 45 53 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X restore 770 343 graph;
+#X obj 203 304 t f f f f;
+#X obj 243 349 s glisspresetstabread;
+#X obj 574 548 r glisspresetstabread;
+#X obj 574 597 tabread GLISS-PRESETS;
+#X obj 574 625 s to_gliss_presets;
+#X floatatom 585 576 5 0 0 0 - - -, f 5;
+#X floatatom 417 576 5 0 0 0 - - -, f 5;
+#X floatatom 420 461 5 0 0 0 - - -, f 5;
+#X floatatom 357 107 5 0 0 0 - - -, f 5;
+#X obj 45 127 Transition-Randomizer;
+#X obj 61 -119 r to-transitions;
+#X floatatom 93 101 5 0 0 0 - - -, f 5;
+#X floatatom 130 349 5 0 0 0 - - -, f 5;
+#X obj 112 374 >=;
+#X obj 45 -143 inlet;
+#X obj 45 -25 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 112 629 del;
-#X obj 112 657 spigot;
-#X obj 130 560 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 112 551 del;
+#X obj 112 579 spigot;
+#X obj 130 482 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X msg 35 543 0;
-#X msg 200 543 1;
-#X floatatom 189 179 5 0 0 0 - - -, f 5;
-#X floatatom 141 179 5 0 0 0 - - -, f 5;
-#X text 997 440 Series of glissando presets.;
-#X obj 991 -24 Array-Setter-Global;
-#X obj 991 -62 r array-setters;
-#X text 999 -42 Series of Global Presets to switch to.;
-#X text 997 119 Series of glissando times to switch to.;
-#X obj 681 461 s array-setter-reset;
-#X obj 479 -40 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X msg 35 465 0;
+#X msg 200 465 1;
+#X floatatom 189 101 5 0 0 0 - - -, f 5;
+#X floatatom 141 101 5 0 0 0 - - -, f 5;
+#X text 997 362 Series of glissando presets.;
+#X obj 991 -102 Array-Setter-Global;
+#X obj 991 -140 r array-setters;
+#X text 999 -120 Series of Global Presets to switch to.;
+#X text 997 41 Series of glissando times to switch to.;
+#X obj 533 -48 s array-setter-reset;
+#X obj 479 -118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 479 42 until;
-#X msg 479 14 101;
-#X obj 479 186 s Array-Setter-Global;
-#X msg 479 70 0;
-#X obj 479 98 t f f f f;
-#X obj 499 166 s Array-Setter-Gliss;
-#X obj 519 146 s Array-Setter-Delay;
-#X obj 539 126 s Array-Setter-Gliss-Presets;
-#X obj 479 -14 t b b b;
-#X text 1000 279 Series of delay times in beween switches.;
-#X text 201 164 EXP;
-#X text 139 164 FINAL;
-#X text 91 164 #TODO;
-#X text 217 685 Back to top.;
-#X obj 189 147 r transexp;
-#X text 163 360 This is mainly what happens each transition.;
-#X obj 93 71 r transnumtodo;
-#X obj 141 -65 inlet;
-#X obj 45 -14 route 8 9 10 11 12 13 14 15 16 17 18 19 20 21;
-#X obj 45 111 t b b;
-#X msg 317 -57 4;
-#X floatatom 1103 41 5 0 0 0 - - -, f 5;
+#X obj 479 -36 until;
+#X msg 479 -64 101;
+#X obj 479 108 s Array-Setter-Global;
+#X msg 479 -8 0;
+#X obj 479 20 t f f f f;
+#X obj 499 88 s Array-Setter-Gliss;
+#X obj 519 68 s Array-Setter-Delay;
+#X obj 539 48 s Array-Setter-Gliss-Presets;
+#X obj 479 -92 t b b b;
+#X text 1000 201 Series of delay times in beween switches.;
+#X text 201 86 EXP;
+#X text 139 86 FINAL;
+#X text 91 86 #TODO;
+#X text 217 607 Back to top.;
+#X obj 189 69 r transexp;
+#X text 163 282 This is mainly what happens each transition.;
+#X obj 93 -7 r transnumtodo;
+#X obj 141 -143 inlet;
+#X obj 45 -92 route 8 9 10 11 12 13 14 15 16 17 18 19 20 21;
+#X obj 45 33 t b b;
+#X floatatom 1103 -37 5 0 0 0 - - -, f 5;
+#X msg 317 -135 4;
 #X connect 7 0 4 0;
 #X connect 8 0 3 0;
 #X connect 9 0 56 1;
@@ -180,7 +180,7 @@
 #X connect 61 0 49 3;
 #X connect 62 0 49 2;
 #X connect 65 0 64 0;
-#X connect 65 0 91 0;
+#X connect 65 0 90 0;
 #X connect 69 0 78 0;
 #X connect 70 0 73 0;
 #X connect 71 0 70 0;
@@ -212,5 +212,5 @@
 #X connect 88 14 48 0;
 #X connect 89 0 49 0;
 #X connect 89 1 69 0;
-#X connect 90 0 88 0;
-#X coords 0 687 1 686 130 140 0;
+#X connect 91 0 88 0;
+#X coords 0 609 1 608 130 140 0;

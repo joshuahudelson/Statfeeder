@@ -1,4 +1,6 @@
-#N canvas 169 227 1066 519 10;
+#N canvas 163 235 1066 519 10;
+#X obj 100 31 cnv 15 128 258 empty empty empty 20 12 0 14 -228856 -66577
+0;
 #X obj 101 46 vradio 13 1 0 18 empty empty empty 0 -8 0 10 -262144
 -1 -1 11;
 #X text 108 30 SOURCE PRESETS:;
@@ -9,6 +11,6 @@
 17 ORGY \;;
 #X obj 101 325 Sourcerer;
 #X obj 101 4 r to_source_presets;
-#X connect 0 0 3 0;
-#X connect 4 0 0 0;
+#X connect 1 0 4 0;
+#X connect 5 0 1 0;
 #X coords 0 -1 1 1 130 260 2 99 30;
