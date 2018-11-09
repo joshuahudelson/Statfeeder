@@ -1,4 +1,4 @@
-#N canvas 48 89 1191 655 10;
+#N canvas 45 93 1321 655 10;
 #X obj 285 564 s numelems;
 #X obj 285 543 s rhythmrate;
 #X obj 285 501 s rhythmsinglevalue;
@@ -6,7 +6,7 @@
 #X obj 285 480 s rhythmexponent;
 #X obj 25 476 r rhythmoutput;
 #X obj 0 544 Gate;
-#N canvas 94 124 840 620 rhythmtriage 0;
+#N canvas 91 128 840 620 rhythmtriage 0;
 #X obj 365 49 inlet;
 #X obj 365 77 sel 0 1 2 3 4 5 6 7;
 #X msg 365 565 \; rhythm-vol-0 \$1;
@@ -148,33 +148,33 @@
 #X obj 161 510 s rhythmdriver;
 #X obj 161 -38 r rhythmtarget-receive;
 #X obj 285 141 r rhythmnumelems-receive;
-#X msg 842 59 0;
-#X obj 842 31 t b b;
-#X msg 874 59 1;
-#X obj 1011 31 f;
-#X obj 1047 31 + 1;
-#X obj 1011 142 s rhythm-presets-receive;
-#X floatatom 1071 117 5 0 0 0 - - -, f 5;
-#X obj 842 3 r rhythmer-presets-zero;
-#X obj 1011 3 r rhythmer-presets-increment;
-#X obj 1071 89 r rhythmer-presets-confirm;
-#X msg 1011 89 set \$1;
-#X obj 1047 -41 r init-loadbang;
-#X msg 1047 -20 1;
-#X msg 769 543 \; rhythmdriver-receive \$1 \; rhythmtarget-receive
+#X msg 912 59 0;
+#X obj 912 31 t b b;
+#X msg 944 59 1;
+#X obj 1081 31 f;
+#X obj 1117 31 + 1;
+#X obj 1081 142 s rhythm-presets-receive;
+#X floatatom 1141 117 5 0 0 0 - - -, f 5;
+#X obj 912 3 r rhythmer-presets-zero;
+#X obj 1081 3 r rhythmer-presets-increment;
+#X obj 1141 89 r rhythmer-presets-confirm;
+#X msg 1081 89 set \$1;
+#X obj 1117 -41 r init-loadbang;
+#X msg 1117 -20 1;
+#X msg 769 613 \; rhythmdriver-receive \$1 \; rhythmtarget-receive
 \$2 \; rhythmvolume-receive \$3 \; rhythmrate-receive \$4 \; rhythmsinglevalue-receive
 \$5 \; rhythmepsilon-receive \$6 \; rhythmnumelems-receive \$7 \; rhythmexponent-receive
 \$8 \; rhythmstartstop \$9 \; walker-preset-zero bang \;;
-#X obj 655 303 t b f;
-#X msg 773 522 0 0 0 125 0 0.01 8 1 0;
-#X msg 836 446 1 1 0 125 0 0.01 8 1.5 1;
-#X msg 852 427 1 2 0 125 0 0.01 8 1.5 1;
-#X msg 867 408 1 0 1 125 0 0.01 8 1.5 1;
-#X msg 883 389 2 2 0 125 0 0.01 8 13 1;
+#X obj 691 422 t b f;
+#X msg 773 592 0 0 0 125 0 0.01 8 1 0;
+#X msg 836 516 1 1 0 125 0 0.01 8 1.5 1;
+#X msg 852 497 1 2 0 125 0 0.01 8 1.5 1;
+#X msg 867 478 1 0 1 125 0 0.01 8 1.5 1;
+#X msg 883 459 2 2 0 125 0 0.01 8 13 1;
 #X obj 552 -100 statfeed;
 #X obj 578 -161 r numelems;
 #X obj 605 -131 r rhythmexponent;
-#X msg 610 383 randomize;
+#X msg 326 -117 randomize;
 #N canvas 470 143 863 617 drivers 0;
 #X obj 185 324 random 999;
 #X obj 185 352 / 1000;
@@ -273,41 +273,41 @@
 #X connect 44 0 31 0;
 #X connect 44 1 32 0;
 #X connect 44 2 33 0;
-#X restore 410 -206 pd drivers;
-#X floatatom 485 -172 5 0 0 0 - - -, f 5;
-#X obj 412 -81 s rhythmoutput;
+#X restore 448 -186 pd drivers;
+#X floatatom 448 -158 5 0 0 0 - - -, f 5;
+#X obj 422 -31 s rhythmoutput;
 #X obj 605 -75 unpack f f f f f f f f;
-#X obj 625 265 tabwrite array1;
-#X msg 637 238 0;
-#X obj 605 210 t f b;
-#X obj 626 173 t f b;
-#X msg 658 198 1;
-#X obj 646 146 t f b;
-#X obj 666 123 t f b;
-#X obj 686 100 t f b;
-#X obj 706 73 t f b;
-#X obj 726 50 t f b;
-#X obj 746 20 t f b;
-#X msg 678 171 2;
-#X msg 698 148 3;
-#X msg 718 125 4;
-#X msg 738 98 5;
-#X msg 758 75 6;
-#X msg 778 45 7;
-#X floatatom 791 -46 5 0 0 0 - - -, f 5;
+#X obj 625 375 tabwrite array1;
+#X msg 637 348 0;
+#X obj 605 320 t f b;
+#X obj 626 283 t f b;
+#X msg 658 308 1;
+#X obj 646 256 t f b;
+#X obj 666 233 t f b;
+#X obj 686 210 t f b;
+#X obj 706 183 t f b;
+#X obj 734 163 t f b;
+#X obj 756 137 t f b;
+#X msg 678 281 2;
+#X msg 698 258 3;
+#X msg 718 235 4;
+#X msg 738 208 5;
+#X msg 766 191 6;
+#X msg 788 165 7;
+#X floatatom 823 -103 5 0 0 0 - - -, f 5;
 #X obj 448 -133 t b f;
-#X msg 788 503 0 1 0 125 0 0.01 8 10 1;
-#X msg 804 484 0 2 0 125 0 0.01 8 10 1;
-#X msg 820 465 0 0 1 125 0 0.01 8 10 1;
-#X obj 773 320 sel 0 1 2 3 4 5 6 7 8 9;
-#X msg 899 370 1 1 0 122 3 0.01 8 1.8 1;
-#X msg 915 351 1 2 0 122 3 0.01 8 1.8 1;
+#X msg 788 573 0 1 0 125 0 0.01 8 10 1;
+#X msg 804 554 0 2 0 125 0 0.01 8 10 1;
+#X msg 820 535 0 0 1 125 0 0.01 8 10 1;
+#X obj 773 390 sel 0 1 2 3 4 5 6 7 8 9;
+#X msg 899 440 1 1 0 122 3 0.01 8 1.8 1;
+#X msg 915 421 1 2 0 122 3 0.01 8 1.8 1;
 #X obj 161 -80 r rhythm-presets-receive;
-#X obj 1011 57 % 10;
+#X obj 1081 57 % 10;
 #X obj 156 201 cnv 15 406 258 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 285 255 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 125 256;
+-262144 -1 -1 143 256;
 #X obj 285 299 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 0 256;
 #X obj 285 342 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
@@ -315,14 +315,14 @@
 #X text 283 240 Rate;
 #X text 283 327 Epsilon;
 #X obj 285 429 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 1.5 256;
+-262144 -1 -1 2 256;
 #X text 283 414 Exp;
 #X obj 285 222 tgl 13 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 161 363 vradio 13 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 0;
 #X obj 161 417 vradio 13 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 2;
 #X obj 285 385 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 8 256;
 #X text 283 370 Num Elems;
@@ -331,7 +331,7 @@
 #X text 161 348 DRIVERS;
 #X text 163 402 TARGETS;
 #X obj 161 216 vradio 13 1 0 10 empty empty empty 0 -8 0 10 -262144
--1 -1 4;
+-1 -1 2;
 #X text 175 362 Random \; Single-Value \; Feedback;
 #X text 176 417 Off \; Tonal Presets \; Noisy Presets \;;
 #X text 280 204 VOL;
@@ -343,11 +343,22 @@
 2 \; SingleN 2;
 #X obj 362 201 cnv 15 200 258 empty empty empty 20 12 0 14 -262144
 -66577 0;
-#N canvas 43 81 723 507 (subpatch) 0;
+#N canvas 43 85 723 507 (subpatch) 0;
 #X array array1 8 float 3;
-#A 0 0 1 2 3 7 4 40 169;
-#X coords 0 40 8 0 200 258 2 0 0;
+#A 0 3.6688 1.94531 1.69441 1 1.39474 0 2.16524 2.54476;
+#X coords 0 15 8 0 200 258 2 0 0;
 #X restore 362 201 graph;
+#X obj 734 -27 expr (pow($f1 \, $f2));
+#X obj 756 -47 expr (pow($f1 \, $f2));
+#X floatatom 889 -88 5 0 0 0 - - -, f 5;
+#X obj 691 13 expr (pow($f1 \, $f2));
+#X obj 712 -7 expr (pow($f1 \, $f2));
+#X obj 648 53 expr (pow($f1 \, $f2));
+#X obj 669 33 expr (pow($f1 \, $f2));
+#X obj 605 93 expr (pow($f1 \, $f2));
+#X obj 626 73 expr (pow($f1 \, $f2));
+#X obj 889 -138 loadbang;
+#X msg 889 -116 0.48;
 #X connect 5 0 6 1;
 #X connect 5 0 8 1;
 #X connect 6 0 7 0;
@@ -393,15 +404,14 @@
 #X connect 42 0 39 0;
 #X connect 43 0 44 0;
 #X connect 44 0 65 0;
-#X connect 46 0 49 0;
-#X connect 46 1 50 0;
-#X connect 46 2 52 0;
-#X connect 46 3 53 0;
-#X connect 46 4 54 0;
-#X connect 46 5 55 0;
-#X connect 46 6 56 0;
-#X connect 46 6 64 0;
-#X connect 46 7 57 0;
+#X connect 46 0 107 0;
+#X connect 46 1 108 0;
+#X connect 46 2 105 0;
+#X connect 46 3 106 0;
+#X connect 46 4 103 0;
+#X connect 46 5 104 0;
+#X connect 46 6 100 0;
+#X connect 46 7 101 0;
 #X connect 48 0 47 1;
 #X connect 49 0 47 0;
 #X connect 49 1 48 0;
@@ -455,4 +465,23 @@
 #X connect 85 0 0 0;
 #X connect 87 0 42 0;
 #X connect 90 0 33 0;
+#X connect 100 0 56 0;
+#X connect 100 0 64 0;
+#X connect 101 0 57 0;
+#X connect 102 0 101 1;
+#X connect 102 0 100 1;
+#X connect 102 0 104 1;
+#X connect 102 0 103 1;
+#X connect 102 0 106 1;
+#X connect 102 0 105 1;
+#X connect 102 0 108 1;
+#X connect 102 0 107 1;
+#X connect 103 0 54 0;
+#X connect 104 0 55 0;
+#X connect 105 0 52 0;
+#X connect 106 0 53 0;
+#X connect 107 0 49 0;
+#X connect 108 0 50 0;
+#X connect 109 0 110 0;
+#X connect 110 0 102 0;
 #X coords 0 -1 1 1 408 260 2 155 200;
