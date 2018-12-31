@@ -1,4 +1,4 @@
-#N canvas 43 173 1170 593 10;
+#N canvas 43 153 1170 593 10;
 #X obj 49 44 < 8;
 #X obj 49 166 > 15;
 #X obj 49 98 expr (($f1>7)&($f1<15));
@@ -35,8 +35,8 @@
 #X msg 561 503 set \$1;
 #X msg 413 519 0;
 #X obj 381 490 t f b;
-#X obj 879 47 r to_global_presets;
-#X obj 943 366 loadbang;
+#X obj 855 15 r to_global_presets;
+#X obj 941 376 loadbang;
 #X msg 941 411 15;
 #X msg 987 411 6;
 #X obj 294 427 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -64,14 +64,14 @@
 #X msg 697 72 color 0 0 0;
 #X msg 697 346 color 0 0 0;
 #X obj 412 428 nbx 3 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 55 256;
+-262144 -1 -1 15 256;
 #X obj 510 428 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 28 256;
+-262144 -1 -1 6 256;
 #X text 485 433 EXP;
 #X text 387 432 NUM;
 #X obj 385 464 t f b;
 #X obj 608 428 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--228856 -1 -1 55 256;
+-228856 -1 -1 0 256;
 #X obj 234 490 r globaltabread;
 #X connect 0 0 5 0;
 #X connect 1 0 3 0;
