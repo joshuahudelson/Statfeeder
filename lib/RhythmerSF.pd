@@ -1,4 +1,4 @@
-#N canvas 45 93 1321 655 10;
+#N canvas 43 97 1321 655 10;
 #X obj 285 564 s numelems;
 #X obj 285 543 s rhythmrate;
 #X obj 285 501 s rhythmsinglevalue;
@@ -307,7 +307,7 @@
 #X obj 156 201 cnv 15 406 258 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 285 255 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 143 256;
+-262144 -1 -1 125 256;
 #X obj 285 299 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 0 256;
 #X obj 285 342 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
@@ -315,7 +315,7 @@
 #X text 283 240 Rate;
 #X text 283 327 Epsilon;
 #X obj 285 429 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 2 256;
+-262144 -1 -1 10 256;
 #X text 283 414 Exp;
 #X obj 285 222 tgl 13 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -324,7 +324,7 @@
 #X obj 161 417 vradio 13 1 0 3 empty empty empty 0 -8 0 10 -262144
 -1 -1 2;
 #X obj 285 385 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 8 256;
+-262144 -1 -1 7 256;
 #X text 283 370 Num Elems;
 #X obj 326 222 bng 13 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -345,7 +345,7 @@
 -66577 0;
 #N canvas 43 85 723 507 (subpatch) 0;
 #X array array1 8 float 3;
-#A 0 3.6688 1.94531 1.69441 1 1.39474 0 2.16524 2.54476;
+#A 0 2.16524 1.69441 2.36327 0 1 1.94531 1.39474 2.54476;
 #X coords 0 15 8 0 200 258 2 0 0;
 #X restore 362 201 graph;
 #X obj 734 -27 expr (pow($f1 \, $f2));

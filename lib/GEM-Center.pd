@@ -1,20 +1,21 @@
-#N canvas 43 125 1187 639 10;
+#N canvas 43 109 1270 639 10;
 #X obj 1065 14 r elem-to-GEM-0;
 #X obj 1065 42 r exp-to-GEM-0;
 #X obj 1065 70 r elem-to-GEM-0;
 #X obj 1065 98 r exp-to-GEM-0;
 #X obj 1065 126 r elem-to-GEM-0;
 #X obj 1065 154 r exp-to-GEM-0;
-#N canvas 43 221 450 300 gemwin 0;
+#N canvas 43 245 853 379 gemwin 0;
 #X obj 67 117 outlet;
 #X obj 67 10 inlet;
 #X obj 67 41 route create;
 #X msg 67 90 set destroy;
-#X msg 148 69 set create;
+#X msg 203 62 set create;
 #X msg 172 227 destroy \, reset;
-#X msg 240 125 dimen 1366 768 \, create \, 1;
+#X msg 256 121 dimen 1366 768 \, create \, 1;
 #X msg 138 179 dimen 150 150 \, create \, 1;
 #X text 175 262 Edited;
+#X obj 364 299 outlet;
 #X obj 54 244 gemwin;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
@@ -24,8 +25,9 @@
 #X connect 2 1 5 0;
 #X connect 3 0 0 0;
 #X connect 4 0 0 0;
-#X connect 5 0 9 0;
-#X connect 6 0 9 0;
+#X connect 5 0 10 0;
+#X connect 6 0 10 0;
+#X connect 10 0 9 0;
 #X restore 1069 332 pd gemwin;
 #X msg 1110 265 destroy;
 #X obj 1055 255 Gem;
@@ -102,7 +104,41 @@
 #X msg 623 113 0 2 0;
 #X msg 283 114 -2 -1.4 0;
 #X msg 913 113 2 -1.4 0;
+#X obj 1071 563 pix_record;
+#X obj 1090 532 cnv 15 145 25 empty empty empty 20 12 0 14 -225271
+-66577 0;
+#X msg 1100 536 bang;
+#X msg 1172 536 auto \$1;
+#X obj 1153 537 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X msg 1096 413 codeclist;
+#X obj 1092 433 t a;
+#X obj 1080 460 cnv 15 155 65 empty empty empty 20 12 0 14 -225271
+-66577 0;
+#X msg 1083 481 file /tmp/mymovie.mov;
+#X obj 1084 462 bng 15 250 50 0 empty empty empty 0 -6 0 8 -258699
+-1 -1;
+#N canvas 0 50 450 300 savepanel 0;
+#X obj 114 62 inlet;
+#X obj 114 254 outlet;
+#X obj 114 199 t b a;
+#X obj 114 125 savepanel;
+#X msg 114 162 set file \$1;
+#X connect 0 0 3 0;
+#X connect 2 0 1 0;
+#X connect 2 1 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X restore 1104 461 pd savepanel;
+#X msg 1140 504 record \$1;
+#X obj 1120 506 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0
+1;
+#X obj 1083 504 t a;
+#X floatatom 1159 566 5 0 0 0 - - -, f 5;
+#X msg 1093 388 codec mjpa;
+#X msg 1132 365 codec 20;
 #X connect 6 0 7 0;
+#X connect 6 1 82 0;
 #X connect 7 0 6 0;
 #X connect 9 0 12 0;
 #X connect 9 0 32 0;
@@ -203,3 +239,17 @@
 #X connect 79 0 42 0;
 #X connect 80 0 22 0;
 #X connect 81 0 63 0;
+#X connect 82 1 96 0;
+#X connect 84 0 82 0;
+#X connect 85 0 82 0;
+#X connect 86 0 85 0;
+#X connect 87 0 88 0;
+#X connect 88 0 82 0;
+#X connect 90 0 95 0;
+#X connect 91 0 92 0;
+#X connect 92 0 90 0;
+#X connect 93 0 95 0;
+#X connect 94 0 93 0;
+#X connect 95 0 82 0;
+#X connect 97 0 88 0;
+#X connect 98 0 88 0;
