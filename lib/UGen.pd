@@ -1,4 +1,4 @@
-#N canvas 154 171 1212 597 10;
+#N canvas 151 147 1212 597 10;
 #X obj 223 317 statfeed~;
 #X obj 689 8 r fadertrim-\$2;
 #X obj 51 364 tabwrite~ \$0-array;
