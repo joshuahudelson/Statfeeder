@@ -1,4 +1,4 @@
-#N canvas 107 81 1229 660 10;
+#N canvas 67 87 1853 993 10;
 #X obj 14 15 cnv 15 1150 640 empty empty empty 20 12 0 14 -191407 -66577
 0;
 #X obj 22 26 Mixer 0 3 0;
@@ -16,8 +16,10 @@
 #X obj 314 68 UGen 1 1 4;
 #X obj 179 663 keyname;
 #X obj 179 691 sel 1 2 3 4 5 6;
-#X text 394 799 BASE;
-#X obj 421 747 s elem-exp-multiplier-0;
-#X floatatom 430 704 5 0 0 0 - - -, f 5;
+#X obj 363 726 s elem-exp-multiplier-0;
+#X floatatom 363 698 5 0 0 0 - - -, f 5;
+#X obj 363 783 s elem-exp-adder-0;
+#X floatatom 363 755 5 0 0 0 - - -, f 5;
 #X connect 14 0 15 0;
-#X connect 18 0 17 0;
+#X connect 17 0 16 0;
+#X connect 19 0 18 0;
