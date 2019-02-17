@@ -1,4 +1,4 @@
-#N canvas 43 128 1323 609 10;
+#N canvas 67 128 1323 609 10;
 #X obj 406 625 s to_global_presets;
 #N canvas 43 105 450 250 (subpatch) 0;
 #X array DELAY 100 float 3;
@@ -121,7 +121,6 @@
 #X obj 45 -92 route 8 9 10 11 12 13 14 15 16 17 18 19 20 21;
 #X obj 45 33 t b b;
 #X floatatom 1103 -37 5 0 0 0 - - -, f 5;
-#X msg 317 -135 4;
 #X connect 7 0 4 0;
 #X connect 8 0 3 0;
 #X connect 9 0 56 1;
@@ -212,5 +211,4 @@
 #X connect 88 14 48 0;
 #X connect 89 0 49 0;
 #X connect 89 1 69 0;
-#X connect 91 0 88 0;
 #X coords 0 609 1 608 130 140 0;

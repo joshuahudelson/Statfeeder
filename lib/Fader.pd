@@ -82,11 +82,15 @@
 #X obj 926 109 s auxfader-\$1;
 #X obj 926 174 s auxknob-\$1;
 #X obj 355 305 r elem-exp-multiplier-\$1;
-#X obj 411 386 r elem-exp-adder-\$1;
+#X obj 450 344 r elem-exp-adder-\$1;
 #X floatatom 301 406 5 0 0 0 - - -, f 5;
-#X obj 385 329 t b f;
 #X obj 305 451 + 0;
 #X obj 369 364 - 0;
+#X floatatom 339 463 5 0 0 0 - - -, f 5;
+#X obj 380 232 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 371 410 5 0 0 0 - - -, f 5;
+#X obj 397 331 t b f;
 #X connect 0 0 8 0;
 #X connect 1 0 41 0;
 #X connect 2 0 4 0;
@@ -177,11 +181,13 @@
 #X connect 77 1 59 0;
 #X connect 78 0 64 0;
 #X connect 78 1 65 0;
-#X connect 82 0 87 0;
-#X connect 83 0 85 0;
-#X connect 83 0 86 1;
-#X connect 84 0 86 0;
+#X connect 82 0 86 0;
+#X connect 83 0 85 1;
+#X connect 83 0 90 0;
+#X connect 84 0 85 0;
+#X connect 85 0 10 0;
 #X connect 85 0 87 0;
-#X connect 85 1 87 1;
-#X connect 86 0 10 0;
-#X connect 87 0 5 1;
+#X connect 86 0 5 1;
+#X connect 86 0 89 0;
+#X connect 90 0 86 0;
+#X connect 90 1 86 1;
