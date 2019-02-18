@@ -14,21 +14,9 @@
 #X obj 601 68 UGen 2 2 5;
 #X obj 22 68 UGen 0 0 3;
 #X obj 314 68 UGen 1 1 4;
-#X msg 1232 422 \; elem-exp-multiplier-0 \$1 \; elem-exp-multiplier-1
-\$2 \; elem-exp-multiplier-2 \$3 \; elem-exp-multiplier-3 \$4 \; elem-exp-multiplier-4
-\$5 \; elem-exp-multiplier-5 \$6 \; elem-exp-adder-0 \$7 \; elem-exp-adder-1
-\$8 \; elem-exp-adder-2 \$9 \; elem-exp-adder-3 \$10 \; elem-exp-adder-4
-\$11 \; elem-exp-adder-5 \$12;
-#X msg 1232 393 351 699 752 1000 1000 1000 6 7 5 0 0 0;
-#X msg 1242 363 80 401 199 1000 1000 1000 6 7 5 0 0 0;
-#X obj 1232 82 sel 49 50 51 52 53 54;
-#X msg 1262 333 100 601 199 1000 1000 1000 6 7 5 0 0 0;
-#X msg 1283 295 400 801 399 1000 1000 1000 6 7 5 0 0 0;
+#X obj 1317 355 s trans_time_pow;
+#X floatatom 1317 304 5 0 0 0 - - -, f 5;
+#X obj 1309 463 s trans_time_add;
+#X floatatom 1331 424 5 0 0 0 - - -, f 5;
 #X connect 15 0 14 0;
-#X connect 16 0 14 0;
-#X connect 17 0 15 0;
-#X connect 17 1 16 0;
-#X connect 17 2 18 0;
-#X connect 17 3 19 0;
-#X connect 18 0 14 0;
-#X connect 19 0 14 0;
+#X connect 17 0 16 0;

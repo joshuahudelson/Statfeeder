@@ -1,4 +1,4 @@
-#N canvas 185 140 1500 791 10;
+#N canvas 67 140 1500 791 10;
 #X obj 49 44 < 8;
 #X obj 49 166 > 15;
 #X obj 49 98 expr (($f1>7)&($f1<15));
@@ -29,7 +29,7 @@
 #X floatatom 793 -2 5 0 0 0 - - -, f 5;
 #X floatatom 913 195 5 0 0 0 - - -, f 5;
 #X obj 561 631 s transexp;
-#X obj 442 631 s transnumtodo;
+#X obj 412 471 s transnumtodo;
 #X obj 853 514 t f b;
 #X floatatom 561 611 5 0 0 0 - - -, f 5;
 #X msg 561 583 set \$1;
@@ -44,11 +44,11 @@
 #X obj 382 71 cnv 15 288 388 empty empty empty 20 12 0 14 -233017 -66577
 0;
 #X obj 385 89 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 5;
+-166441 -262144 0;
 #X obj 385 143 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 5;
+-262144 -262144 0;
 #X obj 385 197 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--166441 -262144 5;
+-262144 -262144 0;
 #X text 388 72 OFF WHIT HALO REED SERP WIND GONG RAYS;
 #X text 388 126 FlUT FLOU CHOR CHR2 WHST HUM HUM2 BACK;
 #X text 388 180 SIRN SIR2 SALT GRND KETL STAT;
@@ -73,6 +73,7 @@
 #X obj 608 428 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
 -228856 -1 -1 0 256;
 #X obj 234 490 r globaltabread;
+#X obj 935 265 r to_global_presets_2;
 #X connect 0 0 5 0;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;
@@ -148,4 +149,5 @@
 #X connect 60 0 24 0;
 #X connect 60 1 57 0;
 #X connect 62 0 61 0;
+#X connect 63 0 31 0;
 #X coords 0 -1 1 1 290 390 2 381 70;
