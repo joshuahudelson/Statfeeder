@@ -1,4 +1,4 @@
-#N canvas 67 87 1853 993 10;
+#N canvas 263 176 1535 727 10;
 #X obj 14 15 cnv 15 1150 640 empty empty empty 20 12 0 14 -191407 -66577
 0;
 #X obj 22 26 Mixer 0 3 0;
@@ -14,9 +14,20 @@
 #X obj 601 68 UGen 2 2 5;
 #X obj 22 68 UGen 0 0 3;
 #X obj 314 68 UGen 1 1 4;
-#X obj 1317 355 s trans_time_pow;
-#X floatatom 1317 304 5 0 0 0 - - -, f 5;
-#X obj 1309 463 s trans_time_add;
-#X floatatom 1331 424 5 0 0 0 - - -, f 5;
+#X obj 1309 405 s trans_time_pow;
+#X floatatom 1309 354 5 0 0 0 - - -, f 5;
+#X floatatom 1309 444 5 0 0 0 - - -, f 5;
+#X obj 1309 561 s trans_time_add;
+#X floatatom 1309 522 5 0 0 0 - - -, f 5;
+#X obj 1309 483 s trans_time_mult;
+#X obj 1309 238 s trans_time_exp;
+#X obj 1309 315 s trans_presets_exp;
+#X floatatom 1309 262 5 0 0 0 - - -, f 5;
+#X floatatom 1309 200 5 0 0 0 - - -, f 5;
+#X obj 1309 290 min 27;
 #X connect 15 0 14 0;
-#X connect 17 0 16 0;
+#X connect 16 0 19 0;
+#X connect 18 0 17 0;
+#X connect 22 0 24 0;
+#X connect 23 0 20 0;
+#X connect 24 0 21 0;

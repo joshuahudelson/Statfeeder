@@ -1,9 +1,9 @@
-#N canvas 45 108 1225 636 10;
+#N canvas 67 108 1225 636 10;
 #X obj 650 534 s gliss-length-exps;
 #X obj 445 534 s gliss-length-elems;
 #X obj 858 534 s gliss-length-sources;
 #X obj 270 4 r init-loadbang;
-#X obj 404 4 r to_gliss_presets;
+#X obj 404 -6 r to_gliss_presets;
 #X msg 270 26 0;
 #X msg 691 340 zero zero zero;
 #X obj 445 422 sel zero gliss;
@@ -41,7 +41,7 @@
 #X text 418 43 0 E/EX/S/ \; 1 */0/0/ \; 2 0/*/0/ \; 3 0/0/*/ \; 4 */*/*
 \; 5 */*/0/ \; 6 0/*/* \; 7 */0/*;
 #X obj 402 158 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
--262144 -1 -1 98.4252 256;
+-262144 -1 -1 1250 256;
 #X connect 3 0 5 0;
 #X connect 3 0 32 0;
 #X connect 4 0 36 0;
