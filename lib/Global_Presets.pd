@@ -1,72 +1,76 @@
 #N canvas 67 87 1853 993 10;
-#X text 1088 583 2 ALL SIG \; 3 ALL SELF;
-#X text 1087 636 6 ONE SELF \; 7 PAIR;
-#X text 1087 662 8 PAIR & NOISE \; 9 PAIR & SIG \;;
-#X text 1080 688 10 PAIR & SELF \; 11 DAISY CHAIN;
-#X text 1087 610 4 ONE NOISE \; 5 ONE SIG;
-#X text 1088 556 0 ALL OFF \; 1 ALL NOISE;
-#X text 1080 714 12 DAISY CHAIN REVERSE;
-#X text 1080 782 17 ORGY;
-#X text 1080 728 13 DC & 0.1 NOISE \; 14 DC & 0.5 SIG;
-#X text 1080 755 15 DC & SELF \; 16 DC & 0.5 SELF;
-#X text 1078 521 FOR REFERENCE: \; SOURCE PRESETS:;
-#X obj 428 11 inlet;
-#X obj 100 82 sel 0 1 2 3 4 8 9 10 11 12, f 38;
-#X text 88 8 Question: do I need to use a counter \; and multiplex
+#X text 1497 670 2 ALL SIG \; 3 ALL SELF;
+#X text 1496 723 6 ONE SELF \; 7 PAIR;
+#X text 1496 749 8 PAIR & NOISE \; 9 PAIR & SIG \;;
+#X text 1489 775 10 PAIR & SELF \; 11 DAISY CHAIN;
+#X text 1496 697 4 ONE NOISE \; 5 ONE SIG;
+#X text 1497 643 0 ALL OFF \; 1 ALL NOISE;
+#X text 1489 801 12 DAISY CHAIN REVERSE;
+#X text 1489 869 17 ORGY;
+#X text 1489 815 13 DC & 0.1 NOISE \; 14 DC & 0.5 SIG;
+#X text 1489 842 15 DC & SELF \; 16 DC & 0.5 SELF;
+#X text 1487 608 FOR REFERENCE: \; SOURCE PRESETS:;
+#X obj 968 64 inlet;
+#X obj 180 82 sel 0 1 2 3 4 8 9 10 11 12, f 38;
+#X text 168 8 Question: do I need to use a counter \; and multiplex
 these \, or are five settings enough? \; Do five settings actually
 center the piece around \; those ratios nicely? \;;
-#X msg 122 594 1 6 7 5 0 0 0 1 1 1 1;
-#X msg 167 478 3 54 55 53 5 5 5 1 1 1 1;
-#X msg 100 623 0 0 0 0 0 0 0 0 0 0 0;
-#X msg 212 420 2 400 600 500 244 359 279 1 1 1 1;
-#X msg 234 391 11 400 401 400 100 7 100 1 1 1 1;
-#X msg 257 362 11 400 80 400 40 70 40 1 1 1 1;
-#X msg 302 304 16 199 99 604 20 99 40 1 1 1 1 0 500;
-#X msg 279 333 10 200 400 601 100 200 100 1 0.5 1 1 0 500;
-#X text 239 624 0 ALL OFF;
-#X text 261 594 1 WHITE;
-#X text 319 536 2 WIND;
-#X text 325 479 3 WHISTLE;
-#X text 364 450 4 GRIND;
-#X text 423 420 5 CHORD;
-#X text 440 392 6 STATIC;
-#X text 451 362 7 SIREN;
-#X text 545 334 8 HUM;
-#X text 532 304 9 HUM 2;
-#X msg 144 536 2 400 400 400 3 3 3 1 1 1 1;
-#X msg 189 449 7 794 0 801 60 0 60 1 0 1 1;
-#X msg 635 201 \; to_source_presets \$1;
-#X msg 30 662 \; to_source_presets \$1 \; fader-0-bypass \$2 \; fader-1-bypass
-\$3 \; fader-2-bypass \$4 \; fader-3-bypass \$5 \; fader-4-bypass \$6
-\; fader-5-bypass \$7 \; ugen0-external-vol \$8 \; ugen1-external-vol
-\$9 \; ugen2-external-vol \$10 \; stereo-mono \$11;
-#X msg 668 159 \; ugen1-external-vol \$1;
-#X msg 635 101 8 0.4;
-#X obj 635 130 unpack;
-#X msg 652 72 14;
-#X msg 670 43 17;
-#X msg 392 668 \; elem-exp-multiplier-0 \$1 \; elem-exp-multiplier-1
-\$2 \; elem-exp-multiplier-2 \$3 \; elem-exp-multiplier-3 \$4 \; elem-exp-multiplier-4
-\$5 \; elem-exp-multiplier-5 \$6 \; elem-exp-adder-0 \$7 \; elem-exp-adder-1
-\$8 \; elem-exp-adder-2 \$9 \; elem-exp-adder-3 \$10 \; elem-exp-adder-4
-\$11 \; elem-exp-adder-5 \$12;
-#X obj 660 450 sel 16 17 18 19 20 21 22 23;
-#X obj 144 507 t b b;
-#X msg 392 525 800 800 800 800 800 800 3 3 3 0 0 0;
-#X msg 679 582 500 600 800 276 350 445 6 7 5 0 0 0;
-#X msg 660 611 400 300 800 999 600 800 6 7 5 0 0 0;
-#X msg 392 583 800 999 800 999 800 999 6 7 5 0 0 0;
-#X obj 122 565 t b b;
-#X text 373 112 EXTRA PRESETS: - DC reverse \; - Pair with Noise \,
+#X msg 202 694 1 6 7 5 0 0 0 1 1 1 1;
+#X msg 247 478 3 54 55 53 5 5 5 1 1 1 1;
+#X msg 180 723 0 0 0 0 0 0 0 0 0 0 0;
+#X msg 292 420 2 400 600 500 244 359 279 1 1 1 1;
+#X msg 314 391 11 400 401 400 100 7 100 1 1 1 1;
+#X msg 337 362 11 400 80 400 40 70 40 1 1 1 1;
+#X msg 382 304 16 199 99 604 20 99 40 1 1 1 1 0 500;
+#X msg 359 333 10 200 400 601 100 200 100 1 0.5 1 1 0 500;
+#X text 319 724 0 ALL OFF;
+#X text 341 694 1 WHITE;
+#X text 399 636 2 WIND;
+#X text 405 479 3 WHISTLE;
+#X text 444 450 4 GRIND;
+#X text 503 420 5 CHORD;
+#X text 520 392 6 STATIC;
+#X text 531 362 7 SIREN;
+#X text 625 334 8 HUM;
+#X text 612 304 9 HUM 2;
+#X msg 224 636 2 400 400 400 3 3 3 1 1 1 1;
+#X msg 269 449 7 794 0 801 60 0 60 1 0 1 1;
+#X msg 1355 261 \; to_source_presets \$1;
+#X msg 1388 219 \; ugen1-external-vol \$1;
+#X msg 1355 161 8 0.4;
+#X obj 1355 190 unpack;
+#X msg 1372 132 14;
+#X msg 1390 103 17;
+#X obj 968 450 sel 16 17 18 19 20 21 22 23;
+#X msg 968 611 400 300 800 999 600 800 6 7 5 0 0 0;
+#X text 1401 143 EXTRA PRESETS: - DC reverse \; - Pair with Noise \,
 vol. 0.4 \; - DC with 0.5 SIG (Chord goes there...) \; - ORGY (siren
 turns to screech) \; \;;
-#X obj 635 22 sel 5 6 7;
+#X obj 1355 82 sel 5 6 7;
+#X msg 987 582 500 600 700 276 350 445 6 7 5 0 0 0;
+#X msg 40 762 \; to_source_presets \$1 \; fader-0-bypass \$2 \; fader-1-bypass
+\$3 \; fader-2-bypass \$4 \; fader-3-bypass \$5 \; fader-4-bypass \$6
+\; fader-5-bypass \$7 \; ugen0-external-vol \$8 \; ugen1-external-vol
+\$9 \; ugen2-external-vol \$10 \; stereo-mono \$11 \; stop_transitions
+bang;
+#X msg 472 768 \; elem-exp-multiplier-0 \$1 \; elem-exp-multiplier-1
+\$2 \; elem-exp-multiplier-2 \$3 \; elem-exp-multiplier-3 \$4 \; elem-exp-multiplier-4
+\$5 \; elem-exp-multiplier-5 \$6 \; pulse_base bang;
+#X msg 664 768 \; elem-exp-adder-0 \$1 \; elem-exp-adder-1 \$2 \; elem-exp-adder-2
+\$3 \; elem-exp-adder-3 \$4 \; elem-exp-adder-4 \$5 \; elem-exp-adder-5
+\$6 \;;
+#X obj 224 607 t b b b;
+#X msg 664 625 3 3 3 0 0 0;
+#X msg 472 625 800 800 800 800 800 800;
+#X msg 664 683 6 7 5 0 0 0;
+#X obj 202 665 t b b b;
+#X msg 473 683 800 999 800 999 800 999;
 #X connect 11 0 12 0;
-#X connect 11 0 42 0;
-#X connect 11 0 50 0;
+#X connect 11 0 40 0;
+#X connect 11 0 43 0;
 #X connect 12 0 16 0;
-#X connect 12 1 48 0;
-#X connect 12 2 43 0;
+#X connect 12 1 52 0;
+#X connect 12 2 48 0;
 #X connect 12 3 15 0;
 #X connect 12 4 33 0;
 #X connect 12 5 17 0;
@@ -74,31 +78,35 @@ turns to screech) \; \;;
 #X connect 12 7 19 0;
 #X connect 12 8 21 0;
 #X connect 12 9 20 0;
-#X connect 14 0 35 0;
-#X connect 15 0 35 0;
-#X connect 16 0 35 0;
-#X connect 17 0 35 0;
-#X connect 18 0 35 0;
-#X connect 19 0 35 0;
-#X connect 20 0 35 0;
-#X connect 21 0 35 0;
-#X connect 32 0 35 0;
-#X connect 33 0 35 0;
-#X connect 37 0 38 0;
+#X connect 14 0 45 0;
+#X connect 15 0 45 0;
+#X connect 16 0 45 0;
+#X connect 17 0 45 0;
+#X connect 18 0 45 0;
+#X connect 19 0 45 0;
+#X connect 20 0 45 0;
+#X connect 21 0 45 0;
+#X connect 32 0 45 0;
+#X connect 33 0 45 0;
+#X connect 36 0 37 0;
+#X connect 37 0 34 0;
+#X connect 37 1 35 0;
 #X connect 38 0 34 0;
-#X connect 38 1 36 0;
 #X connect 39 0 34 0;
-#X connect 40 0 34 0;
-#X connect 42 0 46 0;
-#X connect 42 1 45 0;
-#X connect 43 0 32 0;
-#X connect 43 1 44 0;
-#X connect 44 0 41 0;
-#X connect 45 0 41 0;
-#X connect 46 0 41 0;
-#X connect 47 0 41 0;
-#X connect 48 0 14 0;
-#X connect 48 1 47 0;
-#X connect 50 0 37 0;
-#X connect 50 1 39 0;
-#X connect 50 2 40 0;
+#X connect 40 0 41 0;
+#X connect 40 1 44 0;
+#X connect 41 0 46 0;
+#X connect 43 0 36 0;
+#X connect 43 1 38 0;
+#X connect 43 2 39 0;
+#X connect 44 0 46 0;
+#X connect 48 0 32 0;
+#X connect 48 1 50 0;
+#X connect 48 2 49 0;
+#X connect 49 0 47 0;
+#X connect 50 0 46 0;
+#X connect 51 0 47 0;
+#X connect 52 0 14 0;
+#X connect 52 1 53 0;
+#X connect 52 2 51 0;
+#X connect 53 0 46 0;

@@ -1,4 +1,4 @@
-#N canvas 67 112 1102 678 10;
+#N canvas 412 111 1102 678 10;
 #X floatatom 758 232 5 0 0 0 - - -, f 5;
 #X floatatom 36 65 5 0 0 0 - - -, f 5;
 #X obj 301 322 / 127;
@@ -87,6 +87,7 @@
 -1 -1;
 #X floatatom 371 410 5 0 0 0 - - -, f 5;
 #X obj 397 331 t b f;
+#X obj 429 27 r pulse_base;
 #X connect 0 0 8 0;
 #X connect 1 0 41 0;
 #X connect 2 0 4 0;
@@ -184,3 +185,4 @@
 #X connect 83 0 85 0;
 #X connect 86 0 83 0;
 #X connect 86 1 83 1;
+#X connect 87 0 73 1;

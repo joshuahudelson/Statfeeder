@@ -44,12 +44,12 @@
 0;
 #X obj 33 53 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144 -1
 -1 1;
-#X obj 35 194 nbx 5 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 240.157 256;
-#X text 114 200 RATE;
-#X obj 35 219 nbx 5 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 300 256;
-#X text 114 225 LEAP;
+#X obj 35 165 nbx 5 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
+-262144 -1 -1 1250 256;
+#X text 114 171 RATE;
+#X obj 35 190 nbx 5 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
+-262144 -1 -1 0 256;
+#X text 114 196 LEAP;
 #X text 41 31 WALKER PRESETS;
 #X text 47 52 0 ALL OFF \; 1 ALL WALK \; 2 ELEM \; 3 EXP \; 4 0&2 EXP
 \; 5 1 ELEM \; 6 1 EXP \;;
