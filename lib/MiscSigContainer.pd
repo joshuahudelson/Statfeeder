@@ -1,4 +1,4 @@
-#N canvas 204 226 635 300 10;
+#N canvas 110 226 635 300 10;
 #X obj 104 207 Signal_Output;
 #X obj 104 181 GEM-Center;
 #X obj 234 189 Controller_Input_SF;

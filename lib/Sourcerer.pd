@@ -1,4 +1,4 @@
-#N canvas 86 202 1243 540 10;
+#N canvas 67 202 1243 540 10;
 #X obj 346 8 inlet;
 #X obj 108 444 s source-levels-0;
 #X obj 108 466 s source-levels-1;
@@ -32,7 +32,7 @@
 -1 -1;
 #X msg 345 121 0 0 0 0 0;
 #X msg 345 161 0 0 0 0 0;
-#X obj 13 66 sel 0 1 2 3 4;
+#X obj 13 66 sel 0 1 2 3 4, f 15;
 #X msg 345 141 0 0 0 1 0;
 #X obj 345 444 s source-levels-0;
 #X obj 345 466 s source-levels-1;
@@ -52,13 +52,13 @@
 #X msg 345 311 0 0 1 0 0;
 #X msg 345 351 1 0 0 0 0;
 #X msg 345 331 0 0 0 0 1;
-#X obj 245 66 sel 5 6 7 8 9;
+#X obj 245 66 sel 5 6 7 8 9, f 15;
 #X obj 315 358 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 345 373 0 0 1 0 0;
 #X msg 345 413 1 0 0 0 0;
 #X msg 345 393 0 0 0 1 0;
-#X obj 436 67 sel 10 11 12 13 14;
+#X obj 436 67 sel 10 11 12 13 14, f 21;
 #X obj 436 102 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 576 117 0 0 1 0 0;
@@ -90,7 +90,7 @@
 #X msg 576 372 0 1 0 0.5 0;
 #X msg 576 392 0 0 1 0.5 0;
 #X msg 576 412 1 0 0 0.5 0;
-#X obj 697 67 sel 15 16 17;
+#X obj 697 67 sel 15 16 17, f 14;
 #X text 942 340 15 DC & SELF \; 16 DC & 0.5 SELF;
 #X obj 697 100 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;

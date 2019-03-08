@@ -5,7 +5,7 @@
 #X obj 1065 98 r exp-to-GEM-0;
 #X obj 1065 126 r elem-to-GEM-0;
 #X obj 1065 154 r exp-to-GEM-0;
-#N canvas 67 245 853 379 gemwin 1;
+#N canvas 67 245 853 379 gemwin 0;
 #X obj 67 117 outlet;
 #X obj 67 10 inlet;
 #X obj 67 41 route create;
