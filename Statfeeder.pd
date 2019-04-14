@@ -1,4 +1,4 @@
-#N canvas 190 100 1597 727 10;
+#N canvas 160 150 1597 727 10;
 #X obj 14 15 cnv 15 1150 640 empty empty empty 20 12 0 14 -191407 -66577
 0;
 #X obj 22 26 Mixer 0 3 0;
@@ -21,10 +21,10 @@
 -1 -1;
 #X obj 1275 577 % 12;
 #X obj 1275 616 hradio 20 1 0 12 empty empty empty 0 -8 0 10 -262144
--1 -1 8;
+-1 -1 5;
 #X text 1275 636 C . C# D Eb E. F .F# .G .G# A .Bb .B;
 #X obj 1204 156 hradio 20 1 0 12 empty empty empty 0 -8 0 10 -262144
--1 -1 8;
+-1 -1 5;
 #X obj 1204 287 mtof;
 #X obj 1275 435 expr (44100/$f1);
 #X text 1204 176 C . C# D .Eb. .E. F .F# .G .G# A .Bb .B;

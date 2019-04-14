@@ -24,6 +24,13 @@
 #X obj 367 122 Fader 5 21 37 53 69;
 #X obj 367 144 Fader 6 22 38 54 70;
 #X obj 367 165 Fader 7 23 39 55 71;
+#X obj 604 339 s fader-ramp-time;
+#X obj 604 99 loadbang;
+#X msg 604 128 0;
+#X obj 719 180 sel 0 1;
+#X obj 649 253 f;
+#X obj 715 220 r ramp-time;
+#X obj 722 128 r fader-ramp-time-toggle;
 #X connect 0 0 12 0;
 #X connect 0 1 13 0;
 #X connect 1 0 2 0;
@@ -40,3 +47,10 @@
 #X connect 12 1 10 0;
 #X connect 13 0 3 0;
 #X connect 13 1 10 1;
+#X connect 25 0 26 0;
+#X connect 26 0 24 0;
+#X connect 27 0 26 0;
+#X connect 27 1 28 0;
+#X connect 28 0 24 0;
+#X connect 29 0 28 1;
+#X connect 30 0 27 0;

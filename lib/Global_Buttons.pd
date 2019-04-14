@@ -1,4 +1,4 @@
-#N canvas 324 213 1434 730 10;
+#N canvas 67 213 1434 730 10;
 #X obj 49 43 < 8;
 #X obj 49 155 > 15;
 #X obj 49 97 expr (($f1>7)&($f1<15));
@@ -32,17 +32,17 @@
 #X obj 382 71 cnv 15 288 440 empty empty empty 20 12 0 14 -233017 -66577
 0;
 #X obj 385 89 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 6;
+-262144 -262144 7;
 #X obj 385 143 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 6;
+-262144 -262144 7;
 #X obj 385 197 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 6;
+-166441 -262144 7;
 #X obj 385 348 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 6;
 #X obj 385 401 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 6;
 #X obj 385 454 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--166441 -262144 6;
+-262144 -262144 6;
 #X msg 692 48 color 0 0 0;
 #X msg 697 330 color 0 0 0;
 #X obj 1150 348 r to_secondary_globals;
@@ -55,15 +55,15 @@
 #X obj 392 546 s trans_presets_exp;
 #X obj 392 521 min 27;
 #X obj 392 254 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
--262144 -1 -1 4 256;
+-262144 -1 -1 8 256;
 #X obj 392 300 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
--262144 -1 -1 10 256;
+-262144 -1 -1 8 256;
 #X obj 527 276 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
 -262144 -1 -1 2 256;
 #X obj 463 276 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
--262144 -1 -1 3 256;
+-262144 -1 -1 2 256;
 #X obj 591 276 nbx 3 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
--262144 -1 -1 10 256;
+-262144 -1 -1 60 256;
 #X text 538 259 MULT;
 #X text 469 259 POWER;
 #X text 390 283 TIME EXP;
@@ -96,8 +96,8 @@
 #X obj 857 383 route 0 1 2 3 4 5 6 7;
 #X obj 857 435 route 0 1 2 3 4 5 6 7;
 #X text 389 237 TR PR EXP;
-#X text 394 181 1 . . 2 . . 3 . . 4 . . 5 . . 6 . . 7 . . 8;
-#X text 385 439 SIREN SIRN2 SALT GRIND KETTL STATC GLISS REXP;
+#X text 394 181 1 . . 2 . . 3 . . 4 . . 5 . . 6 . . 7 .GLISS;
+#X text 385 439 SIREN SIRN2 SALT GRIND KETTL STATC REXP GLISS;
 #X connect 0 0 5 0;
 #X connect 1 0 3 0;
 #X connect 2 0 4 0;
