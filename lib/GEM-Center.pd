@@ -1,11 +1,11 @@
-#N canvas 67 109 1270 639 10;
+#N canvas 57 109 1649 639 10;
 #X obj 1065 14 r elem-to-GEM-0;
 #X obj 1065 42 r exp-to-GEM-0;
 #X obj 1065 70 r elem-to-GEM-0;
 #X obj 1065 98 r exp-to-GEM-0;
 #X obj 1065 126 r elem-to-GEM-0;
 #X obj 1065 154 r exp-to-GEM-0;
-#N canvas 67 245 853 379 gemwin 0;
+#N canvas 57 245 853 379 gemwin 1;
 #X obj 67 117 outlet;
 #X obj 67 10 inlet;
 #X obj 67 41 route create;
@@ -30,7 +30,7 @@
 #X connect 10 0 9 0;
 #X restore 1069 332 pd gemwin;
 #X msg 1110 265 destroy;
-#X obj 1055 255 Gem;
+#X obj 1422 46 Gem;
 #X msg 76 532 draw point;
 #X obj 186 368 rotateXYZ;
 #X floatatom 206 314 5 0 0 0 - - -, f 5;

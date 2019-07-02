@@ -1,4 +1,4 @@
-#N canvas 160 150 1597 727 10;
+#N canvas 123 150 1597 727 10;
 #X obj 14 15 cnv 15 1150 640 empty empty empty 20 12 0 14 -191407 -66577
 0;
 #X obj 22 26 Mixer 0 3 0;
@@ -26,18 +26,18 @@
 #X obj 1204 156 hradio 20 1 0 12 empty empty empty 0 -8 0 10 -262144
 -1 -1 5;
 #X obj 1204 287 mtof;
-#X obj 1275 435 expr (44100/$f1);
 #X text 1204 176 C . C# D .Eb. .E. F .F# .G .G# A .Bb .B;
 #X obj 1204 326 expr (44100/$f1);
 #X obj 1204 248 + 36;
 #X text 1315 398 # OF ELEMENTS;
+#X obj 1275 435 expr (44100.0/$f1);
 #X connect 14 0 15 0;
 #X connect 15 0 18 0;
-#X connect 16 0 23 0;
+#X connect 16 0 27 0;
 #X connect 17 0 16 0;
 #X connect 18 0 19 0;
-#X connect 21 0 26 0;
-#X connect 22 0 25 0;
-#X connect 23 0 14 0;
-#X connect 25 0 16 0;
-#X connect 26 0 22 0;
+#X connect 21 0 25 0;
+#X connect 22 0 24 0;
+#X connect 24 0 16 0;
+#X connect 25 0 22 0;
+#X connect 27 0 14 0;

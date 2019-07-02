@@ -1,4 +1,4 @@
-#N canvas 68 279 505 709 10;
+#N canvas 57 279 408 769 10;
 #X obj 117 278 translateXYZ, f 16;
 #X obj 144 249 line;
 #X obj 213 249 line;
