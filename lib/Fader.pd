@@ -1,4 +1,4 @@
-#N canvas 224 111 1102 850 10;
+#N canvas 187 111 1102 850 10;
 #X floatatom 788 322 5 0 0 0 - - -, f 5;
 #X floatatom 66 152 5 0 0 0 - - -, f 5;
 #X obj 331 412 / 127;
@@ -69,7 +69,7 @@
 #X obj 66 495 r ctl-\$5;
 #X obj 156 87 r init-loadbang;
 #X floatatom 176 414 5 0 0 0 - - -, f 5;
-#X floatatom 529 176 5 0 0 0 - - -, f 5;
+#X floatatom 225 250 5 0 0 0 - - -, f 5;
 #X obj 333 705 s fadertrim-\$1;
 #X floatatom 364 216 5 0 0 0 - - -, f 5;
 #X obj 331 307 Gate;
@@ -92,6 +92,7 @@
 #X obj 65 320 route 0;
 #X obj 66 525 route 0;
 #X floatatom 781 155 5 0 0 0 - - -, f 5;
+#X msg 316 54 0;
 #X connect 0 0 8 0;
 #X connect 1 0 41 0;
 #X connect 2 0 4 0;
@@ -171,6 +172,7 @@
 #X connect 66 0 89 0;
 #X connect 67 0 90 0;
 #X connect 68 0 51 0;
+#X connect 68 0 92 0;
 #X connect 72 0 77 0;
 #X connect 72 0 73 1;
 #X connect 73 0 2 0;
@@ -194,3 +196,4 @@
 #X connect 88 1 1 0;
 #X connect 89 1 54 0;
 #X connect 90 1 60 0;
+#X connect 92 0 45 0;
