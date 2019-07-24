@@ -1,4 +1,4 @@
-#N canvas 1031 185 886 817 10;
+#N canvas 82 111 1764 193 10;
 #X msg 249 70 destroy;
 #X obj 1462 59 Gem;
 #X obj 41 678 gemhead;
@@ -74,7 +74,7 @@
 #X obj 1240 430 s circle_distance;
 #X obj 1240 84 loadbang;
 #X obj 1240 142 nbx 4 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-25 -262144 -1 -1 1 256;
+25 -262144 -1 -1 0 256;
 #X text 1270 114 SIZE;
 #X obj 1240 183 s sphere_size_actual;
 #X msg 1310 113 set \$1;
@@ -94,7 +94,7 @@
 #X obj 1240 568 s speed;
 #X obj 1240 469 loadbang;
 #X obj 30 440 s lin_or_pol_motion;
-#X obj 30 414 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 30 414 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 30 356 loadbang;
 #X msg 30 385 0;
@@ -144,9 +144,9 @@
 #X obj 1240 251 nbx 4 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 25 -262144 -1 -1 0 256;
 #X obj 1240 389 nbx 2 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-25 -262144 -1 -1 2.45 256;
+25 -262144 -1 -1 0 256;
 #X obj 1240 527 nbx 4 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-25 -262144 -1 -1 1000 256;
+25 -262144 -1 -1 0 256;
 #X obj 1147 451 r fadertrim-3;
 #X obj 1195 55 r fadertrim-0;
 #X obj 1147 175 r fadertrim-1;
@@ -212,6 +212,19 @@
 #X text 361 71 attach to red button;
 #X obj 171 736 the_scope 1;
 #X obj 301 736 the_scope 2;
+#X msg 1468 476 0;
+#X obj 1610 505 line;
+#X obj 1617 583 * 2;
+#X obj 1522 369 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1468 526 s circle_distance;
+#X obj 1382 525 s to_trader2;
+#X msg 1388 463 1;
+#X obj 1520 411 t b b b;
+#X obj 1650 579 * 1.5;
+#X obj 1576 556 log;
+#X obj 1560 586 * 3.14;
+#X msg 1592 457 0 \, 1 10000;
 #X connect 0 0 10 0;
 #X connect 2 0 153 0;
 #X connect 3 0 8 0;
@@ -360,3 +373,17 @@
 #X connect 161 1 75 0;
 #X connect 161 2 77 0;
 #X connect 161 3 162 0;
+#X connect 166 0 170 0;
+#X connect 167 0 175 0;
+#X connect 167 0 168 0;
+#X connect 167 0 174 0;
+#X connect 168 0 104 0;
+#X connect 169 0 173 0;
+#X connect 172 0 171 0;
+#X connect 173 0 177 0;
+#X connect 173 1 166 0;
+#X connect 173 2 172 0;
+#X connect 174 0 47 0;
+#X connect 175 0 176 0;
+#X connect 176 0 103 0;
+#X connect 177 0 167 0;
