@@ -1,0 +1,102 @@
+#N canvas 376 132 1326 655 10;
+#X obj 300 212 textfile;
+#X obj 300 162 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 369 183 rewind;
+#X obj 422 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 369 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 475 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 369 273 symbol;
+#X obj 342 144 t b b;
+#X obj 300 241 unpack f f s;
+#X obj 233 470 ==;
+#X obj 233 574 s start-instruction;
+#X obj 324 516 s end-instruction;
+#X obj 319 329 -;
+#X obj 319 358 abs;
+#X obj 304 477 del;
+#X obj 233 528 t b b;
+#X obj 292 280 t f f;
+#X obj 233 499 sel 1;
+#X text 366 347 This should LOAD next values \; for instruction;
+#X text 431 518 Probably not used much;
+#X text 358 576 Triggers instruction;
+#X obj 304 545 s trigger_next_textline;
+#X obj 300 95 r trigger_next_textline;
+#X obj 248 329 * 1000;
+#X obj 248 358 / 50;
+#X obj 248 387 int;
+#X msg 418 194 read \$1;
+#X obj 418 165 openpanel;
+#X floatatom 248 416 5 0 0 0 - - -, f 5;
+#X floatatom 319 387 5 0 0 0 - - -, f 5;
+#X obj 528 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 418 18 inlet;
+#X obj 342 18 inlet;
+#X obj 233 18 inlet;
+#X obj 369 302 sel FadeIn Turn180 Vertical;
+#X obj 178 566 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 485 485 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 319 427 * 1000;
+#X text 759 105 Make the label time difference a variable. Use it to
+determine speed of the movements.;
+#X text 771 179 Faders and Buttons: send to them \, lay them out here
+with comments showing what they control. That's probably the quickest
+and easiest way.;
+#X obj 1042 443 sel -1;
+#X floatatom 1103 501 5 0 0 0 - - -, f 5;
+#X msg 1045 401 -1;
+#X msg 986 389 1;
+#X msg 1095 397 -2;
+#X obj 1013 485 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 1013 364 "Don't do anything" preset command == -1;
+#X text 508 427 Why isn't the start-instruction thing working correctly?
+;
+#X connect 0 0 8 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 6 0 34 0;
+#X connect 7 0 1 0;
+#X connect 7 1 2 0;
+#X connect 8 0 16 0;
+#X connect 8 1 12 1;
+#X connect 8 2 6 0;
+#X connect 9 0 17 0;
+#X connect 12 0 13 0;
+#X connect 13 0 29 0;
+#X connect 14 0 11 0;
+#X connect 14 0 21 0;
+#X connect 14 0 36 0;
+#X connect 15 0 10 0;
+#X connect 15 0 35 0;
+#X connect 16 0 23 0;
+#X connect 16 1 12 0;
+#X connect 17 0 15 0;
+#X connect 22 0 1 0;
+#X connect 23 0 24 0;
+#X connect 24 0 25 0;
+#X connect 25 0 28 0;
+#X connect 26 0 0 0;
+#X connect 27 0 26 0;
+#X connect 28 0 9 1;
+#X connect 29 0 37 0;
+#X connect 31 0 27 0;
+#X connect 32 0 7 0;
+#X connect 33 0 9 0;
+#X connect 34 0 4 0;
+#X connect 34 1 3 0;
+#X connect 34 2 5 0;
+#X connect 34 3 30 0;
+#X connect 37 0 14 0;
+#X connect 40 0 45 0;
+#X connect 40 1 41 0;
+#X connect 42 0 40 0;
+#X connect 43 0 40 0;
+#X connect 44 0 40 0;
