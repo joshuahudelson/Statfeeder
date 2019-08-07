@@ -1,4 +1,4 @@
-#N canvas 57 122 1714 655 10;
+#N canvas 57 376 1714 655 10;
 #X obj 300 212 textfile;
 #X obj 300 162 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -35,19 +35,8 @@
 #X obj 319 427 * 1000;
 #X text 541 71 Make the label time difference a variable. Use it to
 determine speed of the movements.;
-#X text 771 179 Faders and Buttons: send to them \, lay them out here
-with comments showing what they control. That's probably the quickest
-and easiest way.;
-#X obj 1466 544 sel -1;
-#X floatatom 1527 602 5 0 0 0 - - -, f 5;
-#X msg 1469 502 -1;
-#X msg 1410 490 1;
-#X msg 1519 498 -2;
-#X obj 1437 586 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X text 1437 465 "Don't do anything" preset command == -1;
 #X floatatom 233 205 5 0 0 0 - - -, f 5;
-#X obj 452 357 instructor;
+#X obj 626 360 outlet;
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
@@ -55,7 +44,7 @@ and easiest way.;
 #X connect 3 1 2 0;
 #X connect 4 0 12 0;
 #X connect 4 1 8 1;
-#X connect 4 2 41 0;
+#X connect 4 2 33 0;
 #X connect 5 0 13 0;
 #X connect 8 0 9 0;
 #X connect 9 0 24 0;
@@ -78,11 +67,6 @@ and easiest way.;
 #X connect 24 0 30 0;
 #X connect 25 0 22 0;
 #X connect 26 0 3 0;
-#X connect 27 0 40 0;
+#X connect 27 0 32 0;
 #X connect 30 0 10 1;
-#X connect 33 0 38 0;
-#X connect 33 1 34 0;
-#X connect 35 0 33 0;
-#X connect 36 0 33 0;
-#X connect 37 0 33 0;
-#X connect 40 0 5 0;
+#X connect 32 0 5 0;
