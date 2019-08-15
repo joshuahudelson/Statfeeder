@@ -1,10 +1,10 @@
 #N canvas 57 87 1863 993 10;
 #X msg 530 229 destroy;
-#X obj 1511 39 Gem;
+#X obj 1574 40 Gem;
 #X obj 11 498 gemhead;
 #X obj 149 121 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1206 802 dac~;
+#X obj 1188 846 dac~;
 #N canvas 57 317 853 379 gemwin 0;
 #X obj 67 117 outlet;
 #X obj 67 10 inlet;
@@ -37,19 +37,19 @@
 #X obj 175 773 % 4;
 #X obj 142 679 r to_trader1;
 #X obj 175 744 r to_trader2;
-#X obj 1125 753 r~ channel0;
-#X obj 1206 753 r~ channel1;
-#X obj 1287 753 r~ channel2;
-#X obj 1286 778 *~ 0.666;
-#X obj 1125 776 *~ 0.666;
-#X obj 1207 776 *~ 0.3;
-#X obj 1565 597 s amplitude0;
-#X obj 1611 578 s amplitude1;
-#X obj 1658 559 s amplitude2;
+#X obj 1107 797 r~ channel0;
+#X obj 1188 797 r~ channel1;
+#X obj 1269 797 r~ channel2;
+#X obj 1268 822 *~ 0.666;
+#X obj 1107 820 *~ 0.666;
+#X obj 1189 820 *~ 0.3;
+#X obj 1490 744 s amplitude0;
+#X obj 1536 725 s amplitude1;
+#X obj 1583 706 s amplitude2;
 #X obj 1381 172 s toggle_amp;
 #X msg 1381 143 1;
 #X obj 1381 114 loadbang;
-#X obj 1565 540 amplitude_slider;
+#X obj 1490 687 amplitude_slider;
 #X msg 416 538 draw point;
 #X obj 416 509 loadbang;
 #X text 1380 96 MAP AMPS LIN/EXP;
@@ -64,7 +64,7 @@
 #X obj 1012 369 s wiggle_sphere1;
 #X obj 1032 350 s wiggle_sphere2;
 #X obj 16 445 s lin_or_pol_motion;
-#X obj 16 419 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 16 419 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 16 361 loadbang;
 #X msg 16 390 0;
@@ -141,7 +141,7 @@
 #X text 943 596 STAY-TIME OF POINTS;
 #X obj 955 615 r fadertrim-6;
 #X obj 645 833 big_circle_sfgem, f 52;
-#X obj 1416 771 controller_stuff_sfgem;
+#X obj 1158 760 controller_stuff_sfgem;
 #X msg 175 266 set \$1;
 #X msg 142 266 set \$1;
 #X floatatom 142 309 5 0 0 0 - - -, f 5;
@@ -199,7 +199,7 @@
 -262144 -1 -1 0 256;
 #X obj 857 238 nbx 3 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
 -262144 -1 -1 0 256;
-#X obj 1000 91 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 1000 91 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 989 72 LIN/POL;
 #X text 654 220 BIG CIRCLE SIZE;
@@ -227,7 +227,7 @@
 #X floatatom 505 508 5 0 0 0 - - -, f 5;
 #X msg 555 505 set \$1;
 #X obj 784 135 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 8000 256;
+-262144 -1 -1 0 256;
 #X text 726 142 STAY TIME;
 #X floatatom 955 749 5 0 0 0 - - -, f 5;
 #X msg 955 720 set \$1;
@@ -274,14 +274,14 @@
 #X obj 1389 247 r circle_size_inst;
 #X obj 1420 356 r spin_inst;
 #X obj 1427 441 r circle_distance_inst;
-#X obj 1285 637 r speeds;
-#X obj 1285 702 s speed_0;
-#X obj 1295 682 s speed_1;
-#X obj 1305 662 s speed_2;
-#X obj 1402 637 r circle_distances;
-#X obj 1402 704 s circle_distance_0;
-#X obj 1412 684 s circle_distance_1;
-#X obj 1426 664 s circle_distance_2;
+#X obj 1250 625 r speeds;
+#X obj 1250 690 s speed_0;
+#X obj 1260 670 s speed_1;
+#X obj 1270 650 s speed_2;
+#X obj 1533 500 r circle_distances;
+#X obj 1533 567 s circle_distance_0;
+#X obj 1543 547 s circle_distance_1;
+#X obj 1557 527 s circle_distance_2;
 #X obj 1250 415 s spins_all;
 #X obj 1250 500 s circle_distances;
 #X obj 1250 596 s speeds;
