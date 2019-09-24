@@ -1,6 +1,7 @@
-#N canvas 1450 677 516 342 10;
+#N canvas 1367 677 516 342 10;
 #X obj 24 65 GEM-Center_sfgem;
-#X msg 35 5 FadeIn;
 #X msg 94 4 Turn180;
+#X text 208 14 BigC Freq/Diff: 349 \, 131 or 70;
+#X msg 35 5 Reset;
 #X connect 1 0 0 0;
-#X connect 2 0 0 0;
+#X connect 3 0 0 0;
