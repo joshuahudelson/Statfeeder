@@ -1,0 +1,114 @@
+#N canvas 925 387 880 602 10;
+#X obj 65 28 inlet;
+#X obj 150 28 inlet;
+#X obj 245 28 inlet;
+#X obj 330 28 inlet;
+#X obj 425 28 inlet;
+#X obj 65 508 outlet;
+#X obj 393 491 outlet;
+#X msg 573 240 destroy;
+#X obj 192 132 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#N canvas 57 317 853 379 gemwin 0;
+#X obj 67 117 outlet;
+#X obj 67 10 inlet;
+#X obj 67 41 route create;
+#X msg 67 90 set destroy;
+#X msg 203 62 set create;
+#X msg 172 227 destroy \, reset;
+#X obj 322 300 outlet;
+#X msg 364 54 dimen 683 384 \, create \, 1;
+#X obj 322 260 gemwin;
+#X msg 232 162 dimen 1366 768 \, create \, 1;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 0 9 0;
+#X connect 2 1 4 0;
+#X connect 2 1 5 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 8 0;
+#X connect 8 0 6 0;
+#X connect 9 0 8 0;
+#X restore 573 269 pd gemwin;
+#X obj 128 132 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 573 199 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 59 416 s lin_or_pol_motion;
+#X obj 59 390 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 59 332 loadbang;
+#X msg 59 361 0;
+#X obj 350 209 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
+-262144 -1 -1 0 256;
+#X obj 491 132 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 397 404 1;
+#X obj 350 180 timer_sfgem;
+#X obj 350 250 instruction_reader_sfgem;
+#X obj 257 132 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 128 203 soundfile_player_sfgem;
+#X text 126 113 NOISE;
+#X text 179 113 OPEN REC;
+#X text 246 113 PLAY REC;
+#X text 471 115 OPEN LABELS;
+#X text 58 313 LINEAR/POLAR;
+#X text 563 181 GEM WIN;
+#X obj 59 127 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 51 459 set \$1;
+#X obj 96 387 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 96 358 r sbutton-6;
+#X obj 350 139 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 435 184 1;
+#X obj 401 140 t b b b b;
+#X msg 452 162 0;
+#X obj 350 320 instructor;
+#X msg 500 302 Reset;
+#X obj 407 291 inlet;
+#X text 389 273 To Test Presets;
+#X obj 177 372 r lin_or_pol_inst;
+#X obj 510 28 inlet;
+#X obj 605 28 inlet;
+#X obj 671 32 inlet;
+#X connect 0 0 17 0;
+#X connect 1 0 8 0;
+#X connect 2 0 11 0;
+#X connect 3 0 35 0;
+#X connect 4 0 10 0;
+#X connect 7 0 9 0;
+#X connect 8 0 22 1;
+#X connect 9 0 7 0;
+#X connect 10 0 22 0;
+#X connect 11 0 7 0;
+#X connect 13 0 12 0;
+#X connect 13 0 30 0;
+#X connect 14 0 15 0;
+#X connect 15 0 13 0;
+#X connect 16 0 20 0;
+#X connect 17 0 20 2;
+#X connect 18 0 6 0;
+#X connect 19 0 16 0;
+#X connect 20 0 37 0;
+#X connect 21 0 22 2;
+#X connect 29 0 13 0;
+#X connect 30 0 5 0;
+#X connect 31 0 13 0;
+#X connect 32 0 31 0;
+#X connect 33 0 19 0;
+#X connect 34 0 33 0;
+#X connect 35 0 18 0;
+#X connect 35 1 20 1;
+#X connect 35 2 34 0;
+#X connect 35 3 36 0;
+#X connect 36 0 33 0;
+#X connect 38 0 37 1;
+#X connect 39 0 37 1;
+#X connect 41 0 13 0;
+#X connect 42 0 21 0;
+#X connect 43 0 29 0;
+#X connect 44 0 38 0;
