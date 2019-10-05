@@ -1,4 +1,4 @@
-#N canvas 571 240 826 570 10;
+#N canvas 460 240 826 570 10;
 #X obj 136 510 scopeXYZ;
 #X obj 150 356 *~;
 #X obj 184 398 *~;

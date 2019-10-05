@@ -1,4 +1,4 @@
-#N canvas 925 387 880 602 10;
+#N canvas 740 387 880 602 10;
 #X obj 65 28 inlet;
 #X obj 150 28 inlet;
 #X obj 245 28 inlet;
@@ -36,7 +36,7 @@
 #X obj 573 199 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 59 416 s lin_or_pol_motion;
-#X obj 59 390 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 59 390 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 59 332 loadbang;
 #X msg 59 361 0;
@@ -56,7 +56,7 @@
 #X text 471 115 OPEN LABELS;
 #X text 58 313 LINEAR/POLAR;
 #X text 563 181 GEM WIN;
-#X obj 59 127 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 59 127 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X msg 51 459 set \$1;
 #X obj 96 387 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -69,7 +69,7 @@
 #X msg 452 162 0;
 #X obj 350 320 instructor;
 #X msg 500 302 Reset;
-#X obj 407 291 inlet;
+#X obj 755 31 inlet;
 #X text 389 273 To Test Presets;
 #X obj 177 372 r lin_or_pol_inst;
 #X obj 510 28 inlet;
