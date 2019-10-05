@@ -1,7 +1,5 @@
-#N canvas 1241 611 626 443 10;
-#X obj 24 65 GEM-Center_sfgem;
-#X msg 94 4 Turn180;
-#X text 208 14 BigC Freq/Diff: 349 \, 131 or 70;
-#X msg 35 5 Reset;
-#X connect 1 0 0 0;
-#X connect 3 0 0 0;
+#N canvas 929 894 961 169 10;
+#X obj 4 3 GEM-Center_sfgem;
+#X msg 721 34 Turn180;
+#X text 713 5 BigC Freq/Diff: 349 \, 131 or 70;
+#X msg 721 58 Reset;
