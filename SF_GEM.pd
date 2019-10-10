@@ -1,6 +1,6 @@
-#N canvas 892 894 961 169 10;
+#N canvas 222 730 1611 169 10;
 #X obj 4 3 GEM-Center_sfgem;
-#X msg 721 34 Turn180;
-#X text 713 5 BigC Freq/Diff: 349 \, 131 or 70;
-#X msg 721 58 Reset;
-#X text 720 86 comment;
+#X msg 1371 54 Turn180;
+#X text 1363 25 BigC Freq/Diff: 349 \, 131 or 70;
+#X msg 1371 78 Reset;
+#X text 1370 106 comment;
