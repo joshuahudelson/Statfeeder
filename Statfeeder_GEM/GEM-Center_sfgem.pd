@@ -1,4 +1,4 @@
-#N canvas 64 337 1848 601 10;
+#N canvas 241 385 2172 601 10;
 #X obj 1766 18 Gem;
 #X obj 135 436 dac~;
 #X obj 54 387 r~ channel0;
@@ -23,12 +23,12 @@
 #X obj 251 131 cnv 15 1099 158 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 779 262 hradio 20 1 0 7 empty empty empty 0 -8 0 10 -262144
--1 -1 3;
+-1 -1 6;
 #X obj 698 262 hradio 20 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 2;
 #X obj 331 151 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 515 151 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 515 151 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 576 151 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -53,17 +53,17 @@
 -262144 -1 -1 0 256;
 #X obj 502 257 nbx 3 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
 -262144 -1 -1 0 256;
-#X obj 640 151 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 640 151 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X text 631 132 LIN/POL;
 #X text 417 239 BIG C FREQ;
 #X text 488 240 BIG C FREQ DIFF;
 #X obj 261 203 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 1.5 256;
+-262144 -1 -1 1 256;
 #X obj 521 203 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
 -262144 -1 -1 0 256;
 #X obj 391 203 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 2 256;
+-262144 -1 -1 1 256;
 #X text 721 247 SWAP;
 #X text 808 245 TRADER PRESETS;
 #X text 284 185 SIZE;
@@ -73,7 +73,7 @@
 -262144 -1 -1 0 256;
 #X text 586 239 STAY TIME;
 #X obj 704 151 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 10000 256;
+-262144 -1 -1 8175 256;
 #X text 716 131 STAY TIME;
 #X obj 1351 133 r sbutton-0;
 #X obj 1422 133 r sbutton-1;
@@ -86,9 +86,9 @@
 -1 -1;
 #X text 839 139 RESET;
 #X obj 896 401 t b b b;
-#X obj 75 110 inlet;
+#X obj 158 60 inlet;
 #X obj 340 257 nbx 3 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 0.5 256;
+-262144 -1 -1 0 256;
 #X text 339 239 BIG C AMP;
 #X text 262 239 BIG C SIZE;
 #X obj 16 282 big_circle_features_router_sfgem;
@@ -97,63 +97,63 @@
 #X obj 110 239 t a;
 #X obj 157 239 t a;
 #X obj 207 239 t a;
-#X obj 698 478 swap_trader_presets_router_sfgem;
+#X obj 689 492 swap_trader_presets_router_sfgem;
 #X obj 704 514 stay_time_translator_rotator_router_sfgem;
 #X obj 18 181 new_buttons_router_sfgem;
 #X obj 827 422 t a;
 #X obj 16 133 t a;
 #X obj 157 133 t a;
 #X obj 1044 198 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 700 256;
 #X obj 1044 212 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 700 256;
 #X obj 1044 226 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 700 256;
 #X obj 1174 198 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 700 256;
 #X obj 1174 212 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 700 256;
 #X obj 1174 226 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 700 256;
 #X obj 961 203 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 0 256;
+-262144 -1 -1 700 256;
 #X text 966 186 SIZE SPEED;
 #X obj 1091 203 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-25 -262144 -1 -1 0 256;
+25 -262144 -1 -1 700 256;
 #X obj 1304 198 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 700 256;
 #X obj 1304 212 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 700 256;
 #X obj 1304 226 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-10 -262144 -1 -1 0 256;
+10 -262144 -1 -1 700 256;
 #X obj 1221 203 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-25 -262144 -1 -1 0 256;
+25 -262144 -1 -1 700 256;
 #X text 1088 185 DISTANCE SPEED;
 #X text 1231 185 SPIN SPEED;
 #X obj 784 198 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 700 256;
 #X obj 784 212 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 700 256;
 #X obj 784 226 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 700 256;
 #X obj 701 203 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 1000 256;
+-262144 -1 -1 700 256;
 #X text 1485 360 big c size speed 1 \; big c amp speed 1 \; big c diff
 speed 1 \; --12 \; more? \; wiggle stuff... \; wiggle speed \, craziness
 \; 2 \;;
 #X text 706 186 SPEEDS;
 #X obj 344 198 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 344 212 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 344 226 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 474 198 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 474 212 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 474 226 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 1 256;
 #X obj 604 198 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
 #X obj 604 212 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
@@ -174,15 +174,10 @@ speed 1 \; --12 \; more? \; wiggle stuff... \; wiggle speed \, craziness
 #X obj 344 42 r size_0_2pnl;
 #X obj 344 62 r size_1_2pnl;
 #X obj 344 82 r size_2_2pnl;
-#X obj 391 22 r distance_all_2pnl;
-#X obj 474 42 r distance_0_2pnl;
-#X obj 474 62 r distance_1_2pnl;
-#X obj 474 82 r distance_2_2pnl;
 #X obj 521 22 r spin_all_2pnl;
 #X obj 604 42 r spin_0_2pnl;
 #X obj 604 62 r spin_1_2pnl;
 #X obj 604 82 r spin_2_2pnl;
-#X obj 701 22 r speeds_all_2pnl;
 #X obj 784 42 r speeds_0_2pnl;
 #X obj 784 62 r speeds_1_2pnl;
 #X obj 784 82 r speeds_2_2pnl;
@@ -199,13 +194,13 @@ speed 1 \; --12 \; more? \; wiggle stuff... \; wiggle speed \, craziness
 #X obj 1304 62 r spin_spd_1_2pnl;
 #X obj 1304 82 r spin_spd_2_2pnl;
 #X obj 914 198 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 700 256;
 #X obj 914 212 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 700 256;
 #X obj 914 226 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 700 256;
 #X obj 831 203 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 0 256;
+-262144 -1 -1 700 256;
 #X text 841 185 LOC SPEED;
 #X obj 831 22 r loc_spd_all_2pnl;
 #X obj 914 42 r loc_spd_0_2pnl;
@@ -215,15 +210,19 @@ speed 1 \; --12 \; more? \; wiggle stuff... \; wiggle speed \, craziness
 #X obj 914 331 s location_speed_1;
 #X obj 914 351 s location_speed_2;
 #X obj 1174 311 s distance_speed_0;
-#X obj 1174 331 s distance_speed_0;
-#X obj 1174 351 s distance_speed_0;
 #X obj 474 321 s distance_0;
 #X obj 474 341 s distance_1;
 #X obj 474 361 s distance_2;
 #X obj 1044 311 s size_speed_0;
 #X obj 1044 331 s size_speed_1;
 #X obj 1044 351 s size_speed_2;
-#X text 1386 247 GIVE ALL NEW NAMES TO THE PRESET RECEIVER...;
+#X obj 1174 331 s distance_speed_1;
+#X obj 1174 351 s distance_speed_2;
+#X obj 474 42 r dist_0_2pnl;
+#X obj 474 62 r dist_1_2pnl;
+#X obj 474 82 r dist_2_2pnl;
+#X obj 391 22 r dist_all_2pnl;
+#X obj 701 22 r speeds_all_2pnl;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
 #X connect 4 0 5 0;
@@ -290,12 +289,12 @@ speed 1 \; --12 \; more? \; wiggle stuff... \; wiggle speed \, craziness
 #X connect 80 0 22 0;
 #X connect 81 0 41 0;
 #X connect 82 0 26 0;
-#X connect 83 0 169 0;
-#X connect 84 0 170 0;
-#X connect 85 0 171 0;
-#X connect 86 0 163 0;
-#X connect 87 0 164 0;
-#X connect 88 0 165 0;
+#X connect 83 0 162 0;
+#X connect 84 0 163 0;
+#X connect 85 0 164 0;
+#X connect 86 0 158 0;
+#X connect 87 0 165 0;
+#X connect 88 0 166 0;
 #X connect 89 0 83 0;
 #X connect 89 0 84 0;
 #X connect 89 0 85 0;
@@ -312,30 +311,30 @@ speed 1 \; --12 \; more? \; wiggle stuff... \; wiggle speed \, craziness
 #X connect 98 0 86 0;
 #X connect 98 0 92 0;
 #X connect 98 0 113 0;
-#X connect 98 0 151 0;
+#X connect 98 0 146 0;
 #X connect 99 0 84 0;
 #X connect 99 0 87 0;
 #X connect 99 0 93 0;
 #X connect 99 0 114 0;
-#X connect 99 0 152 0;
+#X connect 99 0 147 0;
 #X connect 100 0 85 0;
 #X connect 100 0 88 0;
 #X connect 100 0 94 0;
 #X connect 100 0 115 0;
-#X connect 100 0 153 0;
+#X connect 100 0 148 0;
 #X connect 101 0 98 0;
 #X connect 101 0 99 0;
 #X connect 101 0 100 0;
 #X connect 101 0 89 0;
 #X connect 101 0 91 0;
 #X connect 101 0 95 0;
-#X connect 101 0 154 0;
+#X connect 101 0 149 0;
 #X connect 104 0 8 0;
 #X connect 105 0 9 0;
 #X connect 106 0 10 0;
-#X connect 107 0 166 0;
-#X connect 108 0 167 0;
-#X connect 109 0 168 0;
+#X connect 107 0 159 0;
+#X connect 108 0 160 0;
+#X connect 109 0 161 0;
 #X connect 110 0 116 0;
 #X connect 111 0 117 0;
 #X connect 112 0 118 0;
@@ -343,38 +342,38 @@ speed 1 \; --12 \; more? \; wiggle stuff... \; wiggle speed \, craziness
 #X connect 124 0 104 0;
 #X connect 125 0 105 0;
 #X connect 126 0 106 0;
-#X connect 127 0 47 0;
-#X connect 128 0 107 0;
-#X connect 129 0 108 0;
-#X connect 130 0 109 0;
-#X connect 131 0 46 0;
-#X connect 132 0 110 0;
-#X connect 133 0 111 0;
-#X connect 134 0 112 0;
-#X connect 135 0 101 0;
-#X connect 136 0 98 0;
-#X connect 137 0 99 0;
-#X connect 138 0 100 0;
-#X connect 139 0 89 0;
-#X connect 140 0 83 0;
-#X connect 141 0 84 0;
-#X connect 142 0 85 0;
-#X connect 143 0 91 0;
-#X connect 144 0 86 0;
-#X connect 145 0 87 0;
-#X connect 146 0 88 0;
-#X connect 147 0 95 0;
-#X connect 148 0 92 0;
-#X connect 149 0 93 0;
-#X connect 150 0 94 0;
-#X connect 151 0 160 0;
-#X connect 152 0 161 0;
-#X connect 153 0 162 0;
-#X connect 154 0 151 0;
-#X connect 154 0 152 0;
-#X connect 154 0 153 0;
-#X connect 156 0 154 0;
-#X connect 157 0 151 0;
-#X connect 158 0 152 0;
-#X connect 159 0 153 0;
+#X connect 127 0 46 0;
+#X connect 128 0 110 0;
+#X connect 129 0 111 0;
+#X connect 130 0 112 0;
+#X connect 131 0 98 0;
+#X connect 132 0 99 0;
+#X connect 133 0 100 0;
+#X connect 134 0 89 0;
+#X connect 135 0 83 0;
+#X connect 136 0 84 0;
+#X connect 137 0 85 0;
+#X connect 138 0 91 0;
+#X connect 139 0 86 0;
+#X connect 140 0 87 0;
+#X connect 141 0 88 0;
+#X connect 142 0 95 0;
+#X connect 143 0 92 0;
+#X connect 144 0 93 0;
+#X connect 145 0 94 0;
+#X connect 146 0 155 0;
+#X connect 147 0 156 0;
+#X connect 148 0 157 0;
+#X connect 149 0 146 0;
+#X connect 149 0 147 0;
+#X connect 149 0 148 0;
+#X connect 151 0 149 0;
+#X connect 152 0 146 0;
+#X connect 153 0 147 0;
+#X connect 154 0 148 0;
+#X connect 167 0 107 0;
+#X connect 168 0 108 0;
+#X connect 169 0 109 0;
+#X connect 170 0 47 0;
+#X connect 171 0 101 0;
 #X coords 0 -1 1 1 1100 160 2 250 130;
