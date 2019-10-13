@@ -1,4 +1,4 @@
-#N canvas 212 687 1574 642 10;
+#N canvas 175 438 1574 642 10;
 #X obj 130 865 translateXYZ, f 16;
 #X obj 130 45 inlet;
 #X obj 1345 883 outlet;
@@ -31,7 +31,7 @@
 #X obj 1028 580 cos;
 #X obj 1089 580 sin;
 #X obj 1415 116 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X obj 161 836 *;
 #X obj 161 780 t b f;
 #X obj 192 804 t b f;
@@ -44,16 +44,16 @@
 #X obj 257 608 *;
 #X obj 1026 245 unpack;
 #X obj 257 818 spigot;
-#X obj 290 783 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 290 783 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 367 818 spigot;
 #X obj 1028 818 spigot;
 #X obj 1061 783 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X obj 1089 818 spigot;
 #X obj 1122 783 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
-#X obj 401 783 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1 1;
+#X obj 401 783 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 1415 590 1 0;
 #X msg 1443 590 0 1;
@@ -78,7 +78,7 @@
 #X obj 1612 593 r rotate\$1;
 #X obj 651 475 pack;
 #X obj 651 504 liner_sfgem;
-#X obj 651 446 r spin_\$1;
+#X obj 651 386 r spin_\$1;
 #X obj 961 522 t b f;
 #X floatatom 257 637 5 0 0 0 - - -, f 5;
 #X floatatom 367 637 5 0 0 0 - - -, f 5;
@@ -107,6 +107,7 @@
 #X obj 303 540 +;
 #X obj 1028 540 +;
 #X obj 1415 77 r linpol;
+#X obj 651 425 * 3.14159;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 3 0 16 1;
@@ -201,7 +202,7 @@
 #X connect 72 0 73 0;
 #X connect 73 0 75 0;
 #X connect 73 0 92 0;
-#X connect 74 0 72 0;
+#X connect 74 0 103 0;
 #X connect 75 0 101 0;
 #X connect 75 1 101 1;
 #X connect 78 0 45 0;
@@ -230,3 +231,4 @@
 #X connect 101 0 29 0;
 #X connect 101 0 30 0;
 #X connect 102 0 31 0;
+#X connect 103 0 72 0;
