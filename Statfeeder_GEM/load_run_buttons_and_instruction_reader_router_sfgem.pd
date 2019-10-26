@@ -1,4 +1,4 @@
-#N canvas 592 387 880 602 10;
+#N canvas 451 387 880 602 10;
 #X obj 65 28 inlet;
 #X obj 150 28 inlet;
 #X obj 245 28 inlet;
@@ -30,7 +30,7 @@
 #X connect 8 0 6 0;
 #X connect 9 0 8 0;
 #X restore 573 269 pd gemwin;
-#X obj 128 132 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 128 132 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 573 199 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
