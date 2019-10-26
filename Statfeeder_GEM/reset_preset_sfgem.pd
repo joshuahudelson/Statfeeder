@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #N canvas 678 212 863 831 10;
+=======
+#N canvas 816 181 863 831 10;
+>>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2
 #X obj 61 13 inlet;
 #X obj 605 155 outlet;
 #X obj 615 89 outlet;
@@ -7,19 +11,17 @@
 1 \; 1 wiggle 2 \;;
 #X text 511 99 4 speeds all \; 3 speeds 2 \; 2 speeds 1 \; 1 speeds
 2;
-#X text 474 159 4 loc speed all \; 3 loc speeds 2 \; 2 loc speeds 1
+#X text 494 159 4 loc speed all \; 3 loc speeds 2 \; 2 loc speeds 1
 \; 1 loc speeds 2;
 #X obj 595 215 outlet;
 #X text 444 219 4 size speed all \; 3 size speeds 2 \; 2 size speeds
 1 \; 1 size speeds 2;
-#X msg 393 197 -1 -1 -1 -1;
 #X obj 585 275 outlet;
 #X text 410 279 4 dist speed all \; 3 dist speeds 2 \; 2 dist speeds
 1 \; 1 dist speeds 2;
 #X obj 575 335 outlet;
 #X msg 327 317 -1 -1 -1 -1;
 #X obj 565 395 outlet;
-#X msg 293 377 -1 -1 -1 -1;
 #X text 376 339 4 spin speed all \; 3 spin speeds 2 \; 2 spin speeds
 1 \; 1 spin speeds 2;
 #X obj 555 455 outlet;
@@ -29,7 +31,6 @@
 #X obj 532 575 outlet;
 #X text 282 519 4 spin all \; 3 spin 2 \; 2 spin 1 \; 1 spin 2;
 #X obj 522 615 outlet;
-#X text 207 585 2 swap \; 1 trade;
 #X obj 512 651 outlet;
 #X obj 502 729 outlet;
 #X obj 492 803 outlet;
@@ -38,9 +39,8 @@
 #X text 196 733 5 bigC amp \; 4 bigC stay \; 3 bigC fdiff \; 2 bigC
 freq \; 1 bigC size \;;
 #X msg 460 71 -1 -1 -1 -1 -1;
-#X msg 426 137 -1 -1 -1 5000;
-#X msg 260 437 -1 -1 -1 2;
 #X msg 227 497 -1 -1 -1 2.5;
+<<<<<<< HEAD
 #X msg 194 557 -1 -1 -1 6.28;
 #X msg 160 597 -1 1;
 #X text 283 607 THESE MAYBE SHOULD BE REVERSED...;
@@ -76,3 +76,44 @@ freq \; 1 bigC size \;;
 #X connect 38 0 27 0;
 #X connect 39 0 10 0;
 #X connect 41 0 25 0;
+=======
+#X text 219 586 1 linpol \; 2 stay;
+#X msg 160 597 1 20000;
+#X text 186 621 2 trade \; 1 swap;
+#X msg 127 633 -1 1;
+#X msg 61 785 5 971 130 30000 0.4;
+#X msg 426 137 -1 -1 -1 10000;
+#X msg 94 711 9000 9000 9000 9000 9000;
+#X msg 393 197 -1 -1 -1 -1;
+#X msg 360 257 -1 -1 -1 -1;
+#X msg 293 377 -1 -1 -1 -1;
+#X msg 260 437 -1 -1 -1 1;
+#X msg 194 557 -1 -1 -1 15;
+#X connect 0 0 3 0;
+#X connect 3 0 33 0;
+#X connect 3 1 35 0;
+#X connect 3 2 32 0;
+#X connect 3 3 30 0;
+#X connect 3 4 40 0;
+#X connect 3 5 28 0;
+#X connect 3 6 39 0;
+#X connect 3 7 38 0;
+#X connect 3 8 12 0;
+#X connect 3 9 37 0;
+#X connect 3 10 36 0;
+#X connect 3 11 34 0;
+#X connect 3 12 27 0;
+#X connect 12 0 11 0;
+#X connect 27 0 2 0;
+#X connect 28 0 17 0;
+#X connect 30 0 21 0;
+#X connect 32 0 22 0;
+#X connect 33 0 24 0;
+#X connect 34 0 1 0;
+#X connect 35 0 23 0;
+#X connect 36 0 7 0;
+#X connect 37 0 9 0;
+#X connect 38 0 13 0;
+#X connect 39 0 15 0;
+#X connect 40 0 19 0;
+>>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2

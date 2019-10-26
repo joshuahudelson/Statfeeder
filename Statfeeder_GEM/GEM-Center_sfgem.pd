@@ -20,7 +20,7 @@
 #X obj 1419 328 hradio 25 1 0 7 empty empty empty 0 -8 0 10 -262144
 -1 -1 1;
 #X obj 1300 328 hradio 25 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 1;
 #X obj 431 221 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 615 221 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
@@ -48,12 +48,20 @@
 -262144 -1 -1 971 256;
 #X obj 596 327 nbx 3 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
 -262144 -1 -1 130 256;
+<<<<<<< HEAD
 #X obj 738 221 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 20000
+=======
+#X obj 738 221 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+>>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2
 1;
 #X text 731 202 LIN/POL;
 #X text 517 312 BIG C FREQ;
 #X obj 361 273 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
+<<<<<<< HEAD
 -262144 -1 -1 2 256;
+=======
+-262144 -1 -1 1 256;
+>>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2
 #X obj 621 273 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
 -262144 -1 -1 6.28 256;
 #X obj 491 273 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
@@ -63,9 +71,15 @@
 #X text 647 255 SPIN;
 #X text 502 255 DISTANCE;
 #X obj 674 327 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
+<<<<<<< HEAD
 -262144 -1 -1 20000 256;
 #X obj 804 221 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
 -262144 -1 -1 1 256;
+=======
+-262144 -1 -1 30000 256;
+#X obj 804 221 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
+-262144 -1 -1 20000 256;
+>>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2
 #X text 816 201 STAY TIME;
 #X obj 135 203 r sbutton-0;
 #X obj 146 203 r sbutton-1;
@@ -93,15 +107,24 @@
 #X obj 1230 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 10000 256;
 #X obj 1403 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+<<<<<<< HEAD
 10 -262144 -1 -1 5000 256;
 #X obj 1403 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 5000 256;
 #X obj 1403 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 5000 256;
+=======
+10 -262144 -1 -1 10000 256;
+#X obj 1403 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 10000 256;
+#X obj 1403 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 10000 256;
+>>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2
 #X obj 1104 273 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 25 -262144 -1 -1 10000 256;
 #X text 1109 256 SIZE SPEED;
 #X obj 1277 273 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+<<<<<<< HEAD
 25 -262144 -1 -1 5000 256;
 #X obj 1576 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 5000 256;
@@ -128,6 +151,34 @@
 -262144 -1 -1 2 256;
 #X obj 444 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 2 256;
+=======
+25 -262144 -1 -1 10000 256;
+#X obj 1576 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 10000 256;
+#X obj 1576 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 10000 256;
+#X obj 1576 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 10000 256;
+#X obj 1450 273 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+25 -262144 -1 -1 10000 256;
+#X text 1274 255 DISTANCE SPEED;
+#X text 1460 255 SPIN SPEED;
+#X obj 884 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 10000 256;
+#X obj 884 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 10000 256;
+#X obj 884 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 10000 256;
+#X obj 758 273 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
+-262144 -1 -1 10000 256;
+#X text 776 256 SPEEDS;
+#X obj 444 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
+#X obj 444 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
+#X obj 444 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 1 256;
+>>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2
 #X obj 574 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 2.5 256;
 #X obj 574 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
@@ -173,6 +224,7 @@
 #X obj 1576 96 r spin_spd_1_2pnl;
 #X obj 1576 116 r spin_spd_2_2pnl;
 #X obj 1057 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+<<<<<<< HEAD
 10 -262144 -1 -1 5000 256;
 #X obj 1057 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 10 -262144 -1 -1 5000 256;
@@ -180,6 +232,15 @@
 10 -262144 -1 -1 5000 256;
 #X obj 931 273 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
 -262144 -1 -1 5000 256;
+=======
+10 -262144 -1 -1 10000 256;
+#X obj 1057 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 10000 256;
+#X obj 1057 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+10 -262144 -1 -1 10000 256;
+#X obj 931 273 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
+-262144 -1 -1 10000 256;
+>>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2
 #X text 941 255 LOC SPEED;
 #X obj 931 56 r loc_spd_all_2pnl;
 #X obj 1057 76 r loc_spd_0_2pnl;
@@ -203,11 +264,19 @@
 #X obj 491 56 r dist_all_2pnl;
 #X obj 758 56 r speeds_all_2pnl;
 #X obj 941 327 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
+<<<<<<< HEAD
 -262144 -1 -1 5000 256;
 #X obj 1167 327 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 20 -262144 -1 -1 5000 256;
 #X obj 828 327 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
 -262144 -1 -1 5000 256;
+=======
+-262144 -1 -1 9000 256;
+#X obj 1167 327 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+20 -262144 -1 -1 9000 256;
+#X obj 828 327 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
+-262144 -1 -1 9000 256;
+>>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2
 #X obj 361 174 r bigC_size_2pnl;
 #X obj 440 174 r bigC_amp_2pnl;
 #X obj 518 174 r bigC_freq_2pnl;
@@ -257,7 +326,11 @@
 #X obj 28 251 load_run_buttons_and_instruction_reader_router_sfgem
 ;
 #X obj 1054 327 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+<<<<<<< HEAD
 20 -262144 -1 -1 5000 256;
+=======
+20 -262144 -1 -1 9000 256;
+>>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2
 #X obj 1054 172 r bigC_freq_spd_2pnl;
 #X text 1050 312 BIG C FREQ SPEED;
 #X obj 1054 371 s bigC_freq_spd;
