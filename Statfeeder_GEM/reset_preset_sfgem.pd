@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#N canvas 678 212 863 831 10;
-=======
 #N canvas 816 181 863 831 10;
->>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2
 #X obj 61 13 inlet;
 #X obj 605 155 outlet;
 #X obj 615 89 outlet;
@@ -40,43 +36,6 @@
 freq \; 1 bigC size \;;
 #X msg 460 71 -1 -1 -1 -1 -1;
 #X msg 227 497 -1 -1 -1 2.5;
-<<<<<<< HEAD
-#X msg 194 557 -1 -1 -1 6.28;
-#X msg 160 597 -1 1;
-#X text 283 607 THESE MAYBE SHOULD BE REVERSED...;
-#X msg 94 711 5000 5000 5000 5000 5000;
-#X msg 61 785 5 971 130 20000 0.4;
-#X msg 360 257 -1 -1 -1 10000;
-#X text 194 621 2 stay \; 1 linpol;
-#X msg 127 633 1 20000;
-#X connect 0 0 3 0;
-#X connect 3 0 38 0;
-#X connect 3 1 37 0;
-#X connect 3 2 41 0;
-#X connect 3 3 35 0;
-#X connect 3 4 34 0;
-#X connect 3 5 33 0;
-#X connect 3 6 32 0;
-#X connect 3 7 15 0;
-#X connect 3 8 13 0;
-#X connect 3 9 39 0;
-#X connect 3 10 9 0;
-#X connect 3 11 31 0;
-#X connect 3 12 30 0;
-#X connect 9 0 7 0;
-#X connect 13 0 12 0;
-#X connect 15 0 14 0;
-#X connect 30 0 2 0;
-#X connect 31 0 1 0;
-#X connect 32 0 17 0;
-#X connect 33 0 19 0;
-#X connect 34 0 21 0;
-#X connect 35 0 23 0;
-#X connect 37 0 26 0;
-#X connect 38 0 27 0;
-#X connect 39 0 10 0;
-#X connect 41 0 25 0;
-=======
 #X text 219 586 1 linpol \; 2 stay;
 #X msg 160 597 1 20000;
 #X text 186 621 2 trade \; 1 swap;
@@ -116,4 +75,3 @@ freq \; 1 bigC size \;;
 #X connect 38 0 13 0;
 #X connect 39 0 15 0;
 #X connect 40 0 19 0;
->>>>>>> b6f534306483bb7269d19e3b748c6617d79631f2
