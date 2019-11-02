@@ -1,10 +1,14 @@
-#N canvas 67 887 1611 186 10;
-#X obj 4 3 GEM-Center_sfgem;
-#X text 1343 13 BigC Freq/Diff: 349 \, 131 or 70;
-#X msg 1351 66 Reset;
-#X text 1329 142 971 freq \, 130 diff. - Amp either 0.4 or 0.1;
-#X text 1327 86 add everything to instructor \; test textfile reader
+#N canvas 67 827 1793 246 10;
+#X obj 4 21 GEM-Center_sfgem;
+#X text 1317 54 BigC Freq/Diff: 349 \, 131 or 70;
+#X msg 1311 3 Reset;
+#X text 1319 139 971 freq \, 130 diff. - Amp either 0.4 or 0.1;
+#X text 1323 94 add everything to instructor \; test textfile reader
 ;
-#X msg 1351 42 FadeIn;
+#X msg 1361 3 FadeIn;
+#X msg 1417 3 Random;
+#X msg 1472 3 Random_Metro;
 #X connect 2 0 0 0;
 #X connect 5 0 0 0;
+#X connect 6 0 0 0;
+#X connect 7 0 0 0;

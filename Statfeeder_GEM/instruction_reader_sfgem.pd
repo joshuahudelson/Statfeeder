@@ -1,4 +1,4 @@
-#N canvas 57 376 1714 655 10;
+#N canvas 67 300 1714 655 10;
 #X obj 300 212 textfile;
 #X obj 300 162 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -7,16 +7,16 @@
 #X obj 300 241 unpack f f s;
 #X obj 233 470 ==;
 #X obj 233 574 s start-instruction;
-#X obj 324 516 s end-instruction;
+#X obj 343 519 s end-instruction;
 #X obj 319 329 -;
 #X obj 319 358 abs;
 #X obj 316 461 del;
 #X obj 233 528 t b b;
 #X obj 292 280 t f f;
 #X obj 233 499 sel 1;
-#X text 431 518 Probably not used much;
+#X text 450 521 Probably not used much;
 #X text 358 576 Triggers instruction;
-#X obj 304 545 s trigger_next_textline;
+#X obj 316 545 s trigger_next_textline;
 #X obj 300 95 r trigger_next_textline;
 #X obj 248 329 * 1000;
 #X obj 248 358 / 50;
@@ -30,13 +30,14 @@
 #X obj 233 18 inlet;
 #X obj 178 566 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 485 485 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
 #X obj 319 427 * 1000;
 #X text 541 71 Make the label time difference a variable. Use it to
 determine speed of the movements.;
 #X floatatom 233 205 5 0 0 0 - - -, f 5;
 #X obj 626 360 outlet;
+#X text 92 362 Why is this /50 here??;
+#X obj 316 490 t b b;
+#X obj 429 461 s current_instruction_length;
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
@@ -44,13 +45,11 @@ determine speed of the movements.;
 #X connect 3 1 2 0;
 #X connect 4 0 12 0;
 #X connect 4 1 8 1;
-#X connect 4 2 33 0;
+#X connect 4 2 32 0;
 #X connect 5 0 13 0;
 #X connect 8 0 9 0;
 #X connect 9 0 24 0;
-#X connect 10 0 7 0;
-#X connect 10 0 29 0;
-#X connect 10 0 16 0;
+#X connect 10 0 34 0;
 #X connect 11 0 6 0;
 #X connect 11 0 28 0;
 #X connect 11 1 10 0;
@@ -64,9 +63,12 @@ determine speed of the movements.;
 #X connect 21 0 0 0;
 #X connect 22 0 21 0;
 #X connect 23 0 5 1;
-#X connect 24 0 30 0;
+#X connect 24 0 29 0;
 #X connect 25 0 22 0;
 #X connect 26 0 3 0;
-#X connect 27 0 32 0;
-#X connect 30 0 10 1;
-#X connect 32 0 5 0;
+#X connect 27 0 31 0;
+#X connect 29 0 10 1;
+#X connect 29 0 35 0;
+#X connect 31 0 5 0;
+#X connect 34 0 16 0;
+#X connect 34 1 7 0;
