@@ -1,4 +1,4 @@
-#N canvas 57 105 1739 795 10;
+#N canvas 67 97 1739 795 10;
 #X obj 503 711 sel -1;
 #X obj 621 711 sel -1;
 #X obj 739 711 sel -1;
@@ -144,8 +144,8 @@
 #X obj 190 405 t a;
 #X obj 167 405 t a;
 #X obj 144 405 t a;
-#X obj 120 470 t a;
-#X obj 97 470 t a;
+#X obj 120 490 t a;
+#X obj 97 490 t a;
 #X obj 74 577 t a;
 #X obj 51 664 t a;
 #X connect 0 1 108 0;
