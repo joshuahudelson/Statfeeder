@@ -9,7 +9,7 @@
 #X obj 51 5 inlet;
 #X obj 51 92 symbol;
 #X msg 51 34 set \$1;
-#X msg 51 63 Vertical;
+#X msg 51 63 expand;
 #X obj 116 34 r start-instruction;
 #X obj 684 278 sel -1;
 #X obj 291 37 inlet;
@@ -144,8 +144,8 @@
 #X obj 190 405 t a;
 #X obj 167 405 t a;
 #X obj 144 405 t a;
-#X obj 120 490 t a;
-#X obj 97 490 t a;
+#X obj 120 470 t a;
+#X obj 97 510 t a;
 #X obj 74 577 t a;
 #X obj 51 664 t a;
 #X connect 0 1 108 0;

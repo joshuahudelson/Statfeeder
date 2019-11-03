@@ -1,4 +1,4 @@
-#N canvas 451 387 880 602 10;
+#N canvas 639 227 880 602 10;
 #X obj 65 28 inlet;
 #X obj 150 28 inlet;
 #X obj 245 28 inlet;
@@ -30,12 +30,12 @@
 #X connect 8 0 6 0;
 #X connect 9 0 8 0;
 #X restore 573 269 pd gemwin;
-#X obj 128 132 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 128 132 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 573 199 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 350 209 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 0 256;
+-262144 -1 -1 0.8 256;
 #X obj 491 132 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 401 364 1;
@@ -60,6 +60,10 @@
 #X text 389 273 To Test Presets;
 #X obj 510 28 inlet;
 #X obj 671 32 inlet;
+#X obj 139 300 s current_instruction;
+#X obj 78 383 sel end;
+#X obj 493 70 r timer_on_off;
+#X text 323 9 Playback;
 #X connect 0 0 12 0;
 #X connect 1 0 7 0;
 #X connect 2 0 10 0;
@@ -75,6 +79,8 @@
 #X connect 13 0 5 0;
 #X connect 14 0 11 0;
 #X connect 15 0 27 0;
+#X connect 15 0 33 0;
+#X connect 15 0 34 0;
 #X connect 16 0 17 2;
 #X connect 23 0 14 0;
 #X connect 24 0 23 0;
@@ -87,3 +93,5 @@
 #X connect 29 0 27 1;
 #X connect 31 0 16 0;
 #X connect 32 0 28 0;
+#X connect 34 0 26 0;
+#X connect 35 0 23 0;
