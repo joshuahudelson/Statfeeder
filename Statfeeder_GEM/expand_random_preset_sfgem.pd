@@ -63,7 +63,7 @@ freq \; 1 bigC size \;;
 #X obj 720 595 pack f f f f;
 #X obj 726 536 unpack f f f f;
 #X msg 210 707 -1 -1;
-#X obj 391 97 expr (pow($f1 \, 2));
+#X obj 391 97 expr (pow($f1 \, 1));
 #X connect 0 0 46 0;
 #X connect 3 0 31 0;
 #X connect 3 1 30 0;
