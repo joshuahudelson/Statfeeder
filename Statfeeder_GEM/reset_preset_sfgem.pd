@@ -1,4 +1,4 @@
-#N canvas 386 154 863 889 10;
+#N canvas 245 154 863 889 10;
 #X obj 61 13 inlet;
 #X obj 605 155 outlet;
 #X obj 615 89 outlet;
@@ -47,7 +47,7 @@ freq \; 1 bigC size \;;
 #X msg 460 71 -1 -1 -1 -1 -1;
 #X text 174 621 2 trade \; 1 swap;
 #X text 227 585 2 stay \; 1 lin;
-#X msg 160 597 1 0;
+#X msg 160 597 1 25000;
 #X connect 0 0 3 0;
 #X connect 3 0 32 0;
 #X connect 3 1 29 0;

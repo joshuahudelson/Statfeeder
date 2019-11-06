@@ -1,4 +1,4 @@
-#N canvas 288 180 1830 586 10;
+#N canvas 90 180 1830 586 10;
 #X obj 1723 71 Gem;
 #X obj 109 445 dac~;
 #X obj 28 396 r~ channel0;
@@ -53,7 +53,7 @@
 #X text 731 202 LIN/POL;
 #X text 517 312 BIG C FREQ;
 #X obj 361 273 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 45 256;
+-262144 -1 -1 0 256;
 #X obj 621 273 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
 -262144 -1 -1 0 256;
 #X obj 491 273 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
@@ -65,7 +65,7 @@
 #X obj 674 327 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
 -262144 -1 -1 8000 256;
 #X obj 804 221 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 20000 256;
+-262144 -1 -1 8000 256;
 #X text 816 201 STAY TIME;
 #X obj 135 203 r sbutton-0;
 #X obj 146 203 r sbutton-1;
@@ -123,11 +123,11 @@
 -262144 -1 -1 0 256;
 #X text 776 256 SPEEDS;
 #X obj 444 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 45 256;
+-262144 -1 -1 0 256;
 #X obj 444 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 45 256;
+-262144 -1 -1 0 256;
 #X obj 444 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 45 256;
+-262144 -1 -1 0 256;
 #X obj 574 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
 #X obj 574 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
