@@ -1,7 +1,7 @@
-#N canvas 180 114 1574 851 10;
-#X obj 130 865 translateXYZ, f 16;
+#N canvas 67 114 1574 851 10;
+#X obj 130 905 translateXYZ, f 16;
 #X obj 130 45 inlet;
-#X obj 1345 883 outlet;
+#X obj 1345 923 outlet;
 #X obj 1612 805 line;
 #X obj 1681 805 line;
 #X floatatom 1612 651 5 0 0 0 - - -, f 5;
@@ -126,6 +126,9 @@
 #X obj 356 754 *;
 #X obj 295 725 cos;
 #X obj 356 725 sin;
+#X obj 161 876 *;
+#X obj 192 876 *;
+#X obj 281 858 r mirror\$1;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 3 0 16 1;
@@ -161,12 +164,12 @@
 #X connect 29 0 21 0;
 #X connect 30 0 22 0;
 #X connect 31 0 27 0;
-#X connect 32 0 0 1;
+#X connect 32 0 121 0;
 #X connect 33 0 32 0;
 #X connect 33 1 32 1;
 #X connect 34 0 35 0;
 #X connect 34 1 35 1;
-#X connect 35 0 0 2;
+#X connect 35 0 122 0;
 #X connect 36 0 68 0;
 #X connect 36 0 91 0;
 #X connect 37 0 93 0;
@@ -271,3 +274,7 @@
 #X connect 118 0 45 0;
 #X connect 119 0 117 0;
 #X connect 120 0 118 0;
+#X connect 121 0 0 1;
+#X connect 122 0 0 2;
+#X connect 123 0 121 1;
+#X connect 123 0 122 1;

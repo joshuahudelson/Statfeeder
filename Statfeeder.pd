@@ -1,4 +1,4 @@
-#N canvas 298 176 1389 727 10;
+#N canvas 251 176 1389 727 10;
 #X obj 16 15 cnv 15 1150 640 empty empty empty 20 12 0 14 -191407 -66577
 0;
 #X obj 24 26 Mixer 0 3 0;
@@ -14,3 +14,7 @@
 #X obj 603 68 UGen 2 2 5;
 #X obj 24 68 UGen 0 0 3;
 #X obj 316 68 UGen 1 1 4;
+#X text 1214 199 TR PR EXP: 30 \; TIME EXP: 30 \; POWER: 4 \; MULT:
+2 \; ADD: 50 \;;
+#X text 1214 309 TR PR EXP: 35 \; TIME EXP: 35 \; POWER: 3 \; MULT:
+3 \; ADD: 50 \;;

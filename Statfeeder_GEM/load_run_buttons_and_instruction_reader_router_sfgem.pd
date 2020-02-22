@@ -1,4 +1,4 @@
-#N canvas 639 227 880 602 10;
+#N canvas 498 227 880 602 10;
 #X obj 65 28 inlet;
 #X obj 150 28 inlet;
 #X obj 245 28 inlet;
@@ -35,7 +35,7 @@
 #X obj 573 199 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 350 209 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 0.8 256;
+-262144 -1 -1 0 256;
 #X obj 491 132 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 401 364 1;
@@ -60,10 +60,12 @@
 #X text 389 273 To Test Presets;
 #X obj 510 28 inlet;
 #X obj 671 32 inlet;
-#X obj 139 300 s current_instruction;
-#X obj 78 383 sel end;
+#X obj 79 268 s current_instruction;
+#X obj 238 268 sel end;
 #X obj 493 70 r timer_on_off;
 #X text 323 9 Playback;
+#X text 242 320 PRESETS IN HERE:;
+#X text 35 183 SIGNAL STUFF IN HERE:;
 #X connect 0 0 12 0;
 #X connect 1 0 7 0;
 #X connect 2 0 10 0;
