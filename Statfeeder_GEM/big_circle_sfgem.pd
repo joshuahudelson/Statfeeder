@@ -1,4 +1,4 @@
-#N canvas 832 412 826 570 10;
+#N canvas 738 412 826 570 10;
 #X obj 136 510 scopeXYZ;
 #X obj 150 356 *~;
 #X obj 184 398 *~;
@@ -23,7 +23,7 @@
 #X floatatom 341 109 5 0 0 0 - - -, f 5;
 #X msg 469 305 0;
 #X obj 440 238 loadbang;
-#X obj 555 492 inlet;
+#X obj 516 492 inlet;
 #X obj 165 70 inlet;
 #X obj 250 70 inlet;
 #X obj 341 70 inlet;

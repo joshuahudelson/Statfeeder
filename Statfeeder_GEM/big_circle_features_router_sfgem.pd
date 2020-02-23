@@ -1,5 +1,5 @@
-#N canvas 844 516 687 527 10;
-#X obj 534 412 gemhead;
+#N canvas 633 389 854 527 10;
+#X obj 565 357 gemhead;
 #X floatatom 136 248 5 0 0 0 - - -, f 5;
 #X floatatom 182 281 5 0 0 0 - - -, f 5;
 #X floatatom 316 122 5 0 0 0 - - -, f 5;
@@ -39,7 +39,13 @@
 #X obj 31 372 pack;
 #X obj 52 337 r bigC_amp_spd;
 #X text 56 44 No faders here??;
-#X connect 0 0 10 4;
+#X obj 565 412 translateXYZ;
+#X obj 639 249 loadbang;
+#X msg 639 327 0;
+#X obj 691 297 r big_circle_on_off;
+#X obj 691 329 sel 0 1;
+#X msg 691 377 10000;
+#X connect 0 0 40 0;
 #X connect 1 0 10 1;
 #X connect 2 0 32 0;
 #X connect 3 0 30 0;
@@ -70,3 +76,12 @@
 #X connect 36 0 10 0;
 #X connect 37 0 36 0;
 #X connect 38 0 37 1;
+#X connect 40 0 10 4;
+#X connect 41 0 42 0;
+#X connect 42 0 40 1;
+#X connect 42 0 40 2;
+#X connect 43 0 44 0;
+#X connect 44 0 45 0;
+#X connect 44 1 42 0;
+#X connect 45 0 40 1;
+#X connect 45 0 40 2;
