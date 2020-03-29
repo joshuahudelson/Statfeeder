@@ -1,4 +1,4 @@
-#N canvas 563 159 1236 886 10;
+#N canvas 387 194 1236 886 10;
 #X obj 539 8 inlet;
 #X text 533 -14 On/Off;
 #X obj 50 392 s rotate0;
@@ -312,14 +312,14 @@
 #X obj 50 914 random_walker_sfgem;
 #X obj 50 714 random_walker_sfgem;
 #X obj 50 524 random_walker_sfgem;
-#X obj 960 26 loadbang;
-#X obj 367 -3 t f f;
+#X obj 895 -4 loadbang;
+#X obj 365 3 t f f;
 #X msg 161 217 3000;
 #X msg 381 219 3000;
 #X msg 765 214 3000;
 #X obj 290 60 sel 0;
 #X obj 624 200 t b f;
-#X obj 634 71 del 30;
+#X obj 636 48 del 30;
 #X obj 615 268 + 500;
 #X obj 609 298 pipe;
 #X obj 621 458 + 500;

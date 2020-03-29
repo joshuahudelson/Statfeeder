@@ -1,4 +1,4 @@
-#N canvas 240 176 1321 655 10;
+#N canvas 67 179 1321 655 10;
 #X obj 285 564 s numelems;
 #X obj 285 543 s rhythmrate;
 #X obj 285 501 s rhythmsinglevalue;
@@ -39,15 +39,9 @@
 #X msg 397 203 0 0 1;
 #X obj 191 128 inlet;
 #X obj 191 154 sel 0 1 2 3 4 5 6 7;
-#X msg 191 322 0;
 #X msg 207 299 1;
 #X text 648 214 To reset all ugen \; output levels to 1;
-#X msg 223 280 4;
 #X msg 239 259 5;
-#X msg 288 196 20;
-#X msg 256 238 12;
-#X msg 272 217 17;
-#X msg 304 175 21;
 #X msg 76 171 11;
 #X msg 109 129 20;
 #X text 90 22 Tonal Preset Values;
@@ -62,15 +56,27 @@
 #X msg 478 98 1 1 1;
 #X obj 45 455 s to_secondary_globals;
 #X obj 195 395 s to_secondary_globals;
+#X msg 256 214 18;
+#X msg 307 179 12;
+#X obj 332 223 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 296 336 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 326 262 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 223 280 4;
+#X msg 256 238 20;
+#X msg 277 194 17;
+#X msg 191 322 12;
 #X connect 0 0 1 0;
 #X connect 1 0 27 0;
 #X connect 1 1 28 0;
 #X connect 1 2 29 0;
 #X connect 1 3 11 0;
 #X connect 1 4 12 0;
-#X connect 1 5 51 0;
+#X connect 1 5 45 0;
 #X connect 1 6 13 0;
-#X connect 1 7 52 0;
+#X connect 1 7 46 0;
 #X connect 3 0 2 0;
 #X connect 4 0 2 0;
 #X connect 5 0 7 0;
@@ -84,14 +90,14 @@
 #X connect 14 1 25 0;
 #X connect 14 2 24 0;
 #X connect 15 0 16 0;
-#X connect 16 0 46 0;
-#X connect 16 1 48 0;
-#X connect 16 2 41 0;
-#X connect 16 3 49 0;
-#X connect 16 4 42 0;
-#X connect 16 5 50 0;
-#X connect 16 6 45 0;
-#X connect 16 7 47 0;
+#X connect 16 0 40 0;
+#X connect 16 1 42 0;
+#X connect 16 2 35 0;
+#X connect 16 3 43 0;
+#X connect 16 4 36 0;
+#X connect 16 5 44 0;
+#X connect 16 6 39 0;
+#X connect 16 7 41 0;
 #X connect 17 0 21 0;
 #X connect 19 0 22 0;
 #X connect 20 0 22 0;
@@ -110,39 +116,42 @@
 #X connect 28 0 14 0;
 #X connect 29 0 14 0;
 #X connect 30 0 31 0;
-#X connect 31 0 32 0;
-#X connect 31 1 33 0;
-#X connect 31 2 35 0;
-#X connect 31 3 36 0;
-#X connect 31 4 38 0;
-#X connect 31 5 39 0;
-#X connect 31 6 37 0;
-#X connect 31 7 40 0;
-#X connect 32 0 54 0;
-#X connect 33 0 54 0;
-#X connect 35 0 54 0;
-#X connect 36 0 54 0;
-#X connect 37 0 54 0;
-#X connect 38 0 54 0;
-#X connect 39 0 54 0;
-#X connect 40 0 54 0;
-#X connect 41 0 53 0;
-#X connect 42 0 53 0;
-#X connect 45 0 53 0;
-#X connect 46 0 53 0;
-#X connect 47 0 53 0;
-#X connect 48 0 53 0;
-#X connect 49 0 53 0;
-#X connect 50 0 53 0;
-#X connect 51 0 14 0;
-#X connect 52 0 14 0;
+#X connect 31 0 57 0;
+#X connect 31 1 32 0;
+#X connect 31 2 54 0;
+#X connect 31 3 34 0;
+#X connect 31 4 55 0;
+#X connect 31 5 49 0;
+#X connect 31 5 52 0;
+#X connect 31 6 56 0;
+#X connect 31 7 50 0;
+#X connect 31 7 51 0;
+#X connect 32 0 48 0;
+#X connect 34 0 48 0;
+#X connect 35 0 47 0;
+#X connect 36 0 47 0;
+#X connect 39 0 47 0;
+#X connect 40 0 47 0;
+#X connect 41 0 47 0;
+#X connect 42 0 47 0;
+#X connect 43 0 47 0;
+#X connect 44 0 47 0;
+#X connect 45 0 14 0;
+#X connect 46 0 14 0;
+#X connect 49 0 48 0;
+#X connect 50 0 48 0;
+#X connect 54 0 48 0;
+#X connect 55 0 48 0;
+#X connect 56 0 48 0;
+#X connect 56 0 53 0;
+#X connect 57 0 48 0;
 #X restore 0 597 pd rhythmtriage;
 #X obj 68 546 Gate;
 #X obj 285 162 r rhythmexponent-receive;
 #X obj 285 78 r rhythmrate-receive;
 #X obj 285 99 r rhythmsinglevalue-receive;
 #X obj 285 120 r rhythmepsilon-receive;
-#X obj 161 -18 r rhythmvolume-receive;
+#X obj 241 12 r rhythmvolume-receive;
 #X obj 70 521 t f f;
 #X obj 161 -59 r rhythmdriver-receive;
 #X obj 161 510 s rhythmdriver;
@@ -165,7 +174,7 @@
 \$2 \; rhythmvolume-receive \$3 \; rhythmrate-receive \$4 \; rhythmsinglevalue-receive
 \$5 \; rhythmepsilon-receive \$6 \; rhythmnumelems-receive \$7 \; rhythmexponent-receive
 \$8 \; rhythmstartstop \$9 \; walker-preset-zero bang \;;
-#X obj 691 422 t b f;
+#X obj 638 422 t b f;
 #X msg 773 592 0 0 0 125 0 0.01 8 1 0;
 #X msg 836 516 1 1 0 125 0 0.01 8 1.5 1;
 #X msg 852 497 1 2 0 125 0 0.01 8 1.5 1;
@@ -210,7 +219,7 @@
 #X msg 44 126 1 0 0;
 #X msg 64 105 0 1 0;
 #X msg 84 84 0 0 1;
-#X obj 359 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 359 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 431 350 r rhythmepsilon;
 #X obj 264 241 r rhythmsinglevalue;
@@ -294,7 +303,7 @@
 #X msg 738 208 5;
 #X msg 766 191 6;
 #X msg 788 165 7;
-#X floatatom 823 -103 5 0 0 0 - - -, f 5;
+#X floatatom 820 -105 5 0 0 0 - - -, f 5;
 #X msg 788 573 0 1 0 125 0 0.01 8 10 1;
 #X msg 804 554 0 2 0 125 0 0.01 8 10 1;
 #X msg 820 535 0 0 1 125 0 0.01 8 10 1;
@@ -306,7 +315,7 @@
 #X obj 156 201 cnv 15 406 258 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 285 255 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 104 256;
+-262144 -1 -1 126 256;
 #X obj 285 299 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 0 256;
 #X obj 285 342 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
@@ -314,14 +323,14 @@
 #X text 283 240 Rate;
 #X text 283 327 Epsilon;
 #X obj 285 429 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 1 256;
+-262144 -1 -1 1.5 256;
 #X text 283 414 Exp;
 #X obj 285 222 tgl 13 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 161 363 vradio 13 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 1;
 #X obj 161 417 vradio 13 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 2;
 #X obj 285 385 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 8 256;
 #X text 283 370 Num Elems;
@@ -330,7 +339,7 @@
 #X text 161 348 DRIVERS;
 #X text 163 402 TARGETS;
 #X obj 161 216 vradio 13 1 0 10 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 5;
 #X text 175 362 Random \; Single-Value \; Feedback;
 #X text 176 417 Off \; Tonal Presets \; Noisy Presets \;;
 #X text 280 204 VOL;
@@ -368,6 +377,8 @@
 #X msg 50 256 1;
 #X msg 69 227 -1;
 #X obj 54 315 +;
+#X text 602 442 BANG USED TO SHUFFLE... \; BUT IS THAT NECESSARY? \;
+BETTER TO KEEP CONTINUITY \; OF THE RHYTHM?;
 #X connect 5 0 6 1;
 #X connect 5 0 8 1;
 #X connect 5 0 111 0;
@@ -400,7 +411,6 @@
 #X connect 29 0 25 0;
 #X connect 30 0 31 0;
 #X connect 31 0 23 0;
-#X connect 33 0 42 0;
 #X connect 33 1 68 0;
 #X connect 34 0 32 0;
 #X connect 35 0 32 0;

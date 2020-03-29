@@ -14,7 +14,7 @@
 #X msg 760 3 big_circle_appear;
 #X obj 1372 11 r current_instruction;
 #X msg 1569 29 set \$1;
-#X msg 1622 17 end;
+#X msg 1622 17 contract;
 #X msg 681 3 horizontal;
 #X msg 624 3 return;
 #X text 1594 81 expand \; contract \; turn off lin/pol \; horizontal

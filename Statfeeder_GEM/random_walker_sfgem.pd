@@ -1,5 +1,5 @@
-#N canvas 67 275 971 776 10;
-#X obj 146 119 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#N canvas 154 304 971 776 10;
+#X obj 146 119 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 173 141 5 0 0 0 - - -, f 5;
 #X obj 146 76 inlet;
@@ -47,7 +47,7 @@
 #X obj 49 162 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 146 181 del;
-#X msg 680 175 stop;
+#X msg 417 254 stop;
 #X obj 45 312 t b f;
 #X obj 323 630 outlet;
 #X obj 43 255 +;
