@@ -1,4 +1,4 @@
-#N canvas 180 311 1076 651 10;
+#N canvas 86 311 1076 651 10;
 #X obj 620 551 s walker-fader-onoff-1;
 #X obj 689 488 s walker-fader-onoff-4;
 #X obj 598 572 s walker-fader-onoff-0;
@@ -43,7 +43,7 @@
 #X obj 33 53 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144 -1
 -1 0;
 #X obj 35 165 nbx 5 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 874.016 256;
+-262144 -1 -1 1440.94 256;
 #X text 114 171 RATE;
 #X obj 35 190 nbx 5 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 0 256;
@@ -58,7 +58,7 @@
 #X text 315 484 comment;
 #X obj -94 126 * 3000;
 #X obj -86 262 * 160;
-#X msg 182 147 800;
+#X msg 203 112 800;
 #X connect 8 0 53 0;
 #X connect 8 0 18 0;
 #X connect 8 0 48 0;
