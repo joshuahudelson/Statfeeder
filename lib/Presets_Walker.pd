@@ -1,4 +1,4 @@
-#N canvas 86 311 1076 651 10;
+#N canvas 230 298 1076 651 10;
 #X obj 620 551 s walker-fader-onoff-1;
 #X obj 689 488 s walker-fader-onoff-4;
 #X obj 598 572 s walker-fader-onoff-0;
@@ -34,7 +34,6 @@
 #X msg 680 261 0 1 0 0 0 0 1;
 #X msg 697 240 0 0 0 0 1 0 2;
 #X obj 614 109 % 7;
-#X obj -94 70 r auxknob-6;
 #X obj -94 98 / 127;
 #X obj -86 234 / 127;
 #X obj -86 206 r auxfader-6;
@@ -43,7 +42,7 @@
 #X obj 33 53 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144 -1
 -1 0;
 #X obj 35 165 nbx 5 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 1440.94 256;
+-262144 -1 -1 1133.86 256;
 #X text 114 171 RATE;
 #X obj 35 190 nbx 5 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 0 256;
@@ -59,24 +58,25 @@
 #X obj -94 126 * 3000;
 #X obj -86 262 * 160;
 #X msg 203 112 800;
-#X connect 8 0 53 0;
+#X obj -94 70 r auxknob-5;
+#X connect 8 0 52 0;
 #X connect 8 0 18 0;
-#X connect 8 0 48 0;
+#X connect 8 0 47 0;
 #X connect 9 0 13 0;
-#X connect 9 0 40 0;
+#X connect 9 0 39 0;
 #X connect 10 0 11 0;
 #X connect 10 0 34 0;
 #X connect 11 0 10 1;
 #X connect 12 0 17 0;
-#X connect 12 0 40 0;
+#X connect 12 0 39 0;
 #X connect 13 0 12 0;
 #X connect 13 1 14 0;
 #X connect 14 0 10 1;
 #X connect 15 0 9 0;
 #X connect 16 0 10 0;
-#X connect 17 0 40 0;
+#X connect 17 0 39 0;
 #X connect 18 0 11 0;
-#X connect 19 0 47 0;
+#X connect 19 0 46 0;
 #X connect 20 0 2 0;
 #X connect 20 1 0 0;
 #X connect 20 2 4 0;
@@ -92,11 +92,11 @@
 #X connect 22 4 31 0;
 #X connect 22 5 32 0;
 #X connect 22 6 33 0;
-#X connect 24 0 40 0;
+#X connect 24 0 39 0;
 #X connect 25 0 17 0;
 #X connect 26 0 20 0;
 #X connect 28 0 6 0;
-#X connect 28 0 49 0;
+#X connect 28 0 48 0;
 #X connect 28 1 27 0;
 #X connect 29 0 20 0;
 #X connect 30 0 20 0;
@@ -104,17 +104,17 @@
 #X connect 32 0 20 0;
 #X connect 33 0 20 0;
 #X connect 34 0 12 0;
-#X connect 35 0 36 0;
+#X connect 35 0 50 0;
 #X connect 36 0 51 0;
-#X connect 37 0 52 0;
-#X connect 38 0 37 0;
-#X connect 40 0 22 0;
-#X connect 41 0 28 0;
-#X connect 43 0 7 0;
-#X connect 47 0 41 0;
-#X connect 48 0 47 1;
-#X connect 49 0 40 0;
-#X connect 51 0 47 0;
-#X connect 52 0 43 0;
-#X connect 53 0 41 0;
+#X connect 37 0 36 0;
+#X connect 39 0 22 0;
+#X connect 40 0 28 0;
+#X connect 42 0 7 0;
+#X connect 46 0 40 0;
+#X connect 47 0 46 1;
+#X connect 48 0 39 0;
+#X connect 50 0 46 0;
+#X connect 51 0 42 0;
+#X connect 52 0 40 0;
+#X connect 53 0 35 0;
 #X coords 0 -1 1 1 130 260 2 30 30;
