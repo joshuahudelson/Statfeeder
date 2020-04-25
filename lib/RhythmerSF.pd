@@ -58,7 +58,6 @@
 #X obj 472 616 print;
 #X msg 499 598 New Preset;
 #X text 928 149 Volume;
-#X msg 946 240 0 0 0;
 #X msg 962 219 1 0 0;
 #X msg 978 198 0 0 1;
 #X obj 44 109 tabread rhythmer_presets;
@@ -101,15 +100,16 @@
 #X msg 511 375 22 \, 19 \, 11 \, 19 \, 4 \, 13 \, 15 \, 12;
 #X msg 552 404 16 \, 14 \, 15 \, 4 \, 22 \, 20 \, 18 \, 12;
 #X msg 299 230 4 \, 0 \, 22 \, 18 \, 12 \, 2 \, 5 \, 20;
+#X msg 946 240 1 1 1;
 #X connect 0 0 1 0;
 #X connect 1 0 25 0;
 #X connect 1 1 26 0;
 #X connect 1 2 27 0;
 #X connect 1 3 11 0;
 #X connect 1 4 12 0;
-#X connect 1 5 49 0;
-#X connect 1 6 50 0;
-#X connect 1 7 51 0;
+#X connect 1 5 84 0;
+#X connect 1 6 49 0;
+#X connect 1 7 50 0;
 #X connect 3 0 2 0;
 #X connect 4 0 2 0;
 #X connect 5 0 7 0;
@@ -121,7 +121,7 @@
 #X connect 13 0 24 0;
 #X connect 13 1 23 0;
 #X connect 13 2 22 0;
-#X connect 14 0 52 0;
+#X connect 14 0 51 0;
 #X connect 15 0 19 0;
 #X connect 17 0 20 0;
 #X connect 18 0 20 0;
@@ -152,63 +152,63 @@
 #X connect 37 0 38 0;
 #X connect 38 0 31 0;
 #X connect 38 0 46 0;
-#X connect 38 0 61 0;
+#X connect 38 0 60 0;
 #X connect 39 0 37 0;
 #X connect 40 0 39 0;
 #X connect 40 1 34 0;
 #X connect 40 1 47 0;
-#X connect 40 1 60 0;
+#X connect 40 1 59 0;
 #X connect 41 0 40 0;
-#X connect 44 0 84 0;
+#X connect 44 0 83 0;
 #X connect 44 1 34 0;
 #X connect 45 0 44 0;
 #X connect 47 0 46 0;
 #X connect 49 0 13 0;
 #X connect 50 0 13 0;
-#X connect 51 0 13 0;
-#X connect 52 0 57 0;
-#X connect 53 0 76 0;
-#X connect 54 0 56 0;
-#X connect 54 1 34 0;
-#X connect 55 0 54 0;
-#X connect 56 0 31 0;
-#X connect 58 0 41 0;
-#X connect 60 0 59 0;
-#X connect 61 0 59 0;
-#X connect 62 0 80 0;
-#X connect 62 1 34 0;
-#X connect 63 0 62 0;
-#X connect 65 0 78 0;
-#X connect 65 1 34 0;
-#X connect 66 0 65 0;
-#X connect 67 0 79 0;
-#X connect 67 1 34 0;
-#X connect 68 0 67 0;
-#X connect 69 0 77 0;
-#X connect 69 1 34 0;
-#X connect 70 0 69 0;
-#X connect 71 0 82 0;
-#X connect 71 1 34 0;
-#X connect 72 0 71 0;
-#X connect 73 0 83 0;
-#X connect 73 1 34 0;
-#X connect 74 0 73 0;
-#X connect 76 0 55 0;
-#X connect 76 1 36 0;
-#X connect 76 2 45 0;
-#X connect 76 3 63 0;
-#X connect 76 4 70 0;
-#X connect 76 5 66 0;
-#X connect 76 6 68 0;
-#X connect 76 7 72 0;
-#X connect 76 8 74 0;
+#X connect 51 0 56 0;
+#X connect 52 0 75 0;
+#X connect 53 0 55 0;
+#X connect 53 1 34 0;
+#X connect 54 0 53 0;
+#X connect 55 0 31 0;
+#X connect 57 0 41 0;
+#X connect 59 0 58 0;
+#X connect 60 0 58 0;
+#X connect 61 0 79 0;
+#X connect 61 1 34 0;
+#X connect 62 0 61 0;
+#X connect 64 0 77 0;
+#X connect 64 1 34 0;
+#X connect 65 0 64 0;
+#X connect 66 0 78 0;
+#X connect 66 1 34 0;
+#X connect 67 0 66 0;
+#X connect 68 0 76 0;
+#X connect 68 1 34 0;
+#X connect 69 0 68 0;
+#X connect 70 0 81 0;
+#X connect 70 1 34 0;
+#X connect 71 0 70 0;
+#X connect 72 0 82 0;
+#X connect 72 1 34 0;
+#X connect 73 0 72 0;
+#X connect 75 0 54 0;
+#X connect 75 1 36 0;
+#X connect 75 2 45 0;
+#X connect 75 3 62 0;
+#X connect 75 4 69 0;
+#X connect 75 5 65 0;
+#X connect 75 6 67 0;
+#X connect 75 7 71 0;
+#X connect 75 8 73 0;
+#X connect 76 0 31 0;
 #X connect 77 0 31 0;
 #X connect 78 0 31 0;
 #X connect 79 0 31 0;
-#X connect 80 0 31 0;
+#X connect 81 0 31 0;
 #X connect 82 0 31 0;
 #X connect 83 0 31 0;
-#X connect 84 0 31 0;
+#X connect 84 0 13 0;
 #X restore 210 888 pd rhythmtriage;
 #X obj 253 849 Gate;
 #X obj 304 338 r rhythmexponent-receive;
@@ -274,7 +274,7 @@
 #X msg 44 126 1 0 0;
 #X msg 64 105 0 1 0;
 #X msg 84 84 0 0 1;
-#X obj 359 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 359 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 431 350 r rhythmepsilon;
 #X obj 264 241 r rhythmsinglevalue;
@@ -365,7 +365,7 @@
 #X obj 156 401 cnv 15 406 258 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 304 455 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 125 256;
+-262144 -1 -1 117 256;
 #X obj 304 499 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 0 256;
 #X obj 297 542 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
@@ -373,12 +373,12 @@
 #X text 302 440 Rate;
 #X text 295 527 Epsilon;
 #X obj 304 629 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 3 256;
+-262144 -1 -1 1 256;
 #X text 302 614 Exp;
 #X obj 300 422 tgl 13 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 161 582 vradio 13 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 0;
 #X obj 304 585 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 8 256;
 #X text 302 570 Num Elems;
@@ -386,7 +386,7 @@
 -1 -1;
 #X text 161 567 DRIVERS;
 #X obj 161 412 vradio 13 1 0 10 empty empty empty 0 -8 0 10 -262144
--1 -1 5;
+-1 -1 0;
 #X text 295 404 VOL;
 #X text 314 404 SHUFFLE;
 #X text 302 484 Sing Val;
@@ -395,7 +395,7 @@
 -66577 0;
 #N canvas 43 85 723 507 (subpatch) 0;
 #X array array1 8 float 3;
-#A 0 2.36327 1 1.39474 1.69441 2.54476 2.16524 1.94531 0;
+#A 0 1 2.36327 0 2.54476 2.16524 1.94531 1.39474 4.59728;
 #X coords 0 15 8 0 200 258 2 0 0;
 #X restore 362 401 graph;
 #X obj 734 173 expr (pow($f1 \, $f2));
@@ -424,7 +424,7 @@
 -1 -1;
 #X obj 481 747 s randomize_rhythm_presets;
 #X obj 240 542 vradio 13 1 0 9 empty empty empty 0 -8 0 10 -262144
--1 -1 3;
+-1 -1 0;
 #X text 175 581 Rand \; Sing \; Feedb;
 #X text 255 539 Off \; Tonal \; Noise \; Beat \; New \; Ok \; 1 \;
 2 \; 3;

@@ -1,7 +1,7 @@
-#N canvas 453 134 824 749 10;
+#N canvas 312 134 824 749 10;
 #X obj 137 320 sin;
-#X obj 137 349 + 1;
-#X obj 137 378 / 2;
+#X obj 136 355 + 1;
+#X obj 136 380 / 2;
 #X obj 137 291 + 4.71239;
 #X obj 137 262 * 3.14;
 #X obj 137 233 line;
@@ -10,15 +10,19 @@
 #X msg 137 204 0 \, 1 \$1;
 #X obj 223 75 unpack;
 #X obj 137 118 f;
-#X obj 187 536 +;
-#X obj 235 431 *;
+#X obj 187 586 +;
+#X obj 187 511 *;
 #X obj 396 397 -;
-#X floatatom 187 463 5 0 0 0 - - -, f 5;
+#X floatatom 187 553 5 0 0 0 - - -, f 5;
 #X obj 338 321 f;
 #X obj 377 167 t b f b;
+#X obj 32 636 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 144 451 pow;
+#X obj 197 378 r liner_exponent;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
-#X connect 2 0 12 0;
+#X connect 2 0 18 0;
 #X connect 3 0 0 0;
 #X connect 4 0 3 0;
 #X connect 5 0 4 0;
@@ -37,3 +41,5 @@
 #X connect 16 0 10 0;
 #X connect 16 1 13 0;
 #X connect 16 2 15 0;
+#X connect 18 0 12 0;
+#X connect 19 0 18 1;
