@@ -305,6 +305,10 @@
 #X obj 1608 150 loadbang;
 #X msg 1608 171 0;
 #X text 1474 574 Disruption stuff in here.;
+#X obj 946 222 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 936 205 REC VID;
+#X obj 914 605 s record_video;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
 #X connect 4 0 5 0;
@@ -498,4 +502,5 @@
 #X connect 241 0 238 0;
 #X connect 242 0 243 0;
 #X connect 243 0 238 0;
+#X connect 245 0 247 0;
 #X coords 0 -1 1 1 1300 160 2 350 200;
