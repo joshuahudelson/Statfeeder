@@ -1,11 +1,11 @@
-#N canvas 67 793 1759 285 10;
+#N canvas 67 795 1759 285 10;
 #X text 369 66 BigC Freq/Diff: 349 \, 131 or 70;
 #X text 369 84 971 freq \, 130 diff. - Amp either 0.4 or 0.1;
 #X obj 1103 43 s current_instruction_length;
 #X msg 1331 77 reset;
 #X obj 898 12 r current_instruction;
 #X msg 898 33 set \$1;
-#X msg 898 54 rese;
+#X msg 898 54 whatever;
 #X text 693 6 expand \; contract \; turn off lin/pol \; horizontal
 \; retract (linearlly) \; vertical \; triangle (linearlly) \; then
 slow spin;

@@ -1,4 +1,4 @@
-#N canvas 206 211 1714 655 10;
+#N canvas 156 171 1714 655 10;
 #X obj 300 212 textfile;
 #X obj 300 162 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -32,7 +32,7 @@ determine speed of the movements.;
 #X obj 233 470 >=;
 #X obj 233 528 t b b b;
 #X obj 233 334 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 170 256;
 #X obj 470 126 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X floatatom 368 332 5 0 0 0 - - -, f 5;
@@ -40,7 +40,10 @@ determine speed of the movements.;
 #X text 454 339 instruction;
 #X text 569 313 extra instruction;
 #X obj 300 241 unpack f f s f;
+#X obj 601 259 s timer_on_off;
+#X msg 601 230 0;
 #X connect 0 0 35 0;
+#X connect 0 1 37 0;
 #X connect 1 0 0 0;
 #X connect 2 0 0 0;
 #X connect 3 0 1 0;
@@ -74,3 +77,4 @@ determine speed of the movements.;
 #X connect 35 1 31 0;
 #X connect 35 2 25 0;
 #X connect 35 3 32 0;
+#X connect 37 0 36 0;
