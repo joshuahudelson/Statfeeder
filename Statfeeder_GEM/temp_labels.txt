@@ -1,0 +1,41 @@
+0.01 0.02 reset;
+0.5 2 random_locations;
+2 2.01 reset;
+2.01 2.02 center;
+2.02 9 expand_random;
+9 14 stabilize;
+14 14.01 wind_up_1;
+14.01 19 unwind_1;
+23 25 contract;
+27 28 horizontal;
+28 29 contract;
+29 30 vertical;
+31 31.5 contract;
+33 34 triangle;
+35 35.1 wind_up_1;
+35.2 40 unwind_1;
+42 43.5 random_locations;
+43.5 43.6 reset;
+43.6 43.8 center;
+44 50 expand_simple;
+50 53 facial;
+53 53.1 wind_up_simple;
+53.1 58 unwind_simple;
+59 60 variablespin -0.3;
+61 63 variablespin 0.3;
+64 65 variableswap 0;
+66 67 variableswap 1;
+67 68 variableswap 2;
+68 69 variabletrade 0;
+69 70 variabletrade 1;
+70 71 variabletrade 2;
+71 72 variabletrade 3;
+72 73 variabletrade 4;
+73 75 variabletrade 0;
+75 75.1 wind_up_3;
+75.2 80 unwind_3;
+80 80.1 wind_up_3;
+82 90 unwind_3;
+
+
+
