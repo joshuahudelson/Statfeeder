@@ -1,4 +1,4 @@
-#N canvas 67 174 1764 705 10;
+#N canvas 67 292 1764 705 10;
 #X obj 1723 71 Gem;
 #X obj 100 593 dac~;
 #X obj 28 396 r~ channel0;

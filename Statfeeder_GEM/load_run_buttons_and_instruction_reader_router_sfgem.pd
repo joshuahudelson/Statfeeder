@@ -1,14 +1,14 @@
-#N canvas 450 154 880 602 10;
+#N canvas 289 138 880 602 10;
 #X obj 65 28 inlet;
 #X obj 150 28 inlet;
 #X obj 245 28 inlet;
 #X obj 330 28 inlet;
 #X obj 425 28 inlet;
 #X obj 401 393 outlet;
-#X msg 573 240 destroy;
+#X msg 573 240 create;
 #X obj 192 132 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#N canvas 67 317 972 500 gemwin 0;
+#N canvas 67 317 972 500 gemwin 1;
 #X obj 67 117 outlet;
 #X obj 67 10 inlet;
 #X obj 67 41 route create;
@@ -27,17 +27,17 @@
 #X obj 517 115 loadbang;
 #X msg 468 180 snap;
 #X obj 468 103 t b a;
-#X obj 468 77 gemhead -99;
 #X obj 680 158 r record_video;
 #X obj 680 197 t f b;
 #X obj 707 252 random 1000;
 #X msg 707 313 file Statfeeder_SFGEM_video_\$1.avi;
-#X obj 770 199 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
 #X obj 603 123 loadbang;
 #X msg 603 152 1366 768;
-#X obj 623 54 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 468 77 gemhead -99;
+#X msg 537 35 frame \$1;
+#X msg 632 19 60;
+#X msg 320 67 frame 60;
+#X obj 329 37 loadbang;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 2 0 8 0;
@@ -55,16 +55,18 @@
 #X connect 15 0 12 0;
 #X connect 16 0 15 0;
 #X connect 16 1 12 0;
-#X connect 17 0 16 0;
-#X connect 18 0 19 0;
-#X connect 19 0 11 0;
-#X connect 19 1 20 0;
-#X connect 20 0 21 0;
-#X connect 21 0 9 0;
-#X connect 22 0 20 0;
-#X connect 23 0 24 0;
-#X connect 24 0 12 2;
+#X connect 17 0 18 0;
+#X connect 18 0 11 0;
+#X connect 18 1 19 0;
+#X connect 19 0 20 0;
+#X connect 20 0 9 0;
+#X connect 21 0 22 0;
+#X connect 22 0 12 2;
+#X connect 23 0 16 0;
+#X connect 24 0 23 0;
 #X connect 25 0 24 0;
+#X connect 26 0 7 0;
+#X connect 27 0 26 0;
 #X restore 573 269 pd gemwin;
 #X obj 128 132 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -104,7 +106,6 @@
 #X text 525 301 When refactoring: make this a named sub-patch \; And
 also maybe locate it somewhere more accessible.;
 #X obj 491 353 s aux_instruction;
-#X obj 739 136 print inside1;
 #X floatatom 491 315 5 0 0 0 - - -, f 5;
 #X connect 0 0 12 0;
 #X connect 1 0 7 0;
@@ -124,7 +125,7 @@ also maybe locate it somewhere more accessible.;
 #X connect 15 0 31 0;
 #X connect 15 0 32 0;
 #X connect 15 0 37 0;
-#X connect 15 1 41 0;
+#X connect 15 1 40 0;
 #X connect 16 0 17 2;
 #X connect 23 0 14 0;
 #X connect 24 0 23 0;
@@ -134,8 +135,7 @@ also maybe locate it somewhere more accessible.;
 #X connect 25 3 26 0;
 #X connect 26 0 23 0;
 #X connect 28 0 27 1;
-#X connect 28 0 40 0;
 #X connect 30 0 16 0;
 #X connect 32 0 26 0;
 #X connect 33 0 23 0;
-#X connect 41 0 39 0;
+#X connect 40 0 39 0;
