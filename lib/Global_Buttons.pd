@@ -30,17 +30,17 @@
 #X obj 382 201 cnv 15 830 248 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 392 219 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 1;
+-262144 -262144 4;
 #X obj 392 273 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 1;
+-262144 -262144 4;
 #X obj 392 327 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 1;
-#X obj 922 219 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -166441 -262144 4;
+#X obj 922 219 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+-262144 -262144 1;
 #X obj 922 273 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 4;
+-262144 -262144 1;
 #X obj 922 327 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 4;
+-262144 -262144 1;
 #X msg 1252 178 color 0 0 0;
 #X msg 1467 200 color 0 0 0;
 #X obj 1770 218 r to_secondary_globals;
@@ -107,11 +107,11 @@
 #X floatatom 1031 85 5 0 0 0 - - -, f 5;
 #X text 400 203 OFF..WHIT. WIND WHIST GRIND2 NORM PAIR ORGY;
 #X text 401 311 TON . 3RD .OCT. GRIND . . . RHVOL .DC . GLISS;
-#X text 923 311 SIREN SIRN2 SALT GRIND KETTL STATC NULL. NULL.;
 #X msg 1791 125 15;
 #X floatatom 205 90 5 0 0 0 - - -, f 5;
 #X obj 5 236 expr (($f1>7)&($f1<=15));
 #X obj 229 227 expr (($f1>7)&($f1<=15));
+#X text 923 311 SIREN SIRN2 SALT GRIND KETTL STATC NOISE SELVS;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 31 0;
@@ -120,7 +120,7 @@
 #X connect 5 0 0 0;
 #X connect 5 0 1 0;
 #X connect 5 0 7 0;
-#X connect 5 0 100 0;
+#X connect 5 0 99 0;
 #X connect 6 0 29 0;
 #X connect 7 0 6 0;
 #X connect 7 0 8 0;
@@ -142,11 +142,11 @@
 #X connect 23 0 24 0;
 #X connect 23 0 13 0;
 #X connect 23 0 14 0;
-#X connect 23 0 99 0;
+#X connect 23 0 98 0;
 #X connect 24 0 18 0;
 #X connect 24 0 19 0;
 #X connect 24 0 20 0;
-#X connect 24 0 98 0;
+#X connect 24 0 97 0;
 #X connect 25 0 5 0;
 #X connect 25 0 36 0;
 #X connect 25 0 10 0;
@@ -259,8 +259,8 @@
 #X connect 91 0 92 0;
 #X connect 92 0 93 0;
 #X connect 93 0 85 0;
-#X connect 97 0 67 0;
-#X connect 97 0 74 0;
-#X connect 99 0 16 0;
-#X connect 100 0 3 0;
+#X connect 96 0 67 0;
+#X connect 96 0 74 0;
+#X connect 98 0 16 0;
+#X connect 99 0 3 0;
 #X coords 0 -1 1 1 832 250 2 381 200;

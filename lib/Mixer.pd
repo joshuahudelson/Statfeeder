@@ -1,4 +1,4 @@
-#N canvas 67 89 1211 687 10;
+#N canvas 192 278 1379 687 10;
 #X obj 62 579 *~;
 #X floatatom 126 471 5 0 0 0 - - -, f 5;
 #X msg 126 438 set \$1;
@@ -57,7 +57,7 @@
 #X obj 651 225 vsl 50 35 0 1 0 0 empty empty empty 6 12 0 17 -262144
 -1 -1 0 1;
 #X obj 701 225 vsl 50 35 0 1 0 0 empty empty empty 1 12 0 16 -262144
--1 -1 0 1;
+-1 -1 3400 1;
 #X obj 501 43 unpack 0 1 2 3 4;
 #X obj 1009 574 t b f;
 #X obj 926 614 expr 1/$f1;
@@ -80,6 +80,7 @@ the combined signals doesn't exceed 1 \;;
 #X obj 582 68 Glisser;
 #X obj 610 90 Glisser;
 #X obj 855 51 r gliss-length-sources;
+#X floatatom 637 582 5 0 0 0 - - -, f 5;
 #X connect 0 0 60 0;
 #X connect 1 0 12 1;
 #X connect 1 0 45 0;
@@ -125,6 +126,7 @@ the combined signals doesn't exceed 1 \;;
 #X connect 31 0 32 0;
 #X connect 31 1 30 0;
 #X connect 33 0 28 1;
+#X connect 33 0 75 0;
 #X connect 34 0 33 0;
 #X connect 35 0 64 0;
 #X connect 36 0 40 1;
