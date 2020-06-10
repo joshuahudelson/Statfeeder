@@ -2,13 +2,13 @@
 #X obj 27 264 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 124 300 STEREO/MONO;
-#X obj 474 305 s absolute-relative;
+#X obj 470 265 s absolute-relative;
 #X obj 27 -38 r init-loadbang;
 #X msg 27 9 0;
 #X msg 27 238 1;
 #X obj 27 298 s stereo-mono;
-#X msg 575 236 \; pd dsp \$1;
-#X obj 625 208 s reverb-bypass;
+#X msg 570 196 \; pd dsp \$1;
+#X obj 620 168 s reverb-bypass;
 #X msg 27 87 1;
 #X obj 470 -12 r absolute-relative-receive;
 #X obj 570 44 r dsp-on-off-receive;
@@ -17,24 +17,24 @@
 #X obj 420 -40 r sense-numb;
 #X msg 27 35 0;
 #X obj 520 16 r multiplex-controller;
-#X obj 525 277 s multiplex;
-#X obj 401 101 cnv 15 288 48 empty empty empty 20 12 0 14 -162280 -66577
+#X obj 520 237 s multiplex;
+#X obj 401 101 cnv 15 258 48 empty empty empty 20 12 0 14 -162280 -66577
 0;
-#X obj 474 108 tgl 22 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 470 108 tgl 22 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 654 108 tgl 22 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 620 108 tgl 22 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 594 108 tgl 22 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 570 108 tgl 22 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 414 108 tgl 22 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 420 108 tgl 22 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 534 108 tgl 22 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 520 108 tgl 22 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 406 131 SENSE;
-#X text 593 131 DSP;
-#X text 474 131 REL;
-#X text 530 131 PLEX;
-#X text 653 131 REV;
+#X text 412 131 SENSE;
+#X text 569 131 DSP;
+#X text 470 131 REL;
+#X text 516 131 PLEX;
+#X text 619 131 REV;
 #X connect 0 0 6 0;
 #X connect 3 0 4 0;
 #X connect 3 0 5 0;
@@ -55,4 +55,4 @@
 #X connect 20 0 8 0;
 #X connect 21 0 7 0;
 #X connect 23 0 17 0;
-#X coords 0 -1 1 1 290 50 2 400 100;
+#X coords 0 -1 1 1 260 50 2 400 100;
