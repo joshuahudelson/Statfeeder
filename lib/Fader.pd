@@ -1,4 +1,4 @@
-#N canvas 113 111 1102 850 10;
+#N canvas 67 111 1102 850 10;
 #X floatatom 788 322 5 0 0 0 - - -, f 5;
 #X floatatom 66 152 5 0 0 0 - - -, f 5;
 #X obj 331 412 / 127;
@@ -11,8 +11,8 @@
 #X floatatom 807 423 5 0 0 0 - - -, f 5;
 #X obj 331 578 t f f;
 #X obj 435 580 f;
-#X obj 414 559 t f b;
-#X obj 420 603 +;
+#X obj 419 544 t f b;
+#X obj 419 603 +;
 #X floatatom 333 681 5 0 0 0 - - -, f 5;
 #X obj 356 182 r ctl-\$1;
 #X obj 788 247 r ctl-\$2;
@@ -77,7 +77,7 @@
 #X obj 66 400 Gate;
 #X obj 66 610 Gate;
 #X obj 956 199 s auxfader-\$1;
-#X obj 956 264 s auxknob-\$1;
+#X obj 864 287 s auxknob-\$1;
 #X obj 399 361 r elem-exp-multiplier-\$1;
 #X obj 427 384 r elem-exp-adder-\$1;
 #X floatatom 329 537 5 0 0 0 - - -, f 5;
@@ -92,6 +92,7 @@
 #X obj 65 320 route 0;
 #X obj 66 525 route 0;
 #X msg 316 54 0;
+#X obj 554 590 r bend-amount\$2;
 #X connect 0 0 8 0;
 #X connect 1 0 41 0;
 #X connect 2 0 4 0;
@@ -195,3 +196,4 @@
 #X connect 89 1 54 0;
 #X connect 90 1 60 0;
 #X connect 91 0 45 0;
+#X connect 92 0 13 0;

@@ -1,4 +1,4 @@
-#N canvas 67 87 1853 993 10;
+#N canvas 314 89 1434 991 10;
 #X obj 229 173 < 8;
 #X obj 229 285 > 15;
 #X msg 229 309 color 0 \$1 0;
@@ -9,7 +9,7 @@
 #X obj 329 153 % 8;
 #X msg 329 255 set \$1;
 #X msg 329 309 set \$1;
-#X obj 1232 576 Presetter;
+#X obj 1183 606 Presetter;
 #X obj 392 101 + 8;
 #X obj 1276 362 + 16;
 #X obj 5 118 < 8;
@@ -30,23 +30,23 @@
 #X obj 382 201 cnv 15 830 248 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 392 219 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 5;
+-262144 -262144 3;
 #X obj 392 273 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--166441 -262144 5;
+-262144 -262144 3;
 #X obj 392 327 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 5;
+-262144 -262144 3;
 #X obj 922 219 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 0;
+-166441 -262144 2;
 #X obj 922 273 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 0;
+-262144 -262144 2;
 #X obj 922 327 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 0;
+-262144 -262144 2;
 #X msg 392 565 color 0 0 0;
 #X msg 922 565 color 0 0 0;
 #X obj 1670 224 r to_secondary_globals;
 #X msg 1412 183 \$1 \$1;
 #X obj 1266 201 route 0 1 2 3 4 5 6 7;
-#X obj 1477 200 route 0 1 2 3 4 5 6 7;
+#X obj 1477 201 route 0 1 2 3 4 5 6 7;
 #X msg 1670 258 \$1 \$1;
 #X obj 1412 208 - 8;
 #X msg 1412 237 \$1 \$1;
@@ -111,9 +111,10 @@
 #X connect 24 0 57 0;
 #X connect 25 0 5 0;
 #X connect 25 0 36 0;
+#X connect 25 0 10 0;
 #X connect 26 0 23 0;
 #X connect 26 0 35 0;
-#X connect 26 0 10 0;
+#X connect 26 0 10 1;
 #X connect 27 0 38 0;
 #X connect 27 0 42 0;
 #X connect 27 0 47 0;
