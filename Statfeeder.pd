@@ -1,4 +1,4 @@
-#N canvas 718 89 920 991 10;
+#N canvas 891 89 920 991 10;
 #X obj 36 15 cnv 15 850 910 empty empty empty 20 12 0 14 -191407 -66577
 0;
 #X obj 44 660 Presets_Source;
@@ -6,10 +6,11 @@
 #X obj 336 26 Mixer 1 4 1;
 #X obj 326 660 RhythmerSF;
 #X obj 44 389 Global_Buttons;
-#X msg 96 946 1 \, 2 \, 4 \, 5 \, 12 \, 14 \, 16 \, 17 \, 20 \, 21
+#X msg 36 936 1 \, 2 \, 4 \, 5 \, 12 \, 14 \, 16 \, 17 \, 20 \, 21
 ;
 #X obj 44 68 UGen 0 0 3;
 #X obj 336 68 UGen 1 1 4;
 #X obj 623 68 UGen 2 2 5;
 #X obj 44 26 Mixer 0 3 0;
 #X obj 623 26 Mixer 2 5 2;
+#X obj 744 660 Control-Center;

@@ -1,4 +1,4 @@
-#N canvas 260 405 924 675 10;
+#N canvas 213 405 924 675 10;
 #X obj 251 101 cnv 15 228 138 empty empty empty 20 12 0 14 -191407
 -66577 0;
 #X obj 258 319 s trans_time_pow;
@@ -30,7 +30,7 @@
 #X msg 328 39 2;
 #X msg 400 39 60;
 #X text 398 107 TIME STAB.;
-#X text 273 107 PRESET STAB. (EXP);
+#X text 255 107 PRESET STAB. (EXP);
 #X obj 679 -4 r auxknob-6;
 #X obj 685 155 +;
 #X obj 685 52 -;
