@@ -12,7 +12,7 @@
 #X obj 331 578 t f f;
 #X obj 435 580 f;
 #X obj 419 544 t f b;
-#X obj 419 603 +;
+#X obj 392 639 +;
 #X floatatom 333 681 5 0 0 0 - - -, f 5;
 #X obj 356 182 r ctl-\$1;
 #X obj 788 247 r ctl-\$2;
@@ -70,7 +70,7 @@
 #X obj 156 87 r init-loadbang;
 #X floatatom 176 414 5 0 0 0 - - -, f 5;
 #X floatatom 225 250 5 0 0 0 - - -, f 5;
-#X obj 333 705 s fadertrim-\$1;
+#X obj 332 771 s fadertrim-\$1;
 #X floatatom 364 216 5 0 0 0 - - -, f 5;
 #X obj 331 307 Gate;
 #X obj 66 210 Gate;
@@ -92,7 +92,11 @@
 #X obj 65 320 route 0;
 #X obj 66 525 route 0;
 #X msg 316 54 0;
-#X obj 554 590 r bend-amount\$2;
+#X obj 218 703 r bend-amount\$2;
+#X obj 332 738 *;
+#X obj 343 709 t b f;
+#X obj 154 759 loadbang;
+#X msg 219 758 1;
 #X connect 0 0 8 0;
 #X connect 1 0 41 0;
 #X connect 2 0 4 0;
@@ -113,7 +117,7 @@
 #X connect 13 0 14 0;
 #X connect 13 0 11 1;
 #X connect 14 0 48 0;
-#X connect 14 0 71 0;
+#X connect 14 0 94 0;
 #X connect 15 0 72 0;
 #X connect 16 0 0 0;
 #X connect 16 0 78 0;
@@ -196,4 +200,9 @@
 #X connect 89 1 54 0;
 #X connect 90 1 60 0;
 #X connect 91 0 45 0;
-#X connect 92 0 13 0;
+#X connect 92 0 93 0;
+#X connect 93 0 71 0;
+#X connect 94 0 93 0;
+#X connect 94 1 93 1;
+#X connect 95 0 96 0;
+#X connect 96 0 93 0;

@@ -1,4 +1,4 @@
-#N canvas 67 277 1576 587 10;
+#N canvas 67 269 1576 587 10;
 #X obj 179 147 < 8;
 #X obj 179 259 > 15;
 #X msg 179 283 color 0 \$1 0;
@@ -30,17 +30,17 @@
 #X obj 332 171 cnv 15 830 248 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 342 193 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 3;
+-166441 -262144 3;
 #X obj 342 247 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 3;
 #X obj 342 301 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 3;
 #X obj 872 193 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--166441 -262144 2;
+-262144 -262144 1;
 #X obj 872 247 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 2;
+-262144 -262144 1;
 #X obj 872 301 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 2;
+-262144 -262144 1;
 #X msg 342 466 color 0 0 0;
 #X msg 872 466 color 0 0 0;
 #X obj 1402 15 r to_secondary_globals;
@@ -70,9 +70,9 @@
 #X text 346 231 STAT SIREN ORGY. HUM . HUM2 GRIND GRND2 C#MIN;
 #X text 871 231 HUM2 BACKG SIREN SCRCH. SALT GRNDR KETTL STATC;
 #X text 879 177 OFF. HALO. REED. SERP. WIND CHORD WHIST HUM;
-#X text 872 285 NOISE SELFS PAIR. D.C. DCREV DCSIG DCSLF DCHLF;
-#X text 348 285 TON . 3RD .OCT. . DC ...... TRAN1 TRAN2 TRAN3;
-#X text 350 177 OFF..WHIT. WIND. DMAJ DCSLF WHIST AMIN GLISS;
+#X text 350 177 OFF..WHIT. WIND. DMAJ DCHLF WHIST AMIN GLISS;
+#X text 872 285 NOISE SELFS PAIR. D.C. DCREV DCSIG DCSLF .....;
+#X text 348 285 TON . 3RD .OCT. ........... TRAN1 TRAN2 TRAN3;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 31 0;
