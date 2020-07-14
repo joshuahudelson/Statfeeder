@@ -1,4 +1,4 @@
-#N canvas 728 749 1134 991 10;
+#N canvas 634 89 1134 991 10;
 #X text 712 723 2 ALL SIG \; 3 ALL SELF;
 #X text 711 776 6 ONE SELF \; 7 PAIR;
 #X text 711 802 8 PAIR & NOISE \; 9 PAIR & SIG \;;
@@ -136,7 +136,7 @@
 #X text 512 237 21 STATIC - 15;
 #X text 451 198 22 - NOISE - 16;
 #X msg 113 526 2 400 600 500 244 359 279 1 1 1 1 0;
-#X obj 448 78 s play-clip;
+#X obj 448 78 s gliss-second-switch;
 #X connect 11 0 16 0;
 #X connect 11 1 81 0;
 #X connect 12 0 15 0;
