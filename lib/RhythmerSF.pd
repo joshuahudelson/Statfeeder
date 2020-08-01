@@ -1,4 +1,4 @@
-#N canvas 67 56 1853 1024 10;
+#N canvas 134 186 1675 727 10;
 #X obj 268 754 s numelems;
 #X obj 268 733 s rhythmrate;
 #X obj 268 691 s rhythmsinglevalue;
@@ -16,7 +16,7 @@
 #X obj 161 670 s rhythmdriver;
 #X obj 1254 56 r rhythmtarget-receive;
 #X obj 268 350 r rhythmnumelems-receive;
-#X msg 926 219 0;
+#X msg 926 399 0;
 #X obj 926 191 t b b;
 #X obj 991 331 f;
 #X obj 1027 331 + 1;
@@ -24,7 +24,7 @@
 #X floatatom 1051 417 5 0 0 0 - - -, f 5;
 #X obj 926 163 r rhythmer-presets-zero;
 #X obj 991 251 r rhythmer-presets-increment;
-#X obj 1071 339 r rhythmer-presets-confirm;
+#X obj 1071 29 r rhythmer-presets-confirm;
 #X msg 991 389 set \$1;
 #X obj 1027 199 r init-loadbang;
 #X obj 806 563 t b f;
@@ -64,7 +64,7 @@
 #X msg 44 126 1 0 0;
 #X msg 64 105 0 1 0;
 #X msg 84 84 0 0 1;
-#X obj 359 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 359 58 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 431 350 r rhythmepsilon;
 #X obj 264 241 r rhythmsinglevalue;
@@ -154,28 +154,28 @@
 #X obj 156 401 cnv 15 406 258 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 268 490 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 125 256;
+-262144 -1 -1 0 256;
 #X obj 268 526 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 0 256;
 #X obj 268 563 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 0.01 256;
+-262144 -1 -1 0 256;
 #X text 266 475 Rate;
 #X text 266 548 Epsilon;
 #X obj 268 637 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 2.3 256;
+-262144 -1 -1 0 256;
 #X text 266 622 Exp;
 #X obj 268 422 tgl 13 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 161 606 vradio 13 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 0;
 #X obj 268 601 nbx 3 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 8 256;
+-262144 -1 -1 0 256;
 #X text 266 586 Num Elems;
 #X obj 302 422 bng 13 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X text 161 591 DRIVERS;
 #X obj 161 420 vradio 13 1 0 12 empty empty empty 0 -8 0 10 -262144
--1 -1 5;
+-1 -1 10;
 #X text 263 404 VOL;
 #X text 285 404 SHUFFLE;
 #X text 266 511 Sing Val;
@@ -184,7 +184,7 @@
 -66577 0;
 #N canvas 43 85 723 507 (subpatch) 0;
 #X array array1 8 float 3;
-#A 0 0 1.39474 1.69441 1.94531 2.16524 2.36327 1 0;
+#A 0 1 1.39474 1.94531 1.69441 0 0 2.36327 0;
 #X coords 0 15 8 0 220 258 2 0 0;
 #X restore 342 401 graph;
 #X obj 734 233 expr (pow($f1 \, $f2));
@@ -332,7 +332,7 @@ bang \;;
 #X text 1741 406 FED-BACK 3;
 #X msg 1500 346 2 \, 3 \, 3 \, 4 \, 5 \, 6 \, 7 \, 8;
 #X obj 31 815 % 8;
-#X floatatom 71 825 5 0 0 0 - - -, f 5;
+#X floatatom 73 823 5 0 0 0 - - -, f 5;
 #X msg 900 713 0 1 0 125 0 0.01 8 6.5 1 1;
 #X obj 1634 140 t b b;
 #X obj 1634 114 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -369,15 +369,21 @@ bang \;;
 #X obj 991 291 t b f;
 #X msg 958 219 100;
 #X msg 1027 220 100;
-#X obj 1071 358 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
-#X obj 1071 374 sel 0 1;
-#X msg 1109 404 0;
+#X obj 1071 88 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
 #X obj 302 69 r rhythmer-randomize;
 #X obj 302 98 r rhythmer-shuffle;
 #X obj 1041 273 r rhythmer-presets-decrement;
-#X floatatom 919 412 5 0 0 0 - - -, f 5;
 #X obj 991 357 % 13;
+#X obj 1159 380 spigot;
+#X msg 1208 304 2;
+#X msg 1210 331 0;
+#X floatatom 1179 417 5 0 0 0 - - -, f 5;
+#X obj 1096 324 change;
+#X msg 1096 353 1;
+#X msg 1121 71 set 0;
+#X obj 1071 114 sel 0 1;
+#X msg 1102 166 0;
 #X connect 5 0 6 1;
 #X connect 5 0 100 1;
 #X connect 6 0 117 0;
@@ -397,7 +403,7 @@ bang \;;
 #X connect 18 1 236 0;
 #X connect 19 0 20 0;
 #X connect 20 0 19 1;
-#X connect 20 0 245 0;
+#X connect 20 0 242 0;
 #X connect 22 0 21 0;
 #X connect 23 0 18 0;
 #X connect 24 0 235 0;
@@ -647,13 +653,19 @@ bang \;;
 #X connect 235 1 20 1;
 #X connect 236 0 19 1;
 #X connect 237 0 20 0;
-#X connect 238 0 239 0;
-#X connect 239 0 240 0;
-#X connect 239 1 22 0;
-#X connect 240 0 21 0;
-#X connect 241 0 215 0;
-#X connect 242 0 67 0;
-#X connect 243 0 235 0;
-#X connect 245 0 26 0;
-#X connect 245 0 244 0;
+#X connect 238 0 250 0;
+#X connect 239 0 215 0;
+#X connect 240 0 67 0;
+#X connect 241 0 235 0;
+#X connect 242 0 26 0;
+#X connect 242 0 247 0;
+#X connect 243 0 246 0;
+#X connect 244 0 243 1;
+#X connect 245 0 243 1;
+#X connect 247 0 248 0;
+#X connect 248 0 249 0;
+#X connect 249 0 238 0;
+#X connect 250 0 251 0;
+#X connect 250 1 22 0;
+#X connect 251 0 22 0;
 #X coords 0 -1 1 1 408 260 2 155 400;
