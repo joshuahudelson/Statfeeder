@@ -1,4 +1,4 @@
-#N canvas 67 211 1511 807 10;
+#N canvas 290 273 1511 807 10;
 #X obj 62 321 statfeed;
 #X floatatom 84 247 5 0 0 0 - - -, f 5;
 #X obj 62 196 random 1000;
@@ -38,9 +38,9 @@
 #X floatatom 62 355 5 0 0 0 - - -, f 5;
 #X obj 1342 64 t b b;
 #X obj 224 266 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 0 256;
+-262144 -1 -1 6 256;
 #X obj 751 222 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 0 256;
+-262144 -1 -1 6 256;
 #X obj 1369 123 f;
 #X obj 94 16 inlet;
 #X text 130 16 ELEMS;
@@ -53,11 +53,11 @@
 #X obj 457 49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X msg 124 437 0;
-#X obj 89 471 f;
+#X obj 89 472 f;
 #X obj 122 471 + 1;
 #X obj 62 443 t f b;
-#X obj 62 501 tabwrite melodier-\$1-random;
-#X obj 62 530 table melodier-\$1-random;
+#X obj 62 541 tabwrite melodier-\$1-random;
+#X obj 62 570 table melodier-\$1-random;
 #X msg 554 437 0;
 #X obj 519 471 f;
 #X obj 552 471 + 1;
@@ -66,8 +66,8 @@
 #X obj 944 471 f;
 #X obj 977 471 + 1;
 #X obj 917 443 t f b;
-#X obj 492 501 tabwrite melodier-\$1-single;
-#X obj 492 530 table melodier-\$1-single;
+#X obj 492 551 tabwrite melodier-\$1-single;
+#X obj 492 580 table melodier-\$1-single;
 #X obj 917 501 tabwrite melodier-\$1-feedback;
 #X obj 917 530 table melodier-\$1-feedback;
 #X obj 715 18 inlet;

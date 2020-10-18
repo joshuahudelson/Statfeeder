@@ -1,14 +1,15 @@
-#N canvas 697 89 927 991 10;
-#X obj 36 15 cnv 15 850 950 empty empty empty 20 12 0 14 -191407 -66577
+#N canvas 670 89 927 991 10;
+#X obj 39 12 cnv 15 850 950 empty empty empty 20 12 0 14 -191407 -66577
 0;
-#X obj 44 695 Presets_Source;
-#X obj 185 695 Presets-Gliss;
-#X obj 336 26 Mixer 1 4 1;
-#X obj 326 695 RhythmerSF;
-#X obj 45 395 Global_Buttons;
-#X obj 44 68 UGen 0 0 3;
-#X obj 44 26 Mixer 0 3 0;
-#X obj 623 26 Mixer 2 5 2;
-#X obj 744 695 Control-Center;
-#X obj 336 68 UGen 1 1 4;
-#X obj 623 68 UGen 2 2 5;
+#X obj 48 689 Presets_Source;
+#X obj 189 689 Presets-Gliss;
+#X obj 339 23 Mixer 1 4 1;
+#X obj 330 689 RhythmerSF;
+#X obj 48 392 Global_Buttons;
+#X obj 47 65 UGen 0 0 3;
+#X obj 47 23 Mixer 0 3 0;
+#X obj 626 23 Mixer 2 5 2;
+#X obj 749 689 Control-Center;
+#X obj 339 65 UGen 1 1 4;
+#X obj 626 65 UGen 2 2 5;
+#X obj 48 578 Melodier-Box;
