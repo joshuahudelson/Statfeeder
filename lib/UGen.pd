@@ -1,32 +1,32 @@
 #N canvas 67 139 1212 597 10;
-#X obj 223 317 statfeed~;
-#X obj 601 88 r fadertrim-\$2;
-#X obj 51 364 tabwrite~ \$0-array;
-#X obj 51 306 metro 200;
-#X obj 51 270 loadbang;
-#X obj 248 197 spigot;
-#X obj 742 98 r fadertrim-\$3;
-#X obj 274 267 spigot;
-#X obj 435 116 switch~;
-#X obj 223 543 s~ ugen\$1;
-#X obj 223 57 catch~ tougen\$1;
-#X msg 397 340 0;
-#X obj 397 317 sel 1;
-#X obj 223 358 *~;
-#X msg 429 340 1;
-#X obj 397 267 < 1;
-#X floatatom 397 375 5 0 0 0 - - -, f 5;
-#X obj 435 89 r ugen-\$1-dsp;
-#X obj 307 150 loadbang;
-#X msg 307 179 1;
+#X obj 303 317 statfeed~;
+#X obj 601 128 r fadertrim-\$2;
+#X obj 211 414 tabwrite~ \$0-array;
+#X obj 211 356 metro 200;
+#X obj 211 320 loadbang;
+#X obj 328 197 spigot;
+#X obj 742 128 r fadertrim-\$3;
+#X obj 354 267 spigot;
+#X obj 495 186 switch~;
+#X obj 303 473 s~ ugen\$1;
+#X obj 303 117 catch~ tougen\$1;
+#X msg 437 340 0;
+#X obj 437 317 sel 1;
+#X obj 303 358 *~;
+#X msg 469 340 1;
+#X obj 437 267 < 1;
+#X floatatom 437 375 5 0 0 0 - - -, f 5;
+#X obj 495 159 r ugen-\$1-dsp;
+#X obj 387 150 loadbang;
+#X msg 387 179 1;
 #X obj 380 424 r ugen\$1-external-vol;
 #X obj 620 537 s ugen\$1-external-vol-2;
 #X obj 742 181 Glisser;
-#X obj 640 132 r gliss-length-elems;
-#X obj 781 132 r gliss-length-exps;
+#X obj 640 152 r gliss-length-elems;
+#X obj 781 152 r gliss-length-exps;
 #X obj 419 456 r gliss-length-vols;
-#X obj 893 267 s elem-to-GEM-\$2;
-#X obj 1020 267 s exp-to-GEM-\$2;
+#X obj 478 297 s elem-to-GEM-\$2;
+#X obj 494 376 s exp-to-GEM-\$2;
 #X obj 601 211 cnv 15 250 308 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 742 211 nbx 3 56 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 30
@@ -65,7 +65,7 @@
 #X restore 601 268 graph;
 #X obj 380 485 Glisser;
 #X obj 601 181 Glisser;
-#X text 923 57 IMPORTANT: fadertrim-5's knob \; control also controls
+#X text 1083 90 IMPORTANT: fadertrim-5's knob \; control also controls
 the gliss \; rate \, because gliss rate control \; isn't being used
 for now \, nor is \; the exponent fine-grain knob \, so \; should be
 inconsequential unlses this \; changes.;

@@ -1,79 +1,78 @@
 #N canvas 67 87 1853 993 10;
-#X obj 179 147 < 8;
-#X obj 179 259 > 15;
-#X msg 179 283 color 0 \$1 0;
-#X msg 179 175 color 0 \$1 0;
-#X floatatom 179 110 5 0 0 0 - - -, f 5;
-#X msg 279 175 set \$1;
-#X obj 279 127 % 8;
-#X msg 279 229 set \$1;
-#X msg 279 283 set \$1;
-#X obj 1186 397 Presetter;
-#X obj 342 75 + 8;
-#X obj 1186 336 + 16;
-#X obj 15 92 < 8;
-#X obj 15 255 > 15;
-#X msg 15 283 color 0 \$1 0;
-#X msg 15 229 color 0 \$1 0;
-#X msg 105 175 set \$1;
-#X msg 105 229 set \$1;
-#X msg 105 283 set \$1;
-#X obj 872 352 + 8;
-#X obj 1235 336 + 16;
-#X floatatom 15 67 5 0 0 0 - - -, f 5;
-#X obj 105 84 % 8;
-#X floatatom 1186 93 5 0 0 0 - - -, f 5;
-#X floatatom 1182 370 5 0 0 0 - - -, f 5;
-#X obj 1242 67 r to_global_presets;
-#X obj 332 171 cnv 15 830 173 empty empty empty 20 12 0 14 -233017
+#X obj 218 177 < 8;
+#X obj 218 289 > 15;
+#X msg 218 313 color 0 \$1 0;
+#X msg 218 205 color 0 \$1 0;
+#X floatatom 218 140 5 0 0 0 - - -, f 5;
+#X msg 318 205 set \$1;
+#X obj 318 157 % 8;
+#X msg 318 259 set \$1;
+#X msg 318 313 set \$1;
+#X obj 285 387 Presetter;
+#X obj 381 105 + 8;
+#X obj 1225 366 + 16;
+#X obj 54 162 < 8;
+#X obj 54 285 > 15;
+#X msg 54 313 color 0 \$1 0;
+#X msg 54 259 color 0 \$1 0;
+#X msg 144 205 set \$1;
+#X msg 144 259 set \$1;
+#X msg 144 313 set \$1;
+#X obj 911 382 + 8;
+#X obj 1274 366 + 16;
+#X floatatom 54 137 5 0 0 0 - - -, f 5;
+#X obj 144 154 % 8;
+#X floatatom 1225 123 5 0 0 0 - - -, f 5;
+#X floatatom 1221 400 5 0 0 0 - - -, f 5;
+#X obj 1361 40 r to_global_presets;
+#X obj 371 201 cnv 15 830 173 empty empty empty 20 12 0 14 -233017
 -66577 0;
-#X obj 342 193 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+#X obj 381 223 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -166441 -262144 0;
-#X obj 342 247 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+#X obj 381 277 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 0;
-#X obj 342 301 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+#X obj 381 331 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 0;
-#X obj 872 193 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+#X obj 911 223 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 0;
-#X obj 872 247 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+#X obj 911 277 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 0;
-#X obj 872 301 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+#X obj 911 331 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 0;
-#X msg 342 387 color 0 0 0;
-#X msg 872 387 color 0 0 0;
-#X obj 1402 15 r to_secondary_globals;
-#X msg 1322 157 \$1 \$1;
-#X obj 1176 175 route 0 1 2 3 4 5 6 7;
-#X obj 1367 175 route 0 1 2 3 4 5 6 7;
-#X msg 1450 132 \$1 \$1;
-#X obj 1322 182 - 8;
-#X msg 1322 211 \$1 \$1;
-#X obj 1176 229 route 0 1 2 3 4 5 6 7;
-#X obj 1176 283 route 0 1 2 3 4 5 6 7;
-#X msg 1322 265 \$1 \$1;
-#X obj 1322 236 - 16;
-#X obj 1402 62 - 8;
-#X msg 1402 91 \$1 \$1;
-#X msg 1402 145 \$1 \$1;
-#X obj 1402 116 - 16;
-#X obj 1369 229 route 0 1 2 3 4 5 6 7;
-#X obj 1369 283 route 0 1 2 3 4 5 6 7;
-#X obj 653 287 Meta-Controls;
-#X msg 1450 44 15;
-#X floatatom 113 109 5 0 0 0 - - -, f 5;
-#X obj 15 202 expr (($f1>7)&($f1<=15));
-#X obj 179 201 expr (($f1>7)&($f1<=15));
-#X obj 1177 453 Preset-Button-Numbering;
-#X obj 632 181 Transitioner-Control-Box;
-#X text 346 231 STAT SIREN ORGY. HUM . HUM2 GRIND GRND2 C#MIN;
-#X text 871 231 HUM2 BACKG SIREN SCRCH. SALT GRNDR KETTL STATC;
-#X text 879 177 OFF. HALO. REED. SERP. WIND CHORD WHIST HUM;
-#X text 348 285 TON . 3RD .OCT. .D.C. RHSHF TRAN1 TRAN2 GLISS;
-#X text 872 285 NOISE SELFS PAIR. D.C. DCREV DCSIG DCSLF GLISS;
-#X obj 1182 428 New_Transitioner;
-#X text 350 177 OFF..WHIT. WIND. DMAJ DCHLF WHIST F#MIN ?????;
-#X msg 15 175 color 0 \$1 0;
-#X msg 179 229 color 0 \$1 0;
+#X msg 381 417 color 0 0 0;
+#X msg 911 417 color 0 0 0;
+#X obj 1491 64 r to_secondary_globals;
+#X msg 1361 187 \$1 \$1;
+#X obj 1215 205 route 0 1 2 3 4 5 6 7;
+#X obj 1406 205 route 0 1 2 3 4 5 6 7;
+#X msg 1456 152 \$1 \$1;
+#X obj 1361 212 - 8;
+#X msg 1361 241 \$1 \$1;
+#X obj 1215 259 route 0 1 2 3 4 5 6 7;
+#X obj 1215 313 route 0 1 2 3 4 5 6 7;
+#X msg 1361 295 \$1 \$1;
+#X obj 1361 266 - 16;
+#X obj 1408 82 - 8;
+#X msg 1408 111 \$1 \$1;
+#X msg 1408 165 \$1 \$1;
+#X obj 1408 136 - 16;
+#X obj 1408 259 route 0 1 2 3 4 5 6 7;
+#X obj 1408 313 route 0 1 2 3 4 5 6 7;
+#X obj 690 314 Meta-Controls;
+#X msg 1456 64 15;
+#X obj 54 232 expr (($f1>7)&($f1<=15));
+#X obj 218 231 expr (($f1>7)&($f1<=15));
+#X obj 1216 473 Preset-Button-Numbering;
+#X obj 672 209 Transitioner-Control-Box;
+#X text 385 261 STAT SIREN ORGY. HUM . HUM2 GRIND GRND2 C#MIN;
+#X text 910 261 HUM2 BACKG SIREN SCRCH. SALT GRNDR KETTL STATC;
+#X text 918 207 OFF. HALO. REED. SERP. WIND CHORD WHIST HUM;
+#X text 911 315 NOISE SELFS PAIR. D.C. DCREV DCSIG DCSLF GLISS;
+#X obj 1221 438 New_Transitioner;
+#X msg 54 205 color 0 \$1 0;
+#X msg 218 259 color 0 \$1 0;
+#X text 389 207 OFF..WHIT. WIND. DMAJ DCHLF WHIST F#MIN ----;
+#X text 387 315 TON . 3RD. OCTV. D.C. RHSHF TRAN1 TRAN2 GLISS;
 #X connect 0 0 3 0;
 #X connect 1 0 2 0;
 #X connect 2 0 29 0;
@@ -81,7 +80,7 @@
 #X connect 4 0 0 0;
 #X connect 4 0 1 0;
 #X connect 4 0 6 0;
-#X connect 4 0 56 0;
+#X connect 4 0 55 0;
 #X connect 5 0 27 0;
 #X connect 6 0 5 0;
 #X connect 6 0 7 0;
@@ -90,7 +89,7 @@
 #X connect 8 0 29 0;
 #X connect 10 0 23 0;
 #X connect 11 0 23 0;
-#X connect 12 0 66 0;
+#X connect 12 0 63 0;
 #X connect 13 0 14 0;
 #X connect 14 0 32 0;
 #X connect 15 0 31 0;
@@ -102,17 +101,16 @@
 #X connect 21 0 22 0;
 #X connect 21 0 12 0;
 #X connect 21 0 13 0;
-#X connect 21 0 55 0;
+#X connect 21 0 54 0;
 #X connect 22 0 16 0;
 #X connect 22 0 17 0;
 #X connect 22 0 18 0;
-#X connect 22 0 54 0;
 #X connect 23 0 4 0;
 #X connect 23 0 34 0;
 #X connect 23 0 9 0;
 #X connect 24 0 21 0;
 #X connect 24 0 33 0;
-#X connect 24 0 64 0;
+#X connect 24 0 62 0;
 #X connect 25 0 36 0;
 #X connect 25 0 40 0;
 #X connect 25 0 45 0;
@@ -191,8 +189,8 @@
 #X connect 51 7 32 0;
 #X connect 53 0 39 0;
 #X connect 53 0 46 0;
-#X connect 55 0 15 0;
-#X connect 56 0 67 0;
-#X connect 66 0 30 0;
-#X connect 67 0 28 0;
-#X coords 0 -1 1 1 832 175 2 331 170;
+#X connect 54 0 15 0;
+#X connect 55 0 64 0;
+#X connect 63 0 30 0;
+#X connect 64 0 28 0;
+#X coords 0 -1 1 1 832 175 2 370 200;

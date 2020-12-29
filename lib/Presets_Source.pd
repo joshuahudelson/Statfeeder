@@ -1,4 +1,4 @@
-#N canvas 116 235 1066 519 10;
+#N canvas 67 235 1066 519 10;
 #X obj 100 31 cnv 15 128 258 empty empty empty 20 12 0 14 -228856 -66577
 0;
 #X obj 101 46 vradio 13 1 0 18 empty empty empty 0 -8 0 10 -262144
@@ -8,9 +8,10 @@
 \; 9 PAIR & SIG \; 10 PAIR & SELF \; 11 DAISY CHAIN \; 12 DC REVERSE
 \; 13 DC & NOISE \; 14 DC & SIG \; 15 DC & SELF \; 16 DC & HALF \;
 17 ORGY \;;
-#X obj 101 325 Sourcerer;
+#X obj 71 325 Sourcerer;
 #X obj 101 4 r to_source_presets;
 #X text 108 30 SOURCE PRESETS;
+#X obj 71 364 Controller_Input_SF;
 #X connect 1 0 3 0;
 #X connect 4 0 1 0;
 #X coords 0 -1 1 1 130 260 2 99 30;

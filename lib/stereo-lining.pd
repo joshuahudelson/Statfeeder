@@ -1,8 +1,8 @@
-#N canvas 753 221 450 402 10;
+#N canvas 706 221 566 418 10;
 #X obj 171 115 unpack;
 #X obj 160 244 line;
 #X obj 160 221 pack;
-#X msg 366 183 set \$1;
+#X msg 326 182 set \$1;
 #X floatatom 192 200 5 0 0 0 - - -, f 5;
 #X obj 160 174 t f b;
 #X obj 160 319 outlet;
@@ -11,7 +11,7 @@
 #X floatatom 272 200 5 0 0 0 - - -, f 5;
 #X obj 240 174 t f b;
 #X obj 240 319 outlet;
-#X obj 366 39 inlet;
+#X obj 326 88 inlet;
 #X obj 186 86 inlet;
 #X connect 0 0 5 0;
 #X connect 0 1 10 0;

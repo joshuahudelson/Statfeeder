@@ -1,46 +1,46 @@
-#N canvas 72 405 924 675 10;
-#X obj 251 101 cnv 15 228 98 empty empty empty 20 12 0 14 -191407 -66577
+#N canvas 288 278 924 675 10;
+#X obj 351 201 cnv 15 228 98 empty empty empty 20 12 0 14 -191407 -66577
 0;
-#X obj 257 319 s trans_time_pow;
-#X obj 525 186 s trans_time_add;
-#X obj 327 290 s trans_time_mult;
-#X obj 400 261 s trans_time_exp;
-#X obj 86 167 s trans_presets_exp;
-#X obj 86 201 min 27;
-#X obj 276 116 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
+#X obj 357 369 s trans_time_pow;
+#X obj 625 286 s trans_time_add;
+#X obj 427 340 s trans_time_mult;
+#X obj 500 311 s trans_time_exp;
+#X obj 186 267 s trans_presets_exp;
+#X obj 186 301 min 27;
+#X obj 376 216 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
 -262144 -1 -1 8 256;
-#X obj 400 116 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
+#X obj 500 216 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
 -262144 -1 -1 8 256;
-#X obj 327 157 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
+#X obj 427 257 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
 -262144 -1 -1 2 256;
-#X obj 257 157 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
+#X obj 357 257 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
 -262144 -1 -1 2 256;
-#X obj 399 157 nbx 3 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
+#X obj 499 257 nbx 3 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
 -262144 -1 -1 60 256;
-#X text 341 183 MULT;
-#X text 266 183 POWER;
-#X obj 524 98 r to_trans_time_exp;
-#X obj 48 98 r to_trans_presets_exp;
-#X obj 12 143 r to_trans_power;
-#X obj 134 143 r to_trans_mult;
-#X obj 518 143 r to_trans_add;
-#X text 418 183 ADD;
-#X obj 339 -2 loadbang;
-#X msg 276 39 8;
-#X msg 328 39 2;
-#X msg 400 39 60;
-#X text 398 99 TIME STAB.;
-#X text 255 99 PRESET STAB. (EXP);
-#X obj 679 -4 r auxknob-6;
-#X obj 685 155 +;
-#X obj 685 52 -;
-#X obj 679 23 t f f;
-#X floatatom 685 73 5 0 0 0 - - -, f 5;
-#X obj 685 176 max 2;
-#X text 308 141 TIME (& GLISS TIME);
-#X obj 685 93 min 1;
-#X obj 685 114 max -1;
-#X floatatom 685 135 5 0 0 0 - - -, f 5;
+#X text 441 283 MULT;
+#X text 366 283 POWER;
+#X obj 624 198 r to_trans_time_exp;
+#X obj 148 198 r to_trans_presets_exp;
+#X obj 112 243 r to_trans_power;
+#X obj 234 243 r to_trans_mult;
+#X obj 618 243 r to_trans_add;
+#X text 518 283 ADD;
+#X obj 376 108 loadbang;
+#X msg 376 149 8;
+#X msg 428 149 2;
+#X msg 500 149 60;
+#X text 498 199 TIME STAB.;
+#X text 355 199 PRESET STAB. (EXP);
+#X obj 749 96 r auxknob-6;
+#X obj 755 255 +;
+#X obj 755 152 -;
+#X obj 749 123 t f f;
+#X floatatom 755 173 5 0 0 0 - - -, f 5;
+#X obj 755 276 max 2;
+#X text 408 241 TIME (& GLISS TIME);
+#X obj 755 193 min 1;
+#X obj 755 214 max -1;
+#X floatatom 755 235 5 0 0 0 - - -, f 5;
 #X connect 6 0 5 0;
 #X connect 7 0 6 0;
 #X connect 8 0 4 0;
@@ -71,4 +71,4 @@
 #X connect 33 0 34 0;
 #X connect 34 0 35 0;
 #X connect 35 0 27 0;
-#X coords 0 -1 1 1 230 100 2 250 100;
+#X coords 0 -1 1 1 230 100 2 350 200;

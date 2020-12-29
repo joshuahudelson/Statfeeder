@@ -1,40 +1,40 @@
-#N canvas 67 228 971 407 10;
-#X obj 27 264 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#N canvas 67 220 971 510 10;
+#X obj 347 274 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X text 124 300 STEREO/MONO;
-#X obj 446 206 s absolute-relative;
-#X obj 27 -38 r init-loadbang;
-#X msg 27 9 0;
-#X msg 27 238 1;
-#X obj 27 298 s stereo-mono;
-#X msg 518 231 \; pd dsp \$1;
-#X obj 554 183 s reverb-bypass;
-#X msg 27 87 1;
-#X obj 446 -12 r absolute-relative-receive;
-#X obj 518 44 r dsp-on-off-receive;
-#X obj 554 72 r reverb-bypass-receive;
-#X msg 27 61 1;
-#X obj 410 -40 r sense-numb;
-#X msg 27 35 0;
-#X obj 482 16 r multiplex-controller;
-#X obj 482 183 s multiplex;
-#X obj 401 101 cnv 15 188 48 empty empty empty 20 12 0 14 -191407 -66577
+#X text 444 310 STEREO/MONO;
+#X obj 526 339 s absolute-relative;
+#X obj 347 62 r init-loadbang;
+#X msg 347 109 0;
+#X msg 347 248 1;
+#X obj 347 308 s stereo-mono;
+#X msg 598 281 \; pd dsp \$1;
+#X obj 634 260 s reverb-bypass;
+#X msg 347 187 1;
+#X obj 526 88 r absolute-relative-receive;
+#X obj 598 144 r dsp-on-off-receive;
+#X obj 634 172 r reverb-bypass-receive;
+#X msg 347 161 1;
+#X obj 490 60 r sense-numb;
+#X msg 347 135 0;
+#X obj 562 116 r multiplex-controller;
+#X obj 562 316 s multiplex;
+#X obj 481 201 cnv 15 188 48 empty empty empty 20 12 0 14 -191407 -66577
 0;
-#X obj 446 104 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 526 204 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 554 104 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 634 204 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 518 104 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 598 204 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 410 104 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 490 204 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 482 104 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 562 204 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 406 129 SENSE;
-#X text 520 129 DSP;
-#X text 449 129 REL;
-#X text 481 129 PLEX;
-#X text 556 129 REV;
+#X text 486 229 SENSE;
+#X text 600 229 DSP;
+#X text 529 229 REL;
+#X text 561 229 PLEX;
+#X text 636 229 REV;
 #X connect 0 0 6 0;
 #X connect 3 0 4 0;
 #X connect 3 0 5 0;
@@ -55,4 +55,4 @@
 #X connect 20 0 8 0;
 #X connect 21 0 7 0;
 #X connect 23 0 17 0;
-#X coords 0 -1 1 1 190 50 2 400 100;
+#X coords 0 -1 1 1 190 50 2 480 200;
