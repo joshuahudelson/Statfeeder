@@ -1,5 +1,5 @@
 #N canvas 67 89 1229 942 10;
-#X obj 61 3 inlet;
+#X obj 61 53 inlet;
 #X obj 605 243 outlet;
 #X obj 615 139 outlet;
 #X obj 61 92 t b b b b b b b b b b b b b, f 67;
@@ -37,9 +37,9 @@
 \; 2 bigC freq spd \; 1 bigC size spd \;;
 #X text 166 783 5 bigC amp \; 4 bigC stay \; 3 bigC fdiff \; 2 bigC
 freq \; 1 bigC size \;;
-#X obj 907 206 r current_instruction_length;
-#X obj 803 205 unpack f f f f;
-#X obj 803 225 pack f f f f;
+#X obj 767 206 r current_instruction_length;
+#X obj 663 205 unpack f f f f;
+#X obj 663 225 pack f f f f;
 #X msg 460 121 -1 -1 -1 -1 -1;
 #X msg 426 187 -1 -1 -1 -1;
 #X text 174 671 2 trade \; 1 swap;

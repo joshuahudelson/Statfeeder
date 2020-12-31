@@ -58,12 +58,12 @@
 #X obj 1408 136 - 16;
 #X obj 1408 259 route 0 1 2 3 4 5 6 7;
 #X obj 1408 313 route 0 1 2 3 4 5 6 7;
-#X obj 690 314 Meta-Controls;
+#X obj 689 315 Meta-Controls;
 #X msg 1456 64 15;
 #X obj 54 232 expr (($f1>7)&($f1<=15));
 #X obj 218 231 expr (($f1>7)&($f1<=15));
 #X obj 1216 473 Preset-Button-Numbering;
-#X obj 672 209 Transitioner-Control-Box;
+#X obj 671 210 Transitioner-Control-Box;
 #X text 385 261 STAT SIREN ORGY. HUM . HUM2 GRIND GRND2 C#MIN;
 #X text 910 261 HUM2 BACKG SIREN SCRCH. SALT GRNDR KETTL STATC;
 #X text 918 207 OFF. HALO. REED. SERP. WIND CHORD WHIST HUM;

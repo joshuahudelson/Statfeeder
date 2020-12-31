@@ -1,4 +1,4 @@
-#N canvas 67 844 1848 231 10;
+#N canvas 67 746 1848 321 10;
 #X text 1457 152 BigC Freq/Diff: 349 \, 131 or 70;
 #X text 1455 167 971 freq \, 130 diff. - Amp either 0.4 or 0.1;
 #X obj 1324 179 s liner_exponent;
@@ -51,6 +51,9 @@
 #X obj 372 448 t a;
 #X text 375 199 ORBIT;
 #X text 22 6 Make sure to press a few keys to seed the [random].;
+#X msg 1397 27 3.5;
+#X msg 1438 26 1.5;
+#X text 87 217 sets dist 100;
 #X connect 4 0 2 0;
 #X connect 5 0 4 0;
 #X connect 6 0 49 0;
@@ -89,3 +92,5 @@
 #X connect 47 0 49 0;
 #X connect 48 0 20 0;
 #X connect 49 0 20 0;
+#X connect 52 0 15 0;
+#X connect 53 0 15 0;

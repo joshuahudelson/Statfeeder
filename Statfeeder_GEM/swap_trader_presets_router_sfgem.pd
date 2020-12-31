@@ -1,41 +1,41 @@
-#N canvas 294 412 744 457 10;
-#X obj 250 377 trader;
-#X obj 250 222 hradio 30 1 0 3 empty empty empty 0 -8 0 10 -262144
+#N canvas 284 404 873 527 10;
+#X obj 230 337 trader;
+#X obj 230 182 hradio 30 1 0 3 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X obj 283 316 hradio 30 1 0 7 empty empty empty 0 -8 0 10 -262144
--1 -1 6;
-#X msg 361 60 0;
-#X msg 523 60 2;
-#X msg 442 60 1;
-#X msg 361 118 3;
-#X msg 442 118 4;
-#X msg 524 118 5;
-#X msg 610 87 6;
-#X obj 102 64 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 263 276 hradio 30 1 0 7 empty empty empty 0 -8 0 10 -262144
+-1 -1 2;
+#X msg 342 100 0;
+#X msg 504 100 2;
+#X msg 423 100 1;
+#X msg 342 158 3;
+#X msg 423 158 4;
+#X msg 505 158 5;
+#X msg 591 127 6;
+#X obj 132 64 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 102 35 r markerforwardbutton;
-#X obj 141 93 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 132 35 r markerforwardbutton;
+#X obj 171 93 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 141 64 r markerbackbutton;
-#X obj 141 168 - 1;
-#X obj 102 157 + 1;
-#X floatatom 102 186 5 0 0 0 - - -, f 5;
-#X obj 102 128 f;
-#X obj 141 139 f;
-#X obj 102 214 % 3;
-#X obj 361 31 r rbutton-0;
-#X obj 442 31 r rbutton-1;
-#X obj 523 31 r rbutton-2;
-#X obj 610 58 r rbutton-6;
-#X obj 361 89 r rbutton-3;
-#X obj 442 89 r rbutton-4;
-#X obj 523 89 r rbutton-5;
-#X obj 65 92 loadbang;
-#X msg 65 115 300;
-#X obj 375 160 s trade_2pnl;
-#X obj 283 269 r trade;
-#X obj 102 243 s swap_2pnl;
-#X obj 250 168 r swap;
+#X obj 171 64 r markerbackbutton;
+#X obj 171 168 - 1;
+#X obj 132 157 + 1;
+#X floatatom 132 186 5 0 0 0 - - -, f 5;
+#X obj 132 128 f;
+#X obj 171 139 f;
+#X obj 132 214 % 3;
+#X obj 342 71 r rbutton-0;
+#X obj 423 71 r rbutton-1;
+#X obj 504 71 r rbutton-2;
+#X obj 591 98 r rbutton-6;
+#X obj 342 129 r rbutton-3;
+#X obj 423 129 r rbutton-4;
+#X obj 504 129 r rbutton-5;
+#X obj 95 92 loadbang;
+#X msg 95 115 300;
+#X obj 356 200 s trade_2pnl;
+#X obj 263 249 r trade;
+#X obj 132 243 s swap_2pnl;
+#X obj 230 148 r swap;
 #X connect 1 0 0 0;
 #X connect 2 0 0 1;
 #X connect 3 0 29 0;
