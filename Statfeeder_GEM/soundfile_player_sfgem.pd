@@ -1,10 +1,10 @@
-#N canvas 394 411 649 574 10;
+#N canvas 662 529 649 574 10;
 #X obj 274 169 openpanel;
 #X obj 274 243 readsf~ 3;
 #X obj 354 218 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 274 198 open \$1;
-#X msg 354 189 0;
+#X msg 399 261 0;
 #X obj 273 340 s~ channel0;
 #X obj 292 311 s~ channel1;
 #X obj 309 282 s~ channel2;
@@ -24,6 +24,7 @@
 #X obj 90 355 sel 0 1;
 #X msg 90 388 0;
 #X msg 122 388 1;
+#X obj 399 290 s play_rec;
 #X connect 0 0 3 0;
 #X connect 1 0 5 0;
 #X connect 1 0 18 0;
@@ -34,7 +35,7 @@
 #X connect 1 3 4 0;
 #X connect 2 0 1 0;
 #X connect 3 0 1 0;
-#X connect 4 0 2 0;
+#X connect 4 0 24 0;
 #X connect 8 0 9 0;
 #X connect 9 0 7 0;
 #X connect 9 0 6 0;
