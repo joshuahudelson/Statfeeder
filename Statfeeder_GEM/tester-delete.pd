@@ -1,0 +1,2 @@
+#N canvas 777 255 740 577 10;
+#X obj 209 145 translator-rotator-new 0;

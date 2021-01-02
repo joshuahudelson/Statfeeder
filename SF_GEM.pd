@@ -1,4 +1,4 @@
-#N canvas 67 815 1848 252 10;
+#N canvas 67 780 1657 300 10;
 #X text 1562 173 BigC Freq/Diff: 349 \, 131 or 70;
 #X text 1560 188 971 freq \, 130 diff. - Amp either 0.4 or 0.1;
 #X obj 1424 235 s liner_exponent;
@@ -50,23 +50,32 @@
 #X text 1345 14 Only 1 Wind-Up: should take current SPIN and add an
 integer to it. The integer should be the AUX instruction. Then UNWIND
 should take its SPIN value as the new aux value...;
-#X text 420 247 TIMED:;
-#X text 90 249 INSTANTS:;
-#X text 104 274 RESET \; WINDUP \; LINPOL \; TOGGLE AMP? \; MIRRORING
-\; DISRUPT (use AUX as index of possibilities) \; STAYTIME \; LINEAR
-EXPONENT \;;
-#X text 86 454 FADERS & KNOBS \; - 3 sizes \; - 3 spins \; - 3 distance
-\; - 2 last FADERS \; -> StayTime \; -> Instruction Length (SPEED \,
-all);
-#X text 448 271 VAR TRADE \; VAR SWAP \; VAR SPIN \; VAR SPIN DIFF
+#X text 83 559 TIMED:;
+#X text 42 423 INSTANTS:;
+#X text 142 495 VAR TRADE \; VAR SWAP \; VAR SPIN \; VAR SPIN DIFF
 (use AUX as index of possibilities) \; VAR DISTANCE \; VAR DISTANCE
 DIFF (use AUX...) \; VAR SIZE \; VAR SIZE DIFF (use AUX) \; -- \; 7
 buttons for TRADES \; and 1 for 360 SPIN \; -- \; RAND LOCATIONS (use
 AUX to set some kind of limits...) \; MIRRORING (control) \; DISRUPTOR
 (control) \; TOGGLE AMP \; SWAP (forward \, back \, cycle) \;;
-#X text 839 241 SPECIAL: - Expand Random (slow \, pulsing outward)
+#X text 136 723 SPECIAL: - Expand Random (slow \, pulsing outward)
 \; - Contract Random? - Expand Spiral (3 diff rates \, sizes \, diestances)
 \; - Newton's Balls... back and forth \, different timings \; -;
+#X obj 1190 275 s instruction_bypass;
+#X text 124 384 RESET \; WINDUP (using spin-additive) \; LINPOL (aux)
+\; MIRRORING (aux) \; DISRUPT (use AUX as index of possibilities \,
+with 0 = off) \; STAYTIME (aux) \; LINEAR EXPONENT (aux) \; 8...?;
+#X text 512 582 Add number box for timer \, add pulse for phase offset
+metro... add instruction number...;
+#X text 295 362 PRESETS;
+#X text 907 390 - Why does Mirror in Translator-rotator include a -1
+in its select?;
+#X text 501 378 TO DO: \; - Put -1 = 999: in Instructor \;;
+#X text 501 420 FADERS & KNOBS (ALL RELATIVE \, NOT ABSOLUTE) \; FADERS
+\; - 1 size (because am I really gonna control size much?) \; - 3 spins
+\; - 3 distance \; - 1 speed (instruction length) \; KNOBS \; -> StayTime
+\; -> 1 all spin? 1 all times \, 1 all distances \, 1 all size? \;
+->;
 #X connect 4 0 2 0;
 #X connect 5 0 4 0;
 #X connect 5 0 44 0;
