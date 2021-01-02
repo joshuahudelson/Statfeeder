@@ -1,77 +1,77 @@
 #N canvas 67 780 1657 300 10;
-#X text 1562 173 BigC Freq/Diff: 349 \, 131 or 70;
-#X text 1560 188 971 freq \, 130 diff. - Amp either 0.4 or 0.1;
-#X obj 1424 235 s liner_exponent;
-#X obj 12 7 GEM-Center_sfgem;
-#X msg 1424 207 1;
-#X obj 1424 179 loadbang;
-#X obj 1334 140 s current_instruction_length;
-#X obj 1571 104 s new_frame_rate;
-#X msg 1334 122 2000;
-#X msg 1369 122 15000;
-#X obj 1344 93 s aux_instruction;
-#X msg 1344 75 5;
-#X msg 1377 75 0;
-#X msg 1571 75 40;
-#X obj 1571 140 instructor_presets;
-#X text 1569 123 For easy editing:;
-#X text 1539 214 Make sure to press a few keys to seed the [random].
+#X text 1562 233 BigC Freq/Diff: 349 \, 131 or 70;
+#X text 1560 248 971 freq \, 130 diff. - Amp either 0.4 or 0.1;
+#X obj 1424 295 s liner_exponent;
+#X obj 12 67 GEM-Center_sfgem;
+#X msg 1424 267 1;
+#X obj 1424 239 loadbang;
+#X obj 1334 200 s current_instruction_length;
+#X obj 1571 164 s new_frame_rate;
+#X msg 1334 182 2000;
+#X msg 1369 182 15000;
+#X obj 1344 153 s aux_instruction;
+#X msg 1344 135 5;
+#X msg 1377 135 0;
+#X msg 1571 135 40;
+#X obj 1571 200 instructor_presets;
+#X text 1569 183 For easy editing:;
+#X text 1539 274 Make sure to press a few keys to seed the [random].
 ;
-#X msg 1417 75 3.5;
-#X msg 1458 74 1.5;
-#X floatatom 1482 207 5 0 0 0 - - -, f 5;
-#X floatatom 1740 378 5 0 0 0 - - -, f 5;
-#X obj 1740 406 s disrupt_size_0;
-#X obj 1488 292 r rotate_speed_0;
-#X obj 1599 292 r scope0_phase_offset;
-#X obj 1740 292 r disrupt_size_0;
-#X floatatom 1488 321 5 0 0 0 - - -, f 5;
-#X floatatom 1599 321 5 0 0 0 - - -, f 5;
-#X floatatom 1740 321 5 0 0 0 - - -, f 5;
-#X obj 1642 338 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X msg 1417 135 3.5;
+#X msg 1458 134 1.5;
+#X floatatom 1482 267 5 0 0 0 - - -, f 5;
+#X floatatom 1740 438 5 0 0 0 - - -, f 5;
+#X obj 1740 466 s disrupt_size_0;
+#X obj 1488 352 r rotate_speed_0;
+#X obj 1599 352 r scope0_phase_offset;
+#X obj 1740 352 r disrupt_size_0;
+#X floatatom 1488 381 5 0 0 0 - - -, f 5;
+#X floatatom 1599 381 5 0 0 0 - - -, f 5;
+#X floatatom 1740 381 5 0 0 0 - - -, f 5;
+#X obj 1642 398 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1377 292 r rotate0;
-#X floatatom 1377 335 5 0 0 0 - - -, f 5;
-#X obj 1377 314 unpack f f f;
-#X floatatom 1411 335 5 0 0 0 - - -, f 5;
-#X floatatom 1446 335 5 0 0 0 - - -, f 5;
-#X obj 1389 454 s rotate0;
-#X obj 1389 431 pack f f f;
-#X floatatom 1389 389 5 0 0 0 - - -, f 5;
-#X obj 1389 409 t b f;
-#X obj 1488 405 s rotate_speed_0;
-#X floatatom 1488 378 5 0 0 0 - - -, f 5;
-#X msg 1740 349 set \$1;
-#X msg 1488 349 set \$1;
-#X msg 1389 362 set \$1;
-#X obj 1385 259 s disrupt_onoff;
-#X msg 1385 230 0;
-#X msg 1409 122 5000;
-#X text 1345 14 Only 1 Wind-Up: should take current SPIN and add an
+#X obj 1377 352 r rotate0;
+#X floatatom 1377 395 5 0 0 0 - - -, f 5;
+#X obj 1377 374 unpack f f f;
+#X floatatom 1411 395 5 0 0 0 - - -, f 5;
+#X floatatom 1446 395 5 0 0 0 - - -, f 5;
+#X obj 1389 514 s rotate0;
+#X obj 1389 491 pack f f f;
+#X floatatom 1389 449 5 0 0 0 - - -, f 5;
+#X obj 1389 469 t b f;
+#X obj 1488 465 s rotate_speed_0;
+#X floatatom 1488 438 5 0 0 0 - - -, f 5;
+#X msg 1740 409 set \$1;
+#X msg 1488 409 set \$1;
+#X msg 1389 422 set \$1;
+#X obj 1385 319 s disrupt_onoff;
+#X msg 1385 290 0;
+#X msg 1409 182 5000;
+#X text 1345 74 Only 1 Wind-Up: should take current SPIN and add an
 integer to it. The integer should be the AUX instruction. Then UNWIND
 should take its SPIN value as the new aux value...;
-#X text 83 559 TIMED:;
-#X text 42 423 INSTANTS:;
-#X text 142 495 VAR TRADE \; VAR SWAP \; VAR SPIN \; VAR SPIN DIFF
+#X text 83 619 TIMED:;
+#X text 42 483 INSTANTS:;
+#X text 142 555 VAR TRADE \; VAR SWAP \; VAR SPIN \; VAR SPIN DIFF
 (use AUX as index of possibilities) \; VAR DISTANCE \; VAR DISTANCE
 DIFF (use AUX...) \; VAR SIZE \; VAR SIZE DIFF (use AUX) \; -- \; 7
 buttons for TRADES \; and 1 for 360 SPIN \; -- \; RAND LOCATIONS (use
 AUX to set some kind of limits...) \; MIRRORING (control) \; DISRUPTOR
 (control) \; TOGGLE AMP \; SWAP (forward \, back \, cycle) \;;
-#X text 136 723 SPECIAL: - Expand Random (slow \, pulsing outward)
+#X text 136 783 SPECIAL: - Expand Random (slow \, pulsing outward)
 \; - Contract Random? - Expand Spiral (3 diff rates \, sizes \, diestances)
 \; - Newton's Balls... back and forth \, different timings \; -;
-#X obj 1190 275 s instruction_bypass;
-#X text 124 384 RESET \; WINDUP (using spin-additive) \; LINPOL (aux)
+#X obj 1190 335 s instruction_bypass;
+#X text 124 444 RESET \; WINDUP (using spin-additive) \; LINPOL (aux)
 \; MIRRORING (aux) \; DISRUPT (use AUX as index of possibilities \,
 with 0 = off) \; STAYTIME (aux) \; LINEAR EXPONENT (aux) \; 8...?;
-#X text 512 582 Add number box for timer \, add pulse for phase offset
+#X text 512 642 Add number box for timer \, add pulse for phase offset
 metro... add instruction number...;
-#X text 295 362 PRESETS;
-#X text 907 390 - Why does Mirror in Translator-rotator include a -1
+#X text 295 422 PRESETS;
+#X text 907 450 - Why does Mirror in Translator-rotator include a -1
 in its select?;
-#X text 501 378 TO DO: \; - Put -1 = 999: in Instructor \;;
-#X text 501 420 FADERS & KNOBS (ALL RELATIVE \, NOT ABSOLUTE) \; FADERS
+#X text 501 438 TO DO: \; - Put -1 = 999: in Instructor \;;
+#X text 501 480 FADERS & KNOBS (ALL RELATIVE \, NOT ABSOLUTE) \; FADERS
 \; - 1 size (because am I really gonna control size much?) \; - 3 spins
 \; - 3 distance \; - 1 speed (instruction length) \; KNOBS \; -> StayTime
 \; -> 1 all spin? 1 all times \, 1 all distances \, 1 all size? \;

@@ -1,0 +1,49 @@
+#N canvas 601 118 489 234 10;
+#X obj 101 51 cnv 15 148 48 empty empty empty 20 12 0 14 -162280 -66577
+0;
+#X obj 120 54 nbx 3 42 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
+-262144 -1 -1 -12 256;
+#X obj 209 54 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 -12 256;
+#X obj 107 131 Tarer_Master;
+#X obj 107 160 t b f;
+#X obj 283 150 +;
+#X obj 209 21 inlet;
+#X obj 283 177 outlet;
+#X msg 35 112 set \$1;
+#X obj 209 68 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 -12 256;
+#X obj 334 164 +;
+#X obj 334 192 outlet;
+#X obj 209 82 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 -12 256;
+#X obj 385 178 +;
+#X obj 385 207 outlet;
+#X obj 249 21 inlet;
+#X obj 289 21 inlet;
+#X obj 120 21 inlet;
+#X obj 103 56 vsl 15 40 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X connect 1 0 3 0;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 3 1 4 0;
+#X connect 4 0 5 0;
+#X connect 4 0 10 0;
+#X connect 4 0 13 0;
+#X connect 4 1 5 1;
+#X connect 4 1 8 0;
+#X connect 4 1 10 1;
+#X connect 4 1 13 1;
+#X connect 5 0 7 0;
+#X connect 6 0 2 0;
+#X connect 8 0 1 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 15 0 9 0;
+#X connect 16 0 12 0;
+#X connect 17 0 1 0;
+#X connect 18 0 1 0;
+#X coords 0 -1 1 1 150 50 2 100 50;
