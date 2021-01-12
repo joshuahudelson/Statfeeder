@@ -1,111 +1,149 @@
-#N canvas 67 780 1657 300 10;
-#X text 1562 233 BigC Freq/Diff: 349 \, 131 or 70;
-#X text 1560 248 971 freq \, 130 diff. - Amp either 0.4 or 0.1;
-#X obj 1424 295 s liner_exponent;
-#X obj 12 67 GEM-Center_sfgem;
-#X msg 1424 267 1;
-#X obj 1424 239 loadbang;
-#X obj 1334 200 s current_instruction_length;
-#X obj 1571 164 s new_frame_rate;
-#X msg 1334 182 2000;
-#X msg 1369 182 15000;
-#X obj 1344 153 s aux_instruction;
-#X msg 1344 135 5;
-#X msg 1377 135 0;
-#X msg 1571 135 40;
-#X obj 1571 200 instructor_presets;
-#X text 1569 183 For easy editing:;
-#X text 1539 274 Make sure to press a few keys to seed the [random].
+#N canvas 67 725 1822 347 10;
+#X text 1092 453 BigC Freq/Diff: 349 \, 131 or 70;
+#X text 1090 468 971 freq \, 130 diff. - Amp either 0.4 or 0.1;
+#X obj 954 515 s liner_exponent;
+#X obj 12 7 GEM-Center_sfgem;
+#X msg 954 487 1;
+#X obj 1325 72 s current_instruction_length;
+#X obj 1101 394 s new_frame_rate;
+#X msg 1325 54 2000;
+#X msg 1360 54 15000;
+#X obj 1325 25 s aux_instruction;
+#X msg 1325 7 5;
+#X msg 1358 7 0;
+#X msg 1101 365 40;
+#X obj 1101 430 instructor_presets;
+#X text 1099 413 For easy editing:;
+#X text 1069 494 Make sure to press a few keys to seed the [random].
 ;
-#X msg 1417 135 3.5;
-#X msg 1458 134 1.5;
-#X floatatom 1482 267 5 0 0 0 - - -, f 5;
-#X floatatom 1740 438 5 0 0 0 - - -, f 5;
-#X obj 1740 466 s disrupt_size_0;
-#X obj 1488 352 r rotate_speed_0;
-#X obj 1599 352 r scope0_phase_offset;
-#X obj 1740 352 r disrupt_size_0;
-#X floatatom 1488 381 5 0 0 0 - - -, f 5;
-#X floatatom 1599 381 5 0 0 0 - - -, f 5;
-#X floatatom 1740 381 5 0 0 0 - - -, f 5;
-#X obj 1642 398 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X msg 1398 7 3.5;
+#X msg 1439 6 1.5;
+#X floatatom 1012 487 5 0 0 0 - - -, f 5;
+#X floatatom 1270 658 5 0 0 0 - - -, f 5;
+#X obj 1270 686 s disrupt_size_0;
+#X obj 1018 572 r rotate_speed_0;
+#X obj 1129 572 r scope0_phase_offset;
+#X obj 1270 572 r disrupt_size_0;
+#X floatatom 1018 601 5 0 0 0 - - -, f 5;
+#X floatatom 1129 601 5 0 0 0 - - -, f 5;
+#X floatatom 1270 601 5 0 0 0 - - -, f 5;
+#X obj 1172 618 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1377 352 r rotate0;
-#X floatatom 1377 395 5 0 0 0 - - -, f 5;
-#X obj 1377 374 unpack f f f;
-#X floatatom 1411 395 5 0 0 0 - - -, f 5;
-#X floatatom 1446 395 5 0 0 0 - - -, f 5;
-#X obj 1389 514 s rotate0;
-#X obj 1389 491 pack f f f;
-#X floatatom 1389 449 5 0 0 0 - - -, f 5;
-#X obj 1389 469 t b f;
-#X obj 1488 465 s rotate_speed_0;
-#X floatatom 1488 438 5 0 0 0 - - -, f 5;
-#X msg 1740 409 set \$1;
-#X msg 1488 409 set \$1;
-#X msg 1389 422 set \$1;
-#X obj 1385 319 s disrupt_onoff;
-#X msg 1385 290 0;
-#X msg 1409 182 5000;
-#X text 1345 74 Only 1 Wind-Up: should take current SPIN and add an
+#X obj 907 572 r rotate0;
+#X floatatom 907 615 5 0 0 0 - - -, f 5;
+#X obj 907 594 unpack f f f;
+#X floatatom 941 615 5 0 0 0 - - -, f 5;
+#X floatatom 976 615 5 0 0 0 - - -, f 5;
+#X obj 919 734 s rotate0;
+#X obj 919 711 pack f f f;
+#X floatatom 919 669 5 0 0 0 - - -, f 5;
+#X obj 919 689 t b f;
+#X obj 1018 685 s rotate_speed_0;
+#X floatatom 1018 658 5 0 0 0 - - -, f 5;
+#X msg 1270 629 set \$1;
+#X msg 1018 629 set \$1;
+#X msg 919 642 set \$1;
+#X obj 915 539 s disrupt_onoff;
+#X msg 915 510 0;
+#X msg 1400 54 5000;
+#X text 87 740 Only 1 Wind-Up: should take current SPIN and add an
 integer to it. The integer should be the AUX instruction. Then UNWIND
 should take its SPIN value as the new aux value...;
-#X text 83 619 TIMED:;
-#X text 42 483 INSTANTS:;
-#X text 142 555 VAR TRADE \; VAR SWAP \; VAR SPIN \; VAR SPIN DIFF
+#X text 43 519 TIMED:;
+#X text 32 383 INSTANTS:;
+#X text 102 455 VAR TRADE \; VAR SWAP \; VAR SPIN \; VAR SPIN DIFF
 (use AUX as index of possibilities) \; VAR DISTANCE \; VAR DISTANCE
 DIFF (use AUX...) \; VAR SIZE \; VAR SIZE DIFF (use AUX) \; -- \; 7
 buttons for TRADES \; and 1 for 360 SPIN \; -- \; RAND LOCATIONS (use
 AUX to set some kind of limits...) \; MIRRORING (control) \; DISRUPTOR
 (control) \; TOGGLE AMP \; SWAP (forward \, back \, cycle) \;;
-#X text 136 783 SPECIAL: - Expand Random (slow \, pulsing outward)
-\; - Contract Random? - Expand Spiral (3 diff rates \, sizes \, diestances)
+#X text 96 683 SPECIAL: - Expand Random (slow \, pulsing outward) \;
+- Contract Random? - Expand Spiral (3 diff rates \, sizes \, diestances)
 \; - Newton's Balls... back and forth \, different timings \; -;
-#X obj 1190 335 s instruction_bypass;
-#X text 124 444 RESET \; WINDUP (using spin-additive) \; LINPOL (aux)
+#X obj 1261 379 s instruction_bypass;
+#X text 114 344 RESET \; WINDUP (using spin-additive) \; LINPOL (aux)
 \; MIRRORING (aux) \; DISRUPT (use AUX as index of possibilities \,
 with 0 = off) \; STAYTIME (aux) \; LINEAR EXPONENT (aux) \; 8...?;
-#X text 512 642 Add number box for timer \, add pulse for phase offset
+#X text 1333 324 Add number box for timer \, add pulse for phase offset
 metro... add instruction number...;
-#X text 295 422 PRESETS;
-#X text 907 450 - Why does Mirror in Translator-rotator include a -1
-in its select?;
-#X text 501 438 TO DO: \; - Put -1 = 999: in Instructor \;;
-#X text 501 480 FADERS & KNOBS (ALL RELATIVE \, NOT ABSOLUTE) \; FADERS
-\; - 1 size (because am I really gonna control size much?) \; - 3 spins
-\; - 3 distance \; - 1 speed (instruction length) \; KNOBS \; -> StayTime
-\; -> 1 all spin? 1 all times \, 1 all distances \, 1 all size? \;
-->;
+#X text 285 322 PRESETS;
+#X text 239 444 TO DO: \; - Put -1 = 999: in Instructor \;;
+#X obj 954 459 loadbang;
+#X obj 1387 130 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1387 150 s tarer_master;
+#X obj 1665 119 s tare_0;
+#X obj 1665 93 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1665 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1665 253 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1665 199 s tare_1;
+#X obj 1665 279 s tare_2;
+#X obj 1665 47 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1687 31 r tare_0;
+#X obj 1686 68 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 1327 267 Make second spin: \; - average x and y values to get
+centroid \; - use that as the origin to spin around \; -;
+#X floatatom 1537 46 5 0 0 0 - - -, f 5;
+#X floatatom 1578 51 5 0 0 0 - - -, f 5;
+#X obj 1523 106 s radius-0;
+#X obj 1563 136 s radius-1;
+#X obj 1389 197 print;
+#X obj 1506 236 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1496 187 s all_spigots_0;
+#X obj 1536 217 s all_spigots_1;
+#X obj 1556 247 s all_spigots_2;
+#X obj 1501 146 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+1 1;
 #X connect 4 0 2 0;
-#X connect 5 0 4 0;
-#X connect 5 0 44 0;
-#X connect 8 0 6 0;
-#X connect 9 0 6 0;
-#X connect 11 0 10 0;
-#X connect 12 0 10 0;
-#X connect 13 0 7 0;
-#X connect 17 0 10 0;
-#X connect 18 0 10 0;
-#X connect 19 0 2 0;
-#X connect 20 0 21 0;
+#X connect 7 0 5 0;
+#X connect 8 0 5 0;
+#X connect 10 0 9 0;
+#X connect 11 0 9 0;
+#X connect 12 0 6 0;
+#X connect 16 0 9 0;
+#X connect 17 0 9 0;
+#X connect 18 0 2 0;
+#X connect 19 0 20 0;
+#X connect 21 0 24 0;
 #X connect 22 0 25 0;
 #X connect 23 0 26 0;
-#X connect 24 0 27 0;
-#X connect 25 0 41 0;
-#X connect 26 0 28 0;
-#X connect 27 0 40 0;
-#X connect 29 0 31 0;
-#X connect 31 0 30 0;
-#X connect 31 1 32 0;
-#X connect 31 2 33 0;
-#X connect 33 0 42 0;
-#X connect 35 0 34 0;
-#X connect 36 0 37 0;
-#X connect 37 0 35 0;
-#X connect 37 1 35 2;
-#X connect 39 0 38 0;
-#X connect 40 0 20 0;
-#X connect 41 0 39 0;
-#X connect 42 0 36 0;
-#X connect 44 0 43 0;
-#X connect 45 0 6 0;
+#X connect 24 0 40 0;
+#X connect 25 0 27 0;
+#X connect 26 0 39 0;
+#X connect 28 0 30 0;
+#X connect 30 0 29 0;
+#X connect 30 1 31 0;
+#X connect 30 2 32 0;
+#X connect 32 0 41 0;
+#X connect 34 0 33 0;
+#X connect 35 0 36 0;
+#X connect 36 0 34 0;
+#X connect 36 1 34 2;
+#X connect 38 0 37 0;
+#X connect 39 0 19 0;
+#X connect 40 0 38 0;
+#X connect 41 0 35 0;
+#X connect 43 0 42 0;
+#X connect 44 0 5 0;
+#X connect 55 0 4 0;
+#X connect 55 0 43 0;
+#X connect 56 0 57 0;
+#X connect 59 0 58 0;
+#X connect 60 0 62 0;
+#X connect 61 0 63 0;
+#X connect 64 0 59 0;
+#X connect 64 0 60 0;
+#X connect 64 0 61 0;
+#X connect 65 0 66 0;
+#X connect 68 0 70 0;
+#X connect 69 0 71 0;
+#X connect 73 0 72 0;
+#X connect 77 0 74 0;
+#X connect 77 0 75 0;
+#X connect 77 0 76 0;
