@@ -185,13 +185,11 @@
 #X text 33 22 POLAR ADD;
 #X text 297 168 CARTESIAN MULT;
 #X text 560 95 Y-VALUE ABSOLUTE;
-#X text 34 168 POLAR MULT;
 #X obj 961 181 hradio 25 1 0 2 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
 #X obj 1103 537 s ctrl_or_comp;
 #X msg 1097 493 0;
 #X obj 31 39 polar_add_subpatch;
-#X obj 33 185 polar_multiplication_subpatch;
 #X obj 294 39 x_value_add_subpatch;
 #X obj 294 184 cartesian_multiplication_subpatch;
 #X obj 557 39 x_value_absolute_subpatch;
@@ -206,16 +204,16 @@
 #X obj 33 258 rotation_subpatch;
 #X obj 294 257 phase_offset_subpatch;
 #X text 1214 23 MIRROR;
-#X text 860 235 CENTROID SPIN;
 #X obj 33 112 spin_subpatch 16 17 18;
-#X obj 836 254 cent_spin_subpatch;
+#X obj 31 184 cent_spin_subpatch;
 #X text 561 22 X-VALUE ABSOLUTE;
 #X obj 1070 188 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-20 -262144 -1 -1 1.41967 256;
+20 -262144 -1 -1 2.59943 256;
 #X obj 1180 188 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-20 -262144 -1 -1 3.74923 256;
+20 -262144 -1 -1 1.80082 256;
 #X obj 1394 258 r x_y_absolute-0;
 #X obj 1400 308 unpack;
+#X text 35 167 ORBIT;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
 #X connect 4 0 5 0;
@@ -293,10 +291,10 @@
 #X connect 102 0 73 0;
 #X connect 103 0 74 0;
 #X connect 129 0 65 0;
-#X connect 147 0 148 0;
-#X connect 149 0 147 0;
-#X connect 157 0 149 0;
-#X connect 172 0 173 0;
-#X connect 173 0 170 0;
-#X connect 173 1 171 0;
+#X connect 146 0 147 0;
+#X connect 148 0 146 0;
+#X connect 155 0 148 0;
+#X connect 169 0 170 0;
+#X connect 170 0 167 0;
+#X connect 170 1 168 0;
 #X coords 0 -1 1 1 1300 300 1 20 20;
