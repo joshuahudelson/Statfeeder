@@ -1,4 +1,4 @@
-#N canvas 67 136 1102 850 10;
+#N canvas 67 112 1102 850 10;
 #X floatatom 698 340 5 0 0 0 - - -, f 5;
 #X floatatom 87 178 5 0 0 0 - - -, f 5;
 #X obj 361 351 / 127;
@@ -94,8 +94,12 @@
 #X text 773 414 Add back in relative?;
 #X obj 361 731 s fader_or_knob_\$1;
 #X obj 698 735 s fader_or_knob_\$2;
-#X obj 727 550 / 15;
-#X obj 356 669 / 15;
+#X obj 698 550 / 15;
+#X obj 361 629 / 15;
+#X obj 495 733 s ctrl_or_comp;
+#X msg 495 704 0;
+#X obj 361 686 t f b;
+#X obj 698 684 t f b;
 #X connect 0 0 93 0;
 #X connect 1 0 29 0;
 #X connect 2 0 4 0;
@@ -192,5 +196,10 @@
 #X connect 84 0 85 0;
 #X connect 85 0 86 0;
 #X connect 86 0 32 0;
-#X connect 93 0 92 0;
-#X connect 94 0 91 0;
+#X connect 93 0 98 0;
+#X connect 94 0 97 0;
+#X connect 96 0 95 0;
+#X connect 97 0 91 0;
+#X connect 97 1 96 0;
+#X connect 98 0 92 0;
+#X connect 98 1 96 0;

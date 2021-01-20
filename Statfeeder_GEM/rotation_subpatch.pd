@@ -1,4 +1,4 @@
-#N canvas 520 332 575 463 10;
+#N canvas 316 240 768 623 10;
 #X obj 101 247 liner_sfgem;
 #X obj 101 223 pack;
 #X obj 149 317 liner_sfgem;
@@ -29,6 +29,9 @@
 #X obj 344 508 s rot_2_speed_rec;
 #X obj 344 528 s rot_5_speed_rec;
 #X obj 101 151 control_numbers_window 999 999 999 999 22;
+#X obj 410 249 r rot_tare_0;
+#X obj 410 319 r rot_tare_1;
+#X obj 410 385 r rot_tare_2;
 #X connect 0 0 6 0;
 #X connect 0 0 6 0;
 #X connect 1 0 0 0;
@@ -62,4 +65,7 @@
 #X connect 29 5 5 1;
 #X connect 29 5 27 0;
 #X connect 29 5 28 0;
+#X connect 30 0 6 1;
+#X connect 31 0 7 1;
+#X connect 32 0 8 1;
 #X coords 0 -1 1 1 252 52 2 100 150;

@@ -1,4 +1,4 @@
-#N canvas 568 506 649 574 10;
+#N canvas 474 506 649 574 10;
 #X obj 274 169 openpanel;
 #X obj 274 243 readsf~ 3;
 #X obj 354 218 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -24,7 +24,7 @@
 #X msg 90 388 0;
 #X msg 122 388 1;
 #X obj 399 290 s play_rec;
-#X obj 214 236 adc~;
+#X obj 214 236 noise~;
 #X connect 0 0 3 0;
 #X connect 1 0 5 0;
 #X connect 1 0 17 0;

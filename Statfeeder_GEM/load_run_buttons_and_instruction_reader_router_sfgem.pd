@@ -1,4 +1,4 @@
-#N canvas 134 437 1184 627 10;
+#N canvas 67 437 1184 627 10;
 #X obj 165 64 inlet;
 #X obj 222 104 inlet;
 #X obj 275 38 inlet;
@@ -94,7 +94,7 @@
 #X connect 37 0 38 0;
 #X connect 38 0 26 0;
 #X restore 603 309 pd gemwin;
-#X obj 158 146 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 158 146 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 603 56 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -118,15 +118,11 @@
 #X msg 465 224 1;
 #X obj 431 180 t b b b b;
 #X msg 482 202 0;
-#X obj 380 360 instructor;
-#X obj 695 342 inlet;
+#X obj 278 486 instructor;
 #X obj 620 154 inlet;
 #X obj 311 239 sel end;
 #X obj 380 150 r timer_on_off;
-#X text 272 360 PRESETS IN HERE:;
 #X text 24 243 SIGNAL STUFF IN HERE:;
-#X text 679 291 When refactoring: make this a named sub-patch \; And
-also maybe locate it somewhere more accessible.;
 #X obj 521 463 s aux_instruction;
 #X floatatom 521 405 5 0 0 0 - - -, f 5;
 #X text 174 46 0;
@@ -135,8 +131,8 @@ also maybe locate it somewhere more accessible.;
 #X text 422 97 3 Playback;
 #X text 555 110 4;
 #X text 628 136 5;
-#X text 704 323 6;
 #X obj 431 433 s play_rec;
+#X obj 321 388 outlet;
 #X connect 0 0 11 0;
 #X connect 1 0 6 0;
 #X connect 2 0 9 0;
@@ -149,9 +145,8 @@ also maybe locate it somewhere more accessible.;
 #X connect 9 0 5 0;
 #X connect 10 0 14 0;
 #X connect 11 0 14 2;
-#X connect 12 0 43 0;
+#X connect 12 0 39 0;
 #X connect 13 0 10 0;
-#X connect 14 0 35 0;
 #X connect 15 0 16 2;
 #X connect 22 0 13 0;
 #X connect 23 0 22 0;
@@ -160,8 +155,7 @@ also maybe locate it somewhere more accessible.;
 #X connect 24 2 23 0;
 #X connect 24 3 25 0;
 #X connect 25 0 22 0;
-#X connect 27 0 26 1;
-#X connect 28 0 15 0;
-#X connect 29 0 25 0;
-#X connect 30 0 22 0;
-#X connect 35 0 34 0;
+#X connect 27 0 15 0;
+#X connect 28 0 25 0;
+#X connect 29 0 22 0;
+#X connect 32 0 31 0;
