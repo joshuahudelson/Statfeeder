@@ -1,4 +1,4 @@
-#N canvas 67 700 1657 380 10;
+#N canvas 67 679 1657 401 10;
 #X text 1496 501 BigC Freq/Diff: 349 \, 131 or 70;
 #X text 1494 516 971 freq \, 130 diff. - Amp either 0.4 or 0.1;
 #X obj 8 -51 GEM-Center_sfgem;
