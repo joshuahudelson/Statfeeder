@@ -1,4 +1,4 @@
-#N canvas 890 89 575 579 10;
+#N canvas 843 89 575 579 10;
 #X obj 101 40 r spin_master_set;
 #X obj 135 60 r spin_0_set;
 #X obj 170 80 r spin_1_set;
@@ -32,7 +32,6 @@
 #X obj 410 239 r spin_tare_0;
 #X obj 410 309 r spin_tare_1;
 #X obj 410 375 r spin_tare_2;
-#X obj 411 269 print spin-tare-0;
 #X connect 0 0 20 0;
 #X connect 1 0 20 1;
 #X connect 2 0 20 2;
@@ -67,7 +66,6 @@
 #X connect 29 0 12 0;
 #X connect 29 0 13 0;
 #X connect 30 0 27 1;
-#X connect 30 0 33 0;
 #X connect 31 0 28 1;
 #X connect 32 0 29 1;
 #X coords 0 -1 1 1 252 52 2 100 150;
