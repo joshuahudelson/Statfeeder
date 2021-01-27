@@ -9,7 +9,7 @@
 #X obj 201 49 loadbang;
 #X msg 201 78 0.5;
 #X obj 62 98 vsl 25 200 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 9950 1;
+-1 -1 10450 1;
 #X text 101 59 START/STOP;
 #X text 103 73 RECORDING;
 #X obj 117 141 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
@@ -25,14 +25,14 @@
 #X msg 201 123 1;
 #X obj 117 8 r stacc-leg-receive;
 #X obj 401 193 sel 0;
-#X connect 2 0 1 1;
+#X connect 2 0 1 0;
 #X connect 3 0 4 0;
 #X connect 4 0 7 0;
 #X connect 5 0 6 0;
 #X connect 5 0 17 0;
 #X connect 5 0 18 0;
 #X connect 6 0 7 0;
-#X connect 7 0 1 0;
+#X connect 7 0 1 1;
 #X connect 10 0 12 0;
 #X connect 10 0 20 0;
 #X connect 14 0 13 0;

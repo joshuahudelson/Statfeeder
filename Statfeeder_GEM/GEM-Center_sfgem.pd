@@ -1,107 +1,116 @@
-#N canvas 67 144 1695 823 10;
-#X obj 213 787 Gem;
-#X obj 122 790 dac~;
-#X obj 50 723 r~ channel0;
-#X obj 131 723 r~ channel1;
-#X obj 212 723 r~ channel2;
-#X obj 211 748 *~ 0.666;
-#X obj 50 746 *~ 0.666;
-#X obj 132 746 *~ 0.3;
-#X obj 28 595 controller_stuff_sfgem;
-#X obj 21 131 cnv 15 1298 379 empty empty empty 20 12 0 14 -233017
+#N canvas 67 326 1389 727 10;
+#X obj 183 438 Gem;
+#X obj 102 438 dac~;
+#X obj 30 371 r~ channel0;
+#X obj 111 371 r~ channel1;
+#X obj 192 371 r~ channel2;
+#X obj 192 400 *~ 0.666;
+#X obj 30 398 *~ 0.666;
+#X obj 111 398 *~ 0.3;
+#X obj 289 371 controller_stuff_sfgem;
+#X obj 21 131 cnv 15 1798 228 empty empty empty 20 12 0 14 -233017
 -66577 0;
-#X obj 931 383 hradio 30 1 0 5 empty empty empty 0 -8 0 10 -262144
+#X obj 121 536 hradio 30 1 0 5 empty empty empty 0 -8 0 10 -262144
+-1 -1 1;
+#X obj 1585 334 hradio 20 1 0 3 empty empty empty 0 -8 0 10 -262144
 -1 -1 2;
-#X obj 830 383 hradio 30 1 0 3 empty empty empty 0 -8 0 10 -262144
--1 -1 2;
-#X obj 890 172 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 891 152 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1055 172 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+#X obj 1046 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X obj 1106 172 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+#X obj 1089 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X text 1053 153 NOISE;
-#X text 1096 153 PLAY REC;
-#X obj 941 172 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
+#X text 1044 132 NOISE;
+#X text 1079 132 PLAY REC;
+#X obj 829 152 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 830 172 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 982 152 bng 30 250 50 0 empty empty empty 17 7 0 10 -261234
 -1 -1;
-#X obj 990 172 bng 30 250 50 0 empty empty empty 17 7 0 10 -261234
--1 -1;
-#X text 932 153 GEM WIN;
-#X text 985 153 PLAYBACK;
-#X text 562 357 SIZE;
+#X text 977 132 PLAYBACK;
+#X text 1330 139 SIZE;
 #X text 38 285 SPIN;
-#X obj 292 603 stay_time_translator_rotator_router_sfgem;
-#X obj 830 91 r swap_2pnl;
-#X obj 931 91 r trade_2pnl;
-#X obj 830 651 s swap;
-#X obj 1476 413 s trade;
-#X obj 1332 202 load_run_buttons_and_instruction_reader_router_sfgem
-;
-#X obj 1215 172 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+#X obj 289 400 stay_time_translator_rotator_router_sfgem;
+#X obj 1585 43 r swap_2pnl;
+#X obj 121 507 r trade_2pnl;
+#X obj 829 371 load_run_buttons_and_instruction_reader_router_sfgem
+, f 53;
+#X obj 1706 334 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X obj 1215 630 s mirror_on_off;
-#X obj 1167 172 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+#X obj 1706 507 s mirror_on_off;
+#X obj 1143 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X text 1157 153 REC VID;
-#X obj 1167 655 s record_video;
-#X obj 1215 69 r mirror_on_off_receive;
-#X obj 1501 111 r instruction_bypass;
-#X obj 1030 666 s timer_on_off;
-#X msg 1030 637 0;
-#X obj 1030 185 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X text 1133 132 REC VID;
+#X obj 1706 43 r mirror_on_off_receive;
+#X obj 912 440 s timer_on_off;
+#X msg 912 401 0;
+#X obj 1022 165 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X text 1022 170 Stop;
-#X obj 1106 91 r play_rec;
-#X obj 1483 584 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
-#X text 1528 578 TOGGLE AMP;
-#X obj 1483 625 s toggle_amp;
-#X text 811 152 LOAD LABELS;
-#X text 882 152 LOAD REC;
+#X text 1014 150 Stop;
+#X obj 1089 96 r play_rec;
+#X text 881 132 LOAD REC;
 #X text 37 211 X-VALUE ADD;
-#X text 559 212 Y-VALUE ADD;
-#X text 296 212 POLAR ADD;
-#X text 297 286 CARTESIAN MULT;
-#X obj 1260 479 hradio 25 1 0 2 empty empty empty 0 -8 0 10 -262144
+#X text 561 212 Y-VALUE ADD;
+#X text 298 212 POLAR ADD;
+#X text 299 286 CARTESIAN MULT;
+#X obj 1770 334 hradio 20 1 0 2 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X msg 1347 461 0;
-#X obj 294 229 polar_add_subpatch;
+#X obj 296 229 polar_add_subpatch;
 #X obj 34 229 x_value_add_subpatch;
-#X obj 294 302 cartesian_multiplication_subpatch;
-#X obj 557 374 size_subpatch;
-#X obj 1347 432 loadbang;
-#X text 562 430 STAYTIME;
-#X text 297 431 PHASE OFFSET;
-#X text 34 431 ROTATION;
-#X obj 557 229 y_value_add_subpatch;
-#X obj 557 448 staytime_subpatch;
-#X obj 33 448 rotation_subpatch;
-#X obj 294 447 phase_offset_subpatch;
-#X text 1214 153 MIRROR;
+#X obj 296 302 cartesian_multiplication_subpatch;
+#X obj 1323 156 size_subpatch;
+#X text 1591 138 STAYTIME;
+#X text 1326 286 PHASE OFFSET;
+#X text 1324 213 ROTATION;
+#X obj 559 229 y_value_add_subpatch;
+#X obj 1586 156 staytime_subpatch;
+#X obj 1323 229 rotation_subpatch;
+#X obj 1323 302 phase_offset_subpatch;
 #X obj 33 302 spin_subpatch 16 17 18;
-#X obj 557 302 cent_spin_subpatch;
-#X text 561 285 ORBIT;
-#X obj 1260 578 s ctrl_or_comp;
-#X obj 632 792 trader;
-#X obj 665 763 r trade;
-#X obj 632 734 r swap;
-#X obj 31 141 x_y_absolute_subpatch 0;
-#X obj 294 141 x_y_absolute_subpatch 1;
-#X obj 557 141 x_y_absolute_subpatch 2;
-#X obj 820 302 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
--262144 -1 -1 0 256;
-#X obj 820 320 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
--262144 -1 -1 0 256;
-#X obj 820 338 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
--262144 -1 -1 0 256;
-#X obj 820 538 s radius_0;
-#X obj 820 559 s radius_1;
-#X obj 820 580 s radius_2;
-#X obj 820 18 r radius_0_receive;
-#X obj 820 60 r radius_2_receive;
-#X obj 820 39 r radius_1_receive;
+#X obj 559 302 cent_spin_subpatch;
+#X text 563 285 ORBIT;
+#X obj 1770 449 s ctrl_or_comp;
+#X obj 121 577 trader;
+#X obj 446 371 presetter_sfgem;
+#X obj 559 141 x_y_absolute_subpatch 2;
+#X obj 1143 62 r record_video;
+#X obj 1046 63 r noise_onoff;
+#X obj 938 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 938 83 r gem_window;
+#X obj 1770 101 r control_or_comp_receive;
+#X msg 1282 373 \; pd dsp \$1;
+#X obj 1282 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X text 1282 133 DSP;
+#X obj 1282 66 r dsp_onoff;
+#X text 901 455 Eventually put this in \; load_run_buttons...;
+#X obj 1022 34 r timer_on_off_receive;
+#X obj 34 141 x_y_absolute_subpatch 0;
+#X obj 296 141 x_y_absolute_subpatch 1;
+#X obj 1585 378 swapper;
+#X text 525 456 Knob and fader controls \; button presets \; instructions
+from labels \; clicking presets of number boxes (comp not ctrl!);
+#X obj 1184 152 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+27 -262144 -1 -1 0 256;
+#X text 934 132 WINDOW;
+#X obj 1184 33 r timer_2pnl;
+#X obj 1738 478 s toggle_amp;
+#X obj 1738 334 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 1651 72 loadbang;
+#X obj 1651 536 s liner_exponent;
+#X msg 1651 101 10;
+#X obj 1651 334 nbx 2 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+18 -262144 -1 -1 10 256;
+#X text 1598 316 SWAP;
+#X obj 1738 72 r toggle_amp_receive;
+#X text 1640 316 LIN EXP;
+#X text 1695 315 MIRR.;
+#X text 1733 315 AMP.;
+#X text 1763 316 CTRL/CMP;
+#X obj 822 196 pushbutton_presets_sfgem;
+#X text 814 132 LOAD LABLS;
+#X msg 634 392 spin 222;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
 #X connect 4 0 5 0;
@@ -109,32 +118,35 @@
 #X connect 6 0 1 0;
 #X connect 7 0 1 0;
 #X connect 7 0 1 1;
-#X connect 10 0 28 0;
-#X connect 11 0 27 0;
-#X connect 12 0 29 1;
-#X connect 13 0 29 4;
-#X connect 14 0 29 5;
-#X connect 17 0 29 2;
-#X connect 18 0 29 0;
-#X connect 19 0 29 3;
-#X connect 25 0 11 0;
-#X connect 26 0 10 0;
-#X connect 30 0 31 0;
-#X connect 32 0 34 0;
-#X connect 35 0 30 0;
-#X connect 38 0 37 0;
-#X connect 39 0 38 0;
-#X connect 41 0 14 0;
-#X connect 42 0 44 0;
-#X connect 51 0 69 0;
-#X connect 52 0 51 0;
-#X connect 57 0 52 0;
-#X connect 71 0 70 1;
-#X connect 72 0 70 0;
-#X connect 76 0 79 0;
-#X connect 77 0 80 0;
-#X connect 78 0 81 0;
-#X connect 82 0 76 0;
-#X connect 83 0 78 0;
-#X connect 84 0 77 0;
-#X coords 0 -1 1 1 1300 380 1 20 130;
+#X connect 10 0 57 0;
+#X connect 11 0 73 0;
+#X connect 12 0 25 1;
+#X connect 13 0 25 4;
+#X connect 14 0 25 5;
+#X connect 17 0 25 0;
+#X connect 18 0 25 3;
+#X connect 23 0 11 0;
+#X connect 24 0 10 0;
+#X connect 26 0 27 0;
+#X connect 28 0 25 6;
+#X connect 30 0 26 0;
+#X connect 32 0 31 0;
+#X connect 33 0 32 0;
+#X connect 35 0 14 0;
+#X connect 41 0 56 0;
+#X connect 60 0 28 0;
+#X connect 61 0 13 0;
+#X connect 62 0 25 2;
+#X connect 63 0 62 0;
+#X connect 64 0 41 0;
+#X connect 66 0 65 0;
+#X connect 68 0 66 0;
+#X connect 70 0 33 0;
+#X connect 77 0 75 0;
+#X connect 79 0 78 0;
+#X connect 80 0 82 0;
+#X connect 82 0 83 0;
+#X connect 83 0 81 0;
+#X connect 85 0 79 0;
+#X connect 92 0 58 0;
+#X coords 0 -1 1 1 1800 230 1 20 130;

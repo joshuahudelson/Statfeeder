@@ -1,89 +1,21 @@
-#N canvas 67 679 1657 401 10;
-#X text 1496 501 BigC Freq/Diff: 349 \, 131 or 70;
-#X text 1494 516 971 freq \, 130 diff. - Amp either 0.4 or 0.1;
-#X obj 8 -51 GEM-Center_sfgem;
-#X obj 1325 72 s current_instruction_length;
-#X obj 1637 370 s new_frame_rate;
-#X msg 1325 54 2000;
-#X msg 1360 54 15000;
-#X obj 1325 25 s aux_instruction;
-#X msg 1325 7 5;
-#X msg 1358 7 0;
-#X msg 1637 341 40;
-#X obj 1637 406 instructor_presets;
-#X text 1635 389 For easy editing:;
-#X text 1473 542 Make sure to press a few keys to seed the [random].
-;
-#X msg 1398 7 3.5;
-#X msg 1439 6 1.5;
-#X msg 1400 54 5000;
-#X text 87 740 Only 1 Wind-Up: should take current SPIN and add an
+#N canvas 67 817 1798 254 10;
+#X obj 3 4 GEM-Center_sfgem;
+#X text 80 787 Only 1 Wind-Up: should take current SPIN and add an
 integer to it. The integer should be the AUX instruction. Then UNWIND
 should take its SPIN value as the new aux value...;
-#X text 43 519 TIMED:;
-#X text 32 383 INSTANTS:;
-#X text 102 455 VAR TRADE \; VAR SWAP \; VAR SPIN \; VAR SPIN DIFF
-(use AUX as index of possibilities) \; VAR DISTANCE \; VAR DISTANCE
-DIFF (use AUX...) \; VAR SIZE \; VAR SIZE DIFF (use AUX) \; -- \; 7
-buttons for TRADES \; and 1 for 360 SPIN \; -- \; RAND LOCATIONS (use
-AUX to set some kind of limits...) \; MIRRORING (control) \; DISRUPTOR
-(control) \; TOGGLE AMP \; SWAP (forward \, back \, cycle) \;;
-#X text 96 683 SPECIAL: - Expand Random (slow \, pulsing outward) \;
+#X text 36 566 TIMED:;
+#X text 25 430 INSTANTS:;
+#X text 95 502 VAR TRADE \; VAR SWAP \; VAR SPIN \; VAR SPIN DIFF (use
+AUX as index of possibilities) \; VAR DISTANCE \; VAR DISTANCE DIFF
+(use AUX...) \; VAR SIZE \; VAR SIZE DIFF (use AUX) \; -- \; 7 buttons
+for TRADES \; and 1 for 360 SPIN \; -- \; RAND LOCATIONS (use AUX to
+set some kind of limits...) \; MIRRORING (control) \; DISRUPTOR (control)
+\; TOGGLE AMP \; SWAP (forward \, back \, cycle) \;;
+#X text 89 730 SPECIAL: - Expand Random (slow \, pulsing outward) \;
 - Contract Random? - Expand Spiral (3 diff rates \, sizes \, diestances)
 \; - Newton's Balls... back and forth \, different timings \; -;
-#X text 114 344 RESET \; WINDUP (using spin-additive) \; LINPOL (aux)
+#X text 126 354 RESET \; WINDUP (using spin-additive) \; LINPOL (aux)
 \; MIRRORING (aux) \; DISRUPT (use AUX as index of possibilities \,
 with 0 = off) \; STAYTIME (aux) \; LINEAR EXPONENT (aux) \; 8...?;
-#X text 285 322 PRESETS;
-#X text 239 444 TO DO: \; - Put -1 = 999: in Instructor \;;
-#X obj 1496 187 s all_spigots_0;
-#X obj 1536 217 s all_spigots_1;
-#X obj 1556 247 s all_spigots_2;
-#X obj 1694 182 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
-#X obj 1344 225 s amplitude0;
-#X floatatom 1344 205 5 0 0 0 - - -, f 5;
-#X obj 1544 460 s toggle_amp;
-#X obj 1554 437 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
-#X floatatom 1344 245 5 0 0 0 - - -, f 5;
-#X obj 1344 265 s amplitude1;
-#X floatatom 1434 245 5 0 0 0 - - -, f 5;
-#X obj 1434 265 s amplitude2;
-#X obj 1321 134 s freeze_orbit_0;
-#X obj 1457 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
-#X obj 1454 146 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
-#X obj 1453 178 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
-#X obj 1321 154 s freeze_orbit_1;
-#X obj 1321 174 s freeze_orbit_2;
-#X obj 1531 80 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 1058 472 s liner_exponent;
-#X msg 1063 429 1;
-#X obj 1063 401 loadbang;
-#X connect 5 0 3 0;
-#X connect 6 0 3 0;
-#X connect 8 0 7 0;
-#X connect 9 0 7 0;
-#X connect 10 0 4 0;
-#X connect 14 0 7 0;
-#X connect 15 0 7 0;
-#X connect 16 0 3 0;
-#X connect 28 0 25 0;
-#X connect 28 0 26 0;
-#X connect 28 0 27 0;
-#X connect 30 0 29 0;
-#X connect 32 0 31 0;
-#X connect 33 0 34 0;
-#X connect 35 0 36 0;
-#X connect 38 0 37 0;
-#X connect 39 0 41 0;
-#X connect 40 0 42 0;
-#X connect 43 0 38 0;
-#X connect 43 0 39 0;
-#X connect 43 0 40 0;
-#X connect 45 0 44 0;
-#X connect 46 0 45 0;
+#X text 297 332 PRESETS;
+#X text 232 491 TO DO: \; - Put -1 = 999: in Instructor \;;

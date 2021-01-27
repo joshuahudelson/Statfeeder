@@ -10,8 +10,8 @@
 #X obj 422 470 t f b;
 #X obj 422 517 +;
 #X floatatom 361 535 5 0 0 0 - - -, f 5;
-#X obj 382 162 r ctl-\$1;
-#X obj 698 301 r ctl-\$2;
+#X obj 382 132 r ctl-\$1;
+#X obj 695 131 r ctl-\$2;
 #X obj 56 125 r ctl-\$3;
 #X obj 66 270 s sbutton-\$1;
 #X floatatom 487 345 5 0 0 0 - - -, f 5;
@@ -29,7 +29,7 @@
 #X obj 465 438 * 4;
 #X text 121 125 BUTTONS;
 #X obj 87 206 / 127;
-#X text 439 162 ABSOLUTE;
+#X text 439 132 ABSOLUTE;
 #X text 486 327 RELATIVE;
 #X obj 240 192 + 1;
 #X obj 240 275 sel 1;
@@ -61,7 +61,7 @@
 #X obj 66 400 Gate;
 #X obj 66 571 Gate;
 #X obj 396 214 s auxfader-\$1;
-#X obj 757 319 s auxknob-\$1;
+#X obj 747 339 s auxknob-\$1;
 #X obj 447 240 r elem-exp-multiplier-\$1;
 #X obj 397 263 r elem-exp-adder-\$1;
 #X obj 361 447 + 0;
@@ -77,7 +77,7 @@
 #X obj 361 563 t b f;
 #X obj 412 545 loadbang;
 #X msg 412 574 1;
-#X text 752 300 TRIM;
+#X text 781 320 TRIM;
 #X obj 34 212 t f;
 #X obj 34 382 t f;
 #X obj 34 553 t f;
@@ -91,7 +91,7 @@
 #X floatatom 311 356 5 0 0 0 - - -, f 5;
 #X text 552 560 Only open if \; smooth motion.;
 #X text 449 506 accumulated \; 1's and -1's.;
-#X text 773 414 Add back in relative?;
+#X text 761 383 Add back in relative?;
 #X obj 361 731 s fader_or_knob_\$1;
 #X obj 698 735 s fader_or_knob_\$2;
 #X obj 698 550 / 15;
@@ -99,7 +99,11 @@
 #X obj 495 733 s ctrl_or_comp;
 #X msg 495 704 0;
 #X obj 361 686 t f b;
-#X obj 698 684 t f b;
+#X obj 698 686 t f b;
+#X obj 511 203 s control_or_comp_receive;
+#X msg 511 179 0;
+#X obj 382 161 t f b;
+#X obj 698 161 t f b;
 #X connect 0 0 93 0;
 #X connect 1 0 29 0;
 #X connect 2 0 4 0;
@@ -116,9 +120,8 @@
 #X connect 9 0 83 0;
 #X connect 10 0 35 0;
 #X connect 10 0 75 0;
-#X connect 11 0 56 0;
-#X connect 12 0 0 0;
-#X connect 12 0 62 0;
+#X connect 11 0 101 0;
+#X connect 12 0 102 0;
 #X connect 13 0 69 0;
 #X connect 15 0 18 0;
 #X connect 16 0 17 1;
@@ -203,3 +206,9 @@
 #X connect 97 1 96 0;
 #X connect 98 0 92 0;
 #X connect 98 1 96 0;
+#X connect 100 0 99 0;
+#X connect 101 0 56 0;
+#X connect 101 1 100 0;
+#X connect 102 0 62 0;
+#X connect 102 0 0 0;
+#X connect 102 1 100 0;

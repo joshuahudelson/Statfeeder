@@ -1,0 +1,28 @@
+#N canvas 296 521 450 300 10;
+#X obj 79 211 unpack s s s;
+#X msg 69 119 right center left;
+#X obj 52 206 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 52 233 s push;
+#X msg 86 90 center right left;
+#X obj 52 177 t b a;
+#X text 182 119 Swap;
+#X text 198 90 Shift Right;
+#X msg 52 148 right left center;
+#X text 161 148 Shift Left;
+#X obj 52 23 inlet;
+#X obj 52 61 sel 0 1 2;
+#X obj 79 262 trader-switchers;
+#X connect 0 0 12 0;
+#X connect 0 1 12 1;
+#X connect 0 2 12 2;
+#X connect 1 0 5 0;
+#X connect 2 0 3 0;
+#X connect 4 0 5 0;
+#X connect 5 0 2 0;
+#X connect 5 1 0 0;
+#X connect 8 0 5 0;
+#X connect 10 0 11 0;
+#X connect 11 0 8 0;
+#X connect 11 1 1 0;
+#X connect 11 2 4 0;
