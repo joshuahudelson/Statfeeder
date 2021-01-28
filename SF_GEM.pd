@@ -1,21 +1,20 @@
-#N canvas 67 817 1798 254 10;
+#N canvas 67 668 1798 403 10;
 #X obj 3 4 GEM-Center_sfgem;
-#X text 80 787 Only 1 Wind-Up: should take current SPIN and add an
-integer to it. The integer should be the AUX instruction. Then UNWIND
-should take its SPIN value as the new aux value...;
-#X text 36 566 TIMED:;
-#X text 25 430 INSTANTS:;
-#X text 95 502 VAR TRADE \; VAR SWAP \; VAR SPIN \; VAR SPIN DIFF (use
-AUX as index of possibilities) \; VAR DISTANCE \; VAR DISTANCE DIFF
-(use AUX...) \; VAR SIZE \; VAR SIZE DIFF (use AUX) \; -- \; 7 buttons
-for TRADES \; and 1 for 360 SPIN \; -- \; RAND LOCATIONS (use AUX to
-set some kind of limits...) \; MIRRORING (control) \; DISRUPTOR (control)
-\; TOGGLE AMP \; SWAP (forward \, back \, cycle) \;;
-#X text 89 730 SPECIAL: - Expand Random (slow \, pulsing outward) \;
-- Contract Random? - Expand Spiral (3 diff rates \, sizes \, diestances)
-\; - Newton's Balls... back and forth \, different timings \; -;
-#X text 126 354 RESET \; WINDUP (using spin-additive) \; LINPOL (aux)
-\; MIRRORING (aux) \; DISRUPT (use AUX as index of possibilities \,
-with 0 = off) \; STAYTIME (aux) \; LINEAR EXPONENT (aux) \; 8...?;
-#X text 297 332 PRESETS;
-#X text 232 491 TO DO: \; - Put -1 = 999: in Instructor \;;
+#X text 166 252 Knob and fader controls \; button presets \; instructions
+from labels \; clicking presets of number boxes (comp not ctrl!);
+#X text 547 247 Instructor Controls to Add \; - staytime \, swap \,
+linexp \, mirror \, amplitude(see about smoothing \, values less than
+zero \, etc) \, flip (x or y rotation) \; - set random max/min values
+\; - pulsing random \, pulsing statfeed... \; - make the statfeed thing
+where you choose what functions \; to be sending the outputs to...
+it also uses the random max/min \, scaling them with its outputs. \;
+-;
+#X text 925 240 The pulsing random will work with \; phase and rot
+to basically be the disruptor from before. \; Statfeeder output: X
+elements. Y functions. If I choose \; 4 functions \, assigns them evenly
+\; 5 \, likewise... \; No: number of functions = number of elements.
+1 to 1 \; But what would the values be? Second statfeeder.;
+#X text 1309 242 Will need to make 2 or 3 \, at least \, pulser objects
+\; who send the pulses to the things assigned to them \; Otherwise
+can't have multiple pulses going at once because \; the input names
+(spin \, xadd) will keep changing.;

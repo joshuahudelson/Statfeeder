@@ -1,4 +1,4 @@
-#N canvas 342 378 1049 656 10;
+#N canvas 248 378 1049 656 10;
 #X obj 98 44 inlet;
 #X obj 277 289 route 999;
 #X obj 304 260 route 999;
@@ -10,12 +10,12 @@
 #X obj 632 202 route 999;
 #X obj 277 42 r aux_inst_all;
 #X obj 767 32 r current_instruction_length;
-#X msg 277 91 set \$1 \$2 \$3 \$4;
+#X msg 277 80 set \$1 \$2 \$3 \$4;
 #X obj 277 150 unpack f f f f;
 #X obj 551 150 unpack f f f f;
-#X text 585 71 TIMES;
+#X text 585 40 TIMES;
 #X msg 277 120 222 999 999 999;
-#X msg 581 120;
+#X msg 551 120;
 #X obj 767 133 t f f f f;
 #X obj 803 307 f;
 #X obj 786 278 f;
@@ -65,12 +65,12 @@
 #X obj 458 417 value;
 #X obj 458 388 t b a;
 #X obj 495 388 symbol;
-#X obj 464 145 t a;
+#X obj 461 186 t a;
 #X msg 461 331 \$1_0;
 #X msg 498 360 \$1_1;
 #X msg 538 388 \$1_2;
-#X obj 155 148 symbol;
-#X msg 551 91 set \$5 \$6 \$7 \$8;
+#X obj 155 168 symbol;
+#X msg 551 60 set \$5 \$6 \$7 \$8;
 #X connect 0 0 22 0;
 #X connect 1 1 49 0;
 #X connect 2 1 54 0;
