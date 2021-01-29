@@ -1,20 +1,48 @@
-#N canvas 67 668 1798 403 10;
-#X obj 3 4 GEM-Center_sfgem;
-#X text 166 252 Knob and fader controls \; button presets \; instructions
+#N canvas 67 764 1839 292 10;
+#X obj 10 8 GEM-Center_sfgem;
+#X text 173 256 Knob and fader controls \; button presets \; instructions
 from labels \; clicking presets of number boxes (comp not ctrl!);
-#X text 547 247 Instructor Controls to Add \; - staytime \, swap \,
-linexp \, mirror \, amplitude(see about smoothing \, values less than
-zero \, etc) \, flip (x or y rotation) \; - set random max/min values
-\; - pulsing random \, pulsing statfeed... \; - make the statfeed thing
-where you choose what functions \; to be sending the outputs to...
-it also uses the random max/min \, scaling them with its outputs. \;
--;
-#X text 925 240 The pulsing random will work with \; phase and rot
+#X text 932 244 The pulsing random will work with \; phase and rot
 to basically be the disruptor from before. \; Statfeeder output: X
 elements. Y functions. If I choose \; 4 functions \, assigns them evenly
 \; 5 \, likewise... \; No: number of functions = number of elements.
 1 to 1 \; But what would the values be? Second statfeeder.;
-#X text 1309 242 Will need to make 2 or 3 \, at least \, pulser objects
+#X text 1316 246 Will need to make 2 or 3 \, at least \, pulser objects
 \; who send the pulses to the things assigned to them \; Otherwise
 can't have multiple pulses going at once because \; the input names
 (spin \, xadd) will keep changing.;
+#X obj 122 320 s start-instruction;
+#X obj 95 342 s trigger_next_textline;
+#X obj 95 290 t b b;
+#X obj 109 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 57 324 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 1316 319 TO DO \; - make time/liner for absolutes (also: cartpol
+choice) \; -;
+#X obj 633 339 r aux_inst_all;
+#X obj 633 359 unpack f f f f f f f f;
+#X floatatom 569 406 5 0 0 0 - - -, f 5;
+#X floatatom 602 406 5 0 0 0 - - -, f 5;
+#X floatatom 635 406 5 0 0 0 - - -, f 5;
+#X floatatom 668 406 5 0 0 0 - - -, f 5;
+#X floatatom 701 406 5 0 0 0 - - -, f 5;
+#X floatatom 734 406 5 0 0 0 - - -, f 5;
+#X floatatom 767 406 5 0 0 0 - - -, f 5;
+#X floatatom 800 406 5 0 0 0 - - -, f 5;
+#X text 554 251 pulsing statfeed... \; - make the statfeed thing where
+you choose what functions \; to be sending the outputs to... it also
+uses the random max/min \, scaling them with its outputs. \;;
+#X connect 6 0 5 0;
+#X connect 6 1 4 0;
+#X connect 7 0 6 0;
+#X connect 8 0 5 0;
+#X connect 10 0 11 0;
+#X connect 11 0 12 0;
+#X connect 11 1 13 0;
+#X connect 11 2 14 0;
+#X connect 11 3 15 0;
+#X connect 11 4 16 0;
+#X connect 11 5 17 0;
+#X connect 11 6 18 0;
+#X connect 11 7 19 0;

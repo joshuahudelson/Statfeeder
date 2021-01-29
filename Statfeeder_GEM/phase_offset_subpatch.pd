@@ -1,4 +1,4 @@
-#N canvas 147 286 1027 737 10;
+#N canvas 137 278 1027 737 10;
 #X obj 101 237 liner_sfgem;
 #X obj 101 213 pack;
 #X obj 141 307 liner_sfgem;
@@ -35,6 +35,8 @@
 #X obj 223 684 value phase_2;
 #X obj 373 153 value phase_random_max;
 #X obj 373 182 value phase_random_min;
+#X obj 530 153 value phase_time_random_max;
+#X obj 530 182 value phase_time_random_min;
 #X connect 0 0 6 0;
 #X connect 0 0 6 0;
 #X connect 1 0 0 0;

@@ -1,4 +1,4 @@
-#N canvas 67 190 1783 727 10;
+#N canvas 87 546 1783 568 10;
 #X obj 183 438 Gem;
 #X obj 102 438 dac~;
 #X obj 30 371 r~ channel0;
@@ -12,45 +12,35 @@
 -66577 0;
 #X obj 1585 334 hradio 20 1 0 3 empty empty empty 0 -8 0 10 -262144
 -1 -1 1;
-#X obj 891 152 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 880 152 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1046 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
-#X obj 1089 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+#X obj 982 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 1084 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X text 1044 132 NOISE;
-#X text 1079 132 PLAY REC;
+#X text 979 135 NOISE;
 #X obj 829 152 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 982 152 bng 30 250 50 0 empty empty empty 17 7 0 10 -261234
+#X obj 931 152 bng 30 250 50 0 empty empty empty 17 7 0 10 -261234
 -1 -1;
-#X text 977 132 PLAYBACK;
 #X text 1330 139 SIZE;
 #X text 38 285 SPIN;
 #X obj 289 400 stay_time_translator_rotator_router_sfgem;
-#X obj 1585 43 r swap_2pnl;
 #X obj 829 371 load_run_buttons_and_instruction_reader_router_sfgem
-, f 53;
+;
 #X obj 1706 334 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
 #X obj 1706 507 s mirror_on_off;
-#X obj 1143 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+#X obj 1135 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X text 1133 132 REC VID;
-#X obj 1706 43 r mirror_on_off_receive;
-#X obj 912 440 s timer_on_off;
-#X msg 912 401 0;
-#X obj 1022 165 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X text 1014 150 Stop;
-#X obj 1089 96 r play_rec;
-#X text 881 132 LOAD REC;
+#X obj 1033 420 s timer_on_off;
+#X obj 1084 106 r play_rec;
 #X text 37 211 X-VALUE ADD;
 #X text 561 212 Y-VALUE ADD;
 #X text 298 212 POLAR ADD;
 #X text 299 286 CARTESIAN MULT;
 #X obj 1770 334 hradio 20 1 0 2 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 1;
 #X obj 296 229 polar_add_subpatch;
 #X obj 34 229 x_value_add_subpatch;
 #X obj 296 302 cartesian_multiplication_subpatch;
@@ -67,44 +57,59 @@
 #X text 563 285 ORBIT;
 #X obj 1770 449 s ctrl_or_comp;
 #X obj 446 371 presetter_sfgem;
-#X obj 1143 62 r record_video;
-#X obj 1046 63 r noise_onoff;
-#X obj 938 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 938 83 r gem_window;
+#X obj 1135 82 r record_video;
+#X obj 982 33 r noise_onoff;
+#X obj 1282 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X obj 1282 83 r gem_window;
 #X obj 1770 101 r control_or_comp_receive;
 #X msg 1282 373 \; pd dsp \$1;
-#X obj 1282 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
-#X text 1282 133 DSP;
+#X obj 1282 202 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+1 1;
+#X text 1282 183 DSP;
 #X obj 1282 66 r dsp_onoff;
-#X text 902 466 Eventually put this in \; load_run_buttons...;
-#X obj 1022 34 r timer_on_off_receive;
-#X obj 296 141 x_y_absolute_subpatch 1;
+#X text 1023 446 Eventually put this in \; load_run_buttons...;
+#X obj 1033 54 r timer_on_off_receive;
 #X obj 1585 378 swapper;
-#X obj 1184 152 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-27 -262144 -1 -1 0 256;
-#X text 934 132 WINDOW;
-#X obj 1184 33 r timer_2pnl;
+#X obj 1181 152 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+27 -262144 -1 -1 41 256;
+#X text 1276 135 WINDOW;
+#X obj 1181 53 r timer_2pnl;
 #X obj 1738 478 s toggle_amp;
 #X obj 1738 334 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X obj 1651 72 loadbang;
+#X obj 1651 55 loadbang;
 #X obj 1651 536 s liner_exponent;
-#X msg 1651 101 10;
 #X obj 1651 334 nbx 2 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 18 -262144 -1 -1 1 256;
 #X text 1598 316 SWAP;
-#X obj 1738 72 r toggle_amp_receive;
 #X text 1640 316 LIN EXP;
 #X text 1695 315 MIRR.;
 #X text 1733 315 AMP.;
 #X text 1763 316 CTRL/CMP;
-#X obj 822 196 pushbutton_presets_sfgem;
-#X text 814 132 LOAD LABLS;
-#X obj 559 141 x_y_absolute_subpatch 2;
+#X obj 822 254 pushbutton_presets_sfgem;
 #X obj 34 141 x_y_absolute_subpatch 0;
-#X text 614 427 Y-value needs a Tarer;
+#X msg 1651 101 1;
+#X obj 1706 23 r mirror_on_off_rec;
+#X obj 1585 23 r swapper_rec;
+#X obj 1651 78 r liner_exp_rec;
+#X obj 1738 52 r amp_exp;
+#X obj 561 371 r current_instruction;
+#X obj 561 400 print;
+#X text 823 135 LABELS;
+#X text 872 135 SNDFILE;
+#X text 924 135 PLAYALL;
+#X obj 1033 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X text 1030 134 TIMER;
+#X text 1080 135 SOUND;
+#X text 1126 135 REC VID;
+#X obj 296 141 x_y_absolute_subpatch 1;
+#X obj 559 141 x_y_absolute_subpatch 2;
+#X obj 899 212 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 918 213 Center;
+#X msg 767 414 center;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
 #X connect 4 0 5 0;
@@ -112,32 +117,35 @@
 #X connect 6 0 1 0;
 #X connect 7 0 1 0;
 #X connect 7 0 1 1;
-#X connect 10 0 68 0;
-#X connect 11 0 23 1;
-#X connect 12 0 23 4;
-#X connect 13 0 23 5;
-#X connect 16 0 23 0;
-#X connect 17 0 23 3;
-#X connect 22 0 10 0;
-#X connect 24 0 25 0;
-#X connect 26 0 23 6;
-#X connect 28 0 24 0;
-#X connect 30 0 29 0;
-#X connect 31 0 30 0;
-#X connect 33 0 13 0;
-#X connect 39 0 54 0;
-#X connect 56 0 26 0;
-#X connect 57 0 12 0;
-#X connect 58 0 23 2;
-#X connect 59 0 58 0;
-#X connect 60 0 39 0;
-#X connect 62 0 61 0;
-#X connect 64 0 62 0;
-#X connect 66 0 31 0;
-#X connect 71 0 69 0;
-#X connect 73 0 72 0;
-#X connect 74 0 76 0;
-#X connect 76 0 77 0;
-#X connect 77 0 75 0;
-#X connect 79 0 73 0;
+#X connect 10 0 58 0;
+#X connect 11 0 20 1;
+#X connect 12 0 20 4;
+#X connect 13 0 20 5;
+#X connect 15 0 20 0;
+#X connect 16 0 20 3;
+#X connect 21 0 22 0;
+#X connect 23 0 20 6;
+#X connect 25 0 13 0;
+#X connect 30 0 45 0;
+#X connect 47 0 23 0;
+#X connect 48 0 12 0;
+#X connect 49 0 20 2;
+#X connect 50 0 49 0;
+#X connect 51 0 30 0;
+#X connect 53 0 52 0;
+#X connect 55 0 53 0;
+#X connect 57 0 84 0;
+#X connect 61 0 59 0;
+#X connect 63 0 62 0;
+#X connect 64 0 74 0;
+#X connect 66 0 65 0;
+#X connect 74 0 66 0;
+#X connect 75 0 21 0;
+#X connect 76 0 10 0;
+#X connect 77 0 66 0;
+#X connect 78 0 63 0;
+#X connect 79 0 80 0;
+#X connect 84 0 24 0;
+#X connect 90 0 92 0;
+#X connect 92 0 46 0;
 #X coords 0 -1 1 1 1800 230 1 20 130;

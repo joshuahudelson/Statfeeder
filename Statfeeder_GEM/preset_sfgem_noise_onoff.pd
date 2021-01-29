@@ -1,0 +1,8 @@
+#N canvas 67 89 450 300 10;
+#X obj 70 61 inlet;
+#X obj 177 63 r aux_inst_0;
+#X obj 162 144 f;
+#X obj 162 171 s noise_onoff;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 3 0;

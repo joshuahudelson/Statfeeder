@@ -1,4 +1,4 @@
-#N canvas 547 160 813 690 10;
+#N canvas 527 144 813 690 10;
 #X obj 141 393 s amplitude0;
 #X obj 182 433 s amplitude1;
 #X obj 222 473 s amplitude2;
@@ -35,6 +35,8 @@
 #X obj 222 609 value size_2;
 #X obj 373 153 value size_random_max;
 #X obj 373 182 value size_random_min;
+#X obj 524 153 value size_time_random_max;
+#X obj 524 182 value size_time_random_min;
 #X connect 6 0 25 4;
 #X connect 7 0 25 5;
 #X connect 8 0 25 6;

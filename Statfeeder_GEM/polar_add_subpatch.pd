@@ -1,4 +1,4 @@
-#N canvas 67 294 898 701 10;
+#N canvas 67 286 898 701 10;
 #X obj 274 48 r pol_add_speed_0;
 #X obj 309 68 r pol_add_speed_1;
 #X obj 344 88 r pol_add_speed_2;
@@ -38,6 +38,8 @@
 #X obj 141 589 value pol_add_0;
 #X obj 182 609 value pol_add_1;
 #X obj 222 629 value pol_add_2;
+#X obj 542 153 value pol_add_time_random_max;
+#X obj 542 182 value pol_add_time_random_min;
 #X connect 0 0 16 5;
 #X connect 1 0 16 6;
 #X connect 2 0 16 7;

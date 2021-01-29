@@ -1,4 +1,4 @@
-#N canvas 104 118 824 749 10;
+#N canvas 573 217 824 749 10;
 #X obj 137 320 sin;
 #X obj 137 349 + 1;
 #X obj 137 378 / 2;
@@ -20,6 +20,8 @@
 #X obj 182 342 r liner_exponent;
 #X obj 262 171 r stop_all_liners;
 #X msg 262 200 stop;
+#X obj 301 308 r reset_liner_memory;
+#X msg 368 347 0;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 17 0;
@@ -45,3 +47,5 @@
 #X connect 18 0 17 1;
 #X connect 19 0 20 0;
 #X connect 20 0 5 0;
+#X connect 21 0 22 0;
+#X connect 22 0 15 1;

@@ -1,15 +1,14 @@
-#N canvas 67 543 718 482 10;
+#N canvas 179 397 718 482 10;
 #X obj 41 40 inlet;
 #X obj 41 95 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X obj 41 121 t b b;
-#X msg 41 177 \; record_video 0: play_rec 0 \; gem_window 0 \; timer_on_off_receive
-bang \; noise_onoff 0 \; mirror_on_off_receive 0 \; gem_window 1 \;
-;
+#X msg 41 177 \; gem_window 0 \; noise_onoff 0 \; mirror_on_off_rec
+0 \; gem_window 1 \;;
 #X msg 266 181 \; stop_all_liners bang \; reset_all_tarers bang \;
-reset_times bang \; reset_values bang \; staytime_receive 15000 \;
-liner_exponent 1 \; reset_absolutes bang \; phase_master_set 0.5 \;
-;
+reset_times bang \; reset_values bang \; liner_exponent 1 \; reset_absolutes
+bang \; phase_master_set 0.5 \; x_y_absolute-0-receive 99 \; x_y_absolute-1-receive
+99 \; x_y_absolute-2-receive 99 \;;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
