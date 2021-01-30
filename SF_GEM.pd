@@ -1,4 +1,4 @@
-#N canvas 67 764 1839 292 10;
+#N canvas 67 822 1839 250 10;
 #X obj 10 8 GEM-Center_sfgem;
 #X text 173 256 Knob and fader controls \; button presets \; instructions
 from labels \; clicking presets of number boxes (comp not ctrl!);

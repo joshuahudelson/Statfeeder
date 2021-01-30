@@ -1,4 +1,4 @@
-#N canvas 87 546 1783 568 10;
+#N canvas 67 464 1783 568 10;
 #X obj 183 438 Gem;
 #X obj 102 438 dac~;
 #X obj 30 371 r~ channel0;
@@ -30,7 +30,7 @@
 ;
 #X obj 1706 334 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X obj 1706 507 s mirror_on_off;
+#X obj 1706 427 s mirror_on_off;
 #X obj 1135 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
 #X obj 1033 420 s timer_on_off;
@@ -55,7 +55,7 @@
 #X obj 33 302 spin_subpatch 16 17 18;
 #X obj 559 302 cent_spin_subpatch;
 #X text 563 285 ORBIT;
-#X obj 1770 449 s ctrl_or_comp;
+#X obj 1770 369 s ctrl_or_comp;
 #X obj 446 371 presetter_sfgem;
 #X obj 1135 82 r record_video;
 #X obj 982 33 r noise_onoff;
@@ -72,14 +72,14 @@
 #X obj 1033 54 r timer_on_off_receive;
 #X obj 1585 378 swapper;
 #X obj 1181 152 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-27 -262144 -1 -1 41 256;
+27 -262144 -1 -1 19 256;
 #X text 1276 135 WINDOW;
 #X obj 1181 53 r timer_2pnl;
-#X obj 1738 478 s toggle_amp;
+#X obj 1738 398 s toggle_amp;
 #X obj 1738 334 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
 #X obj 1651 55 loadbang;
-#X obj 1651 536 s liner_exponent;
+#X obj 1651 456 s liner_exponent;
 #X obj 1651 334 nbx 2 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 18 -262144 -1 -1 1 256;
 #X text 1598 316 SWAP;
