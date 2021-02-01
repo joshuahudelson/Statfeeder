@@ -1,4 +1,4 @@
-#N canvas 67 822 1839 250 10;
+#N canvas 67 814 1839 250 10;
 #X obj 10 8 GEM-Center_sfgem;
 #X text 173 256 Knob and fader controls \; button presets \; instructions
 from labels \; clicking presets of number boxes (comp not ctrl!);
@@ -18,18 +18,6 @@ can't have multiple pulses going at once because \; the input names
 -1 -1;
 #X obj 57 324 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X text 1316 319 TO DO \; - make time/liner for absolutes (also: cartpol
-choice) \; -;
-#X obj 633 339 r aux_inst_all;
-#X obj 633 359 unpack f f f f f f f f;
-#X floatatom 569 406 5 0 0 0 - - -, f 5;
-#X floatatom 602 406 5 0 0 0 - - -, f 5;
-#X floatatom 635 406 5 0 0 0 - - -, f 5;
-#X floatatom 668 406 5 0 0 0 - - -, f 5;
-#X floatatom 701 406 5 0 0 0 - - -, f 5;
-#X floatatom 734 406 5 0 0 0 - - -, f 5;
-#X floatatom 767 406 5 0 0 0 - - -, f 5;
-#X floatatom 800 406 5 0 0 0 - - -, f 5;
 #X text 554 251 pulsing statfeed... \; - make the statfeed thing where
 you choose what functions \; to be sending the outputs to... it also
 uses the random max/min \, scaling them with its outputs. \;;
@@ -37,12 +25,3 @@ uses the random max/min \, scaling them with its outputs. \;;
 #X connect 6 1 4 0;
 #X connect 7 0 6 0;
 #X connect 8 0 5 0;
-#X connect 10 0 11 0;
-#X connect 11 0 12 0;
-#X connect 11 1 13 0;
-#X connect 11 2 14 0;
-#X connect 11 3 15 0;
-#X connect 11 4 16 0;
-#X connect 11 5 17 0;
-#X connect 11 6 18 0;
-#X connect 11 7 19 0;

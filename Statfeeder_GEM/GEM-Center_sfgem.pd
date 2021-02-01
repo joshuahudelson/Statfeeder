@@ -1,4 +1,4 @@
-#N canvas 67 464 1783 568 10;
+#N canvas 67 440 1783 568 10;
 #X obj 183 438 Gem;
 #X obj 102 438 dac~;
 #X obj 30 371 r~ channel0;
@@ -72,7 +72,7 @@
 #X obj 1033 54 r timer_on_off_receive;
 #X obj 1585 378 swapper;
 #X obj 1181 152 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-27 -262144 -1 -1 19 256;
+27 -262144 -1 -1 10 256;
 #X text 1276 135 WINDOW;
 #X obj 1181 53 r timer_2pnl;
 #X obj 1738 398 s toggle_amp;
@@ -94,8 +94,6 @@
 #X obj 1585 23 r swapper_rec;
 #X obj 1651 78 r liner_exp_rec;
 #X obj 1738 52 r amp_exp;
-#X obj 561 371 r current_instruction;
-#X obj 561 400 print;
 #X text 823 135 LABELS;
 #X text 872 135 SNDFILE;
 #X text 924 135 PLAYALL;
@@ -134,7 +132,7 @@
 #X connect 51 0 30 0;
 #X connect 53 0 52 0;
 #X connect 55 0 53 0;
-#X connect 57 0 84 0;
+#X connect 57 0 82 0;
 #X connect 61 0 59 0;
 #X connect 63 0 62 0;
 #X connect 64 0 74 0;
@@ -144,8 +142,7 @@
 #X connect 76 0 10 0;
 #X connect 77 0 66 0;
 #X connect 78 0 63 0;
-#X connect 79 0 80 0;
-#X connect 84 0 24 0;
-#X connect 90 0 92 0;
-#X connect 92 0 46 0;
+#X connect 82 0 24 0;
+#X connect 88 0 90 0;
+#X connect 90 0 46 0;
 #X coords 0 -1 1 1 1800 230 1 20 130;

@@ -1,4 +1,4 @@
-#N canvas 758 101 1056 778 10;
+#N canvas 654 93 1056 778 10;
 #X obj 300 172 textfile;
 #X obj 300 122 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -42,6 +42,8 @@
 #X msg 327 239 1;
 #X obj 74 283 r instruction_bypass;
 #X obj 585 208 s noise_onoff;
+#X obj 581 559 print current instruction;
+#X obj 691 323 print pre-unpack instruction;
 #X connect 0 0 37 0;
 #X connect 0 1 22 0;
 #X connect 1 0 0 0;
@@ -71,6 +73,7 @@
 #X connect 27 0 7 0;
 #X connect 27 1 5 1;
 #X connect 27 2 24 0;
+#X connect 27 2 42 0;
 #X connect 27 3 26 0;
 #X connect 27 3 35 0;
 #X connect 27 4 28 0;
@@ -89,6 +92,7 @@
 #X connect 27 10 35 7;
 #X connect 35 0 36 0;
 #X connect 37 0 27 0;
+#X connect 37 0 43 0;
 #X connect 37 1 39 0;
 #X connect 39 0 38 0;
 #X connect 40 0 27 0;
