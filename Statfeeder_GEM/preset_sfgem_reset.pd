@@ -7,8 +7,8 @@
 0 \; gem_window 1 \;;
 #X msg 266 181 \; stop_all_liners bang \; reset_all_tarers bang \;
 reset_times bang \; reset_values bang \; liner_exponent 1 \; reset_absolutes
-bang \; phase_master_set 0.5 \; x_y_absolute-0-receive 99 \; x_y_absolute-1-receive
-99 \; x_y_absolute-2-receive 99 \;;
+bang \; phase_master_set 0.5 \; x_y_absolute-0-receive 0 \; x_y_absolute-1-receive
+0 \; x_y_absolute-2-receive 0 \;;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;

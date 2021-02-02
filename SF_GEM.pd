@@ -1,13 +1,13 @@
-#N canvas 67 814 1839 250 10;
+#N canvas 26 671 1839 393 10;
 #X obj 10 8 GEM-Center_sfgem;
-#X text 173 256 Knob and fader controls \; button presets \; instructions
+#X text 248 370 Knob and fader controls \; button presets \; instructions
 from labels \; clicking presets of number boxes (comp not ctrl!);
-#X text 932 244 The pulsing random will work with \; phase and rot
+#X text 968 351 The pulsing random will work with \; phase and rot
 to basically be the disruptor from before. \; Statfeeder output: X
 elements. Y functions. If I choose \; 4 functions \, assigns them evenly
 \; 5 \, likewise... \; No: number of functions = number of elements.
 1 to 1 \; But what would the values be? Second statfeeder.;
-#X text 1316 246 Will need to make 2 or 3 \, at least \, pulser objects
+#X text 1352 361 Will need to make 2 or 3 \, at least \, pulser objects
 \; who send the pulses to the things assigned to them \; Otherwise
 can't have multiple pulses going at once because \; the input names
 (spin \, xadd) will keep changing.;
@@ -18,10 +18,22 @@ can't have multiple pulses going at once because \; the input names
 -1 -1;
 #X obj 57 324 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X text 554 251 pulsing statfeed... \; - make the statfeed thing where
+#X text 565 357 pulsing statfeed... \; - make the statfeed thing where
 you choose what functions \; to be sending the outputs to... it also
 uses the random max/min \, scaling them with its outputs. \;;
+#X msg 644 265 0 0;
+#X obj 580 294 s x_y_absolute-0-output;
+#X obj 888 248 r aux_inst_0;
+#X obj 978 247 r aux_inst_1;
+#X obj 1071 246 r current_instruction_length;
+#X floatatom 1075 302 5 0 0 0 - - -, f 5;
+#X floatatom 984 306 5 0 0 0 - - -, f 5;
+#X floatatom 890 303 5 0 0 0 - - -, f 5;
 #X connect 6 0 5 0;
 #X connect 6 1 4 0;
 #X connect 7 0 6 0;
 #X connect 8 0 5 0;
+#X connect 10 0 11 0;
+#X connect 12 0 17 0;
+#X connect 13 0 16 0;
+#X connect 14 0 15 0;

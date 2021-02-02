@@ -1,60 +1,60 @@
-#N canvas 400 89 752 525 10;
-#X obj 101 101 cnv 15 250 68 empty empty empty 20 12 0 14 -162280 -66577
+#N canvas 193 89 1446 968 10;
+#X obj 301 201 cnv 15 250 68 empty empty empty 20 12 0 14 -162280 -66577
 0;
-#X obj 102 103 nbx 4 35 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 30
--262144 -1 -1 -0.186241 256;
-#X obj 102 40 unpack;
-#X obj 227 103 nbx 4 35 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 30
--262144 -1 -1 -0.0511144 256;
-#X obj 152 142 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 0 256;
-#X obj 297 142 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 302 203 nbx 4 35 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 30
+-262144 -1 -1 5.96046e-07 256;
+#X obj 427 203 nbx 4 35 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 30
+-262144 -1 -1 5.96046e-07 256;
+#X obj 352 242 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
+-262144 -1 -1 1000 256;
+#X obj 497 242 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 297 189 s x_y_absolute-\$1-cartpol;
-#X obj 297 70 r x_y_absolute-\$1-cartpol-rec;
-#X obj 462 106 loadbang;
-#X msg 432 124 0;
-#X obj 297 247 s x_y_absolute-\$1-time;
-#X obj 114 394 s x_y_absolute-\$1-out;
-#X obj 114 365 pack;
-#X msg 102 76 set \$1;
-#X msg 227 74 set \$1;
-#X obj 221 11 r x_y_absolute-\$1-receive;
-#X obj 102 11 r x_y_absolute-\$1;
-#X obj 221 40 unpack;
-#X obj 108 260 t b f;
-#X obj 432 27 r reset_absolutes;
-#X msg 547 85 0;
-#X obj 573 111 r reset_times;
-#X obj 297 218 r x_y_absolute_\$1-time-receive;
-#X msg 560 153 0;
-#X text 309 271 Unused for now...;
-#X obj 393 10 t b a;
-#X connect 1 0 12 0;
-#X connect 2 0 13 0;
-#X connect 2 1 14 0;
-#X connect 2 1 12 1;
-#X connect 3 0 18 0;
-#X connect 4 0 10 0;
-#X connect 5 0 6 0;
-#X connect 7 0 5 0;
-#X connect 8 0 9 0;
-#X connect 9 0 5 0;
-#X connect 12 0 11 0;
-#X connect 13 0 1 0;
-#X connect 14 0 3 0;
-#X connect 15 0 25 0;
+#X obj 497 172 r x_y_absolute-\$1-cartpol-rec;
+#X obj 802 206 loadbang;
+#X msg 781 224 0;
+#X obj 323 840 s x_y_absolute-\$1-out;
+#X obj 781 84 r reset_absolutes;
+#X obj 859 202 r reset_times;
+#X msg 859 224 0;
+#X obj 575 224 r x_y_absolute-\$1-time-receive;
+#X obj 370 154 unpack;
+#X obj 122 97 r x_y_absolute-\$1-input;
+#X msg 302 172 set \$1;
+#X msg 427 172 set \$1;
+#X obj 122 136 t a b;
+#X obj 323 356 r x_y_absolute-\$1-receive;
+#X obj 323 395 unpack;
+#X obj 368 441 pack;
+#X obj 283 441 pack;
+#X obj 283 480 liner_sfgem;
+#X obj 335 598 pack;
+#X obj 381 552 t b f;
+#X obj 368 481 liner_sfgem;
+#X connect 3 0 20 1;
+#X connect 3 0 21 1;
+#X connect 5 0 4 0;
+#X connect 6 0 7 0;
+#X connect 7 0 4 0;
+#X connect 9 0 7 0;
+#X connect 10 0 11 0;
+#X connect 11 0 3 0;
+#X connect 12 0 3 0;
+#X connect 13 0 15 0;
+#X connect 13 0 22 1;
+#X connect 13 1 16 0;
+#X connect 13 1 25 1;
+#X connect 14 0 17 0;
+#X connect 15 0 1 0;
 #X connect 16 0 2 0;
-#X connect 17 0 1 0;
-#X connect 17 1 3 0;
-#X connect 18 0 1 0;
-#X connect 18 1 12 1;
+#X connect 17 0 13 0;
+#X connect 18 0 19 0;
+#X connect 19 0 21 0;
 #X connect 19 0 20 0;
-#X connect 19 0 9 0;
-#X connect 20 0 3 0;
-#X connect 20 0 1 0;
-#X connect 21 0 23 0;
-#X connect 22 0 4 0;
-#X connect 23 0 4 0;
-#X connect 25 1 17 0;
-#X coords 0 -1 1 1 252 70 2 100 100;
+#X connect 20 0 25 0;
+#X connect 21 0 22 0;
+#X connect 22 0 23 0;
+#X connect 23 0 8 0;
+#X connect 24 0 23 0;
+#X connect 24 1 23 1;
+#X connect 25 0 24 0;
+#X coords 0 -1 1 1 252 70 2 300 200;

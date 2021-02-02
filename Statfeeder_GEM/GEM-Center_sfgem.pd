@@ -1,4 +1,4 @@
-#N canvas 67 440 1783 568 10;
+#N canvas 0 462 1865 568 10;
 #X obj 183 438 Gem;
 #X obj 102 438 dac~;
 #X obj 30 371 r~ channel0;
@@ -67,12 +67,12 @@
 #X obj 1282 202 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
 1 1;
 #X text 1282 183 DSP;
-#X obj 1282 66 r dsp_onoff;
+#X obj 1282 46 r dsp_onoff;
 #X text 1023 446 Eventually put this in \; load_run_buttons...;
 #X obj 1033 54 r timer_on_off_receive;
 #X obj 1585 378 swapper;
 #X obj 1181 152 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-27 -262144 -1 -1 10 256;
+27 -262144 -1 -1 5 256;
 #X text 1276 135 WINDOW;
 #X obj 1181 53 r timer_2pnl;
 #X obj 1738 398 s toggle_amp;
@@ -81,15 +81,13 @@
 #X obj 1651 55 loadbang;
 #X obj 1651 456 s liner_exponent;
 #X obj 1651 334 nbx 2 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-18 -262144 -1 -1 1 256;
+18 -262144 -1 -1 2 256;
 #X text 1598 316 SWAP;
 #X text 1640 316 LIN EXP;
 #X text 1695 315 MIRR.;
 #X text 1733 315 AMP.;
 #X text 1763 316 CTRL/CMP;
 #X obj 822 254 pushbutton_presets_sfgem;
-#X obj 34 141 x_y_absolute_subpatch 0;
-#X msg 1651 101 1;
 #X obj 1706 23 r mirror_on_off_rec;
 #X obj 1585 23 r swapper_rec;
 #X obj 1651 78 r liner_exp_rec;
@@ -102,12 +100,14 @@
 #X text 1030 134 TIMER;
 #X text 1080 135 SOUND;
 #X text 1126 135 REC VID;
-#X obj 296 141 x_y_absolute_subpatch 1;
-#X obj 559 141 x_y_absolute_subpatch 2;
 #X obj 899 212 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X text 918 213 Center;
-#X msg 767 414 center;
+#X msg 722 411 center;
+#X msg 1651 101 2;
+#X obj 559 141 x_y_absolute_subpatch 2;
+#X obj 34 141 x_y_absolute_subpatch 0;
+#X obj 296 141 x_y_absolute_subpatch 1;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
 #X connect 4 0 5 0;
@@ -132,17 +132,17 @@
 #X connect 51 0 30 0;
 #X connect 53 0 52 0;
 #X connect 55 0 53 0;
-#X connect 57 0 82 0;
+#X connect 57 0 80 0;
 #X connect 61 0 59 0;
 #X connect 63 0 62 0;
-#X connect 64 0 74 0;
+#X connect 64 0 87 0;
 #X connect 66 0 65 0;
-#X connect 74 0 66 0;
-#X connect 75 0 21 0;
-#X connect 76 0 10 0;
-#X connect 77 0 66 0;
-#X connect 78 0 63 0;
-#X connect 82 0 24 0;
-#X connect 88 0 90 0;
-#X connect 90 0 46 0;
+#X connect 73 0 21 0;
+#X connect 74 0 10 0;
+#X connect 75 0 66 0;
+#X connect 76 0 63 0;
+#X connect 80 0 24 0;
+#X connect 84 0 86 0;
+#X connect 86 0 46 0;
+#X connect 87 0 66 0;
 #X coords 0 -1 1 1 1800 230 1 20 130;

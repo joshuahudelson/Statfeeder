@@ -43,7 +43,6 @@
 #X obj 74 283 r instruction_bypass;
 #X obj 585 208 s noise_onoff;
 #X obj 581 559 print current instruction;
-#X obj 691 323 print pre-unpack instruction;
 #X connect 0 0 37 0;
 #X connect 0 1 22 0;
 #X connect 1 0 0 0;
@@ -92,7 +91,6 @@
 #X connect 27 10 35 7;
 #X connect 35 0 36 0;
 #X connect 37 0 27 0;
-#X connect 37 0 43 0;
 #X connect 37 1 39 0;
 #X connect 39 0 38 0;
 #X connect 40 0 27 0;
