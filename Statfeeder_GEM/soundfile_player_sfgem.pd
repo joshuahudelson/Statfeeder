@@ -1,4 +1,4 @@
-#N canvas 474 506 649 574 10;
+#N canvas 412 333 905 626 10;
 #X obj 274 169 openpanel;
 #X obj 274 243 readsf~ 3;
 #X obj 354 218 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -25,7 +25,17 @@
 #X msg 122 388 1;
 #X obj 399 290 s play_rec;
 #X obj 214 236 noise~;
+#X obj 521 132 r repeat_soundfile_load;
+#X msg 439 187 set \$1;
+#X msg 441 211 /home/joshua/Desktop/Statfeed - Sampler Video Draft 1/Statfeed-Sampler-Video-Audio-PART2.wav
+;
+#X obj 332 92 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 98 201 print openpanel;
+#X obj 441 253 symbol;
 #X connect 0 0 3 0;
+#X connect 0 0 26 0;
+#X connect 0 0 29 0;
 #X connect 1 0 5 0;
 #X connect 1 0 17 0;
 #X connect 1 1 6 0;
@@ -61,3 +71,8 @@
 #X connect 22 0 18 1;
 #X connect 22 0 19 1;
 #X connect 24 0 8 0;
+#X connect 25 0 27 0;
+#X connect 26 0 27 0;
+#X connect 27 0 30 0;
+#X connect 28 0 0 0;
+#X connect 30 0 3 0;

@@ -1,4 +1,4 @@
-#N canvas 96 336 1184 627 10;
+#N canvas 76 320 1184 627 10;
 #X obj 155 104 inlet;
 #X obj 212 144 inlet;
 #X obj 265 78 inlet;
@@ -8,13 +8,13 @@
 -1 -1;
 #X obj 148 186 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 370 289 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 7.05 256;
+#X obj 370 339 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
+-262144 -1 -1 69.592 256;
 #X obj 511 122 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 421 404 1;
 #X obj 370 260 timer_sfgem;
-#X obj 370 330 instruction_reader_sfgem;
+#X obj 370 380 instruction_reader_sfgem;
 #X obj 277 212 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 148 283 soundfile_player_sfgem;
@@ -22,7 +22,7 @@
 #X text 199 193 OPEN REC;
 #X text 266 193 PLAY REC;
 #X text 491 105 OPEN LABELS;
-#X obj 370 219 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 370 219 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X msg 448 264 1;
 #X msg 487 242 0;
@@ -37,7 +37,7 @@
 #X obj 699 331 inlet;
 #X obj 593 96 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 335 366 s timer_2pnl;
+#X obj 300 477 s timer_2pnl;
 #X text 150 305 SIGNAL STUFF IN HERE;
 #X msg 370 152 0;
 #X obj 88 477 s timer_on_off_receive;
@@ -48,6 +48,8 @@
 #X obj 688 202 sel 0 1;
 #X msg 688 230 0;
 #X obj 593 349 sfgem_pdwindow;
+#X obj 370 314 +;
+#X obj 645 296 r timer_offset_to_timer;
 #X connect 0 0 8 0;
 #X connect 1 0 5 0;
 #X connect 2 0 30 0;
@@ -60,7 +62,7 @@
 #X connect 8 0 11 2;
 #X connect 8 0 33 0;
 #X connect 9 0 28 0;
-#X connect 10 0 7 0;
+#X connect 10 0 42 0;
 #X connect 12 0 13 2;
 #X connect 18 0 10 0;
 #X connect 18 0 35 0;
@@ -80,3 +82,5 @@
 #X connect 39 0 40 0;
 #X connect 39 1 37 0;
 #X connect 40 0 18 0;
+#X connect 42 0 7 0;
+#X connect 43 0 42 1;

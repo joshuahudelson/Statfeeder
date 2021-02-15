@@ -1,10 +1,10 @@
-#N canvas 483 457 1179 573 10;
+#N canvas 484 507 1179 573 10;
 #X obj 132 376 f;
 #X obj 165 376 f;
 #X obj 705 34 r aux_inst_0;
 #X obj 735 63 r aux_inst_1;
 #X obj 132 413 pack;
-#X obj 132 434 s x_y_absolute-0-receive;
+#X obj 143 447 s x_y_absolute-0-receive;
 #X obj 410 373 f;
 #X obj 443 373 f;
 #X obj 410 410 pack;
@@ -17,15 +17,15 @@
 #X obj 198 376 f;
 #X obj 475 373 f;
 #X obj 753 373 f;
-#X obj 909 225 t b b b;
+#X obj 959 171 t b b b;
 #X obj 198 405 s x_y_absolute-0-time-receive;
 #X obj 475 402 s x_y_absolute-1-time-receive;
 #X obj 753 402 s x_y_absolute-2-time-receive;
 #X obj 692 243 t b b b;
 #X obj 410 243 t b b b;
 #X obj 133 243 t b b b;
-#X obj 909 160 inlet;
-#X obj 909 189 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 959 106 inlet;
+#X obj 959 135 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 359 160 inlet;
 #X obj 359 189 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -57,9 +57,9 @@
 #X connect 15 0 19 0;
 #X connect 16 0 20 0;
 #X connect 17 0 21 0;
-#X connect 18 0 24 0;
-#X connect 18 1 23 0;
-#X connect 18 2 22 0;
+#X connect 18 0 32 0;
+#X connect 18 1 30 0;
+#X connect 18 2 28 0;
 #X connect 22 0 10 0;
 #X connect 22 1 11 0;
 #X connect 22 2 17 0;
