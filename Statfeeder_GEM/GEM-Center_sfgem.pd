@@ -1,4 +1,4 @@
-#N canvas 0 333 1865 514 10;
+#N canvas 0 491 1865 514 10;
 #X obj 183 438 Gem;
 #X obj 102 438 dac~;
 #X obj 30 371 r~ channel0;
@@ -10,36 +10,36 @@
 #X obj 289 371 controller_stuff_sfgem;
 #X obj 21 131 cnv 15 1828 228 empty empty empty 20 12 0 14 -233017
 -66577 0;
-#X obj 865 224 hradio 20 1 0 3 empty empty empty 0 -8 0 10 -262144
+#X obj 1164 147 hradio 20 1 0 3 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X obj 880 152 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 855 147 bng 20 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 982 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 917 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 1084 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
-#X text 979 135 NOISE;
-#X obj 829 152 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 979 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 909 166 NOISE;
+#X obj 824 147 bng 20 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 931 152 bng 30 250 50 0 empty empty empty 17 7 0 10 -261234
+#X obj 886 147 bng 20 250 50 0 empty empty empty 17 7 0 10 -261234
 -1 -1;
 #X text 1330 139 SIZE;
 #X text 38 285 SPIN;
 #X obj 289 400 stay_time_translator_rotator_router_sfgem;
-#X obj 829 371 load_run_buttons_and_instruction_reader_router_sfgem
+#X obj 824 371 load_run_buttons_and_instruction_reader_router_sfgem
 ;
-#X obj 986 224 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 986 507 s mirror_on_off;
-#X obj 1135 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+#X obj 1291 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X obj 1033 420 s timer_on_off;
-#X obj 1084 106 r play_rec;
+#X obj 1291 371 s mirror_on_off;
+#X obj 1010 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 956 413 s timer_on_off;
+#X obj 979 36 r play_rec;
 #X text 37 211 X-VALUE ADD;
 #X text 561 212 Y-VALUE ADD;
 #X text 298 212 POLAR ADD;
 #X text 299 286 CARTESIAN MULT;
-#X obj 1050 224 hradio 20 1 0 2 empty empty empty 0 -8 0 10 -262144
+#X obj 1214 170 hradio 15 1 0 2 empty empty empty 0 -8 0 10 -262144
 -1 -1 1;
 #X obj 296 229 polar_add_subpatch;
 #X obj 34 229 x_value_add_subpatch;
@@ -54,62 +54,59 @@
 #X obj 33 302 spin_subpatch 16 17 18;
 #X obj 559 302 cent_spin_subpatch;
 #X text 563 285 ORBIT;
-#X obj 1050 449 s ctrl_or_comp;
+#X obj 1215 437 s ctrl_or_comp;
 #X obj 446 371 presetter_sfgem;
-#X obj 1135 82 r record_video;
-#X obj 982 33 r noise_onoff;
-#X obj 1282 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
-#X obj 1282 83 r gem_window;
-#X obj 1050 1 r control_or_comp_receive;
-#X msg 1282 373 \; pd dsp \$1;
-#X obj 1282 202 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
-#X text 1282 183 DSP;
-#X obj 1282 46 r dsp_onoff;
-#X obj 1033 54 r timer_on_off_receive;
-#X obj 865 458 swapper;
-#X obj 1181 152 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-27 -262144 -1 -1 5 256;
-#X text 1276 135 WINDOW;
-#X obj 1181 24 r timer_2pnl;
-#X obj 1018 478 s toggle_amp;
-#X obj 1018 224 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
+#X obj 1010 57 r record_video;
+#X obj 917 -7 r noise_onoff;
+#X obj 1102 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X obj 931 -45 loadbang;
-#X obj 931 536 s liner_exponent;
-#X obj 931 224 nbx 2 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 18
--262144 -1 -1 2 256;
-#X text 878 206 SWAP;
-#X text 920 206 LIN EXP;
-#X text 975 205 MIRR.;
-#X text 1013 205 AMP.;
-#X text 1043 206 CTRL/CMP;
-#X obj 822 254 pushbutton_presets_sfgem;
-#X obj 986 -77 r mirror_on_off_rec;
-#X obj 865 -77 r swapper_rec;
-#X obj 931 -22 r liner_exp_rec;
-#X obj 1018 -48 r amp_exp;
-#X text 823 135 LABELS;
-#X text 872 135 SNDFILE;
-#X text 924 135 PLAYALL;
-#X obj 1033 152 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1
+#X obj 1102 57 r gem_window;
+#X obj 1215 12 r control_or_comp_receive;
+#X msg 1133 415 \; pd dsp \$1;
+#X obj 1133 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X text 1030 134 TIMER;
-#X text 1080 135 SOUND;
-#X text 1126 135 REC VID;
-#X msg 931 1 2;
-#X obj 1181 202 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-27 -262144 -1 -1 0 256;
-#X obj 1181 53 r timer_offset;
-#X obj 1181 419 s timer_offset_to_timer;
-#X obj 836 413 s repeat_labels_load;
+#X text 1131 167 DSP;
+#X obj 1133 79 r dsp_onoff;
+#X obj 948 14 r timer_on_off_receive;
+#X obj 1164 371 swapper;
+#X obj 1041 144 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+14 -262144 -1 -1 0 256;
+#X text 1094 130 WINDOW;
+#X obj 1041 79 r timer_2pnl;
+#X obj 1277 393 s toggle_amp;
+#X obj 1277 170 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 1235 34 loadbang;
+#X obj 1233 415 s liner_exponent;
+#X obj 1235 147 nbx 2 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+18 -262144 -1 -1 2 256;
+#X text 1175 130 SWAP;
+#X text 1231 130 LIN EXP;
+#X text 1286 130 MIRR.;
+#X text 1249 168 AMP.;
+#X text 1162 169 CTRL/CMP;
+#X obj 1292 80 r mirror_on_off_rec;
+#X obj 1164 -10 r swapper_rec;
+#X obj 1235 57 r liner_exp_rec;
+#X obj 1277 101 r amp_exp;
+#X text 815 130 LABELS;
+#X text 841 167 SNDFILE;
+#X obj 948 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 941 130 TIMER;
+#X text 972 166 SOUND;
+#X msg 1235 80 2;
+#X obj 1041 159 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+14 -262144 -1 -1 0 256;
+#X obj 1041 101 r timer_offset;
+#X obj 1041 392 s timer_offset_to_timer;
+#X obj 829 413 s repeat_labels_load;
 #X obj 886 392 s repeat_soundfile_load;
-#X obj 836 189 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 829 170 bng 10 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 886 189 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 859 135 bng 10 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1107 225 t b f;
+#X obj 886 77 t b f;
 #X text 1326 286 PHASE;
 #X obj 1586 302 y_offset_subpatch;
 #X text 1591 285 Y-OFFSET;
@@ -118,6 +115,11 @@
 #X obj 34 141 x_y_absolute_subpatch 0;
 #X obj 559 141 x_y_absolute_subpatch 2;
 #X obj 296 141 x_y_absolute_subpatch 1;
+#X obj 822 188 statfeed_for_sfgem;
+#X text 1009 130 VID;
+#X text 880 131 PLAY;
+#X text 1047 130 TIMER;
+#X text 1045 172 HEADER;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
 #X connect 4 0 5 0;
@@ -132,7 +134,7 @@
 #X connect 15 0 20 0;
 #X connect 16 0 20 3;
 #X connect 21 0 22 0;
-#X connect 23 0 90 0;
+#X connect 23 0 87 0;
 #X connect 25 0 13 0;
 #X connect 30 0 44 0;
 #X connect 46 0 23 0;
@@ -142,21 +144,21 @@
 #X connect 50 0 30 0;
 #X connect 52 0 51 0;
 #X connect 54 0 52 0;
-#X connect 55 0 78 0;
+#X connect 55 0 76 0;
 #X connect 59 0 57 0;
 #X connect 61 0 60 0;
-#X connect 62 0 82 0;
+#X connect 62 0 79 0;
 #X connect 64 0 63 0;
-#X connect 71 0 21 0;
-#X connect 72 0 10 0;
-#X connect 73 0 64 0;
-#X connect 74 0 61 0;
-#X connect 78 0 24 0;
-#X connect 82 0 64 0;
-#X connect 83 0 85 0;
-#X connect 84 0 83 0;
-#X connect 88 0 86 0;
-#X connect 89 0 87 0;
-#X connect 90 0 16 0;
-#X connect 90 1 20 6;
+#X connect 70 0 21 0;
+#X connect 71 0 10 0;
+#X connect 72 0 64 0;
+#X connect 73 0 61 0;
+#X connect 76 0 24 0;
+#X connect 79 0 64 0;
+#X connect 80 0 82 0;
+#X connect 81 0 80 0;
+#X connect 85 0 83 0;
+#X connect 86 0 84 0;
+#X connect 87 0 16 0;
+#X connect 87 1 20 6;
 #X coords 0 -1 1 1 1830 230 1 20 130;

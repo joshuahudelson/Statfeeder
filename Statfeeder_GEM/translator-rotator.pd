@@ -1,4 +1,4 @@
-#N canvas -194 349 1701 727 10;
+#N canvas 0 349 1701 727 10;
 #X obj 910 764 translateXYZ, f 16;
 #X obj 910 691 inlet;
 #X obj 1082 811 outlet;
@@ -181,6 +181,8 @@
 #X obj 1206 556 r y_offset_\$1;
 #X floatatom 1214 607 5 0 0 0 - - -, f 5;
 #X floatatom 1102 608 5 0 0 0 - - -, f 5;
+#X text 187 411 ORBIT;
+#X obj 346 927 r orbit-radius-set;
 #X connect 0 0 13 0;
 #X connect 1 0 0 0;
 #X connect 3 0 6 0;
@@ -391,3 +393,4 @@
 #X connect 177 1 180 0;
 #X connect 178 0 176 0;
 #X connect 179 0 177 0;
+#X connect 183 0 130 0;

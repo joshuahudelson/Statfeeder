@@ -1,46 +1,46 @@
 #N canvas 764 155 763 580 10;
-#X obj 201 251 cnv 15 248 48 empty empty empty 20 12 0 14 -162280 -66577
+#X obj 200 250 cnv 15 248 48 empty empty empty 20 12 0 14 -162280 -66577
 0;
-#X obj 220 254 nbx 2 42 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
+#X obj 219 253 nbx 2 42 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
 -262144 -1 -1 0 256;
-#X obj 288 254 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1 256;
-#X obj 263 229 inlet;
-#X obj 223 434 outlet;
-#X obj 288 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 287 253 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
-#X obj 342 444 outlet;
-#X obj 288 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1.2 256;
-#X obj 503 444 outlet;
-#X obj 301 230 inlet;
-#X obj 340 230 inlet;
-#X obj 177 229 inlet;
-#X obj 411 254 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 262 228 inlet;
+#X obj 222 433 outlet;
+#X obj 287 267 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
-#X obj 411 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 341 443 outlet;
+#X obj 287 281 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
-#X obj 411 282 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1625.4 256;
-#X obj 441 230 inlet;
-#X obj 480 230 inlet;
-#X obj 521 230 inlet;
-#X obj 324 260 nbx 4 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
+#X obj 502 443 outlet;
+#X obj 300 229 inlet;
+#X obj 339 229 inlet;
+#X obj 176 228 inlet;
+#X obj 410 253 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
-#X obj 403 230 inlet;
-#X obj 551 268 outlet;
-#X obj 602 282 outlet;
-#X obj 653 296 outlet;
-#X obj 288 113 r fader_or_knob_\$1;
-#X obj 288 133 r fader_or_knob_\$2;
-#X obj 288 153 r fader_or_knob_\$3;
-#X obj 324 173 r fader_or_knob_\$4;
-#X obj 220 202 r fader_or_knob_\$5;
-#X msg 414 55 0;
-#X obj 220 33 r reset_values;
-#X msg 220 63 0;
-#X obj 414 26 r reset_times;
-#X obj 34 348 outlet;
+#X obj 410 267 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 410 281 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 440 229 inlet;
+#X obj 479 229 inlet;
+#X obj 520 229 inlet;
+#X obj 323 259 nbx 4 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
+-262144 -1 -1 0 256;
+#X obj 402 229 inlet;
+#X obj 550 267 outlet;
+#X obj 601 281 outlet;
+#X obj 652 295 outlet;
+#X obj 287 112 r fader_or_knob_\$1;
+#X obj 287 132 r fader_or_knob_\$2;
+#X obj 287 152 r fader_or_knob_\$3;
+#X obj 323 172 r fader_or_knob_\$4;
+#X obj 219 201 r fader_or_knob_\$5;
+#X msg 413 54 0;
+#X obj 219 32 r reset_values;
+#X msg 219 62 0;
+#X obj 413 25 r reset_times;
+#X obj 33 347 outlet;
 #X connect 1 0 2 0;
 #X connect 1 0 5 0;
 #X connect 1 0 7 0;
@@ -77,4 +77,4 @@
 #X connect 30 0 5 0;
 #X connect 30 0 7 0;
 #X connect 31 0 28 0;
-#X coords 0 -1 1 1 250 50 2 200 250;
+#X coords 0 -1 1 1 248 48 2 200 250;
