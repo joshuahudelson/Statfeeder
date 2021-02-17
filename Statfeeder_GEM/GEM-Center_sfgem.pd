@@ -18,7 +18,7 @@
 1;
 #X obj 979 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 909 166 NOISE;
+#X text 911 166 NOISE;
 #X obj 824 147 bng 20 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 886 147 bng 20 250 50 0 empty empty empty 17 7 0 10 -261234
@@ -90,7 +90,7 @@
 #X obj 1235 57 r liner_exp_rec;
 #X obj 1277 101 r amp_exp;
 #X text 815 130 LABELS;
-#X text 841 167 SNDFILE;
+#X text 843 167 SNDFILE;
 #X obj 948 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X text 941 130 TIMER;
@@ -102,9 +102,9 @@
 #X obj 1041 392 s timer_offset_to_timer;
 #X obj 829 413 s repeat_labels_load;
 #X obj 886 392 s repeat_soundfile_load;
-#X obj 829 170 bng 10 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 824 167 bng 10 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 859 135 bng 10 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 864 137 bng 10 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 886 77 t b f;
 #X text 1326 286 PHASE;
@@ -113,13 +113,13 @@
 #X text 1589 212 X-OFFSET;
 #X obj 1586 229 x_offset_subpatch;
 #X obj 34 141 x_y_absolute_subpatch 0;
-#X obj 559 141 x_y_absolute_subpatch 2;
-#X obj 296 141 x_y_absolute_subpatch 1;
 #X obj 822 188 statfeed_for_sfgem;
-#X text 1009 130 VID;
+#X text 1008 130 VID;
 #X text 880 131 PLAY;
 #X text 1047 130 TIMER;
 #X text 1045 172 HEADER;
+#X obj 559 141 x_y_absolute_subpatch 2;
+#X obj 296 141 x_y_absolute_subpatch 1;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
 #X connect 4 0 5 0;

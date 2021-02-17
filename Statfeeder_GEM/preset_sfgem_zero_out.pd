@@ -1,5 +1,6 @@
 #N canvas 925 498 450 300 10;
 #X obj 70 68 inlet;
 #X msg 70 97 \; reset_all_tarers bang \; reset_liner_memory bang \;
-reset_times bang \; reset_values bang \;;
+reset_times bang \; reset_absolute_times bang \; reset_values bang
+\; reset_absolute_values bang \;;
 #X connect 0 0 1 0;
