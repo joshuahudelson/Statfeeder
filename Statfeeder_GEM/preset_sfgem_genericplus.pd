@@ -1,4 +1,4 @@
-#N canvas 208 346 1355 656 10;
+#N canvas 401 128 1458 728 10;
 #X obj 98 44 inlet;
 #X obj 277 289 route 999;
 #X obj 304 260 route 999;
@@ -85,6 +85,20 @@ length;
 #X obj 605 251 route 999 333;
 #X obj 578 300 route 999 333;
 #X obj 551 349 route 999 333;
+#X text 1043 22 Note: random is not used in the generic-plus mode \;
+as it doesn't seem that useful for the time being: \; if the min and
+max are negative and positive \, respectively \; then using a simple
+random is the equivalent of using \; random-plus (could go backwards
+or forwards). If min and \; max are both positive (or both negative)
+then it would result in a variable progression in one direction \,
+but this doesn't seem that useful at present. \; One could \, however
+\, do a very short \, single-metro-bang run \; of pulse-plus \, which
+would have the same effect... The reason the pulse-plus is useful is
+because you can set the max and min to be small around zero and then
+run it to produce a "random walk" effect.;
+#X text 1017 359 Actually \, fuck it \, why not just include the randoms
+in the generic plus since you're going to anyway elsewhere in the patch....
+;
 #X connect 0 0 12 0;
 #X connect 1 1 39 0;
 #X connect 2 1 44 0;

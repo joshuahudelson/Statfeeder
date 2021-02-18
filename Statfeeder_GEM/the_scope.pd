@@ -1,4 +1,4 @@
-#N canvas 822 154 942 473 10;
+#N canvas 812 146 942 473 10;
 #X obj 246 408 scopeXYZ~ 2048;
 #X obj 227 369 inlet;
 #X obj 542 200 *~;
@@ -35,6 +35,7 @@
 #X obj 192 21 loadbang;
 #X msg 183 51 1;
 #X obj 245 143 f;
+#X text 679 260 Even out distribution of pixels in circle.;
 #X connect 1 0 0 0;
 #X connect 2 0 11 0;
 #X connect 2 0 19 0;

@@ -1,4 +1,4 @@
-#N canvas 67 87 1853 993 10;
+#N canvas 0 87 1865 993 10;
 #X text 1488 475 2 ALL SIG \; 3 ALL SELF;
 #X text 1487 528 6 ONE SELF \; 7 PAIR;
 #X text 1487 554 8 PAIR & NOISE \; 9 PAIR & SIG \;;

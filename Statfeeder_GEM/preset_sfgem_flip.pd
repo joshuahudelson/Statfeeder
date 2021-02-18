@@ -1,0 +1,16 @@
+#N canvas 1158 581 615 399 10;
+#X obj 98 42 inlet;
+#X obj 278 36 inlet;
+#X obj 73 266 s;
+#X msg 94 73 flipper_x;
+#X obj 222 74 aux_inst_0;
+#X obj 147 294 print;
+#X msg 94 210 \$1_3;
+#X obj 94 152 symbol;
+#X obj 159 242 symbol;
+#X connect 0 0 3 0;
+#X connect 3 0 7 0;
+#X connect 6 0 8 0;
+#X connect 7 0 6 0;
+#X connect 8 0 2 1;
+#X connect 8 0 5 0;

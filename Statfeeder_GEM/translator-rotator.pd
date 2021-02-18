@@ -1,4 +1,4 @@
-#N canvas 0 349 1701 727 10;
+#N canvas 0 698 1746 296 10;
 #X obj 910 764 translateXYZ, f 16;
 #X obj 910 691 inlet;
 #X obj 1082 811 outlet;
@@ -147,8 +147,8 @@
 #X obj 935 36 r pol_add_\$1;
 #X obj 539 499 r cart_mult_\$1;
 #X obj 719 968 s cart_mult_tare_\$1;
-#X obj 1173 711 loadbang;
-#X msg 1173 734 0;
+#X obj 1203 711 loadbang;
+#X msg 1203 734 0;
 #X obj 93 691 -;
 #X obj 126 691 f;
 #X obj 93 657 t f f b;
@@ -179,10 +179,11 @@
 #X obj 1061 574 t b f;
 #X obj 1106 556 r x_offset_\$1;
 #X obj 1206 556 r y_offset_\$1;
-#X floatatom 1214 607 5 0 0 0 - - -, f 5;
-#X floatatom 1102 608 5 0 0 0 - - -, f 5;
 #X text 187 411 ORBIT;
 #X obj 346 927 r orbit-radius-set;
+#X obj 1173 612 r flip_x_\$1;
+#X obj 1264 612 r flip_y_\$1;
+#X text 1204 693 REMOVE?;
 #X connect 0 0 13 0;
 #X connect 1 0 0 0;
 #X connect 3 0 6 0;
@@ -387,10 +388,10 @@
 #X connect 175 0 4 0;
 #X connect 176 0 174 0;
 #X connect 176 1 174 1;
-#X connect 176 1 181 0;
 #X connect 177 0 175 0;
 #X connect 177 1 175 1;
-#X connect 177 1 180 0;
 #X connect 178 0 176 0;
 #X connect 179 0 177 0;
-#X connect 183 0 130 0;
+#X connect 181 0 130 0;
+#X connect 182 0 13 1;
+#X connect 183 0 13 2;

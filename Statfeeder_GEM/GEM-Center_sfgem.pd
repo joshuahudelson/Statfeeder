@@ -1,4 +1,4 @@
-#N canvas 0 491 1865 514 10;
+#N canvas 0 459 1865 514 10;
 #X obj 183 438 Gem;
 #X obj 102 438 dac~;
 #X obj 30 371 r~ channel0;
@@ -14,7 +14,7 @@
 -1 -1 0;
 #X obj 855 147 bng 20 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 917 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 917 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 979 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -59,7 +59,7 @@
 #X obj 1010 57 r record_video;
 #X obj 917 -7 r noise_onoff;
 #X obj 1102 147 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X obj 1102 57 r gem_window;
 #X obj 1215 12 r control_or_comp_receive;
 #X msg 1133 415 \; pd dsp \$1;
@@ -120,6 +120,10 @@
 #X text 1045 172 HEADER;
 #X obj 559 141 x_y_absolute_subpatch 2;
 #X obj 296 141 x_y_absolute_subpatch 1;
+#X text 1414 361 FLIP X;
+#X text 1417 431 FLIP Y;
+#X obj 1407 377 flip_x;
+#X obj 1407 447 flip_y;
 #X connect 2 0 6 0;
 #X connect 3 0 7 0;
 #X connect 4 0 5 0;
