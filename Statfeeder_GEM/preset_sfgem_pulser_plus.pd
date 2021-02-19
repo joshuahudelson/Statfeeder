@@ -65,7 +65,7 @@
 1;
 #X msg 444 505 999 999 999 666;
 #X text 682 127 METRO RATES;
-#X obj 477 654 s generic2_bypass_immediate;
+#X obj 477 654 s genericplus_bypass_immediate;
 #X connect 0 0 7 1;
 #X connect 1 0 22 0;
 #X connect 2 0 3 0;

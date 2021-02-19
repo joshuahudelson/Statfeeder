@@ -6,13 +6,13 @@
 #X obj 427 203 nbx 4 35 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 30
 -262144 -1 -1 0 256;
 #X obj 352 242 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 0 256;
+-262144 -1 -1 1000 256;
 #X obj 497 242 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 751 48 r x_y_absolute-\$1-cartpol-rec;
 #X obj 676 48 loadbang;
 #X msg 655 66 0;
-#X obj 335 870 s x_y_absolute-\$1-out;
+#X obj 295 870 s x_y_absolute-\$1-out;
 #X obj 859 202 r reset_times;
 #X msg 859 224 0;
 #X obj 657 224 r x_y_absolute-\$1-time-receive;
@@ -52,7 +52,6 @@
 #X obj 661 556 liner_sfgem;
 #X obj 335 593 f;
 #X obj 505 615 f;
-#X obj 379 726 convert-to-linear;
 #X obj 30 68 r reset_absolute_values;
 #X obj 424 44 r reset_absolute_times;
 #X obj 738 413 f;
@@ -62,6 +61,8 @@
 #X obj 892 369 r absolute_liner_remember;
 #X obj 892 398 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
+#X obj 379 726 convert-to-cartesian;
+#X obj 430 869 s x_y_absolute-\$2-out;
 #X connect 3 0 17 1;
 #X connect 3 0 18 1;
 #X connect 3 0 23 1;
@@ -76,10 +77,10 @@
 #X connect 12 0 14 0;
 #X connect 12 0 42 1;
 #X connect 12 0 46 1;
-#X connect 12 0 54 1;
+#X connect 12 0 53 1;
 #X connect 12 1 15 0;
 #X connect 12 1 43 1;
-#X connect 12 1 53 1;
+#X connect 12 1 52 1;
 #X connect 13 0 37 0;
 #X connect 14 0 1 0;
 #X connect 15 0 2 0;
@@ -94,18 +95,20 @@
 #X connect 21 1 22 0;
 #X connect 22 0 45 0;
 #X connect 23 0 44 0;
-#X connect 24 0 48 0;
+#X connect 24 0 56 0;
 #X connect 25 0 47 0;
 #X connect 25 1 24 1;
 #X connect 26 0 21 0;
 #X connect 27 0 28 0;
 #X connect 28 0 44 1;
 #X connect 28 0 47 1;
-#X connect 28 0 52 1;
+#X connect 28 0 51 1;
 #X connect 28 1 45 1;
-#X connect 28 1 51 1;
+#X connect 28 1 50 1;
 #X connect 29 0 8 0;
+#X connect 29 0 57 0;
 #X connect 30 0 8 0;
+#X connect 30 0 57 0;
 #X connect 31 0 32 0;
 #X connect 31 1 34 0;
 #X connect 32 0 33 0;
@@ -135,16 +138,16 @@
 #X connect 45 0 25 0;
 #X connect 46 0 19 0;
 #X connect 47 0 24 0;
-#X connect 48 0 30 0;
-#X connect 49 0 36 0;
-#X connect 50 0 39 0;
-#X connect 51 0 45 1;
-#X connect 52 0 44 1;
-#X connect 53 0 43 1;
-#X connect 54 0 42 1;
-#X connect 55 0 56 0;
-#X connect 56 0 52 0;
-#X connect 56 0 51 0;
-#X connect 56 0 53 0;
-#X connect 56 0 54 0;
+#X connect 48 0 36 0;
+#X connect 49 0 39 0;
+#X connect 50 0 45 1;
+#X connect 51 0 44 1;
+#X connect 52 0 43 1;
+#X connect 53 0 42 1;
+#X connect 54 0 55 0;
+#X connect 55 0 51 0;
+#X connect 55 0 50 0;
+#X connect 55 0 52 0;
+#X connect 55 0 53 0;
+#X connect 56 0 30 0;
 #X coords 0 -1 1 1 252 70 2 300 200;

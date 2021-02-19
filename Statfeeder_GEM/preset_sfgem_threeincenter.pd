@@ -1,7 +1,0 @@
-#N canvas 240 251 450 300 10;
-#X obj 63 41 inlet;
-#X msg 63 80 \; staytime 20000 \; x_y_absolute-0-time-receive 0 \;
-x_y_absolute-1-time-receive 0 \; x_y_absolute-2-time-receive 0 \; x_y_absolute-0-receive
-0 0 \; x_y_absolute-1-receive 0 0 \; x_y_absolute-2-receive 0 0 \;
-size_speed_all 4000 \; size_master_set 2 \;;
-#X connect 0 0 1 0;
