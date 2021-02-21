@@ -1,13 +1,13 @@
 #N canvas 0 89 1498 968 10;
-#X obj 301 201 cnv 15 250 68 empty empty empty 20 12 0 14 -162280 -66577
+#X obj 300 201 cnv 15 137 49 empty empty empty 20 12 0 14 -162280 -66577
 0;
-#X obj 302 203 nbx 4 35 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 30
+#X obj 303 203 nbx 2 22 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
+-262144 -1 -1 65 256;
+#X obj 352 203 nbx 4 22 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
 -262144 -1 -1 0 256;
-#X obj 427 203 nbx 4 35 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 30
+#X obj 303 226 nbx 5 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 18
 -262144 -1 -1 0 256;
-#X obj 352 242 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 1000 256;
-#X obj 497 242 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 414 226 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 751 48 r x_y_absolute-\$1-cartpol-rec;
 #X obj 676 48 loadbang;
@@ -16,10 +16,10 @@
 #X obj 859 202 r reset_times;
 #X msg 859 224 0;
 #X obj 657 224 r x_y_absolute-\$1-time-receive;
-#X obj 368 135 unpack;
+#X obj 329 135 unpack;
 #X obj 203 50 r x_y_absolute-\$1-input;
-#X msg 302 172 set \$1;
-#X msg 427 172 set \$1;
+#X msg 303 172 set \$1;
+#X msg 358 172 set \$1;
 #X obj 465 302 r x_y_absolute-\$1-receive;
 #X obj 382 441 pack;
 #X obj 283 441 pack;
@@ -41,9 +41,9 @@
 #X msg 534 786 0 1;
 #X obj 323 385 unpack;
 #X msg 30 112 0 0;
-#X obj 353 94 t a;
+#X obj 314 94 t a;
 #X obj 37 153 t a a;
-#X msg 441 98 0;
+#X msg 402 98 0;
 #X obj 1244 378 r absolute-\$1_liner_function;
 #X obj 1154 746 r absolute-\$1_liner_exponent;
 #X obj 283 510 liner_sfgem;
@@ -150,4 +150,4 @@
 #X connect 55 0 52 0;
 #X connect 55 0 53 0;
 #X connect 56 0 30 0;
-#X coords 0 -1 1 1 252 70 2 300 200;
+#X coords 0 -1 1 1 137 49 2 300 200;

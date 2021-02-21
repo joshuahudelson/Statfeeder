@@ -1,0 +1,169 @@
+#N canvas 0 283 1865 513 10;
+#X obj 183 448 Gem;
+#X obj 102 448 dac~;
+#X obj 30 381 r~ channel0;
+#X obj 111 381 r~ channel1;
+#X obj 192 381 r~ channel2;
+#X obj 192 410 *~ 0.666;
+#X obj 30 408 *~ 0.666;
+#X obj 111 408 *~ 0.3;
+#X obj 289 381 controller_stuff_sfgem;
+#X obj 21 141 cnv 15 1828 228 empty empty empty 20 12 0 14 -233017
+-66577 0;
+#X obj 1381 160 hradio 25 1 0 3 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
+#X obj 749 161 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 840 161 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 932 161 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 835 145 NOISE;
+#X obj 687 161 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 794 161 bng 25 250 50 0 empty empty empty 17 7 0 10 -261234
+-1 -1;
+#X text 688 194 SIZE;
+#X text 29 252 SPIN;
+#X obj 289 410 stay_time_translator_rotator_router_sfgem;
+#X obj 634 381 load_run_buttons_and_instruction_reader_router_sfgem
+;
+#X obj 1548 160 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 1550 380 s mirror_on_off;
+#X obj 1138 161 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 810 423 s timer_on_off;
+#X obj 932 106 r play_rec;
+#X text 239 194 POLAR ADD;
+#X text 244 252 CARTESIAN MULT;
+#X obj 1477 160 hradio 25 1 0 2 empty empty empty 0 -8 0 10 -262144
+-1 -1 1;
+#X obj 241 208 polar_add_subpatch;
+#X obj 241 266 cartesian_multiplication_subpatch;
+#X obj 690 208 size_subpatch;
+#X text 689 309 STAYTIME;
+#X text 459 309 ROTATION;
+#X obj 691 323 staytime_subpatch;
+#X obj 458 323 rotation_subpatch;
+#X obj 24 266 spin_subpatch 16 17 18;
+#X text 462 251 ORBIT;
+#X obj 1474 446 s ctrl_or_comp;
+#X obj 446 381 presetter_sfgem;
+#X obj 1133 51 r record_video;
+#X obj 840 62 r noise_onoff;
+#X obj 1046 161 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X obj 1046 87 r gem_window;
+#X obj 1469 22 r control_or_comp_receive;
+#X msg 1092 379 \; pd dsp \$1;
+#X obj 1092 161 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X text 1092 145 DSP;
+#X obj 1092 113 r dsp_onoff;
+#X obj 886 84 r timer_on_off_receive;
+#X obj 1381 381 swapper;
+#X obj 978 158 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 14
+-262144 -1 -1 0 256;
+#X text 1038 144 WINDOW;
+#X obj 978 39 r timer_2pnl;
+#X text 1392 143 SWAP;
+#X text 1475 143 CTRL/CMP;
+#X obj 1546 90 r mirror_on_off_rec;
+#X obj 1381 3 r swapper_rec;
+#X text 678 144 LABELS;
+#X text 740 144 SNDFILE;
+#X obj 886 161 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 879 145 TIMER;
+#X text 926 145 SOUND;
+#X obj 978 173 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 14
+-262144 -1 -1 0 256;
+#X obj 978 61 r timer_offset;
+#X obj 895 402 s timer_offset_to_timer;
+#X obj 639 423 s repeat_labels_load;
+#X obj 740 402 s repeat_soundfile_load;
+#X obj 666 167 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 728 167 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 794 107 t b f;
+#X text 690 252 PHASE;
+#X obj 908 266 y_offset_subpatch;
+#X text 907 252 Y-OFFSET;
+#X text 905 194 X-OFFSET;
+#X obj 907 208 x_offset_subpatch;
+#X obj 1146 198 statfeed_for_sfgem;
+#X text 1136 145 VID;
+#X text 791 144 PLAY;
+#X text 984 142 TIMER;
+#X text 980 187 HEADER;
+#X text 24 309 FLIP X;
+#X text 239 309 FLIP Y;
+#X obj 458 266 orbit_subpatch;
+#X obj 24 323 flip_x_subpatch;
+#X obj 241 323 flip_y_subpatch;
+#X obj 24 208 x_add_subpatch;
+#X obj 458 208 y_add_subpatch;
+#X obj 691 266 phase_subpatch;
+#X obj 59 144 x_y_absolute_subpatch 0 3;
+#X obj 1335 161 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1335 413 s snapshot;
+#X text 24 193 X ADD;
+#X text 456 194 Y ADD;
+#X obj 275 144 x_y_absolute_subpatch 1 4;
+#X obj 493 144 x_y_absolute_subpatch 2 5;
+#X obj 908 320 image_subpatch;
+#X obj 1027 320 text_subpatch;
+#X text 907 307 IMAGE;
+#X text 1025 307 TEXT;
+#X obj 1269 405 s codec;
+#X obj 1183 402 s frame_rate;
+#X obj 1184 161 nbx 3 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+18 -262144 -1 -1 0 256;
+#X obj 1267 161 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
+18 -262144 -1 -1 0 256;
+#X text 1328 145 PHOTO;
+#X text 1184 145 FRAMERATE;
+#X text 1267 145 CODEC;
+#X text 1540 143 MIRROR;
+#X connect 2 0 6 0;
+#X connect 3 0 7 0;
+#X connect 4 0 5 0;
+#X connect 5 0 1 1;
+#X connect 6 0 1 0;
+#X connect 7 0 1 0;
+#X connect 7 0 1 1;
+#X connect 10 0 50 0;
+#X connect 11 0 20 1;
+#X connect 12 0 20 4;
+#X connect 13 0 20 5;
+#X connect 15 0 20 0;
+#X connect 16 0 20 3;
+#X connect 21 0 22 0;
+#X connect 23 0 70 0;
+#X connect 25 0 13 0;
+#X connect 28 0 38 0;
+#X connect 40 0 23 0;
+#X connect 41 0 12 0;
+#X connect 42 0 20 2;
+#X connect 43 0 42 0;
+#X connect 44 0 28 0;
+#X connect 46 0 45 0;
+#X connect 48 0 46 0;
+#X connect 49 0 60 0;
+#X connect 53 0 51 0;
+#X connect 56 0 21 0;
+#X connect 57 0 10 0;
+#X connect 60 0 24 0;
+#X connect 63 0 65 0;
+#X connect 64 0 63 0;
+#X connect 68 0 66 0;
+#X connect 69 0 67 0;
+#X connect 70 0 16 0;
+#X connect 70 1 20 6;
+#X connect 90 0 91 0;
+#X connect 102 0 101 0;
+#X connect 103 0 100 0;
+#X coords 0 -1 1 1 1830 230 1 20 140;

@@ -1,0 +1,93 @@
+#N canvas 1095 180 735 525 10;
+#X obj 259 129 gemhead;
+#X obj 22 298 pix_texture;
+#X obj 112 316 translateXYZ;
+#X floatatom 135 266 5 0 0 0 - - -, f 5;
+#X floatatom 158 289 5 0 0 0 - - -, f 5;
+#X floatatom 206 299 5 0 0 0 - - -, f 5;
+#X obj 206 279 loadbang;
+#X obj 22 230 color;
+#X obj 49 182 pack f f f;
+#X floatatom 75 61 5 0 0 0 - - -, f 5;
+#X obj 75 146 t f f f;
+#X obj 75 117 line;
+#X floatatom 85 89 5 0 0 0 - - -, f 5;
+#X obj 135 177 line;
+#X obj 158 207 line;
+#X obj 338 53 sel 0 1;
+#X floatatom 322 203 5 0 0 0 - - -, f 5;
+#X obj 550 40 nbx 2 16 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 14
+-262144 -1 -1 0 256;
+#X obj 586 40 nbx 2 16 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 14
+-262144 -1 -1 0 256;
+#X obj 622 40 nbx 2 16 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 14
+-262144 -1 -1 0 256;
+#X obj 586 56 nbx 5 16 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 14
+-262144 -1 -1 0 256;
+#X obj 550 56 nbx 2 16 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 14
+-262144 -1 -1 0 256;
+#X obj 550 71 nbx 2 16 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 14
+-262144 -1 -1 0 256;
+#X obj 586 71 nbx 5 16 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 14
+-262144 -1 -1 0 256;
+#X obj 75 32 r text_fade;
+#X obj 338 22 r text_number;
+#X obj 135 138 r text_x;
+#X obj 175 158 r text_y;
+#X obj 193 179 r text_xy_speed;
+#X obj 322 164 r text_size;
+#X obj 407 156 loadbang;
+#X obj 112 347 text2d;
+#X msg 338 97 text this is text 0;
+#X msg 357 75 text this is text 1;
+#X obj 127 71 r text_fade_speed;
+#X msg 407 185 20;
+#X text 476 117 text \; aux0 = which piece of text \; 1 = x \; 2 =
+y \; 3 = linespeed \; 4 = size \; 5 = fade-in \; 6 = fade speed;
+#X obj 414 334 loadbang;
+#X msg 383 382 100;
+#X msg 424 378 100;
+#X connect 0 0 7 0;
+#X connect 1 0 2 0;
+#X connect 2 0 31 0;
+#X connect 3 0 2 1;
+#X connect 4 0 2 2;
+#X connect 5 0 2 3;
+#X connect 6 0 5 0;
+#X connect 7 0 1 0;
+#X connect 8 0 7 1;
+#X connect 9 0 11 0;
+#X connect 10 0 8 0;
+#X connect 10 1 8 1;
+#X connect 10 2 8 2;
+#X connect 11 0 10 0;
+#X connect 12 0 11 1;
+#X connect 13 0 3 0;
+#X connect 14 0 4 0;
+#X connect 15 0 32 0;
+#X connect 15 1 33 0;
+#X connect 16 0 31 1;
+#X connect 24 0 9 0;
+#X connect 24 0 22 0;
+#X connect 25 0 15 0;
+#X connect 25 0 17 0;
+#X connect 26 0 13 0;
+#X connect 26 0 18 0;
+#X connect 27 0 14 0;
+#X connect 27 0 19 0;
+#X connect 28 0 14 1;
+#X connect 28 0 13 1;
+#X connect 28 0 20 0;
+#X connect 29 0 16 0;
+#X connect 29 0 21 0;
+#X connect 30 0 35 0;
+#X connect 32 0 31 0;
+#X connect 33 0 31 0;
+#X connect 34 0 12 0;
+#X connect 34 0 23 0;
+#X connect 35 0 16 0;
+#X connect 37 0 38 0;
+#X connect 37 0 39 0;
+#X connect 38 0 3 0;
+#X connect 39 0 4 0;
+#X coords 0 -1 1 1 108 47 2 550 40;
