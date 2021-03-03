@@ -46,7 +46,6 @@
 #X text 300 87 set liner memory;
 #X msg 611 497 0;
 #X obj 463 45 r liner_function_all;
-#X obj 825 193 r liner_exponent_all;
 #X connect 0 0 27 0;
 #X connect 0 0 28 0;
 #X connect 2 0 4 0;
@@ -102,4 +101,3 @@
 #X connect 43 0 10 1;
 #X connect 45 0 10 1;
 #X connect 46 0 35 0;
-#X connect 47 0 39 0;

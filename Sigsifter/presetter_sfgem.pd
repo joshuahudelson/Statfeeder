@@ -1,4 +1,4 @@
-#N canvas 0 87 1865 993 10;
+#N canvas 25 197 1780 924 10;
 #X obj 31 39 r current_instruction;
 #X obj 9 10 r start-instruction;
 #X msg 31 142 symbol end, f 11;
@@ -221,6 +221,7 @@ absolute_liner_remember, f 178;
 reset_all_tarers reset_liner_memory zero_function_values zero_function_times
 timer_offset zero_functions confirm_absolutes zero_out, f 220;
 #X obj 1171 329 s absolute_liner_remember;
+#X obj 1544 826 s variable_text;
 #X connect 0 0 7 0;
 #X connect 1 0 6 0;
 #X connect 2 0 202 0;
@@ -447,6 +448,7 @@ timer_offset zero_functions confirm_absolutes zero_out, f 220;
 #X connect 174 15 175 0;
 #X connect 174 16 176 0;
 #X connect 174 17 179 0;
+#X connect 174 17 204 0;
 #X connect 175 0 105 0;
 #X connect 176 0 105 0;
 #X connect 182 0 195 0;

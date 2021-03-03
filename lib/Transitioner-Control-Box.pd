@@ -5,18 +5,18 @@
 #X obj 625 286 s trans_time_add;
 #X obj 427 340 s trans_time_mult;
 #X obj 500 311 s trans_time_exp;
-#X obj 186 267 s trans_presets_exp;
+#X obj 185 327 s trans_presets_exp;
 #X obj 186 301 min 27;
 #X obj 376 216 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
--262144 -1 -1 8 256;
-#X obj 500 216 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
--262144 -1 -1 8 256;
-#X obj 427 257 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
 -262144 -1 -1 2 256;
+#X obj 500 216 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
+-262144 -1 -1 5 256;
+#X obj 427 257 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
+-262144 -1 -1 6 256;
 #X obj 357 257 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
 -262144 -1 -1 2 256;
 #X obj 499 257 nbx 3 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
--262144 -1 -1 60 256;
+-262144 -1 -1 219 256;
 #X text 441 283 MULT;
 #X text 366 283 POWER;
 #X obj 624 198 r to_trans_time_exp;
@@ -35,12 +35,12 @@
 #X obj 755 255 +;
 #X obj 755 152 -;
 #X obj 749 123 t f f;
-#X floatatom 755 173 5 0 0 0 - - -, f 5;
+#X floatatom 755 173 5 0 0 0 - - -;
 #X obj 755 276 max 2;
 #X text 408 241 TIME (& GLISS TIME);
 #X obj 755 193 min 1;
 #X obj 755 214 max -1;
-#X floatatom 755 235 5 0 0 0 - - -, f 5;
+#X floatatom 755 235 5 0 0 0 - - -;
 #X connect 6 0 5 0;
 #X connect 7 0 6 0;
 #X connect 8 0 4 0;

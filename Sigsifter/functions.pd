@@ -110,7 +110,7 @@
 #X obj 362 647 unpack;
 #X obj 93 797 +;
 #X obj 93 428 t f b b;
-#X floatatom 114 834 5 0 0 0 - - -, f 5;
+#X floatatom 114 834 5 0 0 0 - - -;
 #X obj 282 446 t b b;
 #X obj 315 678 t b f;
 #X obj 434 678 t b f;
@@ -154,11 +154,11 @@
 #X text 187 411 ORBIT;
 #X obj 346 927 r orbit-radius-set;
 #X msg 1428 316 set \$1 \$2;
-#X msg 1428 359 -0.416147 0.909298;
-#X obj 1543 314 r confirm_absolutes;
-#X obj 1562 424 s all_spigots-\$1;
-#X msg 1574 387 1;
-#X obj 1550 347 t b b;
+#X msg 1428 385 -0.416147 0.909298;
+#X obj 1550 294 r confirm_absolutes;
+#X obj 1577 385 s all_spigots-\$1;
+#X msg 1577 356 1;
+#X obj 1550 327 t b b;
 #X obj 122 293 convert-to-cartesian;
 #X obj 1042 373 convert-to-cartesian;
 #X obj 93 885 convert-to-cartesian;
