@@ -1,4 +1,4 @@
-#N canvas 0 283 1865 513 10;
+#N canvas 0 251 1865 513 10;
 #X obj 183 448 Gem;
 #X obj 102 448 dac~;
 #X obj 30 381 r~ channel0;
@@ -53,7 +53,7 @@
 #X obj 1133 51 r record_video;
 #X obj 840 62 r noise_onoff;
 #X obj 1076 161 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1
-0 1;
+1 1;
 #X obj 1046 87 r gem_window;
 #X obj 1469 22 r control_or_comp_receive;
 #X msg 1092 379 \; pd dsp \$1;
@@ -64,7 +64,7 @@
 #X obj 886 84 r timer_on_off_receive;
 #X obj 1381 381 swapper;
 #X obj 1008 158 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-14 -262144 -1 -1 0 256;
+14 -262144 -1 -1 8 256;
 #X text 1068 144 WINDOW;
 #X obj 978 39 r timer_2pnl;
 #X text 1422 143 SWAP;

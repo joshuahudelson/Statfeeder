@@ -1,4 +1,4 @@
-#N canvas 0 96 1920 984 10;
+#N canvas 472 266 1440 720 10;
 #X obj 218 177 < 8;
 #X obj 218 289 > 15;
 #X msg 218 313 color 0 \$1 0;
@@ -58,12 +58,11 @@
 #X obj 1408 136 - 16;
 #X obj 1408 259 route 0 1 2 3 4 5 6 7;
 #X obj 1408 313 route 0 1 2 3 4 5 6 7;
-#X obj 689 315 Meta-Controls;
+#X obj 689 216 Meta-Controls;
 #X msg 1456 64 15;
 #X obj 54 232 expr (($f1>7)&($f1<=15));
 #X obj 218 231 expr (($f1>7)&($f1<=15));
 #X obj 1216 473 Preset-Button-Numbering;
-#X obj 671 210 Transitioner-Control-Box;
 #X text 385 261 STAT SIREN ORGY. HUM . HUM2 GRIND GRND2 C#MIN;
 #X text 910 261 HUM2 BACKG SIREN SCRCH. SALT GRNDR KETTL STATC;
 #X text 918 207 OFF. HALO. REED. SERP. WIND CHORD WHIST HUM;
@@ -74,6 +73,7 @@
 #X text 389 207 OFF..WHIT. WIND. DMAJ DCHLF WHIST F#MIN ----;
 #X text 387 315 TON . 3RD. OCTV. D.C. RHSHF TRAN1 TRAN2 GLISS;
 #X floatatom 1523 157 5 0 0 0 - - -;
+#X obj 684 287 Piano-Keyboard;
 #X connect 0 0 3 0;
 #X connect 1 0 2 0;
 #X connect 2 0 29 0;
@@ -90,7 +90,7 @@
 #X connect 8 0 29 0;
 #X connect 10 0 23 0;
 #X connect 11 0 23 0;
-#X connect 12 0 63 0;
+#X connect 12 0 62 0;
 #X connect 13 0 14 0;
 #X connect 14 0 32 0;
 #X connect 15 0 31 0;
@@ -111,7 +111,7 @@
 #X connect 23 0 9 0;
 #X connect 24 0 21 0;
 #X connect 24 0 33 0;
-#X connect 24 0 62 0;
+#X connect 24 0 61 0;
 #X connect 25 0 36 0;
 #X connect 25 0 40 0;
 #X connect 25 0 45 0;
@@ -130,7 +130,7 @@
 #X connect 35 0 39 0;
 #X connect 35 0 46 0;
 #X connect 35 0 49 0;
-#X connect 35 0 67 0;
+#X connect 35 0 66 0;
 #X connect 36 0 37 0;
 #X connect 37 0 27 0;
 #X connect 37 1 27 0;
@@ -192,7 +192,7 @@
 #X connect 53 0 39 0;
 #X connect 53 0 46 0;
 #X connect 54 0 15 0;
-#X connect 55 0 64 0;
-#X connect 63 0 30 0;
-#X connect 64 0 28 0;
+#X connect 55 0 63 0;
+#X connect 62 0 30 0;
+#X connect 63 0 28 0;
 #X coords 0 -1 1 1 832 175 2 370 200;

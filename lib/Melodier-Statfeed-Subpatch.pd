@@ -1,4 +1,4 @@
-#N canvas 363 458 1440 720 10;
+#N canvas 363 360 1440 720 10;
 #X obj 227 371 statfeed;
 #X floatatom 249 297 5 0 0 0 - - -;
 #X obj 227 246 random 1000;
@@ -38,7 +38,7 @@
 #X floatatom 227 405 5 0 0 0 - - -;
 #X obj 794 145 t b b;
 #X obj 324 316 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 8.34684 256;
+-262144 -1 -1 0 256;
 #X obj 594 272 nbx 5 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
 -262144 -1 -1 7 256;
 #X obj 821 187 f;
@@ -64,7 +64,7 @@
 #X obj 412 551 tabwrite melodier-\$1-single;
 #X obj 412 580 table melodier-\$1-single;
 #X obj 621 541 tabwrite melodier-\$1-feedback;
-#X obj 728 508 table melodier-\$1-feedback;
+#X obj 688 570 table melodier-\$1-feedback;
 #X obj 542 680 outlet;
 #X obj 599 641 tabread melodier-\$1-random;
 #X obj 620 621 tabread melodier-\$1-single;
@@ -93,6 +93,10 @@
 #X obj 396 17 r melodier-set-all-iters;
 #X obj 324 97 r melodier-exponents-\$1;
 #X obj 456 57 r generate-new-trigger;
+#X obj 667 20 inlet;
+#X obj 667 40 t f f f;
+#X text 704 19 input (from keyboard) directly to statfeed driver inlets
+;
 #X connect 0 0 33 0;
 #X connect 1 0 0 1;
 #X connect 2 0 3 0;
@@ -193,3 +197,7 @@
 #X connect 85 0 71 0;
 #X connect 86 0 73 0;
 #X connect 87 0 41 0;
+#X connect 88 0 89 0;
+#X connect 89 0 0 0;
+#X connect 89 1 22 0;
+#X connect 89 2 7 0;
