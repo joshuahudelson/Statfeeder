@@ -54,7 +54,7 @@
 #X obj 111 498 s gliss-length-vols-receive;
 #X obj 111 453 * 1000;
 #X text 339 559 FRACTION TO ADJUST EXPONENTS;
-#X text 133 188 REWIND BUTTON \; TOGGLES CONTROLLER;
+#X text 153 185 REWIND BUTTON \; TOGGLES CONTROLLER;
 #X obj 305 249 Keyboarder;
 #X connect 0 0 11 0;
 #X connect 0 1 12 0;
