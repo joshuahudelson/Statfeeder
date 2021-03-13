@@ -1,13 +1,13 @@
 #N canvas 0 251 1865 513 10;
-#X obj 183 448 Gem;
-#X obj 102 448 dac~;
-#X obj 30 381 r~ channel0;
-#X obj 111 381 r~ channel1;
-#X obj 192 381 r~ channel2;
-#X obj 192 410 *~ 0.666;
-#X obj 30 408 *~ 0.666;
-#X obj 111 408 *~ 0.3;
-#X obj 289 381 controller_stuff_sfgem;
+#X obj 183 458 Gem;
+#X obj 102 458 dac~;
+#X obj 30 391 r~ channel0;
+#X obj 111 391 r~ channel1;
+#X obj 192 391 r~ channel2;
+#X obj 192 420 *~ 0.666;
+#X obj 30 418 *~ 0.666;
+#X obj 111 418 *~ 0.3;
+#X obj 289 391 controller_stuff_sfgem;
 #X obj 21 141 cnv 15 1828 228 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 1411 160 hradio 25 1 0 3 empty empty empty 0 -8 0 10 -262144
@@ -25,16 +25,16 @@
 -1 -1;
 #X text 691 191 SIZE;
 #X text 32 249 SPIN;
-#X obj 289 410 stay_time_translator_rotator_router_sfgem;
-#X obj 634 381 load_run_buttons_and_instruction_reader_router_sfgem
+#X obj 289 420 stay_time_translator_rotator_router_sfgem;
+#X obj 705 391 load_run_buttons_and_instruction_reader_router_sfgem
 ;
 #X obj 1578 160 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X obj 1550 380 s mirror_on_off;
+#X obj 1578 391 s mirror_on_off;
 #X obj 1168 161 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
-#X obj 810 423 s timer_on_off;
-#X obj 932 106 r play_rec;
+#X obj 916 428 s timer_on_off;
+#X obj 962 55 r play_rec;
 #X text 242 191 POLAR ADD;
 #X text 247 249 CARTESIAN MULT;
 #X obj 1507 160 hradio 25 1 0 2 empty empty empty 0 -8 0 10 -262144
@@ -48,29 +48,29 @@
 #X obj 461 320 rotation_subpatch;
 #X obj 27 263 spin_subpatch 16 17 18;
 #X text 465 248 ORBIT;
-#X obj 1474 446 s ctrl_or_comp;
-#X obj 446 381 presetter_sfgem;
-#X obj 1133 51 r record_video;
-#X obj 840 62 r noise_onoff;
+#X obj 1507 415 s ctrl_or_comp;
+#X obj 446 391 presetter_sfgem;
+#X obj 1168 101 r record_video;
+#X obj 870 57 r noise_onoff;
 #X obj 1076 161 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1
-1 1;
-#X obj 1046 87 r gem_window;
-#X obj 1469 22 r control_or_comp_receive;
-#X msg 1092 379 \; pd dsp \$1;
+0 1;
+#X obj 1076 53 r gem_window;
+#X obj 1507 77 r control_or_comp_receive;
+#X msg 1122 391 \; pd dsp \$1;
 #X obj 1122 161 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1
 0 1;
 #X text 1122 145 DSP;
-#X obj 1092 113 r dsp_onoff;
-#X obj 886 84 r timer_on_off_receive;
-#X obj 1381 381 swapper;
+#X obj 1122 77 r dsp_onoff;
+#X obj 916 33 r timer_on_off_receive;
+#X obj 1411 391 swapper;
 #X obj 1008 158 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
-14 -262144 -1 -1 8 256;
+14 -262144 -1 -1 0 256;
 #X text 1068 144 WINDOW;
-#X obj 978 39 r timer_2pnl;
+#X obj 1008 79 r timer_2pnl;
 #X text 1422 143 SWAP;
 #X text 1505 143 CTRL/CMP;
-#X obj 1546 90 r mirror_on_off_rec;
-#X obj 1381 3 r swapper_rec;
+#X obj 1578 101 r mirror_on_off_rec;
+#X obj 1411 77 r swapper_rec;
 #X text 708 144 LABELS;
 #X text 770 144 SNDFILE;
 #X obj 916 161 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
@@ -79,15 +79,15 @@
 #X text 956 145 SOUND;
 #X obj 1008 173 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 14 -262144 -1 -1 0 256;
-#X obj 978 61 r timer_offset;
-#X obj 895 402 s timer_offset_to_timer;
-#X obj 639 423 s repeat_labels_load;
-#X obj 740 402 s repeat_soundfile_load;
+#X obj 1008 101 r timer_offset;
+#X obj 1008 428 s timer_offset_to_timer;
+#X obj 696 439 s repeat_labels_load;
+#X obj 758 415 s repeat_soundfile_load;
 #X obj 696 167 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 758 167 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 794 107 t b f;
+#X obj 824 101 t b f;
 #X text 693 249 PHASE;
 #X obj 911 263 y_offset_subpatch;
 #X text 910 249 Y-OFFSET;
@@ -108,7 +108,7 @@
 #X obj 694 263 phase_subpatch;
 #X obj 1365 161 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1335 413 s snapshot;
+#X obj 1365 415 s snapshot;
 #X text 27 190 X ADD;
 #X text 459 191 Y ADD;
 #X obj 530 145 x_y_absolute_subpatch 2 5;
@@ -116,8 +116,8 @@
 #X obj 1030 317 text_subpatch;
 #X text 910 304 IMAGE;
 #X text 1028 304 TEXT;
-#X obj 1269 405 s codec;
-#X obj 1183 402 s frame_rate;
+#X obj 1297 415 s codec;
+#X obj 1214 391 s frame_rate;
 #X obj 1214 161 nbx 3 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0
 18 -262144 -1 -1 0 256;
 #X obj 1297 161 nbx 2 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0

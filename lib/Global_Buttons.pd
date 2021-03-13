@@ -2,28 +2,28 @@
 #X obj 218 169 < 8;
 #X obj 218 278 > 15;
 #X msg 218 299 color 0 \$1 0;
-#X msg 218 197 color 0 \$1 0;
+#X msg 218 198 color 0 \$1 0;
 #X floatatom 218 132 5 0 0 0 - - -;
-#X msg 318 197 set \$1;
+#X msg 318 198 set \$1;
 #X obj 318 149 % 8;
 #X msg 318 249 set \$1;
 #X msg 318 299 set \$1;
-#X obj 285 387 Presetter;
-#X obj 381 105 + 8;
-#X obj 1225 366 + 16;
+#X obj 1327 424 Presetter;
+#X obj 381 97 + 8;
+#X obj 1225 352 + 16;
 #X obj 54 154 < 8;
 #X obj 54 274 > 15;
 #X msg 54 299 color 0 \$1 0;
 #X msg 54 249 color 0 \$1 0;
-#X msg 144 197 set \$1;
+#X msg 144 198 set \$1;
 #X msg 144 249 set \$1;
 #X msg 144 299 set \$1;
-#X obj 911 382 + 8;
-#X obj 1274 366 + 16;
+#X obj 911 368 + 8;
+#X obj 1274 352 + 16;
 #X floatatom 54 129 5 0 0 0 - - -;
 #X obj 144 146 % 8;
-#X floatatom 1225 123 5 0 0 0 - - -;
-#X floatatom 1221 400 5 0 0 0 - - -;
+#X floatatom 1225 115 5 0 0 0 - - -;
+#X floatatom 1221 386 5 0 0 0 - - -;
 #X obj 1361 34 r to_global_presets;
 #X obj 371 201 cnv 15 830 155 empty empty empty 20 12 0 14 -233017
 -66577 0;
@@ -33,20 +33,20 @@
 -262144 -262144 1;
 #X obj 381 317 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 1;
-#X obj 911 217 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
+#X obj 911 216 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 0;
 #X obj 911 267 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 0;
 #X obj 911 317 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
 -262144 -262144 0;
-#X msg 381 417 color 0 0 0;
-#X msg 911 417 color 0 0 0;
+#X msg 381 403 color 0 0 0;
+#X msg 911 403 color 0 0 0;
 #X obj 1491 58 r to_secondary_globals;
-#X msg 1361 181 \$1 \$1;
-#X obj 1215 199 route 0 1 2 3 4 5 6 7;
-#X obj 1406 199 route 0 1 2 3 4 5 6 7;
+#X msg 1361 180 \$1 \$1;
+#X obj 1215 198 route 0 1 2 3 4 5 6 7;
+#X obj 1406 198 route 0 1 2 3 4 5 6 7;
 #X msg 1456 146 \$1 \$1;
-#X obj 1361 206 - 8;
+#X obj 1361 205 - 8;
 #X msg 1361 232 \$1 \$1;
 #X obj 1215 249 route 0 1 2 3 4 5 6 7;
 #X obj 1215 299 route 0 1 2 3 4 5 6 7;
@@ -62,17 +62,16 @@
 #X msg 1456 58 15;
 #X obj 54 224 expr (($f1>7)&($f1<=15));
 #X obj 218 223 expr (($f1>7)&($f1<=15));
-#X obj 1216 473 Preset-Button-Numbering;
+#X obj 1221 448 Preset-Button-Numbering;
 #X text 385 250 STAT SIREN ORGY. HUM . HUM2 GRIND GRND2 C#MIN;
 #X text 910 251 HUM2 BACKG SIREN SCRCH. SALT GRNDR KETTL STATC;
 #X text 918 201 OFF. HALO. REED. SERP. WIND CHORD WHIST HUM;
 #X text 911 301 NOISE SELFS PAIR. D.C. DCREV DCSIG DCSLF GLISS;
-#X obj 1221 438 New_Transitioner;
-#X msg 54 197 color 0 \$1 0;
+#X obj 1221 424 New_Transitioner;
+#X msg 54 198 color 0 \$1 0;
 #X msg 218 249 color 0 \$1 0;
 #X text 389 200 OFF..WHIT. WIND. DMAJ DCHLF WHIST F#MIN ----;
 #X text 387 300 TON . 3RD. OCTV. D.C. RHSHF TRAN1 TRAN2 GLISS;
-#X floatatom 1523 151 5 0 0 0 - - -;
 #X obj 684 273 Piano-Keyboard;
 #X connect 0 0 3 0;
 #X connect 1 0 2 0;
@@ -130,7 +129,6 @@
 #X connect 35 0 39 0;
 #X connect 35 0 46 0;
 #X connect 35 0 49 0;
-#X connect 35 0 66 0;
 #X connect 36 0 37 0;
 #X connect 37 0 27 0;
 #X connect 37 1 27 0;

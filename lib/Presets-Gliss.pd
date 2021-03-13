@@ -10,7 +10,7 @@
 #X msg 78 721 0;
 #X floatatom 118 777 5 0 0 0 - - -;
 #X obj 145 721 r gliss-length;
-#X obj 408 44 r gliss-length-receive;
+#X obj 408 54 r gliss-length-receive;
 #X msg 145 749 set \$1;
 #X obj 250 693 sel zero gliss;
 #X msg 250 721 0;
@@ -29,7 +29,7 @@
 #X msg 414 542 gliss gliss zero;
 #X msg 430 521 zero gliss gliss;
 #X msg 446 500 gliss zero gliss;
-#X obj 546 423 s gliss-length;
+#X obj 496 355 s gliss-length;
 #X obj 326 675 unpack s s s;
 #X obj 334 480 sel 0 1 2 3 4 5 6 7, f 22;
 #X obj 401 201 cnv 15 84 258 empty empty empty 20 12 0 14 -228856 -66577
@@ -41,11 +41,11 @@
 #X obj 408 335 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
 -262144 -1 -1 0 256;
 #X obj 405 127 r stop_glisses;
-#X obj 529 142 / 127;
-#X obj 529 142 / 127;
-#X obj 529 85 r ctl-6;
-#X floatatom 529 114 5 0 0 0 - - -;
-#X obj 529 170 * 2000;
+#X obj 519 289 / 127;
+#X obj 519 289 / 127;
+#X obj 519 232 r ctl-6;
+#X floatatom 519 261 5 0 0 0 - - -;
+#X obj 519 317 * 2000;
 #X text 401 202 GLISS PRESETS;
 #X text 420 358 LENGTH;
 #X connect 3 0 5 0;

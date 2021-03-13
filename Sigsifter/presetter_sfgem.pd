@@ -1,4 +1,4 @@
-#N canvas 0 112 1407 952 10;
+#N canvas 0 112 1759 952 10;
 #X obj 31 39 r current_instruction;
 #X obj 9 10 r start-instruction;
 #X msg 31 142 symbol end;
@@ -135,7 +135,7 @@
 #X msg 818 859 absolute-0;
 #X msg 904 859 absolute-1;
 #X msg 991 859 absolute-2;
-#X obj 911 178 preset_sfgem_zero_functions;
+#X obj 824 252 preset_sfgem_zero_functions;
 #X msg 31 756 x_add;
 #X msg 140 756 spin;
 #X msg 219 756 pol_add;
@@ -191,7 +191,7 @@ flip_x_liner flip_y_liner, f 248;
 #X msg 1428 859 flip_y;
 #X obj 429 252 s reset_function_times;
 #X obj 280 252 s reset_function_values;
-#X obj 1516 880 print NOTE (function not found);
+#X obj 1477 880 print NOTE (function not found);
 #X obj 1087 252 s confirm_absolutes;
 #X obj 31 504 preset_sfgem_genericplus;
 #X msg 31 552 x_add, f 6;
@@ -215,7 +215,7 @@ phase x_offset y_offset flip_x flip_y image text, f 160;
 #X msg 924 420 text;
 #X obj 1099 925 s liner_exponent_all;
 #X obj 1219 252 s absolute_liner_remember;
-#X obj 1544 858 s variable_text;
+#X obj 1515 858 s variable_text;
 #X obj 560 252 s reset_absolute_values;
 #X obj 692 252 s reset_absolute_times;
 #X obj 34 230 sel reset_all_tarers reset_liner_memory reset_function_values
@@ -226,12 +226,6 @@ x_y_absolute-1 x_y_absolute-2 x_y_absolute-all x_y_absolute-cartpol
 , f 162;
 #X obj 31 163 sel window noise dsp staytime swap mirror freeze_orbit
 timer_offset, f 118;
-#X text 440 4 reset_all_tarers: the float and minus in every tarer
-is set to zero. So any new input is subtracted by zero \, not anything
-else. So if I go x_add 5 \, then tare \, then reset_all_tarers \, then
-x_add 7 \, I still go to 7 \, but from zero (except if liner_memory
-is stil 5 \, there's no difference? \; reset_liner_memory:;
-#X obj 953 118 print ZERODFUNCTIONS;
 #X connect 0 0 7 0;
 #X connect 1 0 6 0;
 #X connect 2 0 207 0;
@@ -499,7 +493,6 @@ is stil 5 \, there's no difference? \; reset_liner_memory:;
 #X connect 205 4 203 0;
 #X connect 205 5 204 0;
 #X connect 205 6 135 0;
-#X connect 205 6 209 0;
 #X connect 205 7 95 0;
 #X connect 205 8 180 0;
 #X connect 205 9 201 0;

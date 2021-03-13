@@ -1,6 +1,6 @@
-#N canvas 67 89 450 300 10;
-#X obj 70 61 inlet;
-#X obj 177 63 r aux_inst_0;
+#N canvas 67 96 450 300 10;
+#X obj 120 93 inlet;
+#X obj 177 93 r aux_inst_0;
 #X obj 162 144 f;
 #X obj 162 171 s dsp_onoff;
 #X connect 0 0 2 0;

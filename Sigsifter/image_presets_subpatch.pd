@@ -1,0 +1,11 @@
+#N canvas 92 242 585 474 12;
+#X msg 161 157 shadows1.jpg 2000 1554 0.1;
+#X obj 138 128 sel 0 1;
+#X msg 138 179 path722-35.png 69 45 1;
+#X obj 138 86 inlet;
+#X obj 138 239 outlet;
+#X connect 0 0 4 0;
+#X connect 1 0 2 0;
+#X connect 1 1 0 0;
+#X connect 2 0 4 0;
+#X connect 3 0 1 0;

@@ -9,7 +9,7 @@
 #X obj 148 186 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 370 339 nbx 5 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 25
--262144 -1 -1 69.592 256;
+-262144 -1 -1 0 256;
 #X obj 511 122 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 421 404 1;
@@ -22,7 +22,7 @@
 #X text 199 193 OPEN REC;
 #X text 266 193 PLAY REC;
 #X text 491 105 OPEN LABELS;
-#X obj 370 219 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 370 219 tgl 30 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X msg 448 264 1;
 #X msg 487 242 0;
@@ -35,13 +35,13 @@
 #X text 618 176 5;
 #X obj 421 433 s play_rec;
 #X obj 699 331 inlet;
-#X obj 593 96 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 593 96 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 300 477 s timer_2pnl;
+#X obj 320 419 s timer_2pnl;
 #X text 150 305 SIGNAL STUFF IN HERE;
 #X msg 370 152 0;
-#X obj 88 477 s timer_on_off_receive;
-#X msg 88 454 set \$1;
+#X obj 198 367 s timer_on_off_receive;
+#X msg 198 344 set \$1;
 #X obj 421 63 t b b;
 #X obj 448 220 t b b b;
 #X text 408 16 3 PLAY ALL;

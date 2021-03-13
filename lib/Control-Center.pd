@@ -9,23 +9,23 @@
 #X obj 201 49 loadbang;
 #X msg 201 78 0.5;
 #X obj 62 98 vsl 25 200 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 19900 1;
+-1 -1 9950 1;
 #X text 101 59 START/STOP;
 #X text 103 73 RECORDING;
-#X obj 117 141 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 117 141 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 101 122 Stacc/Leg;
-#X obj 257 166 s stacc-leg-onoff;
+#X obj 297 166 s stacc-leg-onoff;
 #X obj 324 230 s gliss-length-vols-master;
 #X obj 99 200 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 0 256;
+-262144 -1 -1 40 256;
 #X obj 274 114 r gliss-length-vols-receive;
 #X msg 201 182 40;
 #X msg 201 123 1;
 #X obj 117 8 r stacc-leg-receive;
-#X obj 401 193 sel 0;
+#X obj 241 182 sel 0;
 #X obj 99 250 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 1864.04 256;
+-262144 -1 -1 0 256;
 #X text 93 233 Note Duration;
 #X obj 99 343 s note_length;
 #X obj 189 232 r note_lengths_panel;
