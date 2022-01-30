@@ -1,4 +1,4 @@
-#N canvas 136 233 1753 720 10;
+#N canvas 106 209 1753 720 10;
 #X obj 218 169 < 8;
 #X obj 218 278 > 15;
 #X msg 218 299 color 0 \$1 0;
@@ -58,7 +58,7 @@
 #X obj 1408 130 - 16;
 #X obj 1408 249 route 0 1 2 3 4 5 6 7;
 #X obj 1408 299 route 0 1 2 3 4 5 6 7;
-#X obj 689 212 Meta-Controls;
+#X obj 689 205 Meta-Controls;
 #X msg 1456 58 15;
 #X obj 54 224 expr (($f1>7)&($f1<=15));
 #X obj 218 223 expr (($f1>7)&($f1<=15));
@@ -72,7 +72,7 @@
 #X msg 218 249 color 0 \$1 0;
 #X text 389 200 OFF..WHIT. WIND. DMAJ DCHLF WHIST F#MIN ----;
 #X text 387 300 TON . 3RD. OCTV. D.C. RHSHF TRAN1 TRAN2 GLISS;
-#X obj 684 273 Piano-Keyboard;
+#X obj 684 262 Piano-Keyboard;
 #X connect 0 0 3 0;
 #X connect 1 0 2 0;
 #X connect 2 0 29 0;

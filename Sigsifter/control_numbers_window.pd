@@ -1,44 +1,44 @@
 #N canvas 734 131 1030 782 10;
-#X obj 276 218 inlet;
-#X obj 266 343 outlet;
-#X obj 311 323 outlet;
+#X obj 266 215 inlet;
+#X obj 266 303 outlet;
+#X obj 311 303 outlet;
 #X obj 356 302 outlet;
-#X obj 321 218 inlet;
-#X obj 370 218 inlet;
-#X obj 213 218 inlet;
-#X obj 460 218 inlet;
-#X obj 505 218 inlet;
-#X obj 546 218 inlet;
-#X obj 415 218 inlet;
-#X obj 606 289 outlet;
-#X obj 657 289 outlet;
-#X obj 708 289 outlet;
-#X obj 266 79 r fader_or_knob_\$1;
-#X obj 311 99 r fader_or_knob_\$2;
-#X obj 356 119 r fader_or_knob_\$3;
-#X obj 392 139 r fader_or_knob_\$4;
-#X obj 203 59 r fader_or_knob_\$5;
-#X msg 733 257 0;
-#X msg 699 237 0;
-#X obj 203 357 outlet;
-#X obj 699 215 r reset_function_values;
-#X obj 733 235 r reset_function_times;
+#X obj 311 215 inlet;
+#X obj 356 215 inlet;
+#X obj 203 215 inlet;
+#X obj 512 257 inlet;
+#X obj 557 257 inlet;
+#X obj 602 257 inlet;
+#X obj 467 257 inlet;
+#X obj 413 289 outlet;
+#X obj 464 289 outlet;
+#X obj 515 289 outlet;
+#X obj 266 146 r fader_or_knob_\$1;
+#X obj 311 166 r fader_or_knob_\$2;
+#X obj 356 186 r fader_or_knob_\$3;
+#X obj 203 186 r fader_or_knob_\$4;
+#X obj 203 126 r fader_or_knob_\$5;
+#X msg 653 257 0;
+#X msg 429 237 0;
+#X obj 203 303 outlet;
+#X obj 429 215 r reset_function_values;
+#X obj 653 235 r reset_function_times;
 #X obj 200 250 cnv 15 204 42 empty empty empty 20 12 0 14 -162280 -66577
 0;
 #X obj 266 275 nbx 4 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1000 256;
+-262144 -1 -1 0 256;
 #X obj 311 275 nbx 4 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1000 256;
+-262144 -1 -1 0 256;
 #X obj 356 275 nbx 4 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1000 256;
+-262144 -1 -1 0 256;
 #X obj 203 273 nbx 4 16 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 1000 256;
+-262144 -1 -1 0 256;
 #X obj 266 255 nbx 4 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 -1 256;
+-262144 -1 -1 0 256;
 #X obj 311 255 nbx 4 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
 #X obj 356 255 nbx 4 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1 256;
+-262144 -1 -1 0 256;
 #X obj 203 253 nbx 4 16 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
 -262144 -1 -1 0 256;
 #X connect 0 0 29 0;

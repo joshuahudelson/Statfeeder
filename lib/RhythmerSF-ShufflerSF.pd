@@ -1,4 +1,4 @@
-#N canvas 896 130 913 730 10;
+#N canvas 828 114 961 773 10;
 #X obj 92 150 statfeed;
 #X obj 114 106 r numelems;
 #X obj 137 128 r rhythmexponent;

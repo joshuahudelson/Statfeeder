@@ -1,0 +1,15 @@
+0		1		dsp 1;
+0		1		window 1;
+0		1		zero_out;
+0		1		staytime 15000;
+0		1		noise 1;
+0		1		center;
+0		1		size 2 999 999 999 500;
+1		2		x_add 999 1 0 -1 333;
+2		3		spin 1.7 999 999 999 333;
+3		3		reset_all_tarers;
+3		3		reset_liner_memory;
+3		4		x_add 999 -1 0 1 333;
+4		4		zero_functions;
+4		5		end;
+

@@ -1,4 +1,4 @@
-#N canvas 209 227 1440 708 10;
+#N canvas 258 159 1440 852 10;
 #X obj 246 313 Melodier, f 83;
 #X obj 241 151 cnv 15 830 112 empty empty empty 20 12 0 14 -228856
 -66577 0;
@@ -14,49 +14,44 @@
 #X obj 1052 316 s melodier-randomize;
 #X obj 1051 247 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 915 167 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X text 931 164 8 \; 16 \; 32 \; 64 \;;
+#X obj 908 167 vradio 13 1 0 4 empty empty empty 0 -8 0 10 -262144
+-1 -1 1;
+#X text 924 164 8 \; 16 \; 32 \; 64 \;;
 #X obj 1052 293 s melodier-regenerate;
 #X obj 1051 226 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
 1 1;
 #X obj 599 9 r melodier-preset-chooser-increment;
-#X obj 915 9 r melodier-iters-chooser-increment;
+#X obj 908 9 r melodier-iters-chooser-increment;
 #X obj 599 31 f;
 #X obj 637 31 + 1;
 #X obj 599 53 % 4;
 #X obj 1046 89 r melodier-play;
-#X obj 915 31 f;
-#X obj 948 31 + 1;
-#X obj 915 53 % 4;
+#X obj 908 31 f;
+#X obj 941 31 + 1;
+#X obj 908 53 % 4;
 #X obj 925 293 t f f;
 #X obj 952 315 sel 1;
-#X obj 223 111 r melodout-1;
-#X obj 303 111 r melodout-2;
-#X obj 383 111 r meldout-3;
-#X obj 457 111 r melodout-4;
-#X obj 697 111 r melodout-5;
-#X obj 779 111 r meldout-6;
-#X obj 540 111 r melodout-7;
-#X obj 856 111 r melodout-8;
-#X obj 1051 111 r generate-new-trigger;
+#X obj 245 81 r melodout-1;
+#X obj 310 102 r melodout-2;
+#X obj 382 123 r meldout-3;
+#X obj 448 81 r melodout-4;
+#X obj 712 108 r melodout-5;
+#X obj 776 129 r meldout-6;
+#X obj 470 102 r melodout-7;
+#X obj 840 108 r melodout-8;
+#X obj 1051 118 r generate-new-trigger;
 #X text 1025 202 GEN;
 #X text 1020 247 RAND;
 #X text 1016 154 PLAY;
 #X text 1009 180 RESET;
 #X obj 762 64 loadbang;
-#X msg 915 82 0;
-#X obj 546 222 hradio 13 1 0 12 empty empty ___________4____5___6 2
-7 0 10 -262144 -1 -1 0;
-#X obj 546 372 s melodier-key-offset;
-#X msg 694 82 0;
-#X text 944 394 Iterations;
-#X text 771 508 Topology;
-#X msg 735 557 1 1 1 1 1 1;
-#X msg 735 536 2 2 2 2 2 2;
+#X msg 908 82 0;
+#X msg 700 82 0;
+#X text 799 511 Topology;
+#X msg 721 612 1 1 1 1 1 1;
+#X msg 736 591 2 2 2 2 2 2;
 #X obj 595 402 sel 0 1 2 3 4;
-#X msg 735 578 0 0 0 0 0 0;
-#X obj 706 509 sel 0 1 2;
+#X msg 706 633 0 0 0 0 0 0;
 #X msg 595 462 0 0 0;
 #X obj 672 480 unpack f f f;
 #X msg 610 442 1 1 1;
@@ -65,87 +60,100 @@
 #X obj 520 527 s melodout-7;
 #X msg 520 498 set \$1;
 #X msg 617 498 set \$1;
-#X msg 735 607 \; melodier-topo-0 \$1 \; melodier-topo-4 \$2 \; melodier-topo-1
+#X msg 702 657 \; melodier-topo-0 \$1 \; melodier-topo-4 \$2 \; melodier-topo-1
 \$3 \; melodier-topo-2 \$4 \; melodier-topo-3 \$5 \; melodier-topo-5
 \$6;
-#X obj 910 419 s melodier-set-all-iters;
-#X obj 246 168 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X obj 311 168 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X obj 383 168 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
+#X obj 908 419 s melodier-set-all-iters;
+#X obj 245 166 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
+-1 -1 1;
+#X obj 310 166 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
+-1 -1 3;
+#X obj 380 166 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
 -1 -1 4;
-#X text 398 166 Single \; Three \; Five \;;
-#X text 251 151 SCALE;
-#X text 312 151 VELOCITY;
-#X text 387 151 OCTAVE;
-#X obj 451 168 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
+#X text 244 150 SCALE;
+#X text 305 150 VELOCITY;
+#X text 378 150 OCTAVE;
+#X obj 444 166 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X text 460 151 SOURCES;
+#X text 442 150 SOURCES;
 #X obj 712 167 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
+-1 -1 3;
+#X obj 776 167 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X text 727 165 Ones \; & 0.5 \; & 2 \;;
-#X obj 773 167 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
+#X text 709 150 DURATION;
+#X text 773 150 GLISS;
+#X obj 566 153 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X text 715 150 DURATION;
-#X text 789 150 GLISS;
-#X text 788 165 All Off \; Half/Half \; All On \;;
-#X text 466 166 Current \; NoiSigSlf \; & DC \, Orgy \;;
-#X text 326 166 Ones \; 0.5 \, 2 \; 0.25 2 \;;
-#X obj 582 159 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X text 530 157 PRESETS;
-#X text 262 166 Major \; Minor \; Pent \; Whole \; Atonal \; Solomn
+#X text 513 150 PRESETS;
+#X text 261 164 Major \; Minor \; Pent \; Whole \; Atonal \; Solomn
 \;;
-#X msg 832 498 \; melodier-exponents-0 \$1 \; melodier-exponents-4
-\$1 \; melodier-exponents-1 \$1 \; melodier-exponents-2 \$1 \; melodier-exponents-3
-\$1 \; melodier-exponents-5 \$1 \;;
-#X obj 549 180 hsl 115 15 0.05 3 0 0 empty empty Exp._Mult. 3 7 0 10
--262144 -1 -1 0 1;
+#X obj 549 197 hsl 115 17 0.05 10 0 0 empty empty Exp._Mult. 3 7 0
+10 -262144 -1 -1 9900 1;
 #X text 1019 226 RE-G;
-#X msg 620 82 1;
-#X obj 666 241 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 125 256;
+#X msg 628 82 1;
+#X obj 666 239 nbx 3 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 329.825 256;
 #X obj 667 343 s duration-base;
-#X obj 856 167 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
+#X obj 840 167 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
+-1 -1 1;
+#X text 836 150 MELSUBTOP;
+#X text 903 150 ITERS;
+#X obj 549 239 hsl 115 17 50 1500 0 0 empty empty Duration_Base 2 7
+0 9 -262144 -1 -1 2290 1;
+#X obj 954 167 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X text 851 150 MELSUBTOP;
-#X text 875 166 RAND \; SING \; FEED;
-#X text 913 150 ITERS;
-#X obj 549 241 hsl 115 15 50 1500 0 0 empty empty Duration_Base 2 7
-0 9 -262144 -1 -1 590 1;
-#X msg 583 82 0;
-#X obj 965 167 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X text 953 150 NOTE LENG;
-#X text 981 164 __ \; __ \; __ \; __ \;;
-#X obj 965 111 r melodout-9;
-#X obj 502 285 s melodier-sources;
-#X obj 457 285 t f f;
-#X obj 666 180 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
-#X obj 549 201 hsl 115 15 0.2 3 0 0 empty empty Velo_Mult. 3 7 0 10
--262144 -1 -1 0 1;
-#X obj 666 201 nbx 3 15 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+#X obj 954 108 r melodout-9;
+#X obj 505 275 s melodier-sources;
+#X obj 455 285 t f f;
+#X obj 666 197 nbx 3 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 8.69079 256;
+#X obj 549 218 hsl 115 17 0.01 3 0 0 empty empty Velo_Mult. 3 7 0 10
+-262144 -1 -1 9800 1;
+#X obj 666 218 nbx 3 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 2.58035 256;
 #X obj 546 343 s velocity-mult;
-#X obj 910 362 expr (pow(2 \, $f1) * 8);
-#X floatatom 910 391 5 0 0 0 - - -;
+#X obj 908 362 expr (pow(2 \, $f1) * 8);
+#X floatatom 908 391 5 0 0 0 - - -;
 #X msg 546 82 125;
-#X msg 1011 82 1;
-#X msg 657 82 1;
+#X msg 1009 82 1;
+#X msg 663 82 1;
+#X msg 992 498 \; melodier-exponents-0 \$1 \; melodier-exponents-4
+\$1 \; melodier-exponents-1 \$1 \; melodier-exponents-2 \$1 \; melodier-exponents-3
+\$1 \; melodier-exponents-5 \$1 \; melodier-exponents-6 \$1 \;;
+#X text 395 164 3 \; -- \; -- \; Random \; -- \; -- \; Hi & Lo;
+#X text 459 164 Current \; Noise & Curr \; Sig & Curr \; Self & Curr
+\; DC & Curr \; NoiSigSelfDC \; All;
+#X text 727 165 Ones \; -- \; -- \; Halves \; -- \; -- \; 0.1 & 2;
+#X text 791 165 Ones \; -- \; -- \; Halves \; -- \; -- \; Random;
+#X obj 706 509 sel 0 1 2 3 4;
+#X msg 751 570 1 0 0 0 0 0;
+#X obj 886 241 nbx 2 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 18
+-262144 -1 -1 0 256;
+#X obj 799 461 s melsubstatoverride;
+#X text 325 164 Ones \; -- \; -- \; Haflves \; -- \; -- \; 0.1 & 2
+;
+#X msg 766 548 0 \, 1 \, 2 \, 0 \, 1 \, 2;
+#X text 859 166 RAND \; SING \; FEED \; SOLMN \; MIX;
+#X text 970 165 Ones \; -- \; -- \; Rand \; -- \; -- \; 2/0.1;
+#X text 949 150 NOTE LEN.;
+#X text 885 226 #ELEMS OVRR;
+#X obj 306 438 s dura-multiplier;
+#X obj 549 176 hsl 115 17 0 2 0 0 empty empty Dura._Mult. 3 7 0 10
+-262144 -1 -1 4000 1;
+#X obj 666 176 nbx 3 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0.701754 256;
 #X connect 3 0 23 0;
 #X connect 5 0 4 0;
 #X connect 7 0 6 0;
 #X connect 9 0 8 0;
-#X connect 10 0 102 0;
+#X connect 10 0 88 0;
 #X connect 13 0 12 0;
 #X connect 14 0 16 0;
 #X connect 15 0 20 0;
 #X connect 16 0 17 0;
 #X connect 16 0 18 0;
 #X connect 17 0 16 1;
-#X connect 18 0 77 0;
+#X connect 18 0 68 0;
 #X connect 19 0 3 0;
 #X connect 20 0 21 0;
 #X connect 20 0 22 0;
@@ -154,65 +162,72 @@
 #X connect 23 0 2 0;
 #X connect 23 1 24 0;
 #X connect 24 0 7 0;
-#X connect 25 0 60 0;
-#X connect 26 0 61 0;
-#X connect 27 0 62 0;
-#X connect 28 0 67 0;
-#X connect 29 0 69 0;
-#X connect 30 0 71 0;
-#X connect 31 0 81 0;
-#X connect 32 0 86 0;
+#X connect 25 0 56 0;
+#X connect 26 0 57 0;
+#X connect 27 0 58 0;
+#X connect 28 0 62 0;
+#X connect 29 0 64 0;
+#X connect 30 0 65 0;
+#X connect 31 0 71 0;
+#X connect 32 0 76 0;
 #X connect 33 0 7 0;
 #X connect 38 0 39 0;
-#X connect 38 0 42 0;
-#X connect 38 0 104 0;
+#X connect 38 0 40 0;
+#X connect 38 0 90 0;
 #X connect 38 0 91 0;
-#X connect 38 0 105 0;
+#X connect 38 0 73 0;
+#X connect 38 0 92 0;
 #X connect 39 0 10 0;
-#X connect 40 0 41 0;
-#X connect 42 0 77 0;
-#X connect 45 0 58 0;
-#X connect 46 0 58 0;
-#X connect 47 0 50 0;
-#X connect 47 1 52 0;
-#X connect 47 2 53 0;
-#X connect 48 0 58 0;
-#X connect 49 0 48 0;
-#X connect 49 1 45 0;
-#X connect 49 2 46 0;
-#X connect 50 0 51 0;
-#X connect 51 0 56 0;
-#X connect 51 0 80 0;
-#X connect 51 1 49 0;
-#X connect 51 1 57 0;
-#X connect 51 2 0 7;
+#X connect 40 0 68 0;
+#X connect 42 0 54 0;
+#X connect 43 0 54 0;
+#X connect 44 0 46 0;
+#X connect 44 1 48 0;
+#X connect 44 2 49 0;
+#X connect 45 0 54 0;
+#X connect 46 0 47 0;
+#X connect 47 0 52 0;
+#X connect 47 0 93 0;
+#X connect 47 1 53 0;
+#X connect 47 1 98 0;
+#X connect 47 2 0 7;
+#X connect 48 0 47 0;
+#X connect 49 0 47 0;
 #X connect 52 0 51 0;
-#X connect 53 0 51 0;
-#X connect 56 0 55 0;
-#X connect 57 0 54 0;
-#X connect 60 0 0 0;
-#X connect 61 0 0 1;
-#X connect 62 0 0 2;
-#X connect 67 0 97 0;
-#X connect 69 0 0 4;
-#X connect 71 0 0 5;
-#X connect 77 0 47 0;
-#X connect 81 0 98 0;
-#X connect 83 0 99 0;
-#X connect 84 0 85 0;
-#X connect 86 0 49 0;
-#X connect 90 0 84 0;
-#X connect 91 0 40 0;
-#X connect 92 0 0 6;
-#X connect 95 0 92 0;
-#X connect 97 0 0 3;
-#X connect 97 1 96 0;
-#X connect 98 0 80 0;
-#X connect 99 0 100 0;
-#X connect 99 0 101 0;
-#X connect 102 0 103 0;
-#X connect 103 0 59 0;
-#X connect 104 0 90 0;
-#X connect 105 0 13 0;
-#X connect 106 0 81 0;
+#X connect 53 0 50 0;
+#X connect 56 0 0 0;
+#X connect 57 0 0 1;
+#X connect 58 0 0 2;
+#X connect 62 0 83 0;
+#X connect 64 0 0 4;
+#X connect 65 0 0 5;
+#X connect 68 0 44 0;
+#X connect 71 0 84 0;
+#X connect 73 0 85 0;
+#X connect 73 0 109 0;
+#X connect 74 0 75 0;
+#X connect 76 0 98 0;
+#X connect 79 0 74 0;
+#X connect 80 0 0 6;
+#X connect 81 0 80 0;
+#X connect 83 0 0 3;
+#X connect 83 1 82 0;
+#X connect 84 0 93 0;
+#X connect 85 0 86 0;
+#X connect 86 0 87 0;
+#X connect 88 0 89 0;
+#X connect 89 0 55 0;
+#X connect 90 0 79 0;
+#X connect 91 0 13 0;
+#X connect 92 0 71 0;
+#X connect 98 0 45 0;
+#X connect 98 1 42 0;
+#X connect 98 2 43 0;
+#X connect 98 3 99 0;
+#X connect 98 4 103 0;
+#X connect 99 0 54 0;
+#X connect 100 0 101 0;
+#X connect 103 0 54 0;
+#X connect 109 0 110 0;
+#X connect 110 0 108 0;
 #X coords 0 -1 1 1 832 114 2 240 150;

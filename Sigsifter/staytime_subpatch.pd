@@ -1,11 +1,11 @@
 #N canvas 67 267 584 496 10;
-#X obj 140 93 r fader_or_knob_7;
+#X obj 140 113 r fader_or_knob_7;
 #X obj 101 151 cnv 15 204 42 empty empty empty 20 12 0 14 -162280 -66577
 0;
 #X obj 140 160 nbx 6 25 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 22
 -262144 -1 -1 0 256;
-#X obj 140 260 s stay;
-#X obj 311 70 r staytime;
+#X obj 140 210 s stay;
+#X obj 261 113 r staytime;
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 4 0 2 0;

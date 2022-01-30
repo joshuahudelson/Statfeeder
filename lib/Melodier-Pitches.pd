@@ -1,39 +1,55 @@
-#N canvas 1191 115 688 493 12;
-#X obj 76 78 inlet;
+#N canvas 803 115 1076 493 12;
+#X obj 76 94 inlet;
 #X msg 203 145 0;
-#X obj 185 371 f;
-#X obj 154 371 + 1;
-#X obj 56 351 t f b;
+#X obj 185 344 f;
+#X obj 154 344 + 1;
+#X obj 66 324 t f b;
 #X obj 76 125 t f b;
-#X msg 130 240 0 \, 2 \, 4 \, 6 \, 8 \, 10;
-#X msg 148 218 0 \, 1 \, 2 \, 3 \, 4 \, 5 \, 6 \, 7 \, 8 \, 9 \, 10
-\, 11;
-#X msg 76 306 0 \, 2 \, 4 \, 5 \, 7 \, 9 \, 11;
-#X msg 94 284 0 \, 2 \, 3 \, 5 \, 7 \, 8 \, 10;
-#X msg 112 262 0 \, 2 \, 4 \, 7 \, 9;
 #X obj 76 152 sel 0 1 2 3 4 5, f 16;
-#X msg 166 196 0 \, 2 \, 4 \, 5 \, 7 \, 8 \, 10 \, 12 \, 13 \, 15 \,
-17 \, 19 \, 20 \, 20;
-#X obj 56 414 outlet;
-#X obj 185 414 outlet;
+#X obj 66 375 outlet;
+#X obj 185 375 outlet;
+#X msg 166 183 0 \, 2 \, 4 \, 5 \, 7 \, 8 \, 10 \, 12 \, 13 \, 15 \,
+17 \, 19 \, 20 \, 20 \, 20 \, 20;
+#X text 568 183 Solomon;
+#X msg 76 293 0 \, 7 \, 5 \, 0 \, 2 \, 7 \, 4 \, 0 \, 5 \, 7 \, 9 \,
+11 \, 0 \, 4 \, 7 \, 0;
+#X text 724 294 Major: 0 \, 2 \, 4 \, 5 \, 7 \, 9 \, 11;
+#X msg 94 271 0 \, 7 \, 5 \, 0 \, 2 \, 7 \, 3 \, 0 \, 5 \, 7 \, 8 \,
+10 \, 0 \, 3 \, 7 \, 0;
+#X msg 112 249 0 \, 2 \, 4 \, 7 \, 9 \, 0 \, 2 \, 4 \, 7 \, 9 \, 0
+\, 2 \, 4 \, 7 \, 9 \, 0;
+#X msg 130 227 0 \, 2 \, 4 \, 6 \, 8 \, 10 \, 0 \, 2 \, 4 \, 6 \, 8
+10 \, 0 \, 2 \, 4 \, 6;
+#X text 742 271 Minor: 0 \, 2 \, 3 \, 5 \, 7 \, 8 \, 10;
+#X text 752 249 Pent: 0 \, 2 \, 4 \, 7 \, 9;
+#X text 779 227 Whole: 0 \, 2 \, 4 \, 6 \, 8 \, 10;
+#X text 718 206 Atonal: 0 \, 1 \, 2 \, 3 \, 4 \, 5 \, 6 \, 7 \, 8 \,
+9 \, 10 \, 11;
+#X msg 148 205 0 \, 1 \, 2 \, 3 \, 4 \, 5 \, 6 \, 7 \, 8 \, 9 \, 10
+\, 11 \, 12 \, 13 \, 14 \, 15;
+#X text 526 206 Atonal;
+#X text 469 227 Whole;
+#X text 442 249 Pent;
+#X text 432 271 Minor;
+#X text 414 294 Major;
 #X connect 0 0 5 0;
 #X connect 1 0 2 1;
 #X connect 2 0 3 0;
-#X connect 2 0 14 0;
+#X connect 2 0 8 0;
 #X connect 3 0 2 1;
-#X connect 4 0 13 0;
+#X connect 4 0 7 0;
 #X connect 4 1 2 0;
-#X connect 5 0 11 0;
+#X connect 5 0 6 0;
 #X connect 5 1 1 0;
-#X connect 6 0 4 0;
-#X connect 7 0 4 0;
-#X connect 8 0 4 0;
+#X connect 6 0 11 0;
+#X connect 6 1 13 0;
+#X connect 6 2 14 0;
+#X connect 6 3 15 0;
+#X connect 6 4 20 0;
+#X connect 6 5 9 0;
 #X connect 9 0 4 0;
-#X connect 10 0 4 0;
-#X connect 11 0 8 0;
-#X connect 11 1 9 0;
-#X connect 11 2 10 0;
-#X connect 11 3 6 0;
-#X connect 11 4 7 0;
-#X connect 11 5 12 0;
-#X connect 12 0 4 0;
+#X connect 11 0 4 0;
+#X connect 13 0 4 0;
+#X connect 14 0 4 0;
+#X connect 15 0 4 0;
+#X connect 20 0 4 0;

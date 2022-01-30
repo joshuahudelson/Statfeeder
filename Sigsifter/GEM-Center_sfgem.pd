@@ -1,4 +1,4 @@
-#N canvas 0 251 1865 513 10;
+#N canvas 16 567 1865 513 10;
 #X obj 183 458 Gem;
 #X obj 102 458 dac~;
 #X obj 30 391 r~ channel0;
@@ -8,7 +8,7 @@
 #X obj 30 418 *~ 0.666;
 #X obj 111 418 *~ 0.3;
 #X obj 289 391 controller_stuff_sfgem;
-#X obj 21 141 cnv 15 1828 228 empty empty empty 20 12 0 14 -233017
+#X obj 21 141 cnv 15 1625 228 empty empty empty 20 12 0 14 -233017
 -66577 0;
 #X obj 1411 160 hradio 25 1 0 3 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
@@ -166,4 +166,4 @@
 #X connect 89 0 90 0;
 #X connect 100 0 99 0;
 #X connect 101 0 98 0;
-#X coords 0 -1 1 1 1830 230 1 20 140;
+#X coords 0 -1 1 1 1627 230 1 20 140;

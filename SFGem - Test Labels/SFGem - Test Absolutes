@@ -1,0 +1,11 @@
+0		1		dsp 1;
+0		1		zero_out;
+0		1		center;
+0		1		staytime 15000;
+0		1		noise 1;
+0		1		size 1 999 999 999 1000 999 999 999;
+1		2		x_add_pulse 250 999 999 999 250 999 999 999;
+3		4		x_y_absolute-all 1 1;
+4		5		x_y_absolute-all 0 0;
+5		6		end;
+

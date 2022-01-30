@@ -1,31 +1,31 @@
 #N canvas 1006 211 802 525 10;
-#X obj 136 159 value;
-#X msg 252 113 \$1_random_max;
-#X msg 252 211 \$1_random_min;
-#X obj 181 258 value;
-#X obj 252 84 symbol;
-#X obj 252 141 symbol;
-#X obj 136 135 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 136 136 value;
+#X msg 195 90 \$1_random_max;
+#X msg 181 180 \$1_random_min;
+#X obj 158 235 value;
+#X obj 195 61 symbol;
+#X obj 195 118 symbol;
+#X obj 136 112 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 252 183 symbol;
-#X obj 252 240 symbol;
-#X obj 177 235 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 181 152 symbol;
+#X obj 181 209 symbol;
+#X obj 158 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom 48 340 5 0 0 0 - - -, f 5;
-#X obj 48 285 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 48 311 random 1000;
-#X floatatom 136 280 5 0 0 0 - - -, f 5;
-#X floatatom 181 308 5 0 0 0 - - -, f 5;
-#X obj 136 364 -;
-#X obj 100 398 *;
-#X obj 50 364 / 1000;
-#X floatatom 166 445 5 0 0 0 - - -, f 5;
-#X obj 166 416 +;
+#X floatatom 102 201 5 0 0 0 - - -;
+#X obj 102 146 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 102 172 random 1000;
+#X floatatom 136 257 5 0 0 0 - - -;
+#X floatatom 158 278 5 0 0 0 - - -;
+#X obj 136 299 -;
+#X obj 104 317 *;
+#X obj 104 225 / 1000;
+#X floatatom 143 357 5 0 0 0 - - -;
+#X obj 143 335 +;
 #X obj 136 14 inlet;
-#X obj 48 105 inlet;
-#X obj 136 43 t b b a;
-#X obj 166 473 outlet;
+#X obj 102 72 inlet;
+#X obj 136 43 t b b a, f 8;
+#X obj 143 378 outlet;
 #X connect 0 0 13 0;
 #X connect 1 0 5 0;
 #X connect 2 0 8 0;

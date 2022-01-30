@@ -1,10 +1,10 @@
-#N canvas 163 179 1176 843 10;
+#N canvas 123 147 1176 843 10;
 #X msg 326 495 color 0 \$1 0;
-#X floatatom 426 408 5 0 0 0 - - -, f 5;
+#X floatatom 426 408 5 0 0 0 - - -;
 #X msg 402 473 color 0 \$1 0;
-#X floatatom 465 408 5 0 0 0 - - -, f 5;
+#X floatatom 465 408 5 0 0 0 - - -;
 #X msg 311 473 color 0 \$1 0;
-#X floatatom 278 408 5 0 0 0 - - -, f 5;
+#X floatatom 278 408 5 0 0 0 - - -;
 #X msg 364 390 0;
 #X obj 276 74 r note-value;
 #X obj 276 167 sel 0 2 4 5 7 9 11;
@@ -12,7 +12,7 @@
 #X obj 465 247 sel 6 8 10;
 #X obj 276 145 t f b;
 #X obj 276 123 % 12;
-#X floatatom 276 102 5 0 0 0 - - -, f 5;
+#X floatatom 276 102 5 0 0 0 - - -;
 #X obj 278 344 unpack;
 #X obj 426 337 unpack;
 #X obj 465 386 unpack;
@@ -28,14 +28,19 @@
 #X msg 465 364 2.999 0;
 #X msg 484 342 2.999 1;
 #X msg 503 320 2.999 2;
-#X obj 301 541 cnv 15 198 68 empty empty empty 20 12 0 14 -191407 -66577
+#X obj 301 541 cnv 15 198 88 empty empty empty 20 12 0 14 -191407 -66577
 0;
 #X obj 311 577 hradio 25 1 0 7 empty empty empty 0 -8 0 10 -262144
--66577 -262144 6;
+-66577 -262144 4;
 #X obj 402 548 hradio 25 1 0 3 empty empty empty 0 -8 0 10 -262144
 -262144 -262144 2;
 #X obj 326 548 hradio 25 1 0 2 empty empty empty 0 -8 0 10 -262144
 -262144 -262144 1;
+#X obj 318 610 hradio 13 1 0 12 empty empty ___________4____5___6 2
+7 0 10 -262144 -1 -1 0;
+#X obj 318 641 s melodier-key-offset;
+#X msg 463 513 0;
+#X obj 498 495 loadbang;
 #X connect 0 0 32 0;
 #X connect 1 0 0 0;
 #X connect 2 0 31 0;
@@ -82,4 +87,7 @@
 #X connect 26 0 16 0;
 #X connect 27 0 16 0;
 #X connect 28 0 16 0;
-#X coords 0 -1 1 1 200 70 2 300 540;
+#X connect 33 0 34 0;
+#X connect 35 0 33 0;
+#X connect 36 0 35 0;
+#X coords 0 -1 1 1 200 90 2 300 540;
