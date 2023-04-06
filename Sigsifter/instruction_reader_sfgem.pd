@@ -1,7 +1,7 @@
 #N canvas 193 126 1056 746 10;
 #X obj 300 172 textfile;
-#X obj 300 122 bng 30 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 300 122 bng 30 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X msg 369 143 rewind;
 #X obj 342 104 t b b;
 #X obj 268 600 s start-instruction;
@@ -12,13 +12,13 @@
 #X obj 241 622 s trigger_next_textline;
 #X obj 300 75 r trigger_next_textline;
 #X obj 418 125 openpanel;
-#X floatatom 256 484 5 0 0 0 - - -;
-#X floatatom 306 517 5 0 0 0 - - -;
+#X floatatom 256 484 5 0 0 0 - - - 0;
+#X floatatom 306 517 5 0 0 0 - - - 0;
 #X obj 418 48 inlet;
 #X obj 342 48 inlet;
 #X obj 241 48 inlet;
 #X obj 306 545 * 1000;
-#X floatatom 241 120 5 0 0 0 - - -;
+#X floatatom 241 120 5 0 0 0 - - - 0;
 #X obj 306 574 s current_instruction_length;
 #X obj 241 512 >=;
 #X obj 451 219 s timer_on_off;

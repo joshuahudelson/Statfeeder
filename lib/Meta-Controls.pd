@@ -1,46 +1,61 @@
-#N canvas 67 220 971 510 10;
-#X obj 347 274 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
+#N canvas 67 220 1140 510 10;
+#X obj 347 274 tgl 20 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
 #X text 444 310 STEREO/MONO;
-#X obj 526 339 s absolute-relative;
-#X obj 347 62 r init-loadbang;
+#X obj 526 355 s absolute-relative;
+#X obj 347 51 r init-loadbang;
 #X msg 347 109 0;
 #X msg 347 248 1;
 #X obj 347 308 s stereo-mono;
 #X msg 598 281 \; pd dsp \$1;
 #X obj 634 260 s reverb-bypass;
 #X msg 347 187 1;
-#X obj 526 88 r absolute-relative-receive;
+#X obj 526 48 r absolute-relative-receive;
 #X obj 598 144 r dsp-on-off-receive;
 #X obj 634 172 r reverb-bypass-receive;
 #X msg 347 161 1;
-#X obj 490 60 r sense-numb;
+#X obj 490 20 r sense-numb;
 #X msg 347 135 0;
-#X obj 562 116 r multiplex-controller;
-#X obj 562 316 s multiplex;
-#X obj 481 201 cnv 15 188 48 empty empty empty 20 12 0 14 -191407 -66577
+#X obj 562 76 r multiplex-controller;
+#X obj 562 326 s multiplex;
+#X obj 481 201 cnv 15 188 48 empty empty empty 20 12 0 14 #b8b8b8 #404040
 0;
-#X obj 526 204 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 634 204 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 598 204 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 490 204 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 562 204 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X obj 526 204 tgl 25 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 634 204 tgl 25 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 598 204 tgl 25 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X obj 490 204 tgl 25 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
 #X text 486 229 SENSE;
 #X text 600 229 DSP;
 #X text 529 229 REL;
-#X text 561 229 PLEX;
 #X text 636 229 REV;
+#X obj 562 201 vradio 16 1 0 3 empty empty empty 0 -8 0 10 #fcfcfc
+#000000 #000000 0;
+#X obj 539 113 f;
+#X obj 572 113 + 1;
+#X obj 539 135 mod 3;
+#X obj 539 94 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000;
+#X obj 490 257 s sense-numb-post;
+#X obj 562 297 + 1;
+#X msg 347 80 0;
+#X obj 809 75 sel 2;
+#X msg 788 117 127 127 127 127 127 127 1 1 1 1 1 1;
+#X msg 789 146 \; elem-exp-multiplier-0 \$1 \; elem-exp-multiplier-1
+\$2 \; elem-exp-multiplier-2 \$3 \; elem-exp-multiplier-3 \$4 \; elem-exp-multiplier-4
+\$5 \; elem-exp-multiplier-5 \$6 \; elem-exp-adder-0 \$7 \; elem-exp-adder-1
+\$8 \; elem-exp-adder-2 \$9 \; elem-exp-adder-3 \$10 \; elem-exp-adder-4
+\$11 \; elem-exp-adder-5 \$12 \; pulse_base bang;
 #X connect 0 0 6 0;
 #X connect 3 0 4 0;
 #X connect 3 0 5 0;
 #X connect 3 0 9 0;
 #X connect 3 0 13 0;
 #X connect 3 0 15 0;
+#X connect 3 0 34 0;
 #X connect 4 0 19 0;
 #X connect 5 0 0 0;
 #X connect 9 0 20 0;
@@ -49,10 +64,21 @@
 #X connect 12 0 20 0;
 #X connect 13 0 21 0;
 #X connect 14 0 22 0;
-#X connect 15 0 23 0;
-#X connect 16 0 23 0;
+#X connect 15 0 28 1;
+#X connect 16 0 31 0;
 #X connect 19 0 2 0;
 #X connect 20 0 8 0;
 #X connect 21 0 7 0;
-#X connect 23 0 17 0;
+#X connect 22 0 32 0;
+#X connect 27 0 29 0;
+#X connect 27 0 33 0;
+#X connect 28 0 30 0;
+#X connect 29 0 28 1;
+#X connect 30 0 27 0;
+#X connect 30 0 35 0;
+#X connect 31 0 28 0;
+#X connect 33 0 17 0;
+#X connect 34 0 27 0;
+#X connect 35 0 36 0;
+#X connect 36 0 37 0;
 #X coords 0 -1 1 1 190 50 2 480 200;

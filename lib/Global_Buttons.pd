@@ -1,9 +1,9 @@
-#N canvas 106 209 1753 720 10;
+#N canvas 94 188 1753 720 10;
 #X obj 218 169 < 8;
 #X obj 218 278 > 15;
 #X msg 218 299 color 0 \$1 0;
 #X msg 218 198 color 0 \$1 0;
-#X floatatom 218 132 5 0 0 0 - - -;
+#X floatatom 218 132 5 0 0 0 - - - 0;
 #X msg 318 198 set \$1;
 #X obj 318 149 % 8;
 #X msg 318 249 set \$1;
@@ -20,25 +20,25 @@
 #X msg 144 299 set \$1;
 #X obj 911 368 + 8;
 #X obj 1274 352 + 16;
-#X floatatom 54 129 5 0 0 0 - - -;
+#X floatatom 54 129 5 0 0 0 - - - 0;
 #X obj 144 146 % 8;
-#X floatatom 1225 115 5 0 0 0 - - -;
-#X floatatom 1221 386 5 0 0 0 - - -;
+#X floatatom 1225 115 5 0 0 0 - - - 0;
+#X floatatom 1221 386 5 0 0 0 - - - 0;
 #X obj 1361 34 r to_global_presets;
-#X obj 371 201 cnv 15 830 155 empty empty empty 20 12 0 14 -233017
--66577 0;
-#X obj 381 216 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--166441 -262144 1;
-#X obj 381 267 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 1;
-#X obj 381 317 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 1;
-#X obj 911 216 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 0;
-#X obj 911 267 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 0;
-#X obj 911 317 hradio 35 1 0 8 empty empty empty -15 10 0 4 -262144
--262144 -262144 0;
+#X obj 371 201 cnv 15 830 155 empty empty empty 20 12 0 14 #e0e0e0
+#404040 0;
+#X obj 381 216 hradio 35 1 0 8 empty empty empty -15 10 0 4 #fcfcfc
+#fcfcfc #fcfcfc 0;
+#X obj 381 267 hradio 35 1 0 8 empty empty empty -15 10 0 4 #fcfcfc
+#fcfcfc #fcfcfc 0;
+#X obj 381 317 hradio 35 1 0 8 empty empty empty -15 10 0 4 #fcfcfc
+#fcfcfc #fcfcfc 0;
+#X obj 911 216 hradio 35 1 0 8 empty empty empty -15 10 0 4 #fcfcfc
+#a0a0a0 #fcfcfc 0;
+#X obj 911 267 hradio 35 1 0 8 empty empty empty -15 10 0 4 #fcfcfc
+#fcfcfc #fcfcfc 0;
+#X obj 911 317 hradio 35 1 0 8 empty empty empty -15 10 0 4 #fcfcfc
+#fcfcfc #fcfcfc 0;
 #X msg 381 403 color 0 0 0;
 #X msg 911 403 color 0 0 0;
 #X obj 1491 58 r to_secondary_globals;
@@ -66,13 +66,13 @@
 #X text 385 250 STAT SIREN ORGY. HUM . HUM2 GRIND GRND2 C#MIN;
 #X text 910 251 HUM2 BACKG SIREN SCRCH. SALT GRNDR KETTL STATC;
 #X text 918 201 OFF. HALO. REED. SERP. WIND CHORD WHIST HUM;
-#X text 911 301 NOISE SELFS PAIR. D.C. DCREV DCSIG DCSLF GLISS;
 #X obj 1221 424 New_Transitioner;
 #X msg 54 198 color 0 \$1 0;
 #X msg 218 249 color 0 \$1 0;
 #X text 389 200 OFF..WHIT. WIND. DMAJ DCHLF WHIST F#MIN ----;
 #X text 387 300 TON . 3RD. OCTV. D.C. RHSHF TRAN1 TRAN2 GLISS;
 #X obj 684 262 Piano-Keyboard;
+#X text 911 301 ----------------------------------------------;
 #X connect 0 0 3 0;
 #X connect 1 0 2 0;
 #X connect 2 0 29 0;
@@ -89,7 +89,7 @@
 #X connect 8 0 29 0;
 #X connect 10 0 23 0;
 #X connect 11 0 23 0;
-#X connect 12 0 62 0;
+#X connect 12 0 61 0;
 #X connect 13 0 14 0;
 #X connect 14 0 32 0;
 #X connect 15 0 31 0;
@@ -110,7 +110,7 @@
 #X connect 23 0 9 0;
 #X connect 24 0 21 0;
 #X connect 24 0 33 0;
-#X connect 24 0 61 0;
+#X connect 24 0 60 0;
 #X connect 25 0 36 0;
 #X connect 25 0 40 0;
 #X connect 25 0 45 0;
@@ -190,7 +190,7 @@
 #X connect 53 0 39 0;
 #X connect 53 0 46 0;
 #X connect 54 0 15 0;
-#X connect 55 0 63 0;
-#X connect 62 0 30 0;
-#X connect 63 0 28 0;
+#X connect 55 0 62 0;
+#X connect 61 0 30 0;
+#X connect 62 0 28 0;
 #X coords 0 -1 1 1 832 157 2 370 200;

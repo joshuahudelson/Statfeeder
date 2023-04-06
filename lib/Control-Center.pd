@@ -1,53 +1,62 @@
 #N canvas 693 212 750 613 10;
-#X obj 51 51 cnv 15 128 258 empty empty empty 20 12 0 14 -233017 -66577
+#X obj 51 51 cnv 15 128 258 empty empty empty 20 12 0 14 #e0e0e0 #404040
 0;
 #X obj 229 301 Signal_Output;
-#X obj 62 60 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
-;
-#X obj 292 49 r auxfader-7;
-#X obj 292 78 / 127;
-#X obj 221 39 loadbang;
-#X msg 231 78 0.5;
-#X obj 62 98 vsl 25 200 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 9950 1;
-#X text 101 59 START/STOP;
-#X text 103 73 RECORDING;
-#X obj 117 141 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X text 101 122 Stacc/Leg;
+#X obj 55 60 tgl 25 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
+0 1;
+#X obj 312 78 / 127;
+#X obj 251 39 loadbang;
+#X msg 251 78 0.5;
+#X obj 55 98 vsl 25 200 0 1 0 0 empty empty empty 0 -9 0 10 #fcfcfc
+#000000 #000000 0 1;
+#X text 87 59 START/STOP;
+#X text 89 73 RECORDING;
+#X obj 107 141 tgl 25 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 0 1;
+#X text 91 122 Stacc/Leg;
 #X obj 307 166 s stacc-leg-onoff;
 #X obj 324 230 s gliss-length-vols-master;
-#X obj 99 200 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 40 256;
+#X obj 87 200 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
+#fcfcfc #000000 #000000 0 256;
 #X obj 245 122 r gliss-length-vols-receive;
 #X msg 221 182 40;
 #X msg 191 123 1;
 #X obj 117 8 r stacc-leg-receive;
 #X obj 261 182 sel 0;
-#X obj 99 250 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
--262144 -1 -1 0 256;
-#X text 93 233 Note Duration;
+#X obj 86 250 nbx 3 30 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 20
+#fcfcfc #000000 #000000 0 256;
+#X text 80 233 Note Duration;
 #X obj 99 353 s note_length;
 #X obj 189 232 r note_lengths_panel;
-#X text 96 183 ATTACK DECAY;
+#X text 84 183 ATTACK DECAY;
 #X obj 109 329 s gliss-length-receive;
+#X obj 162 97 vsl 13 200 0.01 10000 1 0 empty empty empty 0 -9 0 10
+#fcfcfc #000000 #000000 0 1;
+#X obj 357 365 s master_bandpass;
+#X msg 194 57 10000;
+#X obj 241 8 r master_bandpass_receive;
+#X obj 312 49 r master_volume_receive;
 #X connect 2 0 1 0;
-#X connect 3 0 4 0;
-#X connect 4 0 7 0;
+#X connect 3 0 6 0;
+#X connect 4 0 5 0;
+#X connect 4 0 15 0;
+#X connect 4 0 16 0;
+#X connect 4 0 27 0;
 #X connect 5 0 6 0;
-#X connect 5 0 16 0;
-#X connect 5 0 17 0;
-#X connect 6 0 7 0;
-#X connect 7 0 1 1;
-#X connect 10 0 12 0;
-#X connect 10 0 19 0;
+#X connect 6 0 1 1;
+#X connect 9 0 11 0;
+#X connect 9 0 18 0;
+#X connect 13 0 12 0;
 #X connect 14 0 13 0;
-#X connect 15 0 14 0;
-#X connect 16 0 14 0;
-#X connect 17 0 10 0;
-#X connect 18 0 10 0;
-#X connect 19 0 14 0;
-#X connect 20 0 22 0;
-#X connect 20 0 25 0;
-#X connect 23 0 20 0;
+#X connect 15 0 13 0;
+#X connect 16 0 9 0;
+#X connect 17 0 9 0;
+#X connect 18 0 13 0;
+#X connect 19 0 21 0;
+#X connect 19 0 24 0;
+#X connect 22 0 19 0;
+#X connect 25 0 26 0;
+#X connect 27 0 25 0;
+#X connect 28 0 25 0;
+#X connect 29 0 3 0;
 #X coords 0 -1 1 1 130 260 2 50 50;

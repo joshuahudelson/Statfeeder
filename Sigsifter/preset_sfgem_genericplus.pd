@@ -1,4 +1,4 @@
-#N canvas 98 340 1601 740 10;
+#N canvas 137 121 1601 740 10;
 #X obj 24 44 inlet;
 #X obj 161 42 r aux_inst_all;
 #X obj 934 32 r current_instruction_length;
@@ -64,8 +64,8 @@ length;
 #X obj 995 265 f;
 #X obj 978 313 f;
 #X obj 961 363 f;
-#X obj 1040 120 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
+#X obj 1040 120 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X msg 829 164 \$1_time;
 #X obj 726 222 randomer_sfgem;
 #X obj 829 142 symbol;

@@ -1,11 +1,11 @@
 #N canvas 67 130 1265 883 10;
-#X obj 394 612 dac~;
+#X obj 379 638 dac~;
 #X obj 374 131 r~ ugen0;
 #X obj 374 174 *~;
 #X obj 684 174 *~;
 #X obj 527 174 *~;
 #X obj 318 81 vsl 15 70 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 4889 1;
+-1 -1 3450 1;
 #X obj 373 397 *~;
 #X obj 403 397 *~;
 #X obj 373 450 throw~ dac-left;
@@ -101,6 +101,10 @@
 #X obj 358 61 inlet;
 #X msg 133 227 open /home/joshua/Desktop/SFrec-\$1.wav;
 #X text 216 259 TRANSITION TIME B/T \; STEREO AND MONO;
+#X obj 379 589 bp~, f 6;
+#X obj 431 589 bp~, f 6;
+#X msg 492 571 1.2;
+#X obj 240 571 r master_bandpass;
 #X connect 1 0 2 0;
 #X connect 2 0 81 0;
 #X connect 3 0 83 0;
@@ -143,6 +147,7 @@
 #X connect 38 0 43 0;
 #X connect 38 1 45 0;
 #X connect 39 0 24 0;
+#X connect 39 0 103 0;
 #X connect 40 0 36 0;
 #X connect 41 0 35 0;
 #X connect 42 0 36 0;
@@ -165,8 +170,8 @@
 #X connect 53 0 51 1;
 #X connect 54 0 50 1;
 #X connect 55 0 52 1;
-#X connect 56 0 0 0;
-#X connect 56 1 0 1;
+#X connect 56 0 101 0;
+#X connect 56 1 102 0;
 #X connect 57 0 64 0;
 #X connect 58 0 64 0;
 #X connect 59 0 64 0;
@@ -219,3 +224,9 @@
 #X connect 97 0 91 1;
 #X connect 98 0 5 0;
 #X connect 99 0 74 0;
+#X connect 101 0 0 0;
+#X connect 102 0 0 1;
+#X connect 103 0 101 2;
+#X connect 103 0 102 2;
+#X connect 104 0 101 1;
+#X connect 104 0 102 1;

@@ -1,4 +1,4 @@
-#N canvas 0 89 869 542 10;
+#N canvas 70 109 869 542 10;
 #X obj 240 235 s;
 #X msg 288 191 \$1_random_max;
 #X msg 288 320 \$1_time_random_max;

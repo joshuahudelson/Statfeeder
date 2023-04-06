@@ -3,7 +3,7 @@
 0		1		staytime 15000;
 0		1		noise 1;
 0		1		window 1;
-0		1		size 1 999 999 999 1000 999 999 999;
+0		1		size 10 999 999 999 1000 999 999 999;
 0		1		size_maxmin 1 -1 457 456;
 1		10		size_pulse_plus 456 999 999 999 666 999 999 999;
 10		10		pol_add_maxmin 2 -2 500 0;

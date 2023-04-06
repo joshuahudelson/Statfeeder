@@ -1,4 +1,4 @@
-#N canvas 20 282 1014 709 12;
+#N canvas 363 208 1014 709 12;
 #X obj 142 226 random 999;
 #X obj 142 248 / 1000;
 #X msg 234 273 set \$1;
@@ -41,7 +41,7 @@
 #X obj 414 57 r rhythmdriver;
 #X obj 414 83 sel 0 1 2;
 #X obj 413 453 == 1;
-#X obj 239 83 s rhythmstartstop-send;
+#X obj 49 157 s rhythmstartstop-send;
 #X obj 401 361 r rhythmer-minimum-difference;
 #X obj 413 500 f;
 #X floatatom 431 392 5 0 0 0 - - -;

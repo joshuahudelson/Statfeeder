@@ -1,8 +1,8 @@
-#N canvas 67 235 1066 519 10;
-#X obj 100 31 cnv 15 128 258 empty empty empty 20 12 0 14 -228856 -66577
+#N canvas 50 74 585 683 10;
+#X obj 100 31 cnv 15 128 258 empty empty empty 20 12 0 14 #dcdcdc #404040
 0;
-#X obj 101 46 vradio 13 1 0 18 empty empty empty 0 -8 0 10 -262144
--1 -1 11;
+#X obj 101 46 vradio 13 1 0 18 empty empty empty 0 -8 0 10 #fcfcfc
+#000000 #000000 0;
 #X text 116 46 0 ALL OFF \; 1 ALL NOISE \; 2 ALL SIG \; 3 ALL SELF
 \; 4 ONE NOISE \; 5 ONE SIG \; 6 ONE SELF \; 7 PAIR \; 8 PAIR & NOISE
 \; 9 PAIR & SIG \; 10 PAIR & SELF \; 11 DAISY CHAIN \; 12 DC REVERSE
@@ -11,7 +11,32 @@
 #X obj 101 311 Sourcerer;
 #X obj 101 4 r to_source_presets;
 #X text 108 30 SOURCE PRESETS;
-#X obj 101 350 Controller_Input_SF;
+#X obj 101 340 Controller_Input_SF;
+#X obj 244 142 f;
+#X obj 244 113 t b f;
+#X obj 244 171 +;
+#X obj 244 37 r decrement_source_presets;
+#X msg 244 66 -1;
+#X msg 244 229 set \$1;
+#X floatatom 244 258 5 0 0 0 - - - 0;
+#X obj 300 66 r increment_source_presets;
+#X msg 300 95 1;
+#X obj 244 200 mod 18;
+#X obj 308 240 r select_source_presets;
 #X connect 1 0 3 0;
+#X connect 1 0 7 1;
 #X connect 4 0 1 0;
+#X connect 7 0 9 0;
+#X connect 8 0 7 0;
+#X connect 8 1 9 1;
+#X connect 9 0 16 0;
+#X connect 9 0 7 1;
+#X connect 10 0 11 0;
+#X connect 11 0 8 0;
+#X connect 12 0 13 0;
+#X connect 12 0 1 0;
+#X connect 14 0 15 0;
+#X connect 15 0 8 0;
+#X connect 16 0 12 0;
+#X connect 17 0 13 0;
 #X coords 0 -1 1 1 130 260 2 99 30;
